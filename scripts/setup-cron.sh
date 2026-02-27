@@ -48,7 +48,7 @@ echo ""
 echo "2️⃣ 创建 Cron 配置文件..."
 
 cat > "$CRON_FILE" << EOF
-# 紫微智控 - 自动同步定时任务
+# 紫微智控 - 自动同步定时任务（容错版）
 # 创建时间：$(date '+%Y-%m-%d %H:%M:%S')
 
 SHELL=/bin/bash
@@ -58,7 +58,10 @@ MAILTO=""
 # 每 30 分钟巡查一次（发现更改自动同步）
 */30 * * * * root cd $Ziwei_DIR && /usr/bin/python3 $SCRIPTS_DIR/auto-sync-watchdog.py >> $Ziwei_DIR/data/logs/cron_watchdog.log 2>&1
 
-# 每日 23:40 强制同步
+# 每 10 分钟重试失败的同步
+*/10 * * * * root cd $Ziwei_DIR && /usr/bin/bash $SCRIPTS_DIR/retry-failed-sync.sh >> $Ziwei_DIR/data/logs/cron_retry.log 2>&1
+
+# 每日 23:40 强制同步（确保最终一致性）
 40 23 * * * root cd $Ziwei_DIR && /usr/bin/bash $SCRIPTS_DIR/sync-to-both.sh >> $Ziwei_DIR/data/logs/cron_daily_sync.log 2>&1
 EOF
 
