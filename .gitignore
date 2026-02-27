@@ -1,0 +1,22 @@
+# 敏感信息
+.env
+*.key
+*.secret
+
+# 日志文件
+data/logs/*.log
+data/health/*.log
+
+# 临时文件
+*.tmp
+*.bak
+__pycache__/
+*.pyc
+
+# Obsidian 配置（可选）
+docs/.obsidian/workspace.json
+docs/.obsidian/app.json
+
+# 系统文件
+.DS_Store
+Thumbs.db

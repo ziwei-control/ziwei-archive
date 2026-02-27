@@ -1,0 +1,267 @@
+# 紫微智控 - 岗位配置与权限表
+# 版本：1.0
+# 最后更新：2025-02-27
+
+# =============================================================================
+# 岗位定义
+# =============================================================================
+
+agents:
+  # ---------------------------------------------------------------------------
+  # V-01 视觉侦察兵
+  # ---------------------------------------------------------------------------
+  V-01:
+    name: 视觉侦察兵
+    english_name: The Visionary
+    model: qwen-portal/vision-model
+    model_alias: ~
+    type: vision
+    description: "负责图像解析，48 小时限 4 次调用"
+    permissions:
+      - read_image
+      - call_vision_model
+      - generate_analysis_report
+    restrictions:
+      - cannot_generate_code
+      - cannot_call_other_models
+      - quota_48h_limit: 4
+    output_dir: docs/analysis/
+    log_file: data/logs/vision_usage.log
+
+  # ---------------------------------------------------------------------------
+  # T-01 首席架构师
+  # ---------------------------------------------------------------------------
+  T-01:
+    name: 首席架构师
+    english_name: The Orchestrator
+    model: bailian/qwen3-max-2026-01-23
+    model_alias: t1-architect
+    type: text
+    description: "总调度、任务分解、视觉额度守门"
+    permissions:
+      - task_decompose
+      - call_all_models
+      - approve_vision_quota
+      - manage_system_status
+      - coordinate_learning
+    restrictions:
+      - cannot_generate_code_directly
+      - cannot_call_api_directly
+    output_dir: docs/tasks/
+    log_file: data/logs/orchestrator.log
+
+  # ---------------------------------------------------------------------------
+  # T-02 代码特种兵
+  # ---------------------------------------------------------------------------
+  T-02:
+    name: 代码特种兵
+    english_name: The Coder
+    model: bailian/qwen3-coder-plus
+    model_alias: t2-coder
+    type: code
+    description: "专职代码生成与 Bug 修复"
+    permissions:
+      - generate_code
+      - fix_bugs
+      - optimize_code
+      - add_comments
+    restrictions:
+      - must_submit_for_audit
+      - cannot_deploy_directly
+    output_dir: projects/
+    log_file: data/logs/coder.log
+
+  # ---------------------------------------------------------------------------
+  # T-03 代码审计员
+  # ---------------------------------------------------------------------------
+  T-03:
+    name: 代码审计员
+    english_name: The Auditor
+    model: bailian/qwen3-coder-next
+    model_alias: t3-auditor
+    type: code
+    description: "四维审查，重做计数（上限 20 次）"
+    permissions:
+      - audit_code
+      - approve_delivery
+      - reject_and_retry
+      - send_audit_report
+    restrictions:
+      - max_retry_count: 20
+      - must_report_immediately
+    output_dir: data/logs/
+    log_file: data/logs/auditor.log
+
+  # ---------------------------------------------------------------------------
+  # T-04 逻辑推理机 / 进度监工
+  # ---------------------------------------------------------------------------
+  T-04:
+    name: 逻辑推理机
+    english_name: The Reasoner / Supervisor
+    model: bailian/qwen3.5-plus
+    model_alias: t4-logic
+    type: text
+    description: "复杂逻辑处理，兼任进度监工（18 分钟巡查）"
+    permissions:
+      - complex_reasoning
+      - supervise_progress
+      - scan_code_logic
+      - generate_inspection_report
+    restrictions:
+      - inspection_interval_min: 18
+      - report_interval_hour: 4
+    output_dir: data/logs/
+    log_file: data/logs/supervisor.log
+
+  # ---------------------------------------------------------------------------
+  # T-05 跨域翻译家
+  # ---------------------------------------------------------------------------
+  T-05:
+    name: 跨域翻译家
+    english_name: The Translator
+    model: bailian/glm-4.7
+    model_alias: t5-translator
+    type: text
+    description: "多语言翻译，对比分析"
+    permissions:
+      - translate
+      - compare_analysis
+      - generate_summary
+    restrictions:
+      - cannot_generate_code
+    output_dir: docs/translations/
+    log_file: data/logs/translator.log
+
+  # ---------------------------------------------------------------------------
+  # T-06 长文解析器
+  # ---------------------------------------------------------------------------
+  T-06:
+    name: 长文解析器
+    english_name: The Reader
+    model: bailian/kimi-k2.5
+    model_alias: t6-reader
+    type: text
+    description: "超长文本处理，信息抽取"
+    permissions:
+      - parse_long_text
+      - extract_info
+      - generate_summary
+    restrictions:
+      - min_text_length: 10000
+    output_dir: docs/analysis/
+    log_file: data/logs/reader.log
+
+  # ---------------------------------------------------------------------------
+  # T-07 网络爬虫
+  # ---------------------------------------------------------------------------
+  T-07:
+    name: 网络爬虫
+    english_name: The Scraper
+    model: qwen-portal/coder-model
+    model_alias: ~
+    type: network
+    description: "联网搜索，唯一有联网权限的岗位"
+    permissions:
+      - web_search
+      - fetch_url
+      - verify_facts
+    restrictions:
+      - cannot_generate_code
+      - rate_limit_per_hour: 60
+    output_dir: docs/research/
+    log_file: data/logs/scraper.log
+
+# =============================================================================
+# 系统配置
+# =============================================================================
+
+system:
+  # 运行环境
+  environment:
+    max_memory_mb: 2048  # 2G 内存限制
+    serial_execution: true  # 串行执行
+    async_api_calls: true  # API 异步调用
+
+  # 状态管理
+  status:
+    idle: IDLE
+    busy: BUSY
+    emergency: EMERGENCY
+    sleep: SLEEP
+
+  # 学习机制
+  learning:
+    interval_minutes: 60
+    duration_minutes: 5
+    breakpoint_dir: docs/knowledge/
+
+  # 巡查机制
+  inspection:
+    interval_minutes: 18
+    report_interval_hours: 4
+    buffer_file: data/logs/supervisor_buffer.log
+
+  # 审计机制
+  audit:
+    max_retry_count: 20
+    immediate_report: true
+
+  # 急救机制
+  emergency:
+    heartbeat_interval_seconds: 30
+    heartbeat_timeout_minutes: 2
+    health_dir: data/health/
+
+  # 归档机制
+  archive:
+    delay_hours: 8
+    github_remote: https://github.com/ziwei-control/ziwei-archive.git
+    keep_local: true
+
+# =============================================================================
+# 通知配置
+# =============================================================================
+
+notifications:
+  email:
+    recipient_kangna: 19922307306@189.cn
+    recipient_martin: pandac00@163.com
+    smtp_server: smtp.163.com
+    smtp_port: 465
+    sender: pandac00@163.com
+    # API Key 存储在环境变量，不在此文件中
+
+  feishu:
+    app_id: cli_a9f758dbc1759bd2
+    # App Secret 存储在环境变量，不在此文件中
+
+# =============================================================================
+# 合规红线
+# =============================================================================
+
+compliance:
+  red_lines:
+    - category: 内容违规
+      items:
+        - 涉政/敏感
+        - 色情/低俗/暴力
+        - 违法犯罪
+        - 侵权/隐私
+        - 恶意诱导
+    - category: 使用违规
+      items:
+        - 账号共享/倒卖
+        - API 滥用/盗刷
+        - Coding Plan 滥用
+        - 恶意牟利/薅羊毛
+    - category: 技术红线
+      items:
+        - 反向破解/逆向
+        - 数据违规
+        - 规避审核
+        - 欠费/拒付
+
+  response:
+    - immediate_circuit_break: true
+    - email_alert: true
+    - log_incident: true
