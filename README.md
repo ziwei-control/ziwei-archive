@@ -2,14 +2,25 @@
 
 > AI 驱动的一人公司系统
 
+## 仓库地址
+
+- **GitHub**: https://github.com/ziwei-control/ziwei-archive
+- **Gitee**: https://gitee.com/ziwei-control/ziwei-archive (配置后启用)
+
 ## 快速开始
 
 ### 1. 配置环境变量
 
 ```bash
 cp .env.example .env
-# 编辑 .env 填入真实的 API Key
+# 编辑 .env 填入真实的 API Key 和 Token
 ```
+
+需要配置：
+- `BAILIAN_API_KEY` - 阿里百炼 API Key
+- `EMAIL_PASSWORD` - 邮箱密码
+- `GITHUB_TOKEN` - GitHub Token
+- `GITEE_TOKEN` - Gitee Token（可选，用于双平台同步）
 
 ### 2. 安装依赖
 
@@ -25,6 +36,13 @@ python3 scripts/local_monitor.py &
 
 # 启动进度监工（18 分钟巡查）
 python3 scripts/supervisor.py &
+```
+
+### 4. 双平台同步（可选）
+
+```bash
+# 推送到 GitHub + Gitee
+bash scripts/sync-to-both.sh
 ```
 
 ## 目录结构
