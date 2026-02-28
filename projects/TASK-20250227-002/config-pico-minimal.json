@@ -1,0 +1,25 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "~/.picoclaw/workspace",
+      "provider": "bailian",
+      "model": "qwen3-coder-plus"
+    }
+  },
+  "channels": {
+    "dingtalk": {
+      "enabled": true,
+      "client_id": "YOUR_DINGTALK_APPKEY",
+      "client_secret": "YOUR_DINGTALK_APPSECRET"
+    }
+  },
+  "providers": {
+    "bailian": {
+      "api_key": "sk-sp-68f305abb87846f7a21b5ebb53530890",
+      "api_base": "https://coding.dashscope.aliyuncs.com/v1"
+    }
+  },
+  "gateway": {
+    "port": 18790
+  }
+}

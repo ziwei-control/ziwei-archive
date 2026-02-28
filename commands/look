@@ -1,0 +1,3 @@
+#!/bin/bash
+# 紫微智控 - look 监控程序命令
+exec bash "/home/admin/Ziwei/scripts/look.sh" "$@"

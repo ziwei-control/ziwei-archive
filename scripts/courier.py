@@ -21,18 +21,48 @@ ENV_FILE = Ziwei_DIR / ".env"
 # 从环境变量读取配置
 def load_email_config():
     """加载邮件配置"""
+    # 从 .env 文件读取
+    env_file = "/home/admin/Ziwei/.env"
     config = {
-        "smtp_server": os.getenv("SMTP_SERVER", "smtp.163.com"),
-        "smtp_port": int(os.getenv("SMTP_PORT", "465")),
-        "sender": os.getenv("SENDER_EMAIL", "pandac00@163.com"),
-        "password": os.getenv("EMAIL_PASSWORD", ""),
+        "smtp_server": "smtp.163.com",
+        "smtp_port": 465,
+        "sender": "pandac00@163.com",
+        "password": "",
         "recipient_kangna": "19922307306@189.cn",
         "recipient_martin": "pandac00@163.com"
     }
+    
+    try:
+        with open(env_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    key, value = line.split('=', 1)
+                    value = value.strip('"').strip("'")
+                    
+                    if key == "EMAIL_PASSWORD":
+                        config["password"] = value
+                    elif key == "SMTP_SERVER":
+                        config["smtp_server"] = value
+                    elif key == "SMTP_PORT":
+                        config["smtp_port"] = int(value)
+                    elif key == "SENDER_EMAIL":
+                        config["sender"] = value
+    except Exception as e:
+        print(f"[通信官] 读取.env 文件失败：{e}")
+    
     return config
 
 
 def send_email(subject, content, recipient_type="kangna", html=False):
+    """
+    发送邮件
+    Args:
+        subject: 邮件主题
+        content: 邮件内容
+        recipient_type: kangna/martin/both
+        html: 是否使用 HTML 格式
+    """
     """
     发送邮件
     
@@ -63,11 +93,8 @@ def send_email(subject, content, recipient_type="kangna", html=False):
     msg["To"] = ", ".join(recipients)
     msg["Subject"] = Header(subject, "utf-8")
     
-    # 添加内容
-    if html:
-        msg.attach(MIMEText(content, "html", "utf-8"))
-    else:
-        msg.attach(MIMEText(content, "plain", "utf-8"))
+    # 添加内容（同时添加纯文本和 HTML 版本）
+    msg.attach(MIMEText(content, "html" if html else "plain", "utf-8"))
     
     try:
         # 发送邮件
@@ -331,18 +358,207 @@ def send_compliance_violation(violation_info):
 # 主程序（测试用）
 # =============================================================================
 
-if __name__ == "__main__":
-    print("紫微智控 - 通信官脚本")
-    print("  用法：在其它脚本中导入并使用")
-    print("")
-    print("示例:")
-    print("  from courier import send_email, send_audit_report")
-    print("  send_email('测试', '这是一封测试邮件')")
-    print("")
+def send_delivery(task_id, task_name, task_desc):
+    """发送交付邮件（HTML 紧凑版）"""
+    import datetime
     
-    # 测试配置加载
     config = load_email_config()
-    print(f"SMTP 服务器：{config['smtp_server']}:{config['smtp_port']}")
-    print(f"发件人：{config['sender']}")
-    print(f"收件人（康纳）: {config['recipient_kangna']}")
-    print(f"收件人（Martin）: {config['recipient_martin']}")
+    
+    subject = f"🚀 [任务交付] {task_name} 已完成"
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    
+    # HTML 邮件内容（紧凑版，1:0.35 比例）
+    html_content = f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+        
+        body {{
+            font-family: 'Noto Sans SC', '思源黑体', sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }}
+        
+        .container {{
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }}
+        
+        .header {{
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }}
+        
+        .bitcoin-bg {{
+            position: absolute;
+            font-size: 120px;
+            color: rgba(255, 215, 0, 0.3);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            z-index: 0;
+        }}
+        
+        .header h1 {{
+            color: white;
+            font-size: 22px;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }}
+        
+        .content {{
+            padding: 20px;
+        }}
+        
+        .info-table {{
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }}
+        
+        .info-table tr {{
+            border-bottom: 1px solid #eee;
+        }}
+        
+        .info-table td {{
+            padding: 8px 5px;
+            font-size: 13px;
+        }}
+        
+        .info-table .label {{
+            font-weight: bold;
+            color: #667eea;
+            width: 80px;
+        }}
+        
+        .links {{
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }}
+        
+        .links a {{
+            display: block;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 5px 0;
+        }}
+        
+        .footer {{
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #667eea;
+        }}
+        
+        .footer div {{
+            font-size: 13px;
+            color: #667eea;
+            font-weight: bold;
+        }}
+        
+        .footer .slogan {{
+            font-size: 11px;
+            color: #999;
+            margin-top: 5px;
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="bitcoin-bg">₿</div>
+            <h1>🎉 任务交付完成 🎉</h1>
+        </div>
+        
+        <div class="content">
+            <p style="margin: 0 0 15px 0; font-size: 14px; color: #555;">
+                <strong>{task_name}</strong> 已完成并交付。
+            </p>
+            
+            <table class="info-table">
+                <tr><td class="label">任务 ID:</td><td>{task_id}</td></tr>
+                <tr><td class="label">任务名称:</td><td>{task_name}</td></tr>
+                <tr><td class="label">描述:</td><td>{task_desc}</td></tr>
+                <tr><td class="label">完成时间:</td><td>{now}</td></tr>
+            </table>
+            
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                        border-radius: 10px; padding: 12px; margin-bottom: 15px; color: white;">
+                <strong style="font-size: 14px;">📦 交付内容:</strong>
+                <div style="font-size: 12px; margin-top: 8px;">
+                    ✅ 源代码 &nbsp; ✅ 文档 &nbsp; ✅ 使用说明
+                </div>
+            </div>
+            
+            <div class="links">
+                <strong style="font-size: 13px; color: #667eea;">🌐 项目位置:</strong>
+                <a href="https://github.com/ziwei-control/{task_id}">🐙 GitHub</a>
+                <a href="https://gitee.com/pandac0/{task_id}">🔷 Gitee</a>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); 
+                        border-radius: 10px; padding: 10px; color: white; text-align: center; font-size: 12px;">
+                ⏰ 8 小时后自动归档
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div>🤖 紫微智控 通信官</div>
+            <div class="slogan">时刻准备着</div>
+        </div>
+    </div>
+</body>
+</html>
+"""
+    
+    return send_email(subject, html_content, recipient_type="both", html=True)
+
+
+if __name__ == "__main__":
+    import sys
+    
+    if len(sys.argv) > 1 and sys.argv[1] == "send_delivery":
+        # 从命令行调用
+        task_id = sys.argv[2] if len(sys.argv) > 2 else "未知任务"
+        task_name = sys.argv[3] if len(sys.argv) > 3 else "未知任务"
+        task_desc = sys.argv[4] if len(sys.argv) > 4 else "无描述"
+        
+        print(f"发送交付邮件：{task_name}")
+        result = send_delivery(task_id, task_name, task_desc)
+        if result:
+            print("✅ 邮件发送成功")
+        else:
+            print("❌ 邮件发送失败")
+    else:
+        print("紫微智控 - 通信官脚本")
+        print("  用法：在其它脚本中导入或使用命令行")
+        print("")
+        print("示例:")
+        print("  from courier import send_email, send_delivery")
+        print("  send_email('测试', '这是一封测试邮件')")
+        print("")
+        print("命令行:")
+        print("  python3 courier.py send_delivery TASK-XXX \"任务名称\" \"任务描述\"")
+        print("")
+        
+        # 测试配置加载
+        config = load_email_config()
+        print(f"SMTP 服务器：{config['smtp_server']}:{config['smtp_port']}")
+        print(f"发件人：{config['sender']}")
+        print(f"收件人（康纳）: {config['recipient_kangna']}")
+        print(f"收件人（Martin）: {config['recipient_martin']}")
