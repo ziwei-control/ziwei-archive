@@ -16,7 +16,7 @@ ZIWEI_DIR = "/home/admin/Ziwei"
 WALLET_FILE = os.path.join(ZIWEI_DIR, "data", "wallets.json")
 EMAIL_CONFIG = {
     "to": "19922307306@189.cn",
-    "smtp_server": "smtp.189.cn",
+    "smtp_server": "smtp.163.com",
     "smtp_port": 465,
     "sender_email": "pandac00@163.com",
     "sender_password": "UMayTeWFZsFqwv6M"

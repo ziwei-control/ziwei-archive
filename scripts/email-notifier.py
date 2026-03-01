@@ -13,7 +13,7 @@ from datetime import datetime
 
 # 邮件配置
 EMAIL_CONFIG = {
-    "smtp_server": "smtp.189.cn",
+    "smtp_server": "smtp.163.com",
     "smtp_port": 465,
     "sender_email": "pandac00@163.com", 
     "sender_password": "UMayTeWFZsFqwv6M",

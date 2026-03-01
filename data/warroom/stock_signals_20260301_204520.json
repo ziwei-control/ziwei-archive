@@ -1,0 +1,83 @@
+[
+  {
+    "type": "STOCK_OPPORTUNITY",
+    "asset": "000001.SZ",
+    "name": "平安银行",
+    "current_price": 12.5,
+    "target_price": 14.0,
+    "potential_gain": "12%",
+    "timeframe": "3天",
+    "timestamp": "2026-03-01T20:45:18.706713"
+  },
+  {
+    "type": "STOCK_OPPORTUNITY",
+    "asset": "0700.HK",
+    "name": "腾讯控股",
+    "current_price": 350.0,
+    "target_price": 390.0,
+    "potential_gain": "11.4%",
+    "timeframe": "5天",
+    "timestamp": "2026-03-01T20:45:18.706724"
+  },
+  {
+    "type": "STOCK_OPPORTUNITY",
+    "asset": "600519.SH",
+    "name": "贵州茅台",
+    "current_price": 1800.0,
+    "target_price": 2000.0,
+    "potential_gain": "11.1%",
+    "timeframe": "2天",
+    "timestamp": "2026-03-01T20:45:18.706728"
+  },
+  {
+    "type": "NEW_LISTING",
+    "asset": "688999.SH",
+    "name": "AI科技",
+    "ipo_date": "2026-03-01",
+    "issue_price": 25.0,
+    "expected_gain": "15-20%",
+    "timestamp": "2026-03-01T20:45:18.706738"
+  },
+  {
+    "type": "NEW_LISTING",
+    "asset": "01234.HK",
+    "name": "区块链集团",
+    "ipo_date": "2026-03-05",
+    "issue_price": 8.5,
+    "expected_gain": "12-18%",
+    "timestamp": "2026-03-01T20:45:18.706740"
+  },
+  {
+    "type": "PORTFOLIO_ANALYSIS",
+    "asset": "9611.HK",
+    "name": "龙旗科技",
+    "shares": 700,
+    "current_price": 36.5,
+    "target_price": 41.974999999999994,
+    "potential_gain": "15%",
+    "action": "HOLD",
+    "timestamp": "2026-03-01T20:45:18.706748"
+  },
+  {
+    "type": "PORTFOLIO_ANALYSIS",
+    "asset": "1357.HK",
+    "name": "美图公司",
+    "shares": 1000,
+    "current_price": 8.9,
+    "target_price": 10.235,
+    "potential_gain": "15%",
+    "action": "HOLD",
+    "timestamp": "2026-03-01T20:45:18.706758"
+  },
+  {
+    "type": "PORTFOLIO_ANALYSIS",
+    "asset": "600501.SS",
+    "name": "航天晨光",
+    "shares": 100,
+    "current_price": 27.5,
+    "target_price": 30.800000000000004,
+    "potential_gain": "12%",
+    "action": "HOLD",
+    "timestamp": "2026-03-01T20:45:18.706762"
+  }
+]
