@@ -1,0 +1,28 @@
+# 紫微智控审计系统
+
+无需额外依赖，使用 Python 标准库即可运行。
+
+## 系统要求
+
+- Python 3.6+
+- Linux/macOS/Windows
+
+## 安装（可选）
+
+```bash
+# 本地安装
+pip install -e .
+
+# 或全局安装
+pip install .
+```
+
+## 使用
+
+```bash
+# 直接运行
+python3 src/audit_ziwei_system.py
+
+# 或安装后运行
+ziwei-audit
+```
