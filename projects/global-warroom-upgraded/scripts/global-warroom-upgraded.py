@@ -29,7 +29,7 @@ CONFIG = {
         "smtp_server": os.getenv("SMTP_SERVER", "smtp.163.com"),
         "smtp_port": int(os.getenv("SMTP_PORT", 465)),
         "sender_email": os.getenv("SENDER_EMAIL", "pandac00@163.com"),
-        "sender_password": os.getenv("SENDER_PASSWORD", "UMayTeWFZsFqwv6M"),
+        "sender_password": os.getenv("SENDER_PASSWORD", os.getenv("SENDER_PASSWORD")),
         "receiver_email": os.getenv("RECEIVER_EMAIL", "19922307306@189.cn")
     },
     "thresholds": {

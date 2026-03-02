@@ -89,7 +89,7 @@ for filepath in files_to_check:
     with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
         content = f.read()
     
-    if "UMayTeWFZsFqwv6M" in content or 'sender_password": "UMayTeWFZsFqwv6M"' in content:
+    if os.getenv("SENDER_PASSWORD") in content or 'sender_password": os.getenv("SENDER_PASSWORD")' in content:
         print(f"   ❌ {filename}: 仍包含硬编码密码")
         password_found = True
     else:
