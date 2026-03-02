@@ -16,7 +16,7 @@ from email.mime.multipart import MIMEMultipart
 SMTP_SERVER = "smtp.163.com"
 SMTP_PORT = 465
 SENDER_EMAIL = "pandac00@163.com"
-SENDER_PASSWORD = "UMayTeWFZsFqwv6M"  # 从环境变量读取更安全
+SENDER_PASSWORD = os.getenv("SENDER_PASSWORD", "")  # 从环境变量读取
 RECEIVER_EMAIL = "19922307306@189.cn"  # 康纳
 
 # 日志文件路径

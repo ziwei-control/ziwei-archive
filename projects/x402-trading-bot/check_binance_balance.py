@@ -12,8 +12,8 @@ except ImportError:
     sys.exit(1)
 
 # API 配置
-API_KEY = "0adWsF5X0HfPUfAo6uYSKpQYmJXmRryB8veStp4waJ3jvhBOsAHEcMPyN5srC9a1"
-API_SECRET = "BE3kkKz0Q6Iu82bxKkJDAh1ATkWrpSHLuZhHFJPsHaDB6qScUI5ixjMWNnziKo3T"
+API_KEY = os.getenv("BINANCE_API_KEY", "")
+API_SECRET = os.getenv("BINANCE_API_SECRET", "")
 
 def check_balance():
     """查询 Binance 账户余额"""
