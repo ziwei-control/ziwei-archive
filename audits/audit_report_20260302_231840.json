@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-03-02T23:18:40.353767",
+  "projects": {
+    "x402-api": {
+      "path": "/home/admin/Ziwei/projects/x402-api",
+      "total_files": 32,
+      "python_files": 20,
+      "total_size_kb": 111.44
+    },
+    "x402-python-sdk": {
+      "path": "/home/admin/Ziwei/projects/x402-python-sdk",
+      "total_files": 16,
+      "python_files": 8,
+      "total_size_kb": 35.13
+    },
+    "x402-trading-bot": {
+      "path": "/home/admin/Ziwei/projects/x402-trading-bot",
+      "total_files": 12,
+      "python_files": 6,
+      "total_size_kb": 63.43
+    },
+    "global-warroom": {
+      "path": "/home/admin/Ziwei/projects/global-warroom",
+      "total_files": 15,
+      "python_files": 8,
+      "total_size_kb": 92.55
+    },
+    "global-warroom-upgraded": {
+      "path": "/home/admin/Ziwei/projects/global-warroom-upgraded",
+      "total_files": 8,
+      "python_files": 5,
+      "total_size_kb": 53.06
+    },
+    "scripts": {
+      "path": "/home/admin/Ziwei/scripts",
+      "total_files": 41,
+      "python_files": 24,
+      "total_size_kb": 347.1
+    }
+  },
+  "security": {
+    "critical": 1,
+    "high": 0,
+    "medium": 4,
+    "low": 0
+  },
+  "code_quality": {
+    "total_python_files": 71,
+    "total_lines": 14376,
+    "total_functions": 422,
+    "total_classes": 47,
+    "avg_lines_per_file": 202.5
+  },
+  "running_services": [
+    {
+      "name": "x402 API",
+      "pids": [
+        "484865",
+        "484866"
+      ],
+      "status": "running"
+    }
+  ],
+  "recommendations": [
+    "立即修复硬编码密码",
+    "启动未运行的服务"
+  ]
+}

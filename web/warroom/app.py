@@ -21,7 +21,7 @@ CONFIG = {
         "smtp_server": "smtp.189.cn",
         "smtp_port": 465,
         "sender_email": "pandac00@163.com", 
-        "sender_password": "UMayTeWFZsFqwv6M",
+        "sender_password": os.getenv("SENDER_PASSWORD", ""),
         "receiver_email": "19922307306@189.cn"
     },
     "thresholds": {
