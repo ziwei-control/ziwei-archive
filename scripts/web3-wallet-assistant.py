@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from dotenv import load_dotenv
+load_dotenv()
 # =============================================================================
 # Web3 智能钱包助手 - 全球战情室核心组件
 # 功能：多钱包统一管理 + Coinbase/X402 集成 + 自动交易
@@ -19,7 +21,7 @@ EMAIL_CONFIG = {
     "smtp_server": "smtp.163.com",
     "smtp_port": 465,
     "sender_email": "pandac00@163.com",
-    "sender_password": "UMayTeWFZsFqwv6M"
+    "sender_password": os.getenv("SENDER_PASSWORD")
 }
 
 # 从 MEMORY.md 提取的钱包地址

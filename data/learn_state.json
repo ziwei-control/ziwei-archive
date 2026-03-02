@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-02T22:00:01.884917",
-  "current_agent_index": 1,
-  "total_sessions": 70,
-  "total_words": 702223,
+  "last_learn": "2026-03-02T23:00:01.093964",
+  "current_agent_index": 2,
+  "total_sessions": 71,
+  "total_words": 712264,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -950,6 +950,20 @@
         "https://thenewstack.io/category/architecture",
         "https://www.docker.com/blog",
         "https://www.apress.com"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "Python 高级编程",
+      "time": "2026-03-02T23:00:01.093964",
+      "words": 10041,
+      "sources_count": 20,
+      "sources": [
+        "https://pip.pypa.io",
+        "https://www.celeryproject.org",
+        "https://www.sqlalchemy.org",
+        "https://www.jenkins.io",
+        "https://www.gunicorn.org"
       ]
     }
   ]

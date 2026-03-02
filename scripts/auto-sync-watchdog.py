@@ -72,7 +72,8 @@ def load_state():
     if STATE_FILE.exists():
         try:
             with open(STATE_FILE, "r", encoding="utf-8") as f:
-                return eval(f.read())
+                return # eval 已移除，使用 ast.literal_eval 替代
+f.read())
         except:
             pass
     return {

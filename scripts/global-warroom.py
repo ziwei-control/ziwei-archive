@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from dotenv import load_dotenv
+load_dotenv()
 # =============================================================================
 # 全球战情室 - 实时市场监控系统
 # 功能：24小时监控加密货币 + A股/港股市场，30%+涨跌立即邮件通知
@@ -21,7 +23,7 @@ CONFIG = {
         "smtp_server": "smtp.163.com",
         "smtp_port": 465,
         "sender_email": "pandac00@163.com", 
-        "sender_password": "UMayTeWFZsFqwv6M",
+        "sender_password": os.getenv("SENDER_PASSWORD"),
         "receiver_email": "19922307306@189.cn"
     },
     "thresholds": {

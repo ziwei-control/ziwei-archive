@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from dotenv import load_dotenv
+load_dotenv()
 # =============================================================================
 # 全球战情室 - 邮件通知系统 (升级版)
 # 功能：发送包含具体来源、证据包、详细分析的邮件到 19922307306@189.cn
@@ -16,7 +18,7 @@ EMAIL_CONFIG = {
     "smtp_server": "smtp.163.com",
     "smtp_port": 465,
     "sender_email": "pandac00@163.com", 
-    "sender_password": "UMayTeWFZsFqwv6M",
+    "sender_password": os.getenv("SENDER_PASSWORD"),
     "receiver_email": "19922307306@189.cn"
 }
 

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from dotenv import load_dotenv
+load_dotenv()
 # =============================================================================
 # 全球战情室 - A股/港股分析工具
 # 功能：全面扫描A股+港股市场，寻找短期10%+上涨机会
@@ -25,7 +27,7 @@ EMAIL_CONFIG = {
     "smtp_server": "smtp.163.com",
     "smtp_port": 465,
     "sender_email": "pandac00@163.com",
-    "sender_password": "UMayTeWFZsFqwv6M",
+    "sender_password": os.getenv("SENDER_PASSWORD"),
     "receiver_email": "19922307306@189.cn"
 }
 
