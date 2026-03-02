@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-02T20:00:01.450165",
-  "current_agent_index": 5,
-  "total_sessions": 68,
-  "total_words": 682161,
+  "last_learn": "2026-03-02T21:00:01.694112",
+  "current_agent_index": 0,
+  "total_sessions": 69,
+  "total_words": 692192,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -922,6 +922,20 @@
         "https://www.pontoon.mozilla.org",
         "https://www.deepl.com/blog",
         "https://www.omegat.org"
+      ]
+    },
+    {
+      "agent": "T-06",
+      "topic": "信息抽取",
+      "time": "2026-03-02T21:00:01.694112",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.rollingstone.com",
+        "https://www.slate.com",
+        "https://www.firstthings.com",
+        "https://www.longreads.com",
+        "https://www.newyorker.com"
       ]
     }
   ]
