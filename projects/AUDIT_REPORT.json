@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-03-02T19:53:10.201583",
+  "total_projects": 6,
+  "total_files": 14,
+  "existing_files": 12,
+  "security_issues": 1,
+  "details": [
+    {
+      "name": "x402-api",
+      "files": {
+        "app_production.py": {
+          "exists": true,
+          "size": 9589
+        },
+        "x402_gateway.py": {
+          "exists": true,
+          "size": 5404
+        },
+        "secure_executor.py": {
+          "exists": true,
+          "size": 7592
+        },
+        ".env": {
+          "exists": true,
+          "size": 247
+        }
+      },
+      "security_issues": [
+        {
+          "file": "secure_executor.py",
+          "issues": [
+            "exec(",
+            "eval("
+          ]
+        }
+      ]
+    },
+    {
+      "name": "x402-python-sdk",
+      "files": {
+        "x402/client.py": {
+          "exists": true,
+          "size": 3451
+        },
+        "x402/payment.py": {
+          "exists": true,
+          "size": 1883
+        },
+        "examples/basic_usage.py": {
+          "exists": true,
+          "size": 2150
+        }
+      },
+      "security_issues": []
+    },
+    {
+      "name": "x402-trading-bot",
+      "files": {
+        "bot_simple.py": {
+          "exists": true,
+          "size": 8178
+        }
+      },
+      "security_issues": []
+    },
+    {
+      "name": "global-warroom",
+      "files": {
+        "scripts/web3-wallet-assistant.py": {
+          "exists": true,
+          "size": 6288
+        },
+        "scripts/data-validator.py": {
+          "exists": true,
+          "size": 6116
+        },
+        "scripts/stock-analysis.py": {
+          "exists": true,
+          "size": 11904
+        }
+      },
+      "security_issues": []
+    },
+    {
+      "name": "global-warroom-upgraded",
+      "files": {
+        "scripts/global-warroom-upgraded.py": {
+          "exists": false,
+          "size": 0
+        },
+        "scripts/global-warroom.py": {
+          "exists": false,
+          "size": 0
+        }
+      },
+      "security_issues": []
+    },
+    {
+      "name": "log-trim",
+      "files": {
+        "log-trim.py": {
+          "exists": true,
+          "size": 10266
+        }
+      },
+      "security_issues": []
+    }
+  ]
+}

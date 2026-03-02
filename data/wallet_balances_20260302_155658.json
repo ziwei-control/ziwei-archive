@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-03-02T15:56:58.656485",
+  "total_usdt": 26.221,
+  "eth_price": 2800.0,
+  "btc_price": 65000.0,
+  "xrp_price": 0.5,
+  "details": {
+    "eth": {
+      "total_eth": 0.0,
+      "total_usd": 0.0,
+      "nonzero_count": 0,
+      "nonzero_wallets": []
+    },
+    "btc": {
+      "total_btc": 0.0004034,
+      "total_usd": 26.221,
+      "nonzero_count": 1,
+      "nonzero_wallets": [
+        {
+          "address": "1HW6noDiCJ...3F8WcG4d",
+          "balance": 0.0004034,
+          "value_usd": 26.221
+        }
+      ]
+    },
+    "xrp": {
+      "total_xrp": 0.0,
+      "total_usd": 0.0
+    }
+  }
+}

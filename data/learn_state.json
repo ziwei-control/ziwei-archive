@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-02T02:00:01.961240",
+  "last_learn": "2026-03-02T20:00:01.450165",
   "current_agent_index": 5,
-  "total_sessions": 50,
-  "total_words": 501621,
+  "total_sessions": 68,
+  "total_words": 682161,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -670,6 +670,258 @@
         "https://www.babylon.com",
         "https://www.welocalize.com",
         "https://www.acclaro.com"
+      ]
+    },
+    {
+      "agent": "T-06",
+      "topic": "信息抽取",
+      "time": "2026-03-02T03:00:01.224566",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.vox.com",
+        "https://www.firstthings.com",
+        "https://www.vice.com/news",
+        "https://www.newrepublic.com",
+        "https://www.parisreview.org"
+      ]
+    },
+    {
+      "agent": "T-01",
+      "topic": "系统架构设计",
+      "time": "2026-03-02T04:00:01.586579",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.infoq.com/architecture-design",
+        "https://www.redhat.com/architect",
+        "https://medium.com/tag/software-architecture",
+        "https://stackoverflow.com/questions/tagged/software-architecture",
+        "https://dl.acm.org"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "设计模式",
+      "time": "2026-03-02T05:00:01.854757",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.chef.io",
+        "https://rabbitmq.com",
+        "https://mypy.readthedocs.io",
+        "https://github.com/features/actions",
+        "https://www.mongodb.com"
+      ]
+    },
+    {
+      "agent": "T-03",
+      "topic": "OWASP Top 10",
+      "time": "2026-03-02T06:00:01.968782",
+      "words": 10021,
+      "sources_count": 20,
+      "sources": [
+        "https://www.cnet.com/news/security",
+        "https://www.paloaltonetworks.com/blog",
+        "https://www.helpnetsecurity.com",
+        "https://www.splunk.com/en_us/blog.html",
+        "https://www.avg.com/en/signatures"
+      ]
+    },
+    {
+      "agent": "T-04",
+      "topic": "问题分解",
+      "time": "2026-03-02T07:00:01.106568",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.mathsisfun.com",
+        "https://www.lightgbm.ai",
+        "https://www.mathworks.com",
+        "https://www.r-project.org",
+        "https://www.numpy.org"
+      ]
+    },
+    {
+      "agent": "T-05",
+      "topic": "技术翻译",
+      "time": "2026-03-02T08:00:01.244852",
+      "words": 10033,
+      "sources_count": 20,
+      "sources": [
+        "https://www.phrase.com/blog",
+        "https://www SDL.com",
+        "https://www.transifex.com",
+        "https://www.translatewiki.net",
+        "https://www.amazon.com/translate"
+      ]
+    },
+    {
+      "agent": "T-06",
+      "topic": "信息抽取",
+      "time": "2026-03-02T09:00:01.434687",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.sojo.net",
+        "https://www.theguardian.com/longform",
+        "https://www.gq.com",
+        "https://www.christiancentury.org",
+        "https://www.thenation.com"
+      ]
+    },
+    {
+      "agent": "T-01",
+      "topic": "云原生架构",
+      "time": "2026-03-02T10:00:01.578004",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://microservices.io",
+        "https://www.packtpub.com",
+        "https://softwareengineering.stackexchange.com",
+        "https://itnext.io",
+        "https://www.acm.org"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "单元测试",
+      "time": "2026-03-02T11:00:01.746009",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.celeryproject.org",
+        "https://www.pythonbasics.org",
+        "https://black.readthedocs.io",
+        "https://kafka.apache.org",
+        "https://aws.amazon.com/python"
+      ]
+    },
+    {
+      "agent": "T-03",
+      "topic": "代码安全",
+      "time": "2026-03-02T12:00:01.072384",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://security.googleblog.com",
+        "https://www.bitdefender.com/blog",
+        "https://www.malwarebytes.com/blog",
+        "https://www.kaspersky.com/blog",
+        "https://owasp.org/www-project-top-ten"
+      ]
+    },
+    {
+      "agent": "T-04",
+      "topic": "数学建模",
+      "time": "2026-03-02T13:00:01.290676",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.tensorflow.org",
+        "https://www.desmos.com",
+        "https://www.edx.org/learn/math",
+        "https://www.pandas.pydata.org",
+        "https://plato.stanford.edu"
+      ]
+    },
+    {
+      "agent": "T-05",
+      "topic": "本地化",
+      "time": "2026-03-02T14:00:01.412793",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.onetradis.com",
+        "https://www.star-group.com",
+        "https://www.memoq.com",
+        "https://www.rws.com",
+        "https://www.transperfect.com"
+      ]
+    },
+    {
+      "agent": "T-06",
+      "topic": "长文阅读",
+      "time": "2026-03-02T15:00:01.684083",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.commonwealmagazine.org",
+        "https://www.zenit.org",
+        "https://www.granta.com",
+        "https://longform.org",
+        "https://www.longform.org/apps"
+      ]
+    },
+    {
+      "agent": "T-01",
+      "topic": "分布式系统",
+      "time": "2026-03-02T16:00:01.841464",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.safaribooksonline.com",
+        "https://www.redhat.com/architect",
+        "https://www.computer.org",
+        "https://www.sumologic.com",
+        "https://arxiv.org/list/cs.SE/recent"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "单元测试",
+      "time": "2026-03-02T17:00:02.032984",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://pylint.pycqa.org",
+        "https://cloud.google.com/python",
+        "https://github.com/trending",
+        "https://www.pythonbasics.org",
+        "https://www.mysql.com"
+      ]
+    },
+    {
+      "agent": "T-03",
+      "topic": "OWASP Top 10",
+      "time": "2026-03-02T18:00:01.221591",
+      "words": 10021,
+      "sources_count": 20,
+      "sources": [
+        "https://www.symantec.com/blogs",
+        "https://www.qualys.com/blog",
+        "https://www.kaspersky.com/blog",
+        "https://www.checkpoint.com/cyber-hub",
+        "https://www.rapid7.com/blog"
+      ]
+    },
+    {
+      "agent": "T-04",
+      "topic": "算法分析",
+      "time": "2026-03-02T19:00:01.364217",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.h2o.ai",
+        "https://www.tfx.dev",
+        "https://www.dvc.org",
+        "https://www.mathway.com",
+        "https://www.tensorflow.org/tutorials"
+      ]
+    },
+    {
+      "agent": "T-05",
+      "topic": "跨文化沟通",
+      "time": "2026-03-02T20:00:01.450165",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.smartling.com",
+        "https://www.weblate.org",
+        "https://www.pontoon.mozilla.org",
+        "https://www.deepl.com/blog",
+        "https://www.omegat.org"
       ]
     }
   ]

@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-03-02T17:16:01.273806",
+  "total_usd": 27.20981784,
+  "prices": {
+    "eth": 1955.9,
+    "btc": 66403,
+    "xrp": 1.36,
+    "ardor": 0.0,
+    "nem": 0.0,
+    "lisk": 0.0,
+    "waves": 0.0
+  },
+  "balances": {
+    "eth": {
+      "symbol": "ETH",
+      "total_balance": 0.0,
+      "total_usd": 0.0,
+      "price_usd": 1955.9,
+      "wallet_count": 18,
+      "nonzero_count": 0,
+      "wallets": []
+    },
+    "bitcoin": {
+      "symbol": "BTC",
+      "total_balance": 0.0004034,
+      "total_usd": 0.0,
+      "price_usd": 0,
+      "wallet_count": 2,
+      "nonzero_count": 1,
+      "wallets": [
+        {
+          "address": "1HW6noDiCJ...3F8WcG4d",
+          "full_address": "1HW6noDiCJRiNY552KSewTgCEn3F8WcG4d",
+          "balance": 0.0004034,
+          "value_usd": 0.0
+        }
+      ]
+    },
+    "xrp": {
+      "symbol": "XRP",
+      "total_balance": 20.007219,
+      "total_usd": 27.20981784,
+      "price_usd": 1.36,
+      "wallet_count": 1,
+      "nonzero_count": 1,
+      "wallets": [
+        {
+          "address": "rpSfQv1xhP...tjvthntW",
+          "full_address": "rpSfQv1xhPpLzt2NUtejNfDy3dtjvthntW",
+          "balance": 20.007219,
+          "value_usd": 27.20981784
+        }
+      ]
+    },
+    "ardor": {
+      "symbol": "ARDOR",
+      "total_balance": 0.0,
+      "total_usd": 0.0,
+      "price_usd": 0.0,
+      "wallet_count": 3,
+      "nonzero_count": 0,
+      "wallets": []
+    },
+    "nem": {
+      "symbol": "XEM",
+      "total_balance": 0.0,
+      "total_usd": 0.0,
+      "price_usd": 0.0,
+      "wallet_count": 1,
+      "nonzero_count": 0,
+      "wallets": []
+    },
+    "lisk": {
+      "symbol": "LSK",
+      "total_balance": 0.0,
+      "total_usd": 0.0,
+      "price_usd": 0.0,
+      "wallet_count": 1,
+      "nonzero_count": 0,
+      "wallets": []
+    },
+    "waves": {
+      "symbol": "WAVES",
+      "total_balance": 0.001,
+      "total_usd": 0.0,
+      "price_usd": 0.0,
+      "wallet_count": 1,
+      "nonzero_count": 1,
+      "wallets": [
+        {
+          "address": "3PKchBBnwA...vfhSpgd5",
+          "full_address": "3PKchBBnwAkV1jEzcgZXBaFPQAVvfhSpgd5",
+          "balance": 0.001,
+          "value_usd": 0.0
+        }
+      ]
+    }
+  }
+}

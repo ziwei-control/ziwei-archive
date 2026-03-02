@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-03-02T17:20:51.012580",
+  "total_usd": 54.64101784,
+  "total_cny": 393.415328448,
+  "balances": {
+    "eth": {
+      "balance": 0.0,
+      "usd": 0.0,
+      "price": 2850.0,
+      "symbol": "ETH"
+    },
+    "btc": {
+      "balance": 0.0004034,
+      "usd": 27.4312,
+      "price": 68000.0,
+      "symbol": "BTC"
+    },
+    "xrp": {
+      "balance": 20.007219,
+      "usd": 27.20981784,
+      "price": 1.36,
+      "symbol": "XRP"
+    },
+    "ardor": {
+      "balance": 0.0,
+      "usd": 0.0,
+      "price": 0.008,
+      "symbol": "ARDOR"
+    },
+    "ignis": {
+      "balance": 0.0,
+      "usd": 0.0,
+      "price": 0.0015,
+      "symbol": "IGNIS"
+    },
+    "nem": {
+      "balance": 0.0,
+      "usd": 0.0,
+      "price": 0.012,
+      "symbol": "XEM"
+    },
+    "lisk": {
+      "balance": 0.0,
+      "usd": 0.0,
+      "price": 0.85,
+      "symbol": "LSK"
+    },
+    "waves": {
+      "balance": 0.0,
+      "usd": 0.0,
+      "price": 1.5,
+      "symbol": "WAVES"
+    }
+  }
+}
