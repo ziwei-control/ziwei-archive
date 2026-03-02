@@ -389,8 +389,8 @@ class TradingBot:
         
         print(f"\n📊 {symbol} {reason}")
         print(f"   入场: ${entry_price:.4f}")
-        print(f   出场: ${current_price:.4f}")
-        print(f   收益: {pnl:.2%} (${pnl_usdt:+.2f} USDT)")
+        print(f"   出场: ${current_price:.4f}")
+        print(f"   收益: {pnl:.2%} (${pnl_usdt:+.2f} USDT)")
         
         if not self.config['test_mode'] and not self.config['dry_run']:
             # 取消挂单
