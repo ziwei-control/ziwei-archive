@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T04:00:01.986466",
-  "current_agent_index": 1,
-  "total_sessions": 76,
-  "total_words": 762409,
+  "last_learn": "2026-03-03T05:00:01.325148",
+  "current_agent_index": 2,
+  "total_sessions": 77,
+  "total_words": 772440,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1034,6 +1034,20 @@
         "https://www.redhat.com/architect",
         "https://levelup.gitconnected.com",
         "https://thenewstack.io/category/architecture"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "单元测试",
+      "time": "2026-03-03T05:00:01.325148",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://github.com/trending",
+        "https://pytest.org",
+        "https://www.mysql.com",
+        "https://www.chef.io",
+        "https://redis.io"
       ]
     }
   ]
