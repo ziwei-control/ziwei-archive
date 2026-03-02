@@ -1,0 +1,15 @@
+{
+  "date": "2026-03-02",
+  "time": "2026-03-02 22:36:01",
+  "total_signals": 0,
+  "success_trades": 0,
+  "failed_trades": 0,
+  "warnings": 0,
+  "balance": {
+    "USDT": 0,
+    "BTC": 0,
+    "ETH": 0,
+    "total_usdt": 0
+  },
+  "trades": []
+}
