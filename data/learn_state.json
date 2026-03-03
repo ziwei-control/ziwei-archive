@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T10:00:01.574236",
-  "current_agent_index": 1,
-  "total_sessions": 82,
-  "total_words": 822597,
+  "last_learn": "2026-03-03T11:00:01.093464",
+  "current_agent_index": 2,
+  "total_sessions": 83,
+  "total_words": 832628,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1118,6 +1118,20 @@
         "https://www.computer.org",
         "https://scholar.google.com",
         "https://www.sumologic.com"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "单元测试",
+      "time": "2026-03-03T11:00:01.093464",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.ansible.com",
+        "https://www.git-scm.com",
+        "https://pylint.pycqa.org",
+        "https://www.mongodb.com",
+        "https://www.helm.sh"
       ]
     }
   ]
