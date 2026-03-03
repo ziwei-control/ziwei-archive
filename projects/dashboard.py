@@ -71,10 +71,10 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <div class="container">
-        <h1>🚀 紫微智控 - 系统监控 Dashboard <span style="font-size:0.5em; background: #667eea; color: white; padding: 5px 15px; border-radius: 20px; margin-left: 10px;">v{VERSION}</span></h1>
+        <h1>🚀 紫微智控 - 系统监控 Dashboard <span style="font-size:0.5em; background: #667eea; color: white; padding: 5px 15px; border-radius: 20px; margin-left: 10px;">v{version}</span></h1>
         <button class="refresh-btn" onclick="location.reload()">🔄 刷新</button>
         <div style="text-align: center; color: white; margin-bottom: 20px; opacity: 0.9;">
-            <span class="badge badge-info" style="font-size: 1em;">当前版本：v{VERSION}</span>
+            <span class="badge badge-info" style="font-size: 1em;">当前版本：v{version}</span>
             <span style="margin: 0 10px;">|</span>
             <span>最后更新：{update_time}</span>
             <span style="margin: 0 10px;">|</span>
@@ -101,7 +101,7 @@ HTML_TEMPLATE = """
         setTimeout(() => location.reload(), 30000);
         
         // 页面加载时显示版本信息
-        console.log('紫微智控 Dashboard v{VERSION}');
+        console.log('紫微智控 Dashboard v{version}');
         console.log('自动刷新间隔：30 秒');
         console.log('如果页面未更新，请按 Ctrl+F5 强制刷新');
         
@@ -582,7 +582,8 @@ class DashboardHandler(http.server.BaseHTTPRequestHandler):
                 api_stats=get_api_stats(),
                 project_progress=get_project_progress(),
                 code_mapping=get_code_mapping(),
-                update_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                update_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                version=VERSION
             )
             
             self.send_response(200)
