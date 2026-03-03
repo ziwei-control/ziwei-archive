@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T08:00:01.529846",
-  "current_agent_index": 5,
-  "total_sessions": 80,
-  "total_words": 802535,
+  "last_learn": "2026-03-03T09:00:01.672679",
+  "current_agent_index": 0,
+  "total_sessions": 81,
+  "total_words": 812566,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1090,6 +1090,20 @@
         "https://www.systran.com",
         "https://slator.com",
         "https://www.proz.com"
+      ]
+    },
+    {
+      "agent": "T-06",
+      "topic": "摘要生成",
+      "time": "2026-03-03T09:00:01.672679",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.theatlantic.com",
+        "https://www.propublica.org",
+        "https://www.firstthings.com",
+        "https://www.wired.com",
+        "https://www.sojo.net"
       ]
     }
   ]
