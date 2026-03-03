@@ -15,7 +15,7 @@ from pathlib import Path
 import urllib.request
 
 # 配置
-PORT = 8080
+PORT = 8081
 Ziwei_DIR = Path("/home/admin/Ziwei")
 
 # HTML 模板
