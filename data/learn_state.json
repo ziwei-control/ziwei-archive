@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T22:00:01.461787",
-  "current_agent_index": 1,
-  "total_sessions": 94,
-  "total_words": 942981,
+  "last_learn": "2026-03-03T23:00:01.357534",
+  "current_agent_index": 2,
+  "total_sessions": 95,
+  "total_words": 953012,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1286,6 +1286,20 @@
         "https://levelup.gitconnected.com",
         "https://ieeexplore.ieee.org",
         "https://www.packtpub.com"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "设计模式",
+      "time": "2026-03-03T23:00:01.357534",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://realpython.com/tutorials",
+        "https://docs.python.org/3",
+        "https://pre-commit.com",
+        "https://kubernetes.io",
+        "https://www.nomad.io"
       ]
     }
   ]
