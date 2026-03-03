@@ -12,6 +12,11 @@ import urllib.request
 import urllib.error
 from datetime import datetime
 import os
+import sys
+
+# 导入安全模块
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from security import security_middleware, security_manager
 
 PORT = 5002
 DATA_DIR = "/home/admin/Ziwei/projects/x402-api/data"
@@ -172,11 +177,23 @@ class X402APIHandler(http.server.BaseHTTPRequestHandler):
             })
         elif path == '/api/v1/stats':
             stats = gateway.get_stats()
+            security_stats = security_manager.get_stats()
             self.send_json_response({
                 "success": True,
                 "stats": stats,
-                "prices": API_PRICES
+                "prices": API_PRICES,
+                "security": security_stats
             })
+        
+        elif path == '/api/v1/security/stats':
+            self.send_json_response(security_manager.get_stats())
+        
+        elif path == '/api/v1/security/attacks':
+            limit = int(self.headers.get('X-Limit', 100))
+            self.send_json_response({"attacks": security_manager.get_attack_log(limit)})
+        
+        elif path == '/api/v1/security/blacklist':
+            self.send_json_response({"blacklist": security_manager.get_blacklist()})
         else:
             self.send_json_response({"error": "Not found"}, 404)
 
