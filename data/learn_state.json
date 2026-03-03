@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T14:00:01.445674",
-  "current_agent_index": 5,
-  "total_sessions": 86,
-  "total_words": 862723,
+  "last_learn": "2026-03-03T15:00:01.500474",
+  "current_agent_index": 0,
+  "total_sessions": 87,
+  "total_words": 872754,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1174,6 +1174,20 @@
         "https://www.acclaro.com",
         "https://www.systran.com",
         "https://www.omegat.org"
+      ]
+    },
+    {
+      "agent": "T-06",
+      "topic": "信息抽取",
+      "time": "2026-03-03T15:00:01.500474",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.longform.org/apps",
+        "https://www.npr.org/sections/longform",
+        "https://www.vanityfair.com",
+        "https://www.theintercept.com",
+        "https://www.huffpost.com/longform"
       ]
     }
   ]
