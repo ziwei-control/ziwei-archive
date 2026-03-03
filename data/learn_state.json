@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T15:00:01.500474",
-  "current_agent_index": 0,
-  "total_sessions": 87,
-  "total_words": 872754,
+  "last_learn": "2026-03-03T16:00:01.545665",
+  "current_agent_index": 1,
+  "total_sessions": 88,
+  "total_words": 882785,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1188,6 +1188,20 @@
         "https://www.vanityfair.com",
         "https://www.theintercept.com",
         "https://www.huffpost.com/longform"
+      ]
+    },
+    {
+      "agent": "T-01",
+      "topic": "系统架构设计",
+      "time": "2026-03-03T16:00:01.545665",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.linuxfoundation.org",
+        "https://stackoverflow.com/questions/tagged/software-architecture",
+        "https://www.redhat.com/architect",
+        "https://www.mongodb.com/blog",
+        "https://www.coursera.org/browse/computer-science/system-architecture"
       ]
     }
   ]
