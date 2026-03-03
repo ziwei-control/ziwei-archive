@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T16:00:01.545665",
-  "current_agent_index": 1,
-  "total_sessions": 88,
-  "total_words": 882785,
+  "last_learn": "2026-03-03T17:00:01.097955",
+  "current_agent_index": 2,
+  "total_sessions": 89,
+  "total_words": 892826,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1202,6 +1202,20 @@
         "https://www.redhat.com/architect",
         "https://www.mongodb.com/blog",
         "https://www.coursera.org/browse/computer-science/system-architecture"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "Python 高级编程",
+      "time": "2026-03-03T17:00:01.097955",
+      "words": 10041,
+      "sources_count": 20,
+      "sources": [
+        "https://mypy.readthedocs.io",
+        "https://cloud.google.com/python",
+        "https://mkdocs.org",
+        "https://www.jenkins.io",
+        "https://www.flake8.org"
       ]
     }
   ]
