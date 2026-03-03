@@ -437,6 +437,8 @@ def main():
     print()
     print("=" * 70)
     
+    # 允许端口重用
+    socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
         try:
             httpd.serve_forever()
