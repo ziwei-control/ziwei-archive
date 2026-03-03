@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T13:00:01.527572",
-  "current_agent_index": 4,
-  "total_sessions": 85,
-  "total_words": 852690,
+  "last_learn": "2026-03-03T14:00:01.445674",
+  "current_agent_index": 5,
+  "total_sessions": 86,
+  "total_words": 862723,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1160,6 +1160,20 @@
         "https://www.jmp.com",
         "https://www.coursera.org/browse/data-science",
         "https://www.pandas.pydata.org"
+      ]
+    },
+    {
+      "agent": "T-05",
+      "topic": "本地化",
+      "time": "2026-03-03T14:00:01.445674",
+      "words": 10033,
+      "sources_count": 20,
+      "sources": [
+        "https://www SDL.com",
+        "https://www.babylon.com",
+        "https://www.acclaro.com",
+        "https://www.systran.com",
+        "https://www.omegat.org"
       ]
     }
   ]
