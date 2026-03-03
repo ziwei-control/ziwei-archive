@@ -1,0 +1,125 @@
+{
+  "tasks": [
+    {
+      "name": "数据加载模块",
+      "priority": 1,
+      "estimated_time": 15
+    },
+    {
+      "name": "数据验证",
+      "priority": 2,
+      "estimated_time": 15
+    },
+    {
+      "name": "转换逻辑",
+      "priority": 3,
+      "estimated_time": 30
+    },
+    {
+      "name": "实现错误恢复",
+      "priority": 3.5,
+      "estimated_time": 15,
+      "description": "失败后继续处理",
+      "auto_generated": true
+    },
+    {
+      "name": "实现日志记录",
+      "priority": 3.5,
+      "estimated_time": 15,
+      "description": "详细操作日志",
+      "auto_generated": true
+    },
+    {
+      "name": "输出模块",
+      "priority": 4,
+      "estimated_time": 10
+    },
+    {
+      "name": "错误处理",
+      "priority": 5,
+      "estimated_time": 10
+    },
+    {
+      "name": "性能优化",
+      "priority": 6,
+      "estimated_time": 15
+    }
+  ],
+  "parallel_groups": [
+    [
+      {
+        "name": "错误处理",
+        "priority": 5,
+        "estimated_time": 10
+      },
+      {
+        "name": "性能优化",
+        "priority": 6,
+        "estimated_time": 15
+      }
+    ],
+    [
+      {
+        "name": "数据加载模块",
+        "priority": 1,
+        "estimated_time": 15
+      }
+    ],
+    [
+      {
+        "name": "数据验证",
+        "priority": 2,
+        "estimated_time": 15
+      }
+    ],
+    [
+      {
+        "name": "转换逻辑",
+        "priority": 3,
+        "estimated_time": 30
+      }
+    ],
+    [
+      {
+        "name": "实现错误恢复",
+        "priority": 3.5,
+        "estimated_time": 15,
+        "description": "失败后继续处理",
+        "auto_generated": true
+      }
+    ],
+    [
+      {
+        "name": "实现日志记录",
+        "priority": 3.5,
+        "estimated_time": 15,
+        "description": "详细操作日志",
+        "auto_generated": true
+      }
+    ],
+    [
+      {
+        "name": "输出模块",
+        "priority": 4,
+        "estimated_time": 10
+      }
+    ]
+  ],
+  "total_tasks": 8,
+  "estimated_time_minutes": 125,
+  "critical_path": [
+    "数据加载模块",
+    "数据验证",
+    "转换逻辑"
+  ],
+  "dependencies": {
+    "数据加载模块": [],
+    "数据验证": [],
+    "转换逻辑": [],
+    "实现错误恢复": [],
+    "实现日志记录": [],
+    "输出模块": [],
+    "错误处理": [],
+    "性能优化": []
+  }
+}

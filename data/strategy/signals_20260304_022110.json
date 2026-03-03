@@ -1,0 +1,142 @@
+[
+  {
+    "symbol": "SOL",
+    "signal": "WEAK_BUY",
+    "score": 12.75,
+    "price": 85.01,
+    "change_24h": -2.67543,
+    "reasons": [
+      "趋势：热点排名 #1",
+      "动量：低位运行",
+      "情绪：bullish (score=2, articles=10)",
+      "成交量：高换手率 | 高流动性"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T02:21:10.783613",
+    "suggested_position": 0.032,
+    "suggested_amount_usd": 302.08,
+    "stop_loss": 80.7595,
+    "take_profit": 102.012,
+    "risk_reward_ratio": 4.0
+  },
+  {
+    "symbol": "BNB",
+    "signal": "HOLD",
+    "score": 4.5,
+    "price": 634.39,
+    "change_24h": -1.47793,
+    "reasons": [
+      "趋势：中性",
+      "动量：中性",
+      "情绪：bullish (score=1, articles=10)",
+      "成交量： | 高流动性"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T02:21:10.783594",
+    "suggested_position": 0,
+    "suggested_amount_usd": 0.0,
+    "stop_loss": 602.6705,
+    "take_profit": 761.2679999999999,
+    "risk_reward_ratio": 4.0
+  },
+  {
+    "symbol": "XRP",
+    "signal": "HOLD",
+    "score": 4.5,
+    "price": 1.37,
+    "change_24h": -2.21638,
+    "reasons": [
+      "趋势：中性",
+      "动量：中性",
+      "情绪：bullish (score=1, articles=10)",
+      "成交量： | 高流动性"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T02:21:10.783602",
+    "suggested_position": 0,
+    "suggested_amount_usd": 0.0,
+    "stop_loss": 1.3015,
+    "take_profit": 1.6440000000000001,
+    "risk_reward_ratio": 4.0
+  },
+  {
+    "symbol": "ETH",
+    "signal": "HOLD",
+    "score": 4.0,
+    "price": 1982.36,
+    "change_24h": -2.56648,
+    "reasons": [
+      "趋势：中性",
+      "动量：低位运行",
+      "情绪：bullish (score=1, articles=10)",
+      "成交量：正常换手 | 高流动性"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T02:21:10.783585",
+    "suggested_position": 0,
+    "suggested_amount_usd": 0.0,
+    "stop_loss": 1883.2419999999997,
+    "take_profit": 2378.832,
+    "risk_reward_ratio": 4.0
+  },
+  {
+    "symbol": "BTC",
+    "signal": "HOLD",
+    "score": 0.5,
+    "price": 68358,
+    "change_24h": -0.98201,
+    "reasons": [
+      "趋势：中性",
+      "动量：高位运行",
+      "情绪：bearish (score=-1, articles=10)",
+      "成交量： | 高流动性"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T02:21:10.783557",
+    "suggested_position": 0,
+    "suggested_amount_usd": 0.0,
+    "stop_loss": 64940.1,
+    "take_profit": 82029.59999999999,
+    "risk_reward_ratio": 4.0
+  },
+  {
+    "symbol": "ADA",
+    "signal": "HOLD",
+    "score": -2.0,
+    "price": 0.267171,
+    "change_24h": -4.99278,
+    "reasons": [
+      "趋势：中性",
+      "动量：低位运行",
+      "情绪：bearish (score=-1, articles=10)",
+      "成交量：正常换手 | 高流动性"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T02:21:10.783635",
+    "suggested_position": 0,
+    "suggested_amount_usd": 0.0,
+    "stop_loss": 0.25381244999999997,
+    "take_profit": 0.3206052,
+    "risk_reward_ratio": 4.0
+  },
+  {
+    "symbol": "DOGE",
+    "signal": "WEAK_SELL",
+    "score": -9.0,
+    "price": 0.089855,
+    "change_24h": -5.85537,
+    "reasons": [
+      "趋势：下跌趋势 (-5.9%)",
+      "动量：接近 24h 低点",
+      "情绪：bearish (score=-1, articles=10)",
+      "成交量：正常换手 | 高流动性"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T02:21:10.783627",
+    "suggested_position": 0.032,
+    "suggested_amount_usd": 302.08,
+    "stop_loss": 0.08536225,
+    "take_profit": 0.107826,
+    "risk_reward_ratio": 4.0
+  }
+]

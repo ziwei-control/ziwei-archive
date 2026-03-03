@@ -16,12 +16,12 @@ class DataValidator:
         self.source_cache = {}  # 缓存数据源信息
         
     def generate_content_fingerprint(self, content):
-        """生成内容指纹（哈希值）"""
+        """生成内容指纹（哈希值）- 使用 SHA-256"""
         if isinstance(content, dict):
             content_str = json.dumps(content, sort_keys=True, ensure_ascii=False)
         else:
             content_str = str(content)
-        return hashlib.md5(content_str.encode('utf-8')).hexdigest()
+        return hashlib.sha256(content_str.encode('utf-8')).hexdigest()
     
     def validate_cross_sources(self, alert_data, sources):
         """

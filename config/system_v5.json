@@ -1,0 +1,16 @@
+{
+  "version": "5.0",
+  "features": {
+    "ai_model_calling": true,
+    "deep_semantic": true,
+    "expanded_templates": true,
+    "quality_90plus": true,
+    "knowledge_graph_v2": true,
+    "human_collaboration": true,
+    "meta_cognition": true,
+    "creative_generation": true,
+    "domain_experts": true
+  },
+  "quality_target": 95,
+  "understanding_target": 0.9
+}

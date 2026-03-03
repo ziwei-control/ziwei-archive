@@ -1,0 +1,9 @@
+{
+  "default": "t2-coder",
+  "architect": "t1-architect",
+  "coder": "t2-coder",
+  "auditor": "t3-auditor",
+  "logic": "t4-logic",
+  "translator": "t5-translator",
+  "reader": "t6-reader"
+}

@@ -1,0 +1,31 @@
+{
+  "cache": {
+    "enabled": true,
+    "ttl_seconds": 3600,
+    "max_size_mb": 100
+  },
+  "code_quality": {
+    "review_iterations": 3,
+    "min_score": 80,
+    "auto_fix_enabled": true,
+    "strict_mode": true
+  },
+  "learning_strategy": {
+    "save_all_attempts": true,
+    "analyze_failures": true,
+    "generate_case_studies": true,
+    "weekly_review": true
+  },
+  "api_keys": {
+    "brave_search": "",
+    "google_custom_search": "",
+    "google_cx": "",
+    "github_token": ""
+  },
+  "models": {
+    "default": "t2-coder",
+    "architect": "t1-architect",
+    "coder": "t2-coder",
+    "auditor": "t3-auditor"
+  }
+}

@@ -1,0 +1,387 @@
+2026-03-04 01:03:26,160 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2026-03-04 01:03:26,160 INFO Included extra file "/etc/supervisor/conf.d/ziwei.conf" during parsing
+2026-03-04 01:03:26,166 INFO RPC interface 'supervisor' initialized
+2026-03-04 01:03:26,166 INFO RPC interface 'supervisor' initialized
+2026-03-04 01:03:26,166 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2026-03-04 01:03:26,167 INFO daemonizing the supervisord process
+2026-03-04 01:03:26,168 INFO supervisord started with pid 706710
+2026-03-04 01:03:27,169 INFO spawned: 'ziwei-auto-sync' with pid 706719
+2026-03-04 01:03:27,171 INFO spawned: 'ziwei-dashboard' with pid 706720
+2026-03-04 01:03:27,172 INFO spawned: 'ziwei-log-trim' with pid 706721
+2026-03-04 01:03:27,173 INFO spawned: 'ziwei-trading-bot' with pid 706722
+2026-03-04 01:03:27,174 INFO spawned: 'ziwei-warroom' with pid 706723
+2026-03-04 01:03:27,175 INFO spawned: 'ziwei-x402-api' with pid 706724
+2026-03-04 01:03:27,301 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:03:27,312 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:03:27,349 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:03:28,409 INFO spawned: 'ziwei-auto-sync' with pid 706731
+2026-03-04 01:03:28,410 INFO spawned: 'ziwei-dashboard' with pid 706732
+2026-03-04 01:03:28,410 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:03:28,410 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:03:28,410 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:03:28,411 INFO spawned: 'ziwei-x402-api' with pid 706733
+2026-03-04 01:03:28,475 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:03:28,487 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:03:28,494 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:03:30,714 INFO spawned: 'ziwei-auto-sync' with pid 706735
+2026-03-04 01:03:30,716 INFO spawned: 'ziwei-dashboard' with pid 706736
+2026-03-04 01:03:30,717 INFO spawned: 'ziwei-x402-api' with pid 706737
+2026-03-04 01:03:30,774 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:03:30,809 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:03:30,820 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:03:34,155 INFO spawned: 'ziwei-auto-sync' with pid 706749
+2026-03-04 01:03:34,156 INFO spawned: 'ziwei-dashboard' with pid 706750
+2026-03-04 01:03:34,157 INFO spawned: 'ziwei-x402-api' with pid 706751
+2026-03-04 01:03:34,192 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:03:34,192 INFO gave up: ziwei-auto-sync entered FATAL state, too many start retries too quickly
+2026-03-04 01:03:34,226 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:03:34,232 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:03:34,237 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:03:34,770 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-04 01:04:34,520 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2026-03-04 01:04:34,520 INFO Included extra file "/etc/supervisor/conf.d/ziwei.conf" during parsing
+2026-03-04 01:05:24,613 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2026-03-04 01:05:24,614 INFO Included extra file "/etc/supervisor/conf.d/ziwei.conf" during parsing
+2026-03-04 01:05:24,619 INFO RPC interface 'supervisor' initialized
+2026-03-04 01:05:24,919 INFO RPC interface 'supervisor' initialized
+2026-03-04 01:05:24,920 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2026-03-04 01:05:24,921 INFO daemonizing the supervisord process
+2026-03-04 01:05:24,921 INFO supervisord started with pid 707070
+2026-03-04 01:05:25,924 INFO spawned: 'ziwei-auto-sync' with pid 707072
+2026-03-04 01:05:25,925 INFO spawned: 'ziwei-dashboard' with pid 707073
+2026-03-04 01:05:25,926 INFO spawned: 'ziwei-log-trim' with pid 707074
+2026-03-04 01:05:25,927 INFO spawned: 'ziwei-trading-bot' with pid 707075
+2026-03-04 01:05:25,928 INFO spawned: 'ziwei-warroom' with pid 707076
+2026-03-04 01:05:25,930 INFO spawned: 'ziwei-x402-api' with pid 707077
+2026-03-04 01:05:25,978 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:05:26,053 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:05:26,070 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:05:27,711 INFO spawned: 'ziwei-auto-sync' with pid 707079
+2026-03-04 01:05:27,712 INFO spawned: 'ziwei-dashboard' with pid 707080
+2026-03-04 01:05:27,712 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:05:27,712 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:05:27,712 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:05:27,713 INFO spawned: 'ziwei-x402-api' with pid 707081
+2026-03-04 01:05:27,774 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:05:27,784 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:05:27,797 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:05:30,135 INFO spawned: 'ziwei-auto-sync' with pid 707095
+2026-03-04 01:05:30,136 INFO spawned: 'ziwei-dashboard' with pid 707096
+2026-03-04 01:05:30,137 INFO spawned: 'ziwei-x402-api' with pid 707097
+2026-03-04 01:05:30,205 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:05:30,233 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:05:30,243 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:05:33,678 INFO spawned: 'ziwei-auto-sync' with pid 707109
+2026-03-04 01:05:33,679 INFO spawned: 'ziwei-dashboard' with pid 707110
+2026-03-04 01:05:33,680 INFO spawned: 'ziwei-x402-api' with pid 707111
+2026-03-04 01:05:33,720 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:05:33,750 INFO gave up: ziwei-auto-sync entered FATAL state, too many start retries too quickly
+2026-03-04 01:05:33,750 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:05:33,750 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:05:33,754 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:05:34,734 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-04 01:06:33,514 WARN exited: ziwei-warroom (terminated by SIGKILL; not expected)
+2026-03-04 01:06:33,526 INFO spawned: 'ziwei-warroom' with pid 707288
+2026-03-04 01:06:33,526 WARN exited: ziwei-log-trim (terminated by SIGKILL; not expected)
+2026-03-04 01:06:33,534 INFO spawned: 'ziwei-log-trim' with pid 707290
+2026-03-04 01:06:33,534 WARN exited: ziwei-trading-bot (terminated by SIGKILL; not expected)
+2026-03-04 01:06:33,563 INFO spawned: 'ziwei-trading-bot' with pid 707292
+2026-03-04 01:06:35,140 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:06:35,140 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:06:35,140 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:06:44,505 WARN exited: ziwei-warroom (terminated by SIGKILL; not expected)
+2026-03-04 01:06:44,512 INFO spawned: 'ziwei-warroom' with pid 707349
+2026-03-04 01:06:44,512 WARN exited: ziwei-log-trim (terminated by SIGKILL; not expected)
+2026-03-04 01:06:44,527 INFO spawned: 'ziwei-log-trim' with pid 707350
+2026-03-04 01:06:44,527 WARN exited: ziwei-trading-bot (terminated by SIGKILL; not expected)
+2026-03-04 01:06:44,562 INFO spawned: 'ziwei-trading-bot' with pid 707351
+2026-03-04 01:06:46,084 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:06:46,085 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:06:46,085 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:06:57,734 INFO waiting for ziwei-log-trim to stop
+2026-03-04 01:06:57,761 INFO waiting for ziwei-trading-bot to stop
+2026-03-04 01:06:57,761 INFO waiting for ziwei-warroom to stop
+2026-03-04 01:06:57,761 WARN stopped: ziwei-warroom (terminated by SIGTERM)
+2026-03-04 01:06:57,761 WARN stopped: ziwei-log-trim (terminated by SIGTERM)
+2026-03-04 01:06:57,764 WARN stopped: ziwei-trading-bot (terminated by SIGTERM)
+2026-03-04 01:06:58,769 INFO spawned: 'ziwei-auto-sync' with pid 707387
+2026-03-04 01:06:58,770 INFO spawned: 'ziwei-dashboard' with pid 707388
+2026-03-04 01:06:58,771 INFO spawned: 'ziwei-log-trim' with pid 707389
+2026-03-04 01:06:58,772 INFO spawned: 'ziwei-trading-bot' with pid 707390
+2026-03-04 01:06:58,773 INFO spawned: 'ziwei-warroom' with pid 707391
+2026-03-04 01:06:58,775 INFO spawned: 'ziwei-x402-api' with pid 707392
+2026-03-04 01:06:58,843 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:06:58,924 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:06:58,938 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:07:00,407 INFO spawned: 'ziwei-auto-sync' with pid 707395
+2026-03-04 01:07:00,408 INFO spawned: 'ziwei-dashboard' with pid 707396
+2026-03-04 01:07:00,409 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:07:00,409 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:07:00,409 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:07:00,410 INFO spawned: 'ziwei-x402-api' with pid 707397
+2026-03-04 01:07:00,496 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:07:00,550 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:07:00,550 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:07:02,651 INFO spawned: 'ziwei-auto-sync' with pid 707398
+2026-03-04 01:07:02,652 INFO spawned: 'ziwei-dashboard' with pid 707399
+2026-03-04 01:07:02,653 INFO spawned: 'ziwei-x402-api' with pid 707400
+2026-03-04 01:07:02,686 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:07:02,718 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:07:02,734 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:07:05,884 INFO spawned: 'ziwei-auto-sync' with pid 707415
+2026-03-04 01:07:05,885 INFO spawned: 'ziwei-dashboard' with pid 707416
+2026-03-04 01:07:05,886 INFO spawned: 'ziwei-x402-api' with pid 707417
+2026-03-04 01:07:05,917 WARN exited: ziwei-auto-sync (exit status 0; not expected)
+2026-03-04 01:07:05,917 INFO gave up: ziwei-auto-sync entered FATAL state, too many start retries too quickly
+2026-03-04 01:07:05,961 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:07:05,963 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:07:05,963 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 01:07:06,963 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-04 01:10:04,882 INFO waiting for ziwei-log-trim to stop
+2026-03-04 01:10:04,884 INFO waiting for ziwei-trading-bot to stop
+2026-03-04 01:10:04,884 INFO waiting for ziwei-warroom to stop
+2026-03-04 01:10:04,884 WARN stopped: ziwei-log-trim (terminated by SIGTERM)
+2026-03-04 01:10:04,884 WARN stopped: ziwei-warroom (terminated by SIGTERM)
+2026-03-04 01:10:04,893 WARN stopped: ziwei-trading-bot (terminated by SIGTERM)
+2026-03-04 01:10:05,898 INFO spawned: 'ziwei-auto-sync' with pid 707805
+2026-03-04 01:10:05,900 INFO spawned: 'ziwei-dashboard' with pid 707806
+2026-03-04 01:10:05,901 INFO spawned: 'ziwei-log-trim' with pid 707807
+2026-03-04 01:10:05,902 INFO spawned: 'ziwei-trading-bot' with pid 707808
+2026-03-04 01:10:05,903 INFO spawned: 'ziwei-warroom' with pid 707809
+2026-03-04 01:10:05,905 INFO spawned: 'ziwei-x402-api' with pid 707810
+2026-03-04 01:10:07,092 INFO success: ziwei-auto-sync entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:10:07,092 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:10:07,092 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:10:07,092 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:10:07,092 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:10:07,092 INFO success: ziwei-x402-api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:13:38,154 INFO waiting for ziwei-auto-sync, ziwei-dashboard, ziwei-log-trim, ziwei-trading-bot, ziwei-warroom, ziwei-x402-api to die
+2026-03-04 01:13:38,164 WARN stopped: ziwei-x402-api (terminated by SIGTERM)
+2026-03-04 01:13:38,165 WARN stopped: ziwei-warroom (terminated by SIGTERM)
+2026-03-04 01:13:38,179 WARN stopped: ziwei-trading-bot (terminated by SIGTERM)
+2026-03-04 01:13:38,182 WARN stopped: ziwei-log-trim (terminated by SIGTERM)
+2026-03-04 01:13:38,184 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 01:13:38,184 WARN stopped: ziwei-auto-sync (terminated by SIGTERM)
+2026-03-04 01:13:40,280 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2026-03-04 01:13:40,280 INFO Included extra file "/etc/supervisor/conf.d/ziwei.conf" during parsing
+2026-03-04 01:13:40,287 INFO RPC interface 'supervisor' initialized
+2026-03-04 01:13:40,287 INFO RPC interface 'supervisor' initialized
+2026-03-04 01:13:40,287 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2026-03-04 01:13:40,289 INFO daemonizing the supervisord process
+2026-03-04 01:13:40,289 INFO supervisord started with pid 708413
+2026-03-04 01:13:41,291 INFO spawned: 'ziwei-auto-sync' with pid 708415
+2026-03-04 01:13:41,292 INFO spawned: 'ziwei-dashboard' with pid 708416
+2026-03-04 01:13:41,294 INFO spawned: 'ziwei-log-trim' with pid 708417
+2026-03-04 01:13:41,295 INFO spawned: 'ziwei-trading-bot' with pid 708418
+2026-03-04 01:13:41,296 INFO spawned: 'ziwei-warroom' with pid 708419
+2026-03-04 01:13:41,297 INFO spawned: 'ziwei-x402-api' with pid 708420
+2026-03-04 01:13:41,379 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:13:42,323 INFO success: ziwei-auto-sync entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:13:42,323 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:13:42,323 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:13:42,323 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:13:42,323 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:13:42,386 INFO spawned: 'ziwei-x402-api' with pid 708422
+2026-03-04 01:13:42,443 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:13:44,886 INFO spawned: 'ziwei-x402-api' with pid 708431
+2026-03-04 01:13:44,972 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:13:48,243 INFO spawned: 'ziwei-x402-api' with pid 708439
+2026-03-04 01:13:48,297 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:13:49,000 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:14:09,752 INFO spawned: 'ziwei-x402-api' with pid 708509
+2026-03-04 01:14:09,804 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:14:10,806 INFO spawned: 'ziwei-x402-api' with pid 708510
+2026-03-04 01:14:10,863 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:14:12,866 INFO spawned: 'ziwei-x402-api' with pid 708518
+2026-03-04 01:14:12,927 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:14:15,931 INFO spawned: 'ziwei-x402-api' with pid 708528
+2026-03-04 01:14:15,989 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:14:16,990 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:14:17,314 INFO waiting for ziwei-auto-sync to stop
+2026-03-04 01:14:17,314 INFO waiting for ziwei-dashboard to stop
+2026-03-04 01:14:17,314 INFO waiting for ziwei-log-trim to stop
+2026-03-04 01:14:17,314 INFO waiting for ziwei-trading-bot to stop
+2026-03-04 01:14:17,314 INFO waiting for ziwei-warroom to stop
+2026-03-04 01:14:17,316 WARN stopped: ziwei-auto-sync (terminated by SIGTERM)
+2026-03-04 01:14:17,316 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 01:14:17,316 WARN stopped: ziwei-log-trim (terminated by SIGTERM)
+2026-03-04 01:14:17,317 WARN stopped: ziwei-warroom (terminated by SIGTERM)
+2026-03-04 01:14:18,327 WARN stopped: ziwei-trading-bot (terminated by SIGTERM)
+2026-03-04 01:14:18,331 INFO spawned: 'ziwei-auto-sync' with pid 708538
+2026-03-04 01:14:18,333 INFO spawned: 'ziwei-dashboard' with pid 708539
+2026-03-04 01:14:18,334 INFO spawned: 'ziwei-log-trim' with pid 708540
+2026-03-04 01:14:18,335 INFO spawned: 'ziwei-trading-bot' with pid 708541
+2026-03-04 01:14:18,336 INFO spawned: 'ziwei-warroom' with pid 708542
+2026-03-04 01:14:18,337 INFO spawned: 'ziwei-x402-api' with pid 708543
+2026-03-04 01:14:18,468 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:14:19,335 INFO success: ziwei-auto-sync entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:14:19,336 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:14:19,336 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:14:19,336 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:14:19,336 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:14:19,859 INFO spawned: 'ziwei-x402-api' with pid 708552
+2026-03-04 01:14:19,936 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:14:22,121 INFO spawned: 'ziwei-x402-api' with pid 708558
+2026-03-04 01:14:22,190 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:14:25,623 INFO spawned: 'ziwei-x402-api' with pid 708569
+2026-03-04 01:14:25,687 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:14:26,338 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:14:46,500 INFO spawned: 'ziwei-x402-api' with pid 708641
+2026-03-04 01:14:47,559 INFO success: ziwei-x402-api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:18:05,725 INFO waiting for ziwei-auto-sync, ziwei-dashboard, ziwei-log-trim, ziwei-trading-bot, ziwei-warroom, ziwei-x402-api to die
+2026-03-04 01:18:05,727 WARN stopped: ziwei-x402-api (terminated by SIGTERM)
+2026-03-04 01:18:05,728 WARN stopped: ziwei-warroom (terminated by SIGTERM)
+2026-03-04 01:18:05,739 WARN stopped: ziwei-trading-bot (terminated by SIGTERM)
+2026-03-04 01:18:05,740 WARN stopped: ziwei-log-trim (terminated by SIGTERM)
+2026-03-04 01:18:05,741 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 01:18:05,741 WARN stopped: ziwei-auto-sync (terminated by SIGTERM)
+2026-03-04 01:18:07,817 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2026-03-04 01:18:07,818 INFO Included extra file "/etc/supervisor/conf.d/ziwei.conf" during parsing
+2026-03-04 01:18:07,825 INFO RPC interface 'supervisor' initialized
+2026-03-04 01:18:07,826 INFO RPC interface 'supervisor' initialized
+2026-03-04 01:18:07,826 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2026-03-04 01:18:07,827 INFO daemonizing the supervisord process
+2026-03-04 01:18:07,827 INFO supervisord started with pid 709196
+2026-03-04 01:18:08,303 INFO spawned: 'ziwei-auto-sync' with pid 709198
+2026-03-04 01:18:08,304 INFO spawned: 'ziwei-dashboard' with pid 709199
+2026-03-04 01:18:08,305 INFO spawned: 'ziwei-log-trim' with pid 709200
+2026-03-04 01:18:08,306 INFO spawned: 'ziwei-trading-bot' with pid 709201
+2026-03-04 01:18:08,308 INFO spawned: 'ziwei-warroom' with pid 709202
+2026-03-04 01:18:08,309 INFO spawned: 'ziwei-x402-api' with pid 709203
+2026-03-04 01:18:08,404 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:09,625 INFO success: ziwei-auto-sync entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:18:09,625 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:18:09,625 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:18:09,625 INFO success: ziwei-trading-bot entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:18:09,625 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:18:09,626 INFO spawned: 'ziwei-x402-api' with pid 709212
+2026-03-04 01:18:09,690 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:12,534 INFO spawned: 'ziwei-x402-api' with pid 709220
+2026-03-04 01:18:12,621 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:15,908 INFO spawned: 'ziwei-x402-api' with pid 709242
+2026-03-04 01:18:15,961 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:16,638 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:18:26,688 INFO spawned: 'ziwei-x402-api' with pid 709270
+2026-03-04 01:18:26,739 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:27,742 INFO spawned: 'ziwei-x402-api' with pid 709271
+2026-03-04 01:18:27,800 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:29,803 INFO spawned: 'ziwei-x402-api' with pid 709280
+2026-03-04 01:18:29,873 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:32,878 INFO spawned: 'ziwei-x402-api' with pid 709289
+2026-03-04 01:18:32,935 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:33,936 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:18:50,936 INFO spawned: 'ziwei-x402-api' with pid 709346
+2026-03-04 01:18:50,989 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:51,992 INFO spawned: 'ziwei-x402-api' with pid 709352
+2026-03-04 01:18:52,051 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:54,055 INFO spawned: 'ziwei-x402-api' with pid 709353
+2026-03-04 01:18:54,112 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:57,116 INFO spawned: 'ziwei-x402-api' with pid 709365
+2026-03-04 01:18:57,177 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:18:58,177 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:19:26,176 INFO spawned: 'ziwei-x402-api' with pid 709450
+2026-03-04 01:19:26,237 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:19:27,238 INFO spawned: 'ziwei-x402-api' with pid 709457
+2026-03-04 01:19:27,299 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:19:29,303 INFO spawned: 'ziwei-x402-api' with pid 709460
+2026-03-04 01:19:29,360 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:19:32,364 INFO spawned: 'ziwei-x402-api' with pid 709476
+2026-03-04 01:19:32,433 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:19:33,434 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:19:38,876 INFO spawned: 'ziwei-x402-api' with pid 709495
+2026-03-04 01:19:38,946 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:19:39,948 INFO spawned: 'ziwei-x402-api' with pid 709501
+2026-03-04 01:19:40,006 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:19:42,560 INFO spawned: 'ziwei-x402-api' with pid 709502
+2026-03-04 01:19:42,620 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:19:45,624 INFO spawned: 'ziwei-x402-api' with pid 709513
+2026-03-04 01:19:45,694 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:19:45,694 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:21:17,309 INFO spawned: 'ziwei-x402-api' with pid 709765
+2026-03-04 01:21:17,367 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:21:18,370 INFO spawned: 'ziwei-x402-api' with pid 709766
+2026-03-04 01:21:18,428 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:21:20,450 INFO spawned: 'ziwei-x402-api' with pid 709778
+2026-03-04 01:21:20,567 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:21:23,572 INFO spawned: 'ziwei-x402-api' with pid 709784
+2026-03-04 01:21:23,630 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:21:24,631 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:21:41,412 INFO spawned: 'ziwei-x402-api' with pid 709848
+2026-03-04 01:21:41,468 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:21:42,470 INFO spawned: 'ziwei-x402-api' with pid 709849
+2026-03-04 01:21:42,527 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:21:44,530 INFO spawned: 'ziwei-x402-api' with pid 709861
+2026-03-04 01:21:44,588 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:21:47,600 INFO spawned: 'ziwei-x402-api' with pid 709872
+2026-03-04 01:21:47,697 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-04 01:21:47,697 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly
+2026-03-04 01:22:16,893 INFO spawned: 'ziwei-x402-api' with pid 709958
+2026-03-04 01:22:17,947 INFO success: ziwei-x402-api entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:25:57,541 ERRO Web interface error:Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 716, in _readProcessLog
+    return as_string(readFile(logfile, int(offset), int(length)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/compat.py", line 60, in as_string
+    return s.decode(encoding)
+           ^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x95 in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/supervisor/web.py", line 50, in more
+    response = self.callback()
+               ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/web.py", line 173, in __call__
+    body = self.render()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/web.py", line 210, in render
+    tail = rpcinterface.readProcessStdoutLog(processname,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 730, in readProcessStdoutLog
+    return self._readProcessLog(name, offset, length, 'stdout')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 719, in _readProcessLog
+    raise RPCError(getattr(Faults, why))
+                   ^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Faults' has no attribute 'utf-8'
+2026-03-04 01:28:50,542 ERRO Web interface error:Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 716, in _readProcessLog
+    return as_string(readFile(logfile, int(offset), int(length)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/compat.py", line 60, in as_string
+    return s.decode(encoding)
+           ^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x86 in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/supervisor/web.py", line 50, in more
+    response = self.callback()
+               ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/web.py", line 173, in __call__
+    body = self.render()
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/web.py", line 210, in render
+    tail = rpcinterface.readProcessStdoutLog(processname,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 730, in readProcessStdoutLog
+    return self._readProcessLog(name, offset, length, 'stdout')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 719, in _readProcessLog
+    raise RPCError(getattr(Faults, why))
+                   ^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Faults' has no attribute 'utf-8'
+2026-03-04 01:52:41,005 INFO spawned: 'ziwei-soul-trader' with pid 715116
+2026-03-04 01:52:42,036 INFO success: ziwei-soul-trader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 01:58:36,164 INFO waiting for ziwei-trading-bot to stop
+2026-03-04 01:58:36,168 WARN stopped: ziwei-trading-bot (terminated by SIGTERM)
+2026-03-04 02:06:05,465 INFO waiting for ziwei-soul-trader to stop
+2026-03-04 02:06:05,466 WARN stopped: ziwei-soul-trader (terminated by SIGTERM)
+2026-03-04 02:06:05,467 INFO spawned: 'ziwei-soul-trader' with pid 717591
+2026-03-04 02:06:06,497 INFO success: ziwei-soul-trader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 02:09:08,699 INFO waiting for ziwei-soul-trader to stop
+2026-03-04 02:09:08,700 WARN stopped: ziwei-soul-trader (terminated by SIGTERM)
+2026-03-04 02:09:08,702 INFO spawned: 'ziwei-soul-trader' with pid 718208
+2026-03-04 02:09:09,732 INFO success: ziwei-soul-trader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

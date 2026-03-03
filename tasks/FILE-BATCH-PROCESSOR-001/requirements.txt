@@ -1,0 +1,10 @@
+# FILE-BATCH-PROCESSOR-001 dependencies
+# 生成时间：2026-03-04 03:29:15
+
+# 核心依赖
+# TODO: 根据实际需求添加
+
+# 开发依赖
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=4.0.0

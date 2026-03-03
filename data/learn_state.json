@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T23:00:01.357534",
-  "current_agent_index": 2,
-  "total_sessions": 95,
-  "total_words": 953012,
+  "last_learn": "2026-03-04T04:00:02.000433",
+  "current_agent_index": 1,
+  "total_sessions": 100,
+  "total_words": 1003169,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1300,6 +1300,76 @@
         "https://pre-commit.com",
         "https://kubernetes.io",
         "https://www.nomad.io"
+      ]
+    },
+    {
+      "agent": "T-03",
+      "topic": "代码安全",
+      "time": "2026-03-04T00:00:01.680952",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.pandasecurity.com/en/mediacenter",
+        "https://www.scmagazine.com",
+        "https://www.rapid7.com/blog",
+        "https://www.trendmicro.com/vinfo",
+        "https://owasp.org/www-project-top-ten"
+      ]
+    },
+    {
+      "agent": "T-04",
+      "topic": "数学建模",
+      "time": "2026-03-04T01:00:01.976463",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.mathway.com",
+        "https://www.catboost.ai",
+        "https://www.h2o.ai",
+        "https://www.jmp.com",
+        "https://www.mlschool.com"
+      ]
+    },
+    {
+      "agent": "T-05",
+      "topic": "跨文化沟通",
+      "time": "2026-03-04T02:00:01.244806",
+      "words": 10033,
+      "sources_count": 20,
+      "sources": [
+        "https://www.systran.com",
+        "https://www.acclaro.com",
+        "https://www.omegat.org",
+        "https://www.smartling.com/resources",
+        "https://www.translatorsbase.com"
+      ]
+    },
+    {
+      "agent": "T-06",
+      "topic": "信息抽取",
+      "time": "2026-03-04T03:00:01.546683",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.longreads.com",
+        "https://www.nationalreview.com",
+        "https://www.esquire.com",
+        "https://www.vanityfair.com",
+        "https://www.npr.org/sections/longform"
+      ]
+    },
+    {
+      "agent": "T-01",
+      "topic": "系统架构设计",
+      "time": "2026-03-04T04:00:02.000433",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.datadoghq.com/blog",
+        "https://softwareengineering.stackexchange.com",
+        "https://www.pluralsight.com/browse/software-development",
+        "https://www.oreilly.com/architecture",
+        "https://dev.to/t/architecture"
       ]
     }
   ]

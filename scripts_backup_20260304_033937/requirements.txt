@@ -1,0 +1,5 @@
+# 紫微智控 - Python 依赖
+# 系统已安装 requests 和 pyyaml，无需额外安装
+
+# 如需使用 dotenv 功能（可选）：
+# python-dotenv>=1.0.0

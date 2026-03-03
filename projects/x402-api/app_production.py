@@ -263,6 +263,7 @@ class X402APIHandler(http.server.BaseHTTPRequestHandler):
 
 
 def start_server():
+    socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("", PORT), X402APIHandler) as httpd:
         print("=" * 70)
         print("🚀 紫微智控 x402 API - 生产模式")

@@ -1,0 +1,24 @@
+{
+  "false_positives": [],
+  "false_negatives": [],
+  "experiences": [
+    {
+      "timestamp": "2026-03-04T03:50:36.364759",
+      "risk_score": 0.792608695652174,
+      "quality_score": 9.233333333333333,
+      "issue_count": 23
+    },
+    {
+      "timestamp": "2026-03-04T03:50:37.332802",
+      "risk_score": 0,
+      "quality_score": 8.583333333333334,
+      "issue_count": 0
+    },
+    {
+      "timestamp": "2026-03-04T03:54:36.626212",
+      "risk_score": 0.792608695652174,
+      "quality_score": 9.233333333333333,
+      "issue_count": 23
+    }
+  ]
+}
