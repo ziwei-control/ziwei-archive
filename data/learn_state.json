@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T21:00:01.834689",
-  "current_agent_index": 0,
-  "total_sessions": 93,
-  "total_words": 932950,
+  "last_learn": "2026-03-03T22:00:01.461787",
+  "current_agent_index": 1,
+  "total_sessions": 94,
+  "total_words": 942981,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1272,6 +1272,20 @@
         "https://www.buzzfeed.com/longform",
         "https://www.claremont.org",
         "https://www.newrepublic.com"
+      ]
+    },
+    {
+      "agent": "T-01",
+      "topic": "微服务架构",
+      "time": "2026-03-03T22:00:01.461787",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.elastic.co/blog",
+        "https://cloud.google.com/architecture",
+        "https://levelup.gitconnected.com",
+        "https://ieeexplore.ieee.org",
+        "https://www.packtpub.com"
       ]
     }
   ]
