@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-03T09:00:01.672679",
-  "current_agent_index": 0,
-  "total_sessions": 81,
-  "total_words": 812566,
+  "last_learn": "2026-03-03T10:00:01.574236",
+  "current_agent_index": 1,
+  "total_sessions": 82,
+  "total_words": 822597,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1104,6 +1104,20 @@
         "https://www.firstthings.com",
         "https://www.wired.com",
         "https://www.sojo.net"
+      ]
+    },
+    {
+      "agent": "T-01",
+      "topic": "系统架构设计",
+      "time": "2026-03-03T10:00:01.574236",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.infoq.com/architecture-design",
+        "https://www.pluralsight.com/browse/software-development",
+        "https://www.computer.org",
+        "https://scholar.google.com",
+        "https://www.sumologic.com"
       ]
     }
   ]
