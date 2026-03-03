@@ -16,6 +16,7 @@ import urllib.request
 import re
 
 # 配置
+VERSION = "2.0.1"  # Dashboard 版本号
 PORT = 8081
 Ziwei_DIR = Path("/home/admin/Ziwei")
 
@@ -70,8 +71,15 @@ HTML_TEMPLATE = """
 </head>
 <body>
     <div class="container">
-        <h1>🚀 紫微智控 - 系统监控 Dashboard</h1>
+        <h1>🚀 紫微智控 - 系统监控 Dashboard <span style="font-size:0.5em; background: #667eea; color: white; padding: 5px 15px; border-radius: 20px; margin-left: 10px;">v{VERSION}</span></h1>
         <button class="refresh-btn" onclick="location.reload()">🔄 刷新</button>
+        <div style="text-align: center; color: white; margin-bottom: 20px; opacity: 0.9;">
+            <span class="badge badge-info" style="font-size: 1em;">当前版本：v{VERSION}</span>
+            <span style="margin: 0 10px;">|</span>
+            <span>最后更新：{update_time}</span>
+            <span style="margin: 0 10px;">|</span>
+            <span>自动刷新：30 秒</span>
+        </div>
         
         <div class="grid">
             {system_stats}
@@ -91,6 +99,19 @@ HTML_TEMPLATE = """
     <script>
         // 自动刷新 (每 30 秒)
         setTimeout(() => location.reload(), 30000);
+        
+        // 页面加载时显示版本信息
+        console.log('紫微智控 Dashboard v{VERSION}');
+        console.log('自动刷新间隔：30 秒');
+        console.log('如果页面未更新，请按 Ctrl+F5 强制刷新');
+        
+        // 检测浏览器缓存
+        window.addEventListener('load', function() {
+            if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+                console.log('检测到浏览器后退/前进，强制刷新...');
+                location.reload(true);
+            }
+        });
     </script>
 </body>
 </html>
@@ -566,6 +587,10 @@ class DashboardHandler(http.server.BaseHTTPRequestHandler):
             
             self.send_response(200)
             self.send_header('Content-Type', 'text/html; charset=utf-8')
+            # 禁止缓存，强制刷新
+            self.send_header('Cache-Control', 'no-cache, no-store, must-revalidate')
+            self.send_header('Pragma', 'no-cache')
+            self.send_header('Expires', '0')
             self.end_headers()
             self.wfile.write(content.encode('utf-8'))
             
