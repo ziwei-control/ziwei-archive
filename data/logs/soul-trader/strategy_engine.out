@@ -13232,3 +13232,1688 @@ TypeError: unsupported operand type(s) for +: 'int' and 'dict'
 
 ⏳ 等待 60 秒后重新分析...
 
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_040643.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1987.270000
+   24h 变化：-2.45%
+   建议仓位：3.5%
+   止损：$1887.906500
+   止盈：$2285.360500
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.150000
+   24h 变化：-3.02%
+   建议仓位：3.5%
+   止损：$80.892500
+   止盈：$97.922500
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68450.000000
+   24h 变化：-1.02%
+   建议仓位：0.0%
+   止损：$65027.500000
+   止盈：$78717.500000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$633.370000
+   24h 变化：-0.59%
+   建议仓位：0.0%
+   止损：$601.701500
+   止盈：$728.375500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.70%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_040711.json
+
+🤖 执行模拟交易...
+💰 [模拟买入] ETH: 0.0250 @ $1987.270000 = $49.78
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$839.07 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：43
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0250 @ $1987.270000 = $49.78
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,069.67 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.30%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_040743.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1987.270000
+   24h 变化：-2.45%
+   建议仓位：3.5%
+   止损：$1887.906500
+   止盈：$2285.360500
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.150000
+   24h 变化：-3.02%
+   建议仓位：3.5%
+   止损：$80.892500
+   止盈：$97.922500
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68450.000000
+   24h 变化：-1.02%
+   建议仓位：0.0%
+   止损：$65027.500000
+   止盈：$78717.500000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$633.370000
+   24h 变化：-0.59%
+   建议仓位：0.0%
+   止损：$601.701500
+   止盈：$728.375500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.70%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_040811.json
+
+🤖 执行模拟交易...
+💰 [模拟买入] ETH: 0.0236 @ $1987.270000 = $46.99
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_040843.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1987.270000
+   24h 变化：-2.45%
+   建议仓位：3.5%
+   止损：$1887.906500
+   止盈：$2285.360500
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.150000
+   24h 变化：-3.02%
+   建议仓位：3.5%
+   止损：$80.892500
+   止盈：$97.922500
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68450.000000
+   24h 变化：-1.02%
+   建议仓位：0.0%
+   止损：$65027.500000
+   止盈：$78717.500000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$633.370000
+   24h 变化：-0.59%
+   建议仓位：0.0%
+   止损：$601.701500
+   止盈：$728.375500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.70%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_040911.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_040943.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1986.120000
+   24h 变化：-2.50%
+   建议仓位：3.5%
+   止损：$1886.814000
+   止盈：$2284.038000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.120000
+   24h 变化：-3.05%
+   建议仓位：3.5%
+   止损：$80.864000
+   止盈：$97.888000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68422.000000
+   24h 变化：-1.06%
+   建议仓位：0.0%
+   止损：$65000.900000
+   止盈：$78685.300000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$632.890000
+   24h 变化：-0.66%
+   建议仓位：0.0%
+   止损：$601.245500
+   止盈：$727.823500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.74%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041011.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041043.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1986.120000
+   24h 变化：-2.50%
+   建议仓位：3.5%
+   止损：$1886.814000
+   止盈：$2284.038000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.120000
+   24h 变化：-3.05%
+   建议仓位：3.5%
+   止损：$80.864000
+   止盈：$97.888000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68422.000000
+   24h 变化：-1.06%
+   建议仓位：0.0%
+   止损：$65000.900000
+   止盈：$78685.300000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$632.890000
+   24h 变化：-0.66%
+   建议仓位：0.0%
+   止损：$601.245500
+   止盈：$727.823500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.74%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041111.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041143.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1986.120000
+   24h 变化：-2.50%
+   建议仓位：3.5%
+   止损：$1886.814000
+   止盈：$2284.038000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.120000
+   24h 变化：-3.05%
+   建议仓位：3.5%
+   止损：$80.864000
+   止盈：$97.888000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68422.000000
+   24h 变化：-1.06%
+   建议仓位：0.0%
+   止损：$65000.900000
+   止盈：$78685.300000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$632.890000
+   24h 变化：-0.66%
+   建议仓位：0.0%
+   止损：$601.245500
+   止盈：$727.823500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.74%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041211.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041243.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1983.760000
+   24h 变化：-2.62%
+   建议仓位：3.5%
+   止损：$1884.572000
+   止盈：$2281.324000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.060000
+   24h 变化：-3.01%
+   建议仓位：3.5%
+   止损：$80.807000
+   止盈：$97.819000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68349.000000
+   24h 变化：-0.76%
+   建议仓位：0.0%
+   止损：$64931.550000
+   止盈：$78601.350000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.840000
+   24h 变化：-0.45%
+   建议仓位：0.0%
+   止损：$600.248000
+   止盈：$726.616000
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.71%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041311.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041343.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1983.760000
+   24h 变化：-2.62%
+   建议仓位：3.5%
+   止损：$1884.572000
+   止盈：$2281.324000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.060000
+   24h 变化：-3.01%
+   建议仓位：3.5%
+   止损：$80.807000
+   止盈：$97.819000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68349.000000
+   24h 变化：-0.76%
+   建议仓位：0.0%
+   止损：$64931.550000
+   止盈：$78601.350000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.840000
+   24h 变化：-0.45%
+   建议仓位：0.0%
+   止损：$600.248000
+   止盈：$726.616000
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.71%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041411.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041443.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1982.230000
+   24h 变化：-2.69%
+   建议仓位：3.5%
+   止损：$1883.118500
+   止盈：$2279.564500
+   理由：看涨情绪 (score=3), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.010000
+   24h 变化：-3.07%
+   建议仓位：3.5%
+   止损：$80.759500
+   止盈：$97.761500
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68309.000000
+   24h 变化：-0.82%
+   建议仓位：0.0%
+   止损：$64893.550000
+   止盈：$78555.350000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.510000
+   24h 变化：-0.50%
+   建议仓位：0.0%
+   止损：$599.934500
+   止盈：$726.236500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.74%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041511.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041543.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1982.230000
+   24h 变化：-2.69%
+   建议仓位：3.5%
+   止损：$1883.118500
+   止盈：$2279.564500
+   理由：看涨情绪 (score=3), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.010000
+   24h 变化：-3.07%
+   建议仓位：3.5%
+   止损：$80.759500
+   止盈：$97.761500
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68309.000000
+   24h 变化：-0.82%
+   建议仓位：0.0%
+   止损：$64893.550000
+   止盈：$78555.350000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.510000
+   24h 变化：-0.50%
+   建议仓位：0.0%
+   止损：$599.934500
+   止盈：$726.236500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.74%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041611.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$792.08 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：44
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0236 @ $1987.270000 = $46.99
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$1,019.89 USDC
+初始资金：$10,000.00 USDC
+总收益率：-89.80%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041643.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1982.230000
+   24h 变化：-2.69%
+   建议仓位：3.5%
+   止损：$1883.118500
+   止盈：$2279.564500
+   理由：看涨情绪 (score=3), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$85.010000
+   24h 变化：-3.07%
+   建议仓位：3.5%
+   止损：$80.759500
+   止盈：$97.761500
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68309.000000
+   24h 变化：-0.82%
+   建议仓位：0.0%
+   止损：$64893.550000
+   止盈：$78555.350000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.510000
+   24h 变化：-0.50%
+   建议仓位：0.0%
+   止损：$599.934500
+   止盈：$726.236500
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.74%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041711.json
+
+🤖 执行模拟交易...
+💰 [模拟买入] ETH: 0.0224 @ $1981.900000 = $44.36
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$747.72 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：45
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0224 @ $1981.900000 = $44.36
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$972.91 USDC
+初始资金：$10,000.00 USDC
+总收益率：-90.27%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041743.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1981.900000
+   24h 变化：-2.42%
+   建议仓位：3.5%
+   止损：$1882.805000
+   止盈：$2279.185000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$84.940000
+   24h 变化：-2.75%
+   建议仓位：3.5%
+   止损：$80.693000
+   止盈：$97.681000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68289.000000
+   24h 变化：-0.62%
+   建议仓位：0.0%
+   止损：$64874.550000
+   止盈：$78532.350000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.540000
+   24h 变化：-0.37%
+   建议仓位：0.0%
+   止损：$599.963000
+   止盈：$726.271000
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.37%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041811.json
+
+🤖 执行模拟交易...
+💰 [模拟买入] ETH: 0.0211 @ $1981.900000 = $41.87
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$705.85 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：46
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0211 @ $1981.900000 = $41.87
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$928.55 USDC
+初始资金：$10,000.00 USDC
+总收益率：-90.71%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041843.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1981.900000
+   24h 变化：-2.42%
+   建议仓位：3.5%
+   止损：$1882.805000
+   止盈：$2279.185000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$84.940000
+   24h 变化：-2.75%
+   建议仓位：3.5%
+   止损：$80.693000
+   止盈：$97.681000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68289.000000
+   24h 变化：-0.62%
+   建议仓位：0.0%
+   止损：$64874.550000
+   止盈：$78532.350000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.540000
+   24h 变化：-0.37%
+   建议仓位：0.0%
+   止损：$599.963000
+   止盈：$726.271000
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.37%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041911.json
+
+🤖 执行模拟交易...
+💰 [模拟买入] ETH: 0.0199 @ $1981.900000 = $39.53
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$666.32 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：47
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0199 @ $1981.900000 = $39.53
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$886.68 USDC
+初始资金：$10,000.00 USDC
+总收益率：-91.13%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_041943.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1980.400000
+   24h 变化：-2.50%
+   建议仓位：3.5%
+   止损：$1881.380000
+   止盈：$2277.460000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$84.860000
+   24h 变化：-2.85%
+   建议仓位：3.5%
+   止损：$80.617000
+   止盈：$97.589000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68257.000000
+   24h 变化：-0.66%
+   建议仓位：0.0%
+   止损：$64844.150000
+   止盈：$78495.550000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.220000
+   24h 变化：-0.42%
+   建议仓位：0.0%
+   止损：$599.659000
+   止盈：$725.903000
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.43%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_042011.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$666.32 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：47
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0199 @ $1981.900000 = $39.53
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$886.68 USDC
+初始资金：$10,000.00 USDC
+总收益率：-91.13%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_042043.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1980.400000
+   24h 变化：-2.50%
+   建议仓位：3.5%
+   止损：$1881.380000
+   止盈：$2277.460000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$84.860000
+   24h 变化：-2.85%
+   建议仓位：3.5%
+   止损：$80.617000
+   止盈：$97.589000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68257.000000
+   24h 变化：-0.66%
+   建议仓位：0.0%
+   止损：$64844.150000
+   止盈：$78495.550000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.220000
+   24h 变化：-0.42%
+   建议仓位：0.0%
+   止损：$599.659000
+   止盈：$725.903000
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.43%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_042111.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$666.32 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：47
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0199 @ $1981.900000 = $39.53
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$886.68 USDC
+初始资金：$10,000.00 USDC
+总收益率：-91.13%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
+
+📡 加载最新情报...
+
+📊 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_042143.json
+
+======================================================================
+🎯 Top 5 交易信号
+======================================================================
+
+1. ETH - BUY
+   评分：50
+   价格：$1980.400000
+   24h 变化：-2.50%
+   建议仓位：3.5%
+   止损：$1881.380000
+   止盈：$2277.460000
+   理由：看涨情绪 (score=2), 热点代币 (#1)
+
+2. SOL - BUY
+   评分：50
+   价格：$84.860000
+   24h 变化：-2.85%
+   建议仓位：3.5%
+   止损：$80.617000
+   止盈：$97.589000
+   理由：看涨情绪 (score=2), 热点代币 (#2)
+
+3. BTC - HOLD
+   评分：0
+   价格：$68257.000000
+   24h 变化：-0.66%
+   建议仓位：0.0%
+   止损：$64844.150000
+   止盈：$78495.550000
+   理由：
+
+4. BNB - HOLD
+   评分：0
+   价格：$631.220000
+   24h 变化：-0.42%
+   建议仓位：0.0%
+   止损：$599.659000
+   止盈：$725.903000
+   理由：
+
+5. XRP - HOLD
+   评分：0
+   价格：$1.360000
+   24h 变化：-2.43%
+   建议仓位：0.0%
+   止损：$1.292000
+   止盈：$1.564000
+   理由：
+
+⏳ 等待 1 分钟后重新分析...
+
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+❌ 错误：unsupported operand type(s) for +: 'int' and 'dict'
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 521, in main
+    signals = engine.analyze_all(intel)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 440, in analyze_all
+    signal = self.generate_signal(symbol, intel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 339, in generate_signal
+    position = self.calculate_position(total_score, price_data, signal)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-trading-bot/strategy_engine_v3.py", line 379, in calculate_position
+    current_total = sum(h.get('position', 0) for h in self.simulation_portfolio.values())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'dict'
+
+📡 加载最新情报...
+
+🧠 分析 7 个代币...
+💾 信号已保存：/home/admin/Ziwei/data/strategy/signals_20260304_042211.json
+
+🤖 执行模拟交易...
+
+======================================================================
+💼 模拟投资组合
+======================================================================
+可用余额：$666.32 USDC
+持仓数量：3
+今日盈亏：$+0.00
+胜率：0.0%
+总交易数：47
+
+📦 当前持仓:
+  SOL: 0.7339 @ $85.410000 = $62.68
+  ETH: 0.0199 @ $1981.900000 = $39.53
+  BNB: 0.1863 @ $634.050000 = $118.15
+
+总资产：$886.68 USDC
+初始资金：$10,000.00 USDC
+总收益率：-91.13%
+======================================================================
+
+⏳ 等待 60 秒后重新分析...
+
