@@ -280,5 +280,8 @@ def start_server():
             print("\n🛑 服务器已停止")
 
 
+# 应用安全中间件
+X402APIHandler = security_middleware(X402APIHandler)
+
 if __name__ == '__main__':
     start_server()

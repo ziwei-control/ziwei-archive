@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-03-03T18:18:03.390869",
+    "ip": "127.0.0.1",
+    "attack_type": "sql_injection",
+    "details": "SELECT * FROM users; DROP TABLE users;--",
+    "blocked": false
+  },
+  {
+    "timestamp": "2026-03-03T18:18:03.391168",
+    "ip": "127.0.0.1",
+    "attack_type": "xss",
+    "details": "<script>alert(1)</script>",
+    "blocked": false
+  },
+  {
+    "timestamp": "2026-03-03T18:18:03.391400",
+    "ip": "127.0.0.1",
+    "attack_type": "path_traversal",
+    "details": "../../../etc/passwd",
+    "blocked": false
+  },
+  {
+    "timestamp": "2026-03-03T18:18:03.391614",
+    "ip": "127.0.0.1",
+    "attack_type": "command_injection",
+    "details": "system(rm -rf /)",
+    "blocked": false
+  },
+  {
+    "timestamp": "2026-03-03T18:19:00.343004",
+    "ip": "127.0.0.1",
+    "attack_type": "sql_injection",
+    "details": "{\"code\": \"SELECT * FROM users; DROP TABLE users;--\", \"language\": \"SQL\"}",
+    "blocked": false
+  },
+  {
+    "timestamp": "2026-03-03T18:19:00.354598",
+    "ip": "127.0.0.1",
+    "attack_type": "xss",
+    "details": "{\"text\": \"<script>alert(1)</script>\", \"source_lang\": \"English\", \"target_lang\": \"Chinese\"}",
+    "blocked": false
+  }
+]

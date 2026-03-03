@@ -8,6 +8,7 @@ import os
 import json
 import time
 import hashlib
+import re
 import ipaddress
 from datetime import datetime, timedelta
 from collections import defaultdict
@@ -175,6 +176,14 @@ class SecurityManager:
         if requests_last_second > self.config["ddos"]["threshold_per_second"]:
             self.block_ip(ip, self.config["ddos"]["block_duration"], "疑似 DDoS 攻击")
             self.log_attack(ip, "ddos", f"每秒请求数：{requests_last_second}")
+            
+            # 发送 DDoS 告警邮件
+            try:
+                from email_alert import email_alerter
+                email_alerter.send_ddos_alert(ip, requests_last_second)
+            except Exception as e:
+                self.log_security_event("error", f"发送 DDoS 告警邮件失败：{e}")
+            
             return False, "疑似 DDoS 攻击"
         
         return True, "OK"
@@ -196,45 +205,52 @@ class SecurityManager:
     def detect_attack(self, ip, data):
         """检测攻击行为"""
         attacks = []
+        data_str = str(data).lower()
         
         # SQL 注入检测
         if self.config["attack_detection"]["sql_injection"]:
-            sql_patterns = [
-                r"(\b(SELECT|INSERT|UPDATE|DELETE|DROP|UNION|ALTER)\b)",
-                r"(--|;|\/\*|\*\/)",
-                r"(\b(OR|AND)\b\s+\d+\s*=\s*\d+)",
-            ]
-            for pattern in sql_patterns:
-                if pattern.lower() in str(data).lower():
-                    attacks.append("sql_injection")
+            sql_keywords = ["select", "insert", "update", "delete", "drop", "union", "alter", "truncate"]
+            sql_chars = ["--", ";", "/*", "*/", "'"]
+            
+            has_keyword = any(kw in data_str for kw in sql_keywords)
+            has_char = any(ch in data_str for ch in sql_chars)
+            
+            if has_keyword or has_char:
+                # 进一步检查 SQL 注入模式
+                sql_patterns = [
+                    r"\b(or|and)\b\s+\d+\s*=\s*\d+",
+                    r"\b(or|and)\b\s+['\"]?\d+['\"]?\s*=\s*['\"]?\d+",
+                    r"'\s*(or|and)\s*'",
+                    r";\s*drop\s+",
+                    r";\s*delete\s+",
+                    r";\s*update\s+",
+                    r";\s*insert\s+",
+                ]
+                for pattern in sql_patterns:
+                    if re.search(pattern, data_str):
+                        attacks.append("sql_injection")
+                        break
         
         # XSS 检测
         if self.config["attack_detection"]["xss"]:
-            xss_patterns = [
-                r"<script",
-                r"javascript:",
-                r"on\w+\s*=",
-                r"<iframe",
-            ]
+            xss_patterns = ["<script", "javascript:", "onerror=", "onclick=", "onload=", "onmouseover=", "<iframe", "<img src=x"]
             for pattern in xss_patterns:
-                if pattern.lower() in str(data).lower():
+                if pattern in data_str:
                     attacks.append("xss")
+                    break
         
         # 路径遍历检测
         if self.config["attack_detection"]["path_traversal"]:
-            if "../" in str(data) or "..\\" in str(data):
+            if "../" in data_str or "..\\" in data_str or "/etc/" in data_str or "/passwd" in data_str:
                 attacks.append("path_traversal")
         
         # 命令注入检测
         if self.config["attack_detection"]["command_injection"]:
-            cmd_patterns = [
-                r"[;&|`]",
-                r"\$\(",
-                r"\b(exec|system|eval|passthru)\b",
-            ]
+            cmd_patterns = ["; rm ", "; cat ", "; ls ", "| cat ", "`cat ", "$(cat ", "exec(", "system(", "eval(", "passthru("]
             for pattern in cmd_patterns:
-                if pattern in str(data):
+                if pattern in data_str:
                     attacks.append("command_injection")
+                    break
         
         # 记录攻击
         if attacks:
@@ -298,7 +314,13 @@ class SecurityManager:
         except:
             pass
         
-        # TODO: 发送邮件告警
+        # 发送邮件告警
+        try:
+            from email_alert import email_alerter
+            email_alerter.send_attack_alert(ip, reason, attack_count)
+        except Exception as e:
+            self.log_security_event("error", f"发送邮件告警失败：{e}")
+        
         self.log_security_event("alert", f"安全告警 #{self.alert_count}: {ip} - {reason}")
     
     def get_stats(self):
