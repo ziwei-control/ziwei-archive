@@ -15,11 +15,60 @@ from typing import Dict, List, Optional
 
 # 配置
 SEARCH_CONFIG = {
-    'brave_api_key': os.getenv('BRAVE_API_KEY', ''),  # 如果有配置就用
     'timeout': 10,
     'max_results': 10,
     'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
 }
+
+# Brave API Keys 配置（交替使用）
+BRAVE_KEYS_FILE = Path('/home/admin/Ziwei/config/brave_api_keys.json')
+BRAVE_KEYS = []
+CURRENT_KEY_INDEX = 0
+
+def load_brave_keys():
+    """加载 Brave API Keys"""
+    global BRAVE_KEYS, CURRENT_KEY_INDEX
+    if BRAVE_KEYS_FILE.exists():
+        with open(BRAVE_KEYS_FILE, 'r') as f:
+            config = json.load(f)
+            BRAVE_KEYS = config.get('brave_api_keys', [])
+            CURRENT_KEY_INDEX = config.get('current_key_index', 0)
+    else:
+        # 使用环境变量
+        env_key = os.getenv('BRAVE_API_KEY', '')
+        if env_key:
+            BRAVE_KEYS = [{'key': env_key, 'status': 'active'}]
+
+def get_next_brave_key():
+    """获取下一个可用的 API Key（交替使用）"""
+    global CURRENT_KEY_INDEX
+    
+    if not BRAVE_KEYS:
+        return None
+    
+    # 尝试找到可用的 key
+    for i in range(len(BRAVE_KEYS)):
+        key_index = (CURRENT_KEY_INDEX + i) % len(BRAVE_KEYS)
+        key_data = BRAVE_KEYS[key_index]
+        
+        # 检查是否可用
+        if key_data.get('status') == 'active':
+            CURRENT_KEY_INDEX = (key_index + 1) % len(BRAVE_KEYS)
+            return key_data['key']
+        elif key_data.get('status') == 'rate_limited':
+            # 检查是否已恢复
+            # 简化处理：如果有多个 key，跳过被限制的
+            continue
+    
+    # 如果所有 key 都被限制，返回第一个（等待恢复）
+    if BRAVE_KEYS:
+        CURRENT_KEY_INDEX = (CURRENT_KEY_INDEX + 1) % len(BRAVE_KEYS)
+        return BRAVE_KEYS[0]['key']
+    
+    return None
+
+# 加载 API Keys
+load_brave_keys()
 
 
 class EnhancedWebSearch:
@@ -37,15 +86,17 @@ class EnhancedWebSearch:
         }
     
     def search_brave(self, query: str, count: int = 10) -> List[Dict]:
-        """Brave Search API"""
-        if not SEARCH_CONFIG['brave_api_key']:
+        """Brave Search API（支持多 Key 交替使用）"""
+        api_key = get_next_brave_key()
+        
+        if not api_key:
             print("   ⚠️ Brave API 未配置，跳过")
             return []
         
         try:
             url = "https://api.search.brave.com/res/v1/web/search"
             headers = {
-                'X-Subscription-Token': SEARCH_CONFIG['brave_api_key'],
+                'X-Subscription-Token': api_key,
                 'Accept': 'application/json'
             }
             params = {
@@ -72,6 +123,12 @@ class EnhancedWebSearch:
                 
                 print(f"   ✅ Brave Search: {len(results)} 个结果")
                 return results
+            elif response.status_code == 429:
+                print(f"   ⚠️ Brave API 速率限制，尝试切换 Key...")
+                # 标记当前 key 为受限，尝试下一个
+                self._mark_key_rate_limited(api_key)
+                # 递归调用，尝试下一个 key
+                return self.search_brave(query, count)
             else:
                 print(f"   ⚠️ Brave API 错误：{response.status_code}")
                 return []
@@ -79,6 +136,23 @@ class EnhancedWebSearch:
         except Exception as e:
             print(f"   ⚠️ Brave Search 失败：{e}")
             return []
+    
+    def _mark_key_rate_limited(self, api_key: str):
+        """标记 API Key 为速率受限"""
+        for key_data in BRAVE_KEYS:
+            if key_data['key'] == api_key:
+                key_data['status'] = 'rate_limited'
+                key_data['last_used'] = datetime.now().isoformat()
+                break
+        
+        # 保存更新
+        if BRAVE_KEYS_FILE.exists():
+            with open(BRAVE_KEYS_FILE, 'r') as f:
+                config = json.load(f)
+            config['brave_api_keys'] = BRAVE_KEYS
+            config['current_key_index'] = CURRENT_KEY_INDEX
+            with open(BRAVE_KEYS_FILE, 'w') as f:
+                json.dump(config, f, indent=2)
     
     def search_google(self, query: str, count: int = 10) -> List[Dict]:
         """Google 搜索（无头浏览器）"""

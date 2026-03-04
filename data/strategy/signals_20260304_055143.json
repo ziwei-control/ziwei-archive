@@ -1,0 +1,93 @@
+[
+  {
+    "symbol": "BTC",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 68005,
+    "change_24h": -2.11532,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:51:43.766851",
+    "suggested_position": 0,
+    "stop_loss": 64604.75,
+    "take_profit": 78205.75
+  },
+  {
+    "symbol": "ETH",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 1965.46,
+    "change_24h": -3.92852,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:51:43.766877",
+    "suggested_position": 0,
+    "stop_loss": 1867.187,
+    "take_profit": 2260.279
+  },
+  {
+    "symbol": "BNB",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 630.36,
+    "change_24h": -0.8052,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:51:43.766881",
+    "suggested_position": 0,
+    "stop_loss": 598.842,
+    "take_profit": 724.914
+  },
+  {
+    "symbol": "XRP",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 1.35,
+    "change_24h": -3.05276,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:51:43.766884",
+    "suggested_position": 0,
+    "stop_loss": 1.2825,
+    "take_profit": 1.5525
+  },
+  {
+    "symbol": "SOL",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 84.82,
+    "change_24h": -3.19857,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:51:43.766888",
+    "suggested_position": 0,
+    "stop_loss": 80.579,
+    "take_profit": 97.54299999999998
+  },
+  {
+    "symbol": "DOGE",
+    "signal": "SELL",
+    "score": -40,
+    "price": 0.089175,
+    "change_24h": -5.4452,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:51:43.766897",
+    "suggested_position": 0,
+    "stop_loss": 0.08471625,
+    "take_profit": 0.10255125
+  },
+  {
+    "symbol": "ADA",
+    "signal": "SELL",
+    "score": -40,
+    "price": 0.261483,
+    "change_24h": -6.48518,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:51:43.766901",
+    "suggested_position": 0,
+    "stop_loss": 0.24840885000000001,
+    "take_profit": 0.30070545
+  }
+]

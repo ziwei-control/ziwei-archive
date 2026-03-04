@@ -1,0 +1,93 @@
+[
+  {
+    "symbol": "BTC",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 67986,
+    "change_24h": -2.07292,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:42:43.744153",
+    "suggested_position": 0,
+    "stop_loss": 64586.7,
+    "take_profit": 78183.9
+  },
+  {
+    "symbol": "ETH",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 1965.84,
+    "change_24h": -3.89011,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:42:43.744202",
+    "suggested_position": 0,
+    "stop_loss": 1867.5479999999998,
+    "take_profit": 2260.716
+  },
+  {
+    "symbol": "BNB",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 629.84,
+    "change_24h": -0.84132,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:42:43.744207",
+    "suggested_position": 0,
+    "stop_loss": 598.348,
+    "take_profit": 724.316
+  },
+  {
+    "symbol": "XRP",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 1.35,
+    "change_24h": -3.00843,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:42:43.744210",
+    "suggested_position": 0,
+    "stop_loss": 1.2825,
+    "take_profit": 1.5525
+  },
+  {
+    "symbol": "SOL",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 84.68,
+    "change_24h": -3.29563,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:42:43.744214",
+    "suggested_position": 0,
+    "stop_loss": 80.446,
+    "take_profit": 97.382
+  },
+  {
+    "symbol": "DOGE",
+    "signal": "SELL",
+    "score": -40,
+    "price": 0.088995,
+    "change_24h": -5.60754,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:42:43.744229",
+    "suggested_position": 0,
+    "stop_loss": 0.08454525,
+    "take_profit": 0.10234425
+  },
+  {
+    "symbol": "ADA",
+    "signal": "SELL",
+    "score": -40,
+    "price": 0.261057,
+    "change_24h": -6.49276,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T05:42:43.744234",
+    "suggested_position": 0,
+    "stop_loss": 0.24800414999999998,
+    "take_profit": 0.30021554999999994
+  }
+]

@@ -1,0 +1,1421 @@
+{
+  "timestamp": "2026-03-04T06:24:45.289325",
+  "prices": {
+    "BTC": {
+      "price": 68354,
+      "change_24h": -1.3434,
+      "market_cap": 1365051787429,
+      "volume_24h": 53586413669,
+      "high_24h": 69398,
+      "low_24h": 66337,
+      "time": "2026-03-04T06:24:45.544548"
+    },
+    "ETH": {
+      "price": 1982.2,
+      "change_24h": -3.1873,
+      "market_cap": 238926955266,
+      "volume_24h": 25089223135,
+      "high_24h": 2055.21,
+      "low_24h": 1936.81,
+      "time": "2026-03-04T06:24:45.544561"
+    },
+    "BNB": {
+      "price": 633.36,
+      "change_24h": -0.77366,
+      "market_cap": 86304429654,
+      "volume_24h": 1309109723,
+      "high_24h": 641.4,
+      "low_24h": 621.83,
+      "time": "2026-03-04T06:24:45.544564"
+    },
+    "XRP": {
+      "price": 1.36,
+      "change_24h": -2.78713,
+      "market_cap": 83103972232,
+      "volume_24h": 2758790586,
+      "high_24h": 1.4,
+      "low_24h": 1.34,
+      "time": "2026-03-04T06:24:45.544565"
+    },
+    "SOL": {
+      "price": 85.81,
+      "change_24h": -2.09432,
+      "market_cap": 48862228184,
+      "volume_24h": 5182882172,
+      "high_24h": 88.08,
+      "low_24h": 83.14,
+      "time": "2026-03-04T06:24:45.544567"
+    },
+    "DOGE": {
+      "price": 0.089926,
+      "change_24h": -4.87964,
+      "market_cap": 15184674388,
+      "volume_24h": 1448287077,
+      "high_24h": 0.094891,
+      "low_24h": 0.088781,
+      "time": "2026-03-04T06:24:45.544569"
+    },
+    "ADA": {
+      "price": 0.262875,
+      "change_24h": -6.12712,
+      "market_cap": 9677161946,
+      "volume_24h": 666812566,
+      "high_24h": 0.281202,
+      "low_24h": 0.260988,
+      "time": "2026-03-04T06:24:45.544571"
+    }
+  },
+  "news": {
+    "BTC": [
+      {
+        "title": "Bitcoin Is Headed to $500,000. This Wall Street Analyst Explains Why. - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSUpSTkFsZlN0S0t4c0ZkbEhXcEdSeDZQdU5XNXJ3R012NVFwY1ZzNWRBbS1YSC1TQjlCT184Q3RKTkV4c1BQQ2N6Si1UZ0o1WWdiZHgxSE5qTVAxdE1pbHpzWktHa3p2dVFUS24xZjAyQjN6RWZnZXpzLWh4dThTRW1idThLNFNjTWc4Q2ZPRzhiNjhkeC12Tw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296716"
+      },
+      {
+        "title": "Bitcoin's hard fork proposal to get back $5 billion in stolen Mt. Gox funds sees no takers - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQdmpTd1ZTRUV6d2lENEZQeTNuX0s0bHZ4cU95bW0weUlPY3Q3R3B1RkQ4aWs3UjBocGExX0FBbXpMZ1NfVnJiWHFMMHlFcDFmb2huXzBycEpBWWo1bHpPNkhYejZ5bVlWWVZ6RmsxMnlndTZGMTBDUlZ4Sm1JZXRXaXUzcW5KRVQ2WEFFc3R4bWxFcVAxX25UY2lLaHl1QlAyMURld1BIcF9fLXp2b1lHMTZfUUpqTkVTTEcwSW9ld2hTRlpFSm9ZTEFrQTAtSEFCVGlTek42VDJvUWU1TjBZS2VnQ1B3a1pJUnN1RWh3?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296736"
+      },
+      {
+        "title": "Bitcoin Slides as Risk of Prolonged Iran War Weighs on Crypto - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ3BQTmUzZmNESUxiX1NLMnhITFhNTjdLWFY1NHA4Q0xkbGl4TlpSQjlpaFduX0JfX0pwdW84OGJhdHprV2E4ekhIZmZ1T255MWVid092SjlPUXh6aGNrMThsLVpISEJzSXplN0JfWE5qMmZOZnZnNDZlQ2NFSFgwVWREQm53bEVFRHNydEhlb0lyR2hmNG9UUG43bFRzaVdOcW9fQkpUVWp5MVc0REE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296743"
+      },
+      {
+        "title": "Eric Trump Says He Believes In BTC 'Long Term' And American Bitcoin's 'Growth Metric' Is To Increase Its Stash, Not Chase Exhashes Like Other Miners - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBSOTdNRTgtajExSGlUWjJDemRSRW5vZE5SZ3R3NEl0ZEoxd3dOUU8td29CY0xCLWtFWVFlQmtJUHNtNkhhckVDc0otak9nV0ZSdVNiQlhiSUNORlVBbE5IRktrVFdBNHBvMTc3cThzbDd4Rk10WlkwWl95aHV5cDg?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296748"
+      },
+      {
+        "title": "'Number Goes Up'—Iran Conflict Has Bitcoin Bulls Eyeing $500K - Forbes",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbEpjcm9hUm5HZVdKbnVHcEU1R1Z6TzRwamIxWGFyX2RuYnd1YTRTel82WVFmWFJsTVdyUmhnQmh1aUd0Vm5GblRYU1BnZ3h3WlBIVjJKTEFFYUpUa3JuVVFUdEdfdS12b0lUcmhqdmRJMDljMEcxcms3VEFvTjVaS0Jlb2laajZQZktNWEpoXzNqOUl0N1NoVUhtVEU5eHZNNjZsU1A3SkVkLXFsX1FtNA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296755"
+      },
+      {
+        "title": "Bitcoin is making a bottom, says VanEck Funds' Jan van Eck - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQLWFFNnBYeUxrTXgwUlRhY0tnR0JZcGV4ZUxJZllMWVhHOXpWZkNQdzBlNjdtcEFRMzEzYWNwa010QUNZX2VfcWl4Sl9yeElVY3hpUTJNaS0xZXZuS2pTZEJVcDFJVG8tOVdhSkRMeUdUaHVGM19YemE5SndxZWRVT1h6WW9LTDlyM2FPVHE4S2N1VllvMUxIOEpPN2VZLWNP?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296760"
+      },
+      {
+        "title": "JPMorgan predicts massive shift by mid-year - thestreet.com",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeEgtdk9zLU5LWkNOTGxxQjUwODVrUWFtOHVNaEVyRWFTVDNtNnZrTkRBQWFQOVlTS3BTQnM2MU5NQkRsZjVDS1pRaEdtQi1uRGk1dG1kNVFLUkdzekt3VmtnR1ZfOEFQSVQzUnhGcmtuRFpyWTlJQ0xuVWN1dUgyeWdUdU93b20xNXk4?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296764"
+      },
+      {
+        "title": "Bitcoin's price stabilises after dipping to almost $63,000 following US strike on Iran - Yahoo Finance UK",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQY2dCbUJWTXpJUUxnMlVQcXU2Y25KRFZ0NG1iekQ3NVhqQ1I4aXh6c3l3TmllNnJKMjNSOTgydDg0aXIwYUl2OGRVaF9MRGxEZEdQOEVUNjNtMWEzMHcxNWVrMHBFRlJtMzBhX25td1lZekNKczl1N2hsMFpaOEtQOF84QUZZYlRF?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296771"
+      },
+      {
+        "title": "Ex-LAPD Officer Found Guilty of $350K ‘Wrench Attack’ Bitcoin Robbery - Decrypt",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQcGxnQkxfV3hOYzVFNjhvWkdjMjA1WVd0WGpKamlCakcyYWtuQzROcDRqaUNNZzIyOE9lb0xpV0dHUEdmVHBsWjVFUzhWUHpHemtHb25CdVJPREVHY1Z2V0FvWENkQ1ZCcjNRTUZxcW15VVlRUzZLVUFQZDA4TlN4ZF96SDVCYWtQ0gGQAUFVX3lxTE1VNEg4ckFsSklVQ0VSSXdNX3pSSDc3c3IxaXdVbkZoaHlwWEE2bFU0UVZwekd4bWotcnZvcmh3a1REUmdmX2ZNNTNIRGxIcmVTeGJ0WVZJOVlNWUJUaWUtbmlDdHNpaks2Ti0xS09GVUZBMnlJSlNkUjVTb0E2cm0xTm9ULTV4YUFiZGNIX2NGSg?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296778"
+      },
+      {
+        "title": "Bitcoin's price is rising again in a sharp market reversal. Why the Middle East crisis has investors turning to crypto - Fast Company",
+        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxON3dacFVTal9mLXJPTmsxZVdfUm9pcFNIeExGZ3R6VWZ2MkgwamRJenZPNUN0bDhQYk0wVUVBYXRsZ3NsZzNBcThRVGJDWkk2aTdMR25DVTNYNjkyLXFIUk5XRmYwRzhYa09OYlo2QjRZOEhKYjRfV09SMWRZb3NZa0U0bEx6T2Z6UzRrRURMdw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.296782"
+      }
+    ],
+    "ETH": [
+      {
+        "title": "Bitcoin, Ethereum ETFs Snap Five-Week Losing Streak as Crypto Funds Add $1 Billion - Decrypt",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSUx5LVVwU2JDVkEtNk1DajFMLXpweTlqcHhwcDNwTzJQd2tueDJVajFxOXlCdGRNOXNYVFhQUGl1UmhubUJmcWtKNUtLTHpqa3oxWnRoQVZWNEF4UWxVQjNmTVJMTnpCZkxPQVVONzNsb0p5X2VXVm9sYTRpSDhrY21zTWVrS1NldWphVkpIcks3R2PSAZsBQVVfeXFMUGo5UEV6V1B4V2hqeGhyaVFIbXBid3RVNUQ0OG9RdHpJUjlYNE5SRkhfOWZ6REtpTmU3eVQ2Sm9kQnpHUW5PWUhNY1VvVUg2b29wTlRtY2ZuOHlmU2xqZ3VLZ0JuMHdvcEZIR0RnZ0ZMdDEtR015b3V1OGI5YWNQS1BzSnVVb3d6TVF6aTdXR2tsS09Bck05Qk1fbFk?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919888"
+      },
+      {
+        "title": "Better Cryptocurrency to Buy Now With $1,000 and Hold for 3 Years: XRP vs. Ethereum - Nasdaq",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVWRoaTNCM3ZvdFl3ajZ5S0ZjX1pqekhGOVVHY0dORUZnY1JyVFBhYlUybXBuRXpnMUtibGtLcnFsMnljOVQtbld4eEJJUUo0OXM4SVJVeGtPLTh4UVdUeVlJSV9jWExiQ0p2MDdjalY1SDZmOU5RWE5vVzkwNm9sUnhQdWF1SDRuVDBhZVZYWmJkendCQ0N0bHVpZjg3aWpG?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919910"
+      },
+      {
+        "title": "Vitalik Buterin unveils plan to curb Ethereum block builder centralization - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPblM3d2x2bDc2MlA4bVdUZ3VRSGF2bGJ2a1ZkQUdfMkpGMzZUaHp0NFMzdlhwQVQ0c3FWaGxnc3dwLVJRWmpyZDd0RlBVVGxtMkJrYzFhNl9aS0M0eW10RERONGtzMTRQRzJHT3ZWUWVoeXNuN0I2el9PVGhCTE92M3ZzblBMdlFjaHNIUEhWYVdSU0NhbENaa0NfV3NtNnREMm84RUt6WGxrTkp1SzVIOXB2V0FDQQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919915"
+      },
+      {
+        "title": "Bitmine Immersion Technologies (BMNR) Announces ETH Holdings Reach 4.474 Million Tokens, and Total Crypto and Total Cash Holdings of $9.9 Billion - PR Newswire",
+        "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxQb1R0MkFkeG1OUzAtMVBvX3ZpYm5kVkJsYUxvY2l1dWZzcThUanJXdURfZDRzM0VYNDJ2ZEpRLXBDMkdOUmtrbmNIdjdRQldkQmt6amNqRHBwRXFCbDhYakUwN2FjNFhTSkhVQ2ZBUlNFY2lPVHpFd0FRdzJnbnF2VGUyYjdONzQ3ekMtMXhZU0gtbFowcm1yczJPX1MxSG00SFJFWmR3TzFhdVp2MDA1QlFNbzYwQWVvQmtWY2dlRE5SQy1GQW0zUnFESUpreFJid2FTSzI0TFpHS0RvdGprR2JOb0hxQW1ucTJ4cDlreW52REZaa1lleGNXbFJVLTBGLU5rdDBSOUxmNmxoVFhfZUtmSHBoSHBFd29xYXpqX0RxbFk?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919921"
+      },
+      {
+        "title": "Bitcoin, Ethereum ‘pumping hard’ after Iran strikes, but states brace for financial fallout - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZ2VFN3ZWd3hBRGhZbTA4ZlRDSXdsVDZDOFcxNlRFU3pXSENOZ01ZTi14bFdMdEJjVzNnaHJoV2hfTUYxd1U0QWczQWZHME1OTGVjeXplS1VhZ05yVXc0TVJLcDRSVE9oQzBackpGT2t6NDNLNWRaVVYzZmF3YnhqS2dybDJtbjg?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919929"
+      },
+      {
+        "title": "Ethereum Price Tests Support Near $1,940 As Risk Sentiment Turns Defensive - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMlhWdDRPQU9HUFk5ZXlCeU1UdVowQ1l2UlJaWEJ1QnRfUWc2UjZHSlo1VGdqc014dkpTQ0dVcHdHVDRfYTVtY1BoYk5QSkNvTlFJc3J6eVN0cWlvTDJ4d0JWcXR4OGxoam1CQ0FMRzBwUTMzTmhKdS1HX3dnZGJLLVFsNWZMYkVSa3F3c2xmajJ5Z0c4em9tSE9VeDl5R0JDWTRmTWFYTjZIbXdDbkZfSGthZw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919934"
+      },
+      {
+        "title": "Vitalik Buterin lays out a two-part plan to overhaul Ethereum's execution layer from the ground up - The Block",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORm5pU1ZvM3RXVExkZlNQR3BfUTN2aGVhZTdkdFlEYkdsWURtcnVOcTdCT1gzWVJmeDRxWmFSeVhUZzUxLWczN2I0bk0wVE0zVGUwemZudHNYLWlybTAyalU5M0VhQTVlU1lQR1B1dkY3SzYzVW5STG9hNDZpZ2JjckRYWTNFUlVnTHB0NmQxbTc3eDBzU09LaDloTWZzcE1VRlJPamFURnBqYkNoTmdkREF0YXNfMVJjU19TT1QtVUIwaHJkcTUyb1dpeXc4UQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919939"
+      },
+      {
+        "title": "Ethereum Price Prediction Faces Critical Test as Six Red Months Push ETH Toward Historic Support - FinanceFeeds",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVEc3OVoyVThCUFFfemJhM3lzNlBrUktDZ1dnTV9odzFpVnMwOHlfVnFGUEZOeWtsdjc5Mm5oWFZ3ZFJzQTJZbkpIUEMwWldxb2RaWEZHdE0yX1dyZjhqX1M0WVBHMmNIWEFwU3paRFR3OHo4MXdSTGp2M19pdkFpOFN6SFlyUmVKRE96Mi1rTG5SQXhTQ2k4Y2xNbHp5NUxheE5XSkhyWTR5T1BNbDdZamxsMzdQNUo5OXBQdllPRQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919944"
+      },
+      {
+        "title": "Income Over Volatility: NEOS Ethereum Fund Lures Fresh Cash Despite ETH Slump - TipRanks",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbWRLUkhMZS1DakFXLUxHN19VOWNCZEtQejEtTmhfYkE3WURZNWhTNmtEWVFDeGhDVlVNX0toNnQ0Y01KSVVuSVBrNi1jTEMtUGQ2b1FDRnBGWVJ0cm9tZmthVm5NRU45UnJnNk5CRVBoTldMakRGSEdyVUM2Q0l0OFlyNkRhdkRDNk5NRWl4RXlOY3lHbTd3NjFjTHhwX3NzcVZUZU0zNXJrMVpHaUwtMVVQTkhCYUhmYVduVHpDQWE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919949"
+      },
+      {
+        "title": "Ethereum: Is a price bottom forming as 37.1M ETH gets staked? - AMBCrypto",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPclZLRDVsS29LUldPcU1FR2hYdGl5b1lKNkFFcnFjX0hRSllsQVFtcGwxQy0zUnpNWTZfaENtT3V0dGh3bWRSRklZbmZocDJUMV9ObnU0cmtneFlOd3JCWmlpSWQwMkNraFJ0RUZpaG0xYU9nc1FZcjBXaXp6eHFVd3hKZEtWSDRfLXfSAY8BQVVfeXFMTmttblR5cDZHWG56QkZMVWlCamhJd0RRYkxES3FkZFloR1NQX3RYalZkUkl6LURFZnhueUpyQTVSTFNhUFY0VWNvWDhYNWhsem11ejRXeVVKUW94ejNCc2RzTUNMR2dnMHc1WGc0a0FZT3NpN3RESUtha3VobVJfU2xldVhNSW1TSXpzMGhZekE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:46.919954"
+      }
+    ],
+    "USDT": [
+      {
+        "title": "Tether says it has frozen $4.2 billion of its stablecoin over crime links - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdllLSEgydHc1bUNTdGpzOVF4Y0RXX0dlWndPZmp2REZkcTl0N2hydzRlbkdGLXBtbnZWY1NHUGFjOHdtdFh6Y1ZKSlVFOFctVHNqV2NiMFF4bGVidnpadG1HSmZ2OHlaRTlVUEhPZEhCdl8wSE5nVzZvYm1FTW0tS2RuenU1RW1SaVhmeDdwaE5Lcml5RUREanlMRk81bHV0ckpRejhxVVlsY2dNaXZuaFFJWmNDZW1aRTRpZFBaQzY2RmFCYnpvUzlKSVNiYnYyNV9wSTBWdUctZUFU?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542300"
+      },
+      {
+        "title": "Prosecutors seek forfeiture of $327K in Tether after alleged dating app crypto fraud - The Block",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeGR4M3A1QzBwU0UxQ1RQLUdIdjZndURiTUtHMF9uZkNleWlDMFVOWHQyUTVSbEZwOFhxLXB4eFNXTXgwMVNub0xiWk5nd0NPeEYtNWwxVXl0a1JYMHlPNTB2M2FWcjFxSTZQQlVTblVnQl9LNHF2X2d4YmxJYVJVNFJObkdod1pZaDk2ZWptS2tCNE4zZ0RZYW9wNjAwWFVSWW5SMnZGZ2xhN0JUUGJ6NnlDT0o2ZnlZTWsw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542317"
+      },
+      {
+        "title": "Bybit Launches “Earn Carnival” With Up to 12 Percent APR and 2.5M USDT Rewards - Meyka",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMWUwbTRvek5IZlNISnhRVURTRDJZSEQ0Zk1fclllcE04a2N5blFydmpxcHFrWmNrVE84RUswdktPb1g0UUtIdWp3eWJULVBlcElsd0hSR1B2RGFQZmt4WDc2R0E5dkUzOUZCdnZRaDNZSUJ6RV9yQzlJQWpoRkhHS2x3VGxpVlVaZXdxYlVYcndneHV3VkRNc1FVNTdMT1cxbmc?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542324"
+      },
+      {
+        "title": "DOJ seeks forfeiture of $327K in USDT linked to romance scam - crypto.news",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5YNGsxdTJnWUNmSnQtampZYktSQTA2VWY0czBnYkNMTDVrQmRjN1lmTXlyY2FoNUY3Z2E3Q05QMzkwRzVNQldiUk9TZWpCRkx1N1BUT29uTTRDSlNMTWlveV85NjQ3ZGdkR2lMMnZlTWk1N3N1?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542330"
+      },
+      {
+        "title": "Tether taps Deloitte for first USAT reserve report - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVmJld0lObC1tcEU1VEF3Z2tBUUdPMEhncVRoVWFXNTJxSkl3Y1dFdW5LWGFydjhDOXFXZUd4aERGMFZMeGg3V1NPWHpIc1A0aVJMWkFaQlNlVk5YSlhCQXhDODI5VFhBcjZBTXJONHEzYmp4NFVlU1I5MG5sZDhZSHRjZkhDU3hPbjM0NjRDRWxoaC1GM3o4aHV4TQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542335"
+      },
+      {
+        "title": "Best Crypto Casinos for International Beer-Loving Players With No KYC &amp; Instant Payouts - The Washington Beer Blog",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55akJDeUwwWXZVUTlxLW9MN1BTelZvMUJwS3FxbnFKV0xKY05Ua2k2bi1oMnJ1WXcxS0QxbHVxT29CdUZSUmo0V0Z2Nk1fdnN4T25PU3dkZmQ3Q3dfRTJYOQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542339"
+      },
+      {
+        "title": "Bybit Launches \"BOB Advantage\": Zero Fees, 5,000 USDT Prize Pool, and a New Era for Crypto in Bolivia - Chainwire",
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQ3J1LUZRMG5Ic1RNdXBGb2ViT010ZEJhYUVwYVFmejdzNG5ZcHJZdDVrZjdFU3ZDYkxfdVppSVRGNzhTNFlZeV9FR2lyUm9DaXppaUNPOGM5VnVIVVdJbUdPaEhRcEQyVDROUk1ha3VYQnZRTVhqZmNkMUpnakVQVGs2Qi1JTk5pVFRlQTJEWWdCbjRScndMRXl3MWxwLUVxcjFKd2JOMVVzdExVbHJ3R2V0eGc3OVhSb1Z3TW9vM1FQY2ZzTm9DLQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542344"
+      },
+      {
+        "title": "Bybit Launches “Earn Carnival” Campaign With Up to 12% APR Opportunities and 2.5 Million USDT Prize Pool - Block Telegraph",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQ2Q3ZW9NMmxySXdZeHdSWVQyN0REOG9sZlUzLXpSZVRKZ0RpLTBNUkg1MUpKTEdqUmloZUxQWGFYQ2s3ZmFINTNYR3FLMHpnbVkxbDQ1c1JGaG5hZlZQTDNBZko2WmMzRi0yUXdQbnlkSl9lYjVlaDhtUlNwcE1DYWFiMW50Q0lYMUMxRzlGcHg1TVplLVhLNXdaeXBmcGFBOUFoOG1BdHdUOFJQSTlsUUhWZUxMZFZMdk83SWttLWgtS25EZkRJ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542351"
+      },
+      {
+        "title": "Iranian Exchange Outflows Jump 700% as USDT Sanctions Alert Intensifies - Cryptonews",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcVFLelFfb3lsRDNlZjJJUWM3Rm44eWtFNTI1dk10ZGYxWHU2bFVvS1hOOGdtRnRpOWFyUExIOF9MY0daX3E0Yk96VGVibFdnal9qNXJsaVlYaXVVVFQ0WFhHRUxlMk04T2s2U0kxTkNQMGVRbzE2TUFyaHpQM3hrU2laNkhwalVxX0FYWg?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542355"
+      },
+      {
+        "title": "Visa and Stripe to Launch Stablecoin Cards in Over 100 Countries - ForkLog",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZGRWcUVzaUJUYWR6UnlSSzBaLTlOUkViMnFqWHhMSDM1dElSSVc0a0NBUTMzS1MtaFU3cjJtNXhsV04zdi1jTlBISWlEb2I0bTliNFNBU1dWWkx2cTA3SXBYQmpFRXdqWGRPd3hhUVltZEk3ZndkUGZqellJWWM1c1FfYVdFZFZxSGFFZ3RRY1Fxd9IBlwFBVV95cUxQRlVfQnVyS1FCVHF6ckQtdkhRN3RhalVzV1pDU3R6T1ZhWklaZS1mNFJGT19jQkMwbkk5ZkFQSFozblNFTlJ3Vk9fOC05Zy1NVTZxR0FyaUtuT0prbTFMazRka2Zyd0lRazEwdGdzRmpIaVhLZUNjQm13clpLYVllbHJMb0dQTDlGVGFXdTlfTzAwQ1ZnMWk0?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:47.542361"
+      }
+    ],
+    "BNB": [
+      {
+        "title": "CZ–backed YZi Labs invests $100 million into Hash Global's BNB fund - The Block",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOQnhlb0NNbWtBVlhUZWFzT1N4UGZNcGx4TjBvVllnYy1PN3hBelM0OG5Nbnh2U2UyUVQ3MV8yMlhxaDRFbWQ3cEhvX1d3T0RWeDNuVVdTNTNNR0J0bTVlQmx0NVlfMWhNcE5ITGZnM0p2dWFkeC1IdkJpbnRUVFdDaURELU1JeTk3Nmdlc0tXZDVXTnI0SjVkSDMyYVpKeVJ1X2c4?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197213"
+      },
+      {
+        "title": "BNB USD Slides 0.11% as Technical Signals Point to $555.65 Support - Meyka",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMEZkSEpjRDFhakVHTWVwblJxVjJKMjdCT1BaY29uNTNRYmxKcnNNYTVXQ056ZDh5M25kelRCOE4xRnNGUzNuRnFZVnpOQnpnZUVvSWIxSkJNMlZDMlZTZy11ZklQdWhXdEszdDZ2MF9UdExtMmxSOVpWZHZnMnhzekpCZ0I4aUw4VnBVTGplZ2Rfamw0OGc?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197233"
+      },
+      {
+        "title": "XRP's Price Slumps With Bitcoin Dip, BNB Outperforms Amid Crypto Regulatory Fog - Stocktwits",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVzB3TDlHbEEtaHZfMk9LRk5yVEpRME1kdkRSUjdmLVpjOXVwZF90d20yRU9HOG1BRFRlVEE5MXRkRkI5ZzBQUHJSdDl5ajB5eURDUXl5eExuQUtRb1lNdFV4ekRCRjlIWWlSSEN3SDBvdGNUSXBPclpMNUZJLU1xTWRjS2cybmJIbGhPRGlBVk5GREI3ejRGR0hQNFZlVEM5cHJYbWNtcmtvUXJ4WUR5UGVlc1dnUElzNkpKREdiY3hJV1puZF9hLTh3Zi1GWkRV?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197239"
+      },
+      {
+        "title": "Presale Cryptocurrency 2026 Spotlight: Blazpay, BNB, - openPR.com",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOT0NoQUxXT2lfSzdoREFwdnBaUHRHa2RPamxmQlJsMXlnaHdKbjQ1T014aDZtS3dTc18wSThvazI5cVZZYW83QnF3WnoxbUZNdENHWHFQRU10eEJTZWNyMVZfaXZ3Q2F0RTdhNGJIYzVHdVFaWmI5OXUyTmtHSGVVLXJzVVhsZ1RjNUV0ODl3?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197244"
+      },
+      {
+        "title": "XRP and BNB Battle for 4th Spot, BTC Price Calms at $66K: Market Watch - CryptoPotato",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOT2QyRVYtSnRSWV9VdHZ5b28xLVRiZDdhTTBkdHNKRHNiWjZkekVhRVlaaWVIMkVQY0hIYmxSZEQ4cnNTWF9FUTZCMmh0bTBESnRqQU1WalE1ek5lSExabzZ4MXhjUXBpTGFRRzZwSWxXc3FLejJpZTZlU2Rrc3lxWm5GVTQwQkpkQ05KWW03clJobGZIeWVleQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197249"
+      },
+      {
+        "title": "Binance’s CZ Makes $100 Million Bet on Hash Global’s BNB Fund - FinanceFeeds",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQkJmRGZUd0pUdlVJRk9TVDN2ZjNDQzFjTGttRW5DWXpFSi1SRVBWNExjeHdfMUhWYmNaR0RGb2NmcVlXZXlnSnpKbFFWWHBTT0t0VmU0MUZBYktRd2tnT0VaVFlnVXdNZWtFZ1VfbWN5T3RCMzFvU0g2LVNRZnp6REd0eVVzSkNDcEpJRw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197256"
+      },
+      {
+        "title": "YZi’s $100m BNB bet reframes utility yield for institutions - crypto.news",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPa2E2UUhtVnVUUmZjRnJZU292TG1GN2c2TWZlajFDV254czlaV0ZmVXFaeElEZ2lySkRydl8teTY3aU9WV1dFdVlHQ1UyMEpueVZMbktSMXlnLUZYVDJpTkd6Sk5oRWZ3MU1rWUZKV1hteWtwVFlCSGFIMFJNX1lrZnJjZ0c?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197261"
+      },
+      {
+        "title": "​​​Major cryptocurrencies hit by sharp 2026 sell-off - ig.com",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUnh6WGZaTTVvbFl6VG1BZ1Rya0RQbTlmUnFING9OTll1NnQ4STU3T2Z6TUxmamYySUtlOHNOdHBZLVByNHpQRDBPdHBMWVBEY1ZfVUc0SjRCTU96UjFpbzhZc0Zfb09hTHdqQlpGNFBmbUN1RFZBbm10dk42Q2hpbHU0eFp3a3JEVDBJRDg0ZjNkWDhl?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197267"
+      },
+      {
+        "title": "Next Crypto To Explode: Trump Media Eyes Crypto Expansion As BNB Holds $600, Monero Surges, And DeepSnitch AI Targets 500x Growth - BlockchainReporter",
+        "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNSzZwTHM2N1dZdkdVYjAzbnVweklwajF1UXdDdW9SQWd0ZEhHdTBWcENibE0xc01BbVpIbGNLZl95WkgxMVEzY2ZVTmo1Zk55b25KSkQ5NlJOdzNOMTAzVHlmcUJGZXAwZUZQWHg2Rmxlc0paT1oxYS1VWEFCWV9sT1FKcU14bXVRZnlYSzJRZXJWdVppRFExRFRMWVFYeFhRR1FvRUxBbkxQcW5fWkRMeEFBeUtGOWlOOUNGd082ODBTOEJucm1XQ0hZNUFPQmFMSkx1aXBVN2ZVNWRVSWJTVU1tYl91TkpDN09yc29CQzJFWlA2U1VBRDh3?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197272"
+      },
+      {
+        "title": "BNB tops $870, outperforming crypto majors as volume surges - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSjRyVjBuRmh4SVR4QVBuMTNnMUw3bFVRUUdnMzlwU1BMRzhHcmFWN3VBY0FMdEhONTNUaTJjZFlaWmxBcUNaa2NFbDRPZ0s5WGNPMWZTVEdKc3RWdlQyXzE4eXRjUHIzZXE3T1JfWHZ0LU56dmk2c2s0ZmcxV1dneUt1NVpRcTVRLVRsX1ZiSUdCX1M4UUdBRExLYXpVRUFaZnlIV3RGbw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.197277"
+      }
+    ],
+    "SOL": [
+      {
+        "title": "ETH, SOL, XRP price news: What next as majors surge 10% to recover war-driven losses - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdlo2NmluVkdhQjhPTUtkWk1SM0g0YXYtMVp4a2pjYVhmOGdGa2syeS1WSkdQYTNCRWVqczV1aFQtelREc00xVnRMVXgyTEwxaXFhdVBTcjdYQWg1RHRpWTE2UDRXRmNzR3A5QUZKYWZYTDh2cVJnRFM2ZTUyVlFGYmV2YktaWXg1Zk5zMFk1ejVJUTFXSU90dW9XR3Z1aFgwdVlRUlBTajZaSF9uREl3aDZEMnZDWmE3bHVBejRDdw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884641"
+      },
+      {
+        "title": "This Solana Cohort’s Gains Could Effect a 38% Price Drop - BeInCrypto",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9vZ0ZNQUkzaTdEeW1GTkhIMUgyMXZRY3BIN3R4eElXSl82SGh2cVFYVzd0ZDJPWlB3dFVFdU9ENzNzak5vWm94bEpwakRncG1WZTAwR2dTa1dNaE5oUWxKNmFHY1B6UXdoOHBn?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884662"
+      },
+      {
+        "title": "SOL Consolidates Between $70–$90: Breakout Could Trigger $120 Surge - Coinpaper",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQUZVTzVwdjVhalhGQnRXSWZkOEFmZk5UUGN0N01uNkV1NUdNVWlQbGxENU9yZXh2WGF4eXN0MFNqRlBQZ2dQclFveHo5bUxnYVhBOGFrdk4ybmhmcGtqRVBabFJYS2lUZkxaN1ZmSFRVeklyWXVMeVl0b3VBRUVsb2RGSzZpMDZRZ0JnRDQ2Y3NOZnRLaXc?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884668"
+      },
+      {
+        "title": "Solana price forecast as SOL risks 20% crash - Finbold",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Va3RsVFZGN0VCX2hLOGUzeGJYYlBGcVJmM0tTVE5IZDFYR204SnFVZFphcjNoR043OW1zOHpfcWpQMWhzQnJfMEN2R0FmaTBLQ2pfQ2lrRFlnZlgzbnVyTnRzZ2tZa0pOYmtxamhrTFg2dw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884674"
+      },
+      {
+        "title": "Bitcoin At $67,000, Ethereum, XRP, Dogecoin Hold Support As Sentiment Improves - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZXJFcl9VRDAtcHpNamU3QjVTczJDdE5Wd0pLT1E1bHNUR3JEd0FlaFVJblB6aXJfdGNSd2pVbmdHNFdZakI3TGlwNEwtZU8zRlpQYVV4S001YzhaTDROS3h2cC15ejdaeFl6Vmh6RHlnZGlkcFJxUkVHM09ka3pmVUo5TjVIMG94RXZ1ZnF1dU91S0F3LUlFXzZJeEhjQVBFbTNXbFZPSmhIcFBZOTExTWRBajUtVU1RZmZ3b25wYmNCdDhrTE93RUJiQjJjWUtH?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884679"
+      },
+      {
+        "title": "Solana ETFs: Positioning For The Next Expansion (NYSEARCA:BSOL) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNmg1Q2x4dHpodlFoNXg4b3ZINGtSRmlULXdYeWlRSENpRHZRTHJqSWdUTUxXLVB0NnhJaVNhOGRsSnFNMHlBRUNwMHFpaUl1VnhqUUpWWExIVEhmZmQ0QnA3OFcxNGlSbXY2T0kyWkh1aW1Ga1Y3bC04b0R2cjh5VENabDRqbmVxLUJNU2R1eHE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884684"
+      },
+      {
+        "title": "10% weekend surge in Ethereum (ETH) and Solana (SOL) signals rotation back to crypto protocols - Cyprus Mail",
+        "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObmtScm45OTJzTmtISlRlT0RLX1JWdng3S2FCQlllRXlfelpScklPTWZtN3hQSUZ6VEQwUDJuNWhvckZXak4xeUEya1BkVnZBZUhxbENLZ2JkVExDa2dRX3RsZmdyRWptMmZCZjV3bE5KUnluR3k0NFFRRkN1dHg3S0tNSnZQMDgtWmtiMmhPR0tmVHBBUFpVVHBidlpHY1hvUExVVHRfTFFFOUVuVjg0blY2b0FSbHVzRUVwUVhadkJfUQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884689"
+      },
+      {
+        "title": "Bitcoin Soars: Remarkable Resilience Propels BTC Above $68,000 Milestone - MEXC",
+        "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1Ublk1bWpXOGxnQkhxWjhDTWVhbTM2R1F2TmtwQ1d1V0lHMnZPNTJRVHAwZHZTTVVnY18wZVBpOTZnSDZRREZv?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884693"
+      },
+      {
+        "title": "Solana Price Prediction: SOL Just Reclaimed a Critical Level — Is $100 Back in Play? - Cryptonews",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSFFlMUdnS2ZYOXZDVU9STXg3RTc4ZUoxMW1xeG9ScVhodGEtLURlb2s2TWd1N1Y5X3g1dno2OFB6ckU1QzZETjlNeHBBdzRDelNUX3VVbElNemVxbFpwTjNHcG5lVkl1RFllMVNUZXhCOHhnTzBYUUJjR1l1U25xUFN3ZTUzY3drYk5jenV5OVhMekUtUWRQRndTOTlTa0VJVFVFczgtVHdGb3pO?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884699"
+      },
+      {
+        "title": "Ripple XRP and Solana SOL Holders Rotate Into Pepeto as the Best Crypto to Invest in 2026 - openPR.com",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNd3ZEWXNnQ04wT2U0dFNGYVdLMzFjNHBHdnVmOEt3THUzTUx6cjlvYUo5VDlTSU95dHlVbkRnM1hXTm1iWGhtXy1oRzFIUjlQeHpiWU5fNnhFRWZOcWU1bWlVckc3WV9TeFFfNlo3bmtGc3NGY2dHY0RNbGtxQ2FqNDZUMGs1RVJhTWh0RDF1aXZ5MFlKeFNBYjY4Nlc4aVJ5Q0E?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:48.884704"
+      }
+    ],
+    "XRP": [
+      {
+        "title": "Better Cryptocurrency to Buy Now With $1,000 and Hold for 3 Years: XRP vs. Ethereum - Nasdaq",
+        "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVWRoaTNCM3ZvdFl3ajZ5S0ZjX1pqekhGOVVHY0dORUZnY1JyVFBhYlUybXBuRXpnMUtibGtLcnFsMnljOVQtbld4eEJJUUo0OXM4SVJVeGtPLTh4UVdUeVlJSV9jWExiQ0p2MDdjalY1SDZmOU5RWE5vVzkwNm9sUnhQdWF1SDRuVDBhZVZYWmJkendCQ0N0bHVpZjg3aWpG?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860464"
+      },
+      {
+        "title": "What Would Push the XRP Price Toward $5 Or Back to $1 - 24/7 Wall St.",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRDZkbmotWWpGUE1OTkpORHJaUzJUMkl5UGN4dUk4Nm1GdzV0dlpGQWhQcEp6bmNJdDkwc3UySlU1WDJzVlI5OEFtdnZPbzFfVXgwdHhOSE1Ed1dKcS1FNUU1bjZXOFJlYlo4R0FNZXAwU0Q2ajhfclJaVzRUT0tncnZUem9kQnJfVXZaTW5vbjdISGRYTkNFcmJXWQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860483"
+      },
+      {
+        "title": "Bitcoin Falls Amid Conflict in Middle East. Why Crypto Is Not a Haven. - Barron's",
+        "link": "https://news.google.com/rss/articles/CBMiqANBVV95cUxNRGR1N25DVlJQV0V4dmVoTG5HX2I1UmVQNDVSZXB5ajVHLXhoU0JNeTFJaFZyRGFUeE5vZm43dEZsRmk3R1diZFVUaEJCSG52THVyQWp3emdndXBFSTRDUzVrWWlEVVpFU2c3T0ZPSjJ1QVJTbVNEdDdMVXR1dmdIWnNuQTFGWjlRMHdvUEd2SVY2cE9qMU9OWDc0dHFRYjZnck84UTQ5eTMwOEhwMlRxaFNvNllsU1Rnc3AzdXNhNGxkOXM3U0p0OFZNNmo1M3g5a1E5dUpLUjE2NHdBamFjVDhxenZhUkduN2NJLWFkc1ZkUjdQbG5mTVBaY1ZCT2NxaGlRV2xJZW1Wc2xUcGd2LXdJOEp6STgxRDRkS0xOZWg3bGZCSDRiTFNvak44M2RhRmFPUkdQTmJ6U3ltRFRNZ1lQTGI0MWZHeTdHaVlDWFhvWXhVQUM4T3lIc1h5TGwwQlVHMGlvWTFRLXV5c1ptamc2T2w3SnYyU01GUDJrcGlEZnUwYXN3dXRMU0Q0dEd0WS1PYmNybjgyZDM4dWVsbVNRYWJPZ21m?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860489"
+      },
+      {
+        "title": "XRP Plunges 26% As Crypto Market Faces Fresh Headwinds - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBXTVk2ZURzVXU4OUE3LU1qY1ZiMEJ5SnRoOVB6X0Q5QklEbk9XRmkxUm1VUXRLb0FRd1UwWnZ3SWNUVlZ2bmNwNzdmMHViYUM2X0xLem8xUWNKMnBlTVpQUmNJM1lqZXNZRHVra0FXXy1UX092aHJsT2ROdFh6N1U?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860494"
+      },
+      {
+        "title": "Where Will the Cryptocurrency XRP Be in 1 Year? - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNT0tRaGRxSWxhR3BIQ01QSjhsYVlpU1p1MUdDYWU2Z3l4RnUzckdHaWpnQ0YtbGdPQVVqcnBZdEFoZGh6YVZodkNfbElFYmFfVTJCZC1oaFVpU0V2RHVKaC1YYjAtaVBqbFdXVWM4TWlFLW1MTmJsamFFNHdZbDJXbGJZLTkyX01wQ3VkNlpUTkpmMHM?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860500"
+      },
+      {
+        "title": "ETH, SOL, XRP price news: What next as majors surge 10% to recover war-driven losses - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNdlo2NmluVkdhQjhPTUtkWk1SM0g0YXYtMVp4a2pjYVhmOGdGa2syeS1WSkdQYTNCRWVqczV1aFQtelREc00xVnRMVXgyTEwxaXFhdVBTcjdYQWg1RHRpWTE2UDRXRmNzR3A5QUZKYWZYTDh2cVJnRFM2ZTUyVlFGYmV2YktaWXg1Zk5zMFk1ejVJUTFXSU90dW9XR3Z1aFgwdVlRUlBTajZaSF9uREl3aDZEMnZDWmE3bHVBejRDdw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860505"
+      },
+      {
+        "title": "Ethereum Based Crypto Pepeto Announces $7,44M Raised While XRP Price Prediction Targets $20 - markets.businessinsider.com",
+        "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQMmdWVHROaHEtZTNMWjk1RUhjVzNYaGZJTWlKSElxbkhxYXc2eDV6YUFrVkR0ZjF1R2h6d0hkbDdZM2c1X2hWZFRtQUVuSkJiRm5DSUlTQkpNRW9DaGtUT2kzSmtGRTNJcV8ySEtwc0dMNUFVZFZ6T2FzRnJ1MlQ4ZEphc3FTRzFNN2xOOGRzb3Y5OXBSRlpFekE5clVxc09xakdCUzU2YlcxSFJtaS1HVlcwN19ZMzFjSnhxM2l6d1g5UndweTVucWdvUURoa3psbFk2enhKVk8yUkZXeEttVmZB?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860511"
+      },
+      {
+        "title": "XRP Price At $100 Is ‘Inevitable’, Analyst Explains Why This Is - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVmlMT1drR2pBU01JOTVOTnJ1VUMzN3Q1Tk1BR01OanhtamJVVVNJNXZOUEpqanRySFFfVHVvVXp1c1BmSnhjV2pTSm8xR1ZQNXdhWXBYQkN2azdIMTRKUlU1dlpvR0VYekVZS3htN0MyUmYzUWdoQnF6V3RHN3E5NVQxN2h3VUQ3dmg0RnFheFRUZV91T1pTMGJfZHp0LVE3Vk5iYVd1SW9FRlQwTkhKNjltVzJBa0hQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860517"
+      },
+      {
+        "title": "Ride the XRP wave at Bitrue with a 70,000 XRP trading contest - Crypto Briefing",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbHgzbUhldEhtd3RWZ2J3WDF4SHQ4QlkxOUFPY3d3ODQteDI4ZDJCWExVNklYWXNoQjhvMEcyaTlZb0RFVXN4SlRJSk4xRWp2MFpadG5JOTk3ZEF0MENJVW9sYkx2alRxMVBvT2lCNklFTHZhMVlQNVVPWF9VcmhfZy10TmlRUlNOdUtOVk5lamhaQQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860522"
+      },
+      {
+        "title": "While Bitcoin ETFs bled, Solana and XRP won the week – Here’s the data! - AMBCrypto",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWTNqV2t2cHpqUUk3a1FKaGlwSTRyckpTWXVsTndTVE8wRUxScEo0SmM1c3lZOWZLdDVJTDJiZU1kVG1EX0dkZS0xMDRrc3NyUmRtNl93U2pMR1pwdjZFRXJWLXVzejd6NzFSMl9Fdk1xeHFISDRNcW9sZGRUSERiZmdELVNpY2NSR09xeWRzTVp2bjTSAZgBQVVfeXFMTjFYRzNqeTltbmNpOG5URDZ6MVZObEI4UEthdF91dHFCNDZWNjVoUWdKU2h0RXA3MTlHNjhnUEwtM3JJZmlQWHNRc1RiVzlrSUZWQ05mTkoyX1c0LXVjNnNnWGljclFyaUNzWHpJZ180alNDeDNjUHplb0lDRkJMenBlLWdlRmhndFpMcUNLUHpLMGJFNV8xS2E?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:49.860530"
+      }
+    ],
+    "USDC": [
+      {
+        "title": "USDC Minted: A Staggering 250 Million Injection Signals Major Market Confidence - MEXC",
+        "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE14eER6Z2h4aTd6TWVKRm9EREJialhPeFRlLWxqLTcxX183UDA5Yld2SHUzNFhTcVAydEctRk5MV3FnZ2hfMFlv?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432085"
+      },
+      {
+        "title": "Analyst raises price target on crypto's most subscribed IPO stock - thestreet.com",
+        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNdHd6T1pzSlFNdXNWNC1wR3A5Uk9QQkZ1MnNPeEJidFVzWWVpSjdNVkZrZ0h3X2x6VmtSVEVTd24yazRDWkNxTEV3SXFTQWItMV9xXzBoU1FvNU9FN3hPREdBQkw3clZrM0MyRTFac2tCby1wMmtoRGF6UXo5SjI2d01aWUVQM3E1Qk5MVFgxb3ZaLXkzYVRJRHJFUVUyZE1TbkZkVEdNWWs?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432103"
+      },
+      {
+        "title": "Four Headwinds Stalling Bitcoin's $70K Breakout - Decrypt",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4xR0dReXcza2lNYVRwREJRUE9vTHBMVWFCUmhDSFBidHQ4WUxLMXNvVVRzY3JWNzd2cjBUMEhGcmJZTFUwWEYtWUdzS0NJUV9BVHcwMXMzWFhEd1NKa3lRSmhSTVBIOVdWcmtuRklvbnhhdUxaUUs4aHNrRdIBgwFBVV95cUxPby1iUTBHUzZmcjJ1TWJJUU5oQjNEdmxGdzFnSUgzN1Q0QmlKeDZvc2djY3pobTFDN1hibXA5ZWVPRndZVmo1bkFiaXNQN0wzMGpVX29yRkFuc3ZhU09vVmVSUnRWbE92WE55eEFFbFpPV0RVNHRXZ3dUTUtZMlZjbzA2NA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432109"
+      },
+      {
+        "title": "Whale’s Digital Asset View: Circle’s 3 Drivers - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbWp5MzhheE1CWUFRcEJubzRtaVhFTmZTZE5RbWNSNGM2SmFvR1UwZHdVdjJId3ZkNFNMbGJrYXI3eVZ1YWdZdlpMa0l1bG14SU9GTGliVXhKQ1BzQXlZel9JcUVkSjZmTDZvNExJZ2xKS1NvVjJuWmxGV3EzMkZfejU5bnZGbDJkclM3MA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432116"
+      },
+      {
+        "title": "After Smashing Earnings Expectations, Has Circle Internet Group Proven Its Doubters Wrong? - AOL.com",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ3RwdlJlOHRMb3d0dVhXTHZ5cFVXZGhUOHctMHFIb0JfR09tRU8ybzFoRC1zYnUtWXN0X09GcEZIS09JSTMyaWU0VGxodF9nZXVRVFZmeFI0TWV0R3NRNW5fMXRrbzNPdVJKSWlseXZXQmxEUzQ3YjNyelFxWV84ZjZEMUN2akQ5NEpvUTg5MS12a2RQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432122"
+      },
+      {
+        "title": "Is USDC an Underrated Crypto Play? - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWWNqVElSd2Z5alBfQ2o3cGF1WFJhbkdjTmdTUk9RejUtZlVyY0RYVndlZkZ1LTFfR2JHTUNzQ1M2YlJ3SWxoMkJEM0pHemtGSjhfY0ZEWUJXbWo4WmVNdUlzTGE2R2R0cDdQMlk3aWV6bU5nSjNFb1hTLXZycVd5Vm9n?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432126"
+      },
+      {
+        "title": "Middle East War And Rate Shift Drive Circle Stock 20% Higher As Mizuho Lifts Target - Yellow.com",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOTdTeGtDWUc0QnBYZHJfcVROWnlfQUtYc0xMTUVGd2V6NEVJM2NPRERQalJzdGhaSzZIekMzMWNxdEp3VTNHTzJIYXZIQ2tHZzZGbnNrYWtRUlF1UGUxdlh5Nkkwa2tWaFRKcUxaZDZjZW93MUpjV2ZRVV9OY3poOTZISFdaNTBLdzNZQXBoUkJiR3FRZ1AxU3l5NFBXdDZrN016aUhjS2hLdw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432131"
+      },
+      {
+        "title": "How Is Gold’s Rally Extending Into Crypto Markets in March 2026? - BeInCrypto",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1pMktVcktwaWZkX2J0TjhHVEJZT2dlM3N1cGVSOHlGSTE3MG1TUWZGN1ZteE5Yd19IQkZZMWJGZUQyZmRKTXNhV3l2OTdIWGYycTV0YmdOWUpmX1NNeTd0blhzbUdXVmU1WWhTVzhJZmVCdzdjaHFZ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432137"
+      },
+      {
+        "title": "Blink adds USDC crypto payments at select EV fast charging sites - Charged EVs",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPOWJCOFgtYVJwa0JKZURoSzJMVWM1UnlQQ0RBRTdJaTI2Q3ZUTzgyTWNIRklwbHJlS25ZYkpFZjNhd1llOHY3bGlyYWRVU3kyMlNuLTZWaktOYldmaE40S2dYSUhyeFFXbkNnQkJncEpmRHd2Ri1QTVo5bElTTnFWUE9aOXp5cmdHOTNFaG5YMHFjV0FvNFgxRXNUTkVzUQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432142"
+      },
+      {
+        "title": "Circle’s Q4 Revenue Skyrockets 77% as USDC Supply Nears $75 Billion - CryptoPotato",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQVjNvdmdIWTdEa3I2ZlJ3YjJEaEZXc1pzNHY1Z25fX3pSY0NxTlF6NnFraEc0aktSSjhrdnYyNkxVekYtUUlSYm02blNzN2dBZ2RmbHlTWmhHbkQzeEhhTjBwYTgybGxpeUpSV3hnNDEzcW9oN21LUFdXblVNdHhqdk5RVm1UN2pKS2Jta1o0ZXZvZzFY?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.432148"
+      }
+    ],
+    "STETH": [
+      {
+        "title": "WisdomTree first to market with Ethereum staking fund using Lido's stETH - The Block",
+        "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeWFxc2hQWGhzWk5Zb1ZjRl9NeE1aQllqU0ZDMnVMUUctZnBnLUxkQ3d1VDhaUGFQaVl6YVM4SktlRmlBdURTSElvcmpfWG1rODI3X3ZxSWRuT1UzTkFKcy1SVXJyaUNOVTIxTC1aY29RYndIR2c2SU84b1drZDJOZ1JNWmg4NFpLa0FOYlA2U29jcE5fSm1F?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907907"
+      },
+      {
+        "title": "Hex Trust Adds Custody and Staking for Lido’s stETH, Expanding Institutional Access to Ethereum Rewards - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOcFFtRGxEU1RJY2FQRW51elB1X0NqWUFlTTliOGFrOHJ4UWdkRzE2RmZGUEdsdHpJdm1LYzlhRE5sbmJxZkRTMDdOWHFpNU1UQ0dkNnFDeE9LQy0yNFRMd3ZJWTIxT1VkQzR1RW54R2VDSV93aU5WSHJBbmNQMkxxT19VMWltbEVjcXJ2NEZMQmdOSFcyenloMHZhOHoyU3kwMjJRVTczdjkxQTBXZmFBN2Y2YjdvbkZXRXpjVDlPT1p3QkllY3RQMHVkQkp0MGtvcHk1OW9mVkRyWVk3Y3VSNw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907924"
+      },
+      {
+        "title": "Ethereum stakers face 9-day wait as stETH loops fall into the red - Blockworks",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE16dlFiUFBmSkFoSWlZTlgxRDNqemx3b2Q3V0JTeHVNSUN0T2tLUWU5YkFHT2xrN1FpNF9QRER0enVpSHhTdzRoeG1QN0pxcFdTbERrb2VHSVBwRVo2ZjRGdGRnNmdTU00wRmliaw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907928"
+      },
+      {
+        "title": "WisdomTree Launches First Fully Staked ETH ETP in Europe - European Business Magazine",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTlU4QVQwdEl4RHNxQVVvc3R1ek5TWEg3ZUo4M2tCNnFPWmtjak50cXlrVDJtR1M3ZldZcS1pWGRvNVpsUlYxNllabnlQeU02UkJ6WWx5VjVsa3J0SlB4VkJBSjQ0X2tVTFJJbW1PS2I1LWc5ckZDdmZ5S2VhMnZ0NU1sbjFvWkVBYmRSczJwRmszaDRvM2I3TjRnMUhCV3NhTUs5allPNmZMX2dTaVHSAbYBQVVfeXFMTm13TmRaeUEzMUVhLTR1OWx6OEdJQ2NPY1Vxbm1sZk1pZDVuVmJFdEJkck04Z2JvWVlBeTdYOWhINVBWMm9RNXh5X0NaeEJWNXJ0RlJoSVFVX0JiZ3NMdjREQWxvYk5JSG1LanNnRlNEbUhpbHA5ODJsUFltLXlxcGwyOVhfZjVOSG5QcG0wMnNCYzQ1V1dVTWNqdkJVRHgyQWJEN1dTVzY0dVBtUWgyQXl0U1hYaHc?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907934"
+      },
+      {
+        "title": "Lido faces three-year low in Ethereum staking market amid stETH depeg turmoil - CryptoSlate",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSWFKZ2dPNGlBeHRYbDRhVzNUN19SZndRWGtPZVBzS20wRHhMTFk0aG9fS1VsQTM4ZFlYZ2JObndLZHFTNUJkemQxblVCV0sxZWtOekI4ZURKQy1JYTFVYTIyV0I5VHRzWHJjR1lRYzhJdEhDQTYzY2ctbzAyRE5SanAwS0UwcmJzSVc2OC1R?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907938"
+      },
+      {
+        "title": "Five New Crypto ETF Applications Filed This Week - CoinMarketCap",
+        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOd29oY1VOSkVBQ0E4dDE2LW93X0UwX3lLZG5HTy1YeVRZTTRjb09aWS1BdFRWT2Q1bXJYNW0zMVNHTEo0NjJWSXlIenlsZHBfbmMwdmM1OTJhRDg0NWlSU3U2cjF2aXNCeGwtbU5BS2RJMjVtOGRhVmlhbkhFeVZqR3ltdnE5Rnp5UEVXeVpTaUUyX1lZ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907942"
+      },
+      {
+        "title": "Lido's Liquid Staking Revolution: Exploring stETH, wstETH, and the Future of Ethereum Staking - OKX",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB3SlRPaENadnE5aklyM2x3QTl1N0tUXy0zZWZVRVdsNlNLVTA3RmFOX1FOX2dpS20wN1J0RmxBd3pNVGIyQkJtWnBhUGhTNE56M1FUbWI2SURaWW5vN1BQdUNnbi05OUZSTDh2VVlWVU9ldw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907947"
+      },
+      {
+        "title": "What is Lido? Liquid Staking Protocol for Easy ETH Rewards - Nansen",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5YTVdhX1dDZWtXbVRuSzFHZEtmdk1mblNWdWtoWHRfbUFGSjlZS01HQzVvVEhCeF9WN3R6cVQ1VUdISmgwSDJNQVFwWVFLbnVw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907951"
+      },
+      {
+        "title": "AAVE Price Drops: Whale’s $37.6M Sell-Off Triggers 10% Market Plunge - Bitget",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1BS1dOdnhBOFM0TzU3UWo1a0ZoQXExbW9pRlFEbWxERUJaV1RfT1dsbVhFYUZibUsxRXZPR01Pb1JlUWlhYUd1R3A5aXRWU1hURjFFcnE1QTl1UmJ4WEHSAWNBVV95cUxQVElxd09BckUzd1doU1JrbmZ5STRDQ1NIWHp5clE0TS00Yy16NEczd1dLNjE3aU5nSjFBdHdyTU9XOTN0MExmc0FmZnFiUFpybWlBb2ljM1FkeV9ZejZ3SExHWkE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907957"
+      },
+      {
+        "title": "What is Wrapped stETH? Ethereum derivative explained - crypto.news",
+        "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9lWGhnU0lNNTFmSlctVnR2Y0FtYk0wZWVuaDUzREEyWTNqcW5wNE5ySVRCVmZnNzN1aUs0V1phR2lGU1pJUkVHRTNCajFNR2JQYjRZdGRkdVAwcm9ydllmWXRaZkEwV29hQzJZNkdTOXB2T1IxN2QwMU8tdGQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:50.907961"
+      }
+    ],
+    "ADA": [
+      {
+        "title": "Navigating the Crypto Market Evolution with Cardano, Chainlink and Stellar Futures - CME Group",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON1pJQ3J5SDI2QWZCZnY3azdhek9hTlJTUUFzWkxfMFVTUWVfa3lkcXY3dGRNT21GS0RiS1hCS3dLbm5qOWNYVVpWMHJqYzFCdHpSRW9tY2lnVWNaazBYWm54X3F3bW00ZWY4UDZjNkFPWUZLa2s5VGVJbmw0NS13NGk0amhYRFhYdUVqb3pJdERESWRQaVhmXzJUc1F4ME0yQk1lMGhibDlWWjZPOXl5eWVscDFBOEtBb0Jfb0JKTi1Jb0U?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784009"
+      },
+      {
+        "title": "3 Reasons to Sell Cardano Today and Buy Ethereum or XRP Instead - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcWRhMmc4b2I0T2NWZl9uV1gwT2dybTAwTU41REZGa2ZiZ3ZHb1VoYlVzWjBaUERPekZoSDE3RGpBTUxBNEs5cVBMWldCWTZraUR5c2NsNzE1S0otUDRZUDRFd0Q3VkgzTjNDOURabDdKaXlSVWVLc28wNU1fbERXOGhrcGhNeTRFNkYzUmFoRkhURGFUYTdCUQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784026"
+      },
+      {
+        "title": "Cardano Under Pressure as Whales Reduce Exposure and Bearish Sentiment Grows - equiti.com",
+        "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbUVFNVZGS3pabkRPSExIdy1za3RXcTZzdlpBckFmZ2FuQnVfV3V1TzJHc2dmOVdyLUxMOVNEbm4zT1pGX3NCYWE3M3Fzc1h3QUVrSk90UTAzampwYU9SZVlLa3Q0dmNIZjBxWW5ZU2wzb04yLUVmTXRkX3luR3FoMjV2Si1FNlZ6cXFFVFVaTGc1anBteENGOWVoTDhyb1BJNzdmNw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784032"
+      },
+      {
+        "title": "XRP, XLM, ADA – Zombie Crypto to Avoid or Bear Market Fortresses? - Cryptonews",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVmdHR3J2Z3A1X3NodTRIYUNnX2VGTmZUOWxZVXRsS2JuLUZvTGxkMHl2SW1zaEdUYXVTT3NGUENNZE83Y2dJTTNqME83aEFHRkItaUl6WUZWWnRyUU9zSWNScm15Tjk3R2pXeC02clpOZzFjSVcwM19kN0pYLWV5MTBCODlEemNRckV6X3VlbnRjUllaUDRMVA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784039"
+      },
+      {
+        "title": "Crypto News: Cardano Price Prediction Struggles Below All Moving Averages as ADA Tests the $0.28 Floor - CoinCentral",
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNOXFxRzFzaU90a2FKMHdab2NTTjB0TGFkQjNXWDBRVVFGUXRkZE9OSUNHMnRGSjJjUVAtYWRVcmFZc1pJQk4tV3hsT0hJbm03VzhoUEhVRUtKRzVHSzl6ZVlBYUtEQi14T05ZRHFDVklyZHNUYUluY0ozbXF4b2xMbkRmdG0tRmJUdkhKcWJWdHZUeURJQW1HTjZfN0ttQjJVSE9GWHphNFUwdUhTb3UwTlhCc1hoUk1vZGpmUVkxemhlYzA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784045"
+      },
+      {
+        "title": "Are Cardano whales triggering another price drop? - FXStreet",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPTDg2YjN0c3RQQXlYMmJMaFdjX0ViVHYwVk5NVThFdjk1THNCa3pDZkhFZDZxWld2VUgtWjFEQ2pUcHN4LTdqT2VFb0k3VWV5QjBsTE8zX1J4TWhzZFppbXFwdzA0VHVFMURnNDhUeHIxTjRoU1ViQVk2d3hGM2l3a2VpMzM5OHpFYk5iUkFfQ3RIcnpoSG9yMl9aZHJKOFdoOTM0VGJEeXItNWthMzNYNl9tUlZhbkdzZGFkOGFkNHZmOWhtXzZoT0NMV19XMTV3MmZNYVNQNFdBMWotN3dwQtIB5gFBVV95cUxQRXFGR0plNU5CZDZtbkRTWDFBdnNxS1ZCZlBwRGlpd3ZJNmhuV1JoSHQxUUEzTTFacFRGam5kQmUwamJhZ1RzNFJzLXlUeThtVTdHVThBYm1nNDZXSlB6UzZoWUJrb2lLb0NIaDk1a1dJdU9RQjZUVUVyOXJEYlUyLTd2M1ZhMy1udjZXaDRJTzJpQUxmdzZvTVg2YzhrSEJtNFBsT2VCR2VvXzctREo4WUhKTVZEQWFuem94V3IzOEVrVm1Wd2JsNzVZc0ZIenJyTnFTdVlsMTJ1Nk9nZExzMVZuV21JZw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784051"
+      },
+      {
+        "title": "Pepeto vs Cardano ADA Price Forecast 2026: Top Crypto to Buy for 269x ROI Portfolio Growth - openPR.com",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWjVUZnJwYVhST2dxQnZIekpVcWk1MW5VNG5TdmNydkxOMDBCRGtwS3Y5SmdqZVFseDNWNkhoT1JYVXVxRUFyNlY1RFIwbklsR1dRUEMwZ0tzX2tTU3U3a3FXVVg5YnItQnZPc01CTWRvM29McVhmenhIaDd4aFlidmZfR1lMaFozRUdSam52c1F0bDdIVElTNHlQSQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784055"
+      },
+      {
+        "title": "CME says it captures over 75% of the crypto market cap with recent introduction of Cardano, Chainlink and Stellar futures - The Block",
+        "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPdFV3TG1TMU45TUY5a1VIaFBEem9jNmFWdlBhWkZNTjgtdkVXYkZpYmJMXzVMMFpLTFJOSFRoSTUwQU1JQy1neXFBelc2NzUyY3hsMk5lUjAyVkJhMU9JV2pMVV9ldV9PbTRhUFBuUnhlR2dKRndscGJWVUtEUUNrb3ZiQmJIN3Vzck9GUDNWRWVuMm83TnlOWTU3eU1HeG5DSDNkRi1paS1CZTFvODJNRnFHVUxqc0FPQ1RRTndoRllub2o3RUdXQldGc1lHcmdOZ3piZUQ5cHYxY055S3lscjVtZ3IxU09NbDRJ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784060"
+      },
+      {
+        "title": "Cardano Jumps, USDCX Becomes Top Stablecoin As Midnight Nears Mainnet - DailyCoin",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSHBBTlItZ0pJaVVGei05M2szWldlTWhEcGttVl82bE5oYUhiYnhmdFZNVl9hekpzd010WjVhSTJxd3M0R01xR2czT3VyWUhXQWwxSkxHQjZKQkdBNE92dlBDNFVJZ0o1RmFuYUtpbTg3ZHZlU05YVXhSR05kc2gzaWVRZDZWRzJpdVBBbVMybU94M2VtQ3c?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784065"
+      },
+      {
+        "title": "Cardano Founder Condemns US Crypto Bill as Terrible Threat to Blockchain Innovation - CryptoRank",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOa2tYNUtZakhQdXJFb2JKa1pPeGtpRWVpQTlQYWNGWEVFYk56R0VuTGpCbko1dW1jZEhYZnZYME94NnpqT0hfLUsxN1BleWRzRmlWZjE2Z1o5WGx4dGd2NEpHdzJMWlZrcWdDaW40NTB2dzZHSVNKM2I4UjVNRGNDcDFFaw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:51.784070"
+      }
+    ],
+    "DOGE": [
+      {
+        "title": "Dogecoin risks $0.08 as US-Iran war rattles crypto - FXStreet",
+        "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxORDJlaHJzTERPNi1rR3N5N3dZbFYzeno0dmF6dWtyYXlqWlNnblJhUkl0anhOTW4zTjhCU1FES0RzWlhlUjM1c0xaRWpBZnBGaU5KTnFnQ2M0a09mbENVcXljVWxONEJfZGtMaFR4bkdXUHFZNEFaU2djTl9Vc0hkSWVwclZBTXExSi1nWXRDdEV3aTNKX3RKRTRfTk1YeEpwQ3dJNDc5Mi1oalB1WE80LW5ueVpydlRrcTBjZC1kaDYyZjQ3dHlFc0FneU5BcElObTVzYjFNcWU5LWcycFVOa9IB5gFBVV95cUxQcEV1dVNaQkczanE4ckdYRTBjS21xTGRxbTZZcmVrVXpaeWxIdi00WE9ENTZvck92dHMzTHV3WGJSMm9xZU5pZjFYVXN2OEhOU3kxcUdXdHJTX3pYNEZNb05hX3cwWUVZREdNeGN0MWVvdlRzcWxwenZ0QWhkYlYwRDl0UGRCb1NpcVhINXV3S1BscDRhQnZob0xydVFSRUl1Ukhna0RzUC11RTZUR1VCSG5femlvTENxU2x0Z3dLbE9zZTBlTVVPR0pHSm84M1N3S0tzM19lMWw3M2xkYnFwOTQxMVd1UQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433688"
+      },
+      {
+        "title": "Dogecoin (DOGE): Cryptocurrency Overview, History, and Uses - Investopedia",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5oRV92cm5kTC15bGRsOTVyc3J4VnhrZU9IN3FySElEUURGZGdLcktkSkhMSldnQmduSDM5X1dySkRLbEkwRkJ5Z2dlUUF3OXJZbDlSX0hiQmVOb2h0MEE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433704"
+      },
+      {
+        "title": "Dogecoin (DOGE) Eyes Drop Below $0.08 as Memecoin Demand Crumbles and Geopolitical Tensions Mount - CCN.com",
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPYUt4Q0RHNTdjYTBLdld0ODA0QTRZbUdMZHlzLTZLRWFHZ19WaXZSQldFTjdTSi1LSm8zTkp5Vlg0QUZvM2lrVHh2d1BLeExVSnZodFNRYVdsdFBFcjRDaVRXckpNOHh2SGUzNkYwZVA4VkZTSEw2R1RPd0owRWI3X1pMZ1JndWtoQjVvZThhcHJxcmp2WHB3Y1IxQjB0RDlza2JUZjdvaVJWUUpWZ0xNdEpjNWx3bEx2WFlQUWYwbHpfMlR1T2hYbzY3cw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433710"
+      },
+      {
+        "title": "Dogecoin Level To Watch As Memecoin Takes Hit In Iran War? Popular Analyst Says They're Looking Forward To 'Start Accumulating' Here - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOR19tT3JTZ3NnRU9ZNS0tMjJRdDlYTHFQWWhZUDdyRlJxOU5DVnd2QUVwSjl3VGVRazVOUjFIN0RaSEdCMGpjYWhnNDRyUDNfa2FXdm13RzFWX3FRVHVzV3ZwVzFBVjZ4aVFzUHlReGxhRFJxTlVCNTdrUHRqcmRBblhNb09NQnJm?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433715"
+      },
+      {
+        "title": "XRP vs. Dogecoin: Which Crypto Has the Better Risk/Reward Right Now? - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMktmeVJGTmdvd0ktYVZOOWFYTUNWZ3lETlNlR1ZjeUxIZU93SUhjbzEzZmx5ekJORzd2QkpNZU1namhRajZIcmJqWXUxWTlqYm5uYUQ0TjRvYjdoU3Z4X1VBeFVMWUpod3JSdEpDdnd5ZGVRS2otWjgweVRKUmJ4MnpIVU42amFfOENERHRSRmJweFdDNC05OA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433720"
+      },
+      {
+        "title": "XRP vs. Dogecoin: Which Crypto Has the Better Risk/Reward Right Now? - Nasdaq",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYW9aMUF0ejVfcVA1VlFLYXMwNlRLM3h4U0lrd1lTd3MzZy1hdE1Uejd4UFJZeEo2TU9wQnprV2J1akoyRExOZ2ZteHhjNDRBZzNHY0lFc1FfdlZqMzdEZk43d3hmcG5fdVAzSlg2QTdwZ2IzdTM5a1hqZV8xR3owekdwS2NhbXdkcEZ4OTRRM0ZUcXhKalctVA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433725"
+      },
+      {
+        "title": "BTC, ETH, DOGE price news: Bitcoin at $68,000 as majors see strongest bounce in weeks - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdEpfYVVGdUU3RXc4bTFQUnhJY2FMd21HaUcyYUhhdkpCeTBnN0xkdHdmeDQ3T1NfMmhLRXNOeW9XSXNlbGcwUnJsQVlmV2MtNE84RHdYWkVSenNmOTBURlI0cmVzLXB0UmJpLXdtNjE4R0F2QnJ3RVVOQTRXM3pBV3pfencwNzBGRkQ5R2cwQlBuUkVPblA3NWVLZFV6Rmp6N3VJSktLTEVIdEtzcUdfdDktZWtBSXMzZmUyTGFESF9FdjBGQ0E?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433730"
+      },
+      {
+        "title": "Analyst Says DOGE Could Mirror XRP’s Historic Cycle - Coinpaper",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRm1TZXAwZmdsdS01YVo2YUFOd1JlVWpMeGpncHlmRlpqNHhVZmRxY0dKUjVxajB1ckdnbXV3RklKVmxIMGRLYXFvY0xsUzBscG8zZ0xQazFfOUhaVElZamJDcF9lckI5c0pRcmdrVDJ0Y016SHlYVlM4eVVVOWRhNnVTUW1BQQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433737"
+      },
+      {
+        "title": "Bitcoin Drops 4.4% to $66,348 as Fear Hits 10: DOGE and SHIB Lose - openPR.com",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOamM0RW1pNWhyeHZJWmV2djN3WmdHNmk2b1FUdk1Vd2RqVHItRVpDNjlUbXZMeHlxclZYZTVKU1E4c1Q2Vmh2UzlFVEZxYklzNGY4ZU9iX3prcDc2UENZaGJiMmtLTVpRN0ZhZTg5WXpXUjNMNG9HOU0yZUNIOVlwelVmZzc3dkJENElYM04yN1d0NXFmbnl6Wm1jdGIyWTQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433741"
+      },
+      {
+        "title": "Dogecoin surges ahead while Bitcoin, Ethereum see short-lived gains - dlnews.com",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZDQza2V3YnVQaUtMOC03Nnl3WFE5S2QtVzFjR3pOVmhBbGFpekE4MXRrOUhnN05LN2hqZkU1SWFTa3RDUnNmamVISlQxMndzMXZmTGJyalJrMEVWQUlxUWFTU2NlX3FocnY5YlhnVXBtZFRQcUlNLWpRcC0temoySWhSc2VoRFlkbVE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:52.433746"
+      }
+    ],
+    "TRX": [
+      {
+        "title": "Justin Sun’s TRON stock is dying - Protos | Informed crypto news",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBQc1Iza0gtWXpjTmJUTW4xUlNYYWZtWW1nMXBVX2VkbVIzakRaUU1uMXpCdEtpaGl1MV9BNjJ0emEtYzVmdHVnR1BTdFB6N2tMT0owb3R6NkFWbHhpczdqVA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065763"
+      },
+      {
+        "title": "Can TRX clear $0.2960 as TRON’s stablecoin empire hits $86B? - AMBCrypto",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNczFmRmdfQlI1SEMtdlRHbHhQUlZuUXpwSGptTC1NbUZaa2tlQzE1dmRnQTlUV05DSHFSQzVPT1JuSjhMTmJKX1Q0WW9pdDdabEtHdnQ0ZHJsODNZN21CTmZJdGoyMlFKVkhTc3pFQm92WGRPNUZJdkJFSUdUVDJfV2hvblJMZ9IBiwFBVV95cUxQUFNlUEYzQ2swRGs4ckZLMXRaNGp4Q0pzR2NkeENYSUdXOUtGUHNrZG1TeGJSRU9ZT1VWeU1JY1lQU0RCUnJBNU9ud0FJMWc0dEEzb1RJVkZhQk5VS21KaVppallKNVU2MHg3Z2k2cUlhYXA1dFZIaWlpbmNTSFpxTFhjRndkX1lhWk9n?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065781"
+      },
+      {
+        "title": "Baltex Announces XMR to TRX Swaps Now Completing in as Little as 20 Minutes - markets.businessinsider.com",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQdGE4U2hsOE9GdS1aV1VsWkVicnlCWVBnTkh5Yk5EWkUybDNlbHFPS3BRdUJSN0hXdlM0cHUyQjhyemJnSTFKQVpBSE1qY0xDbUtZVHlpVE9QUEZhamp1U3FCdFlXTEVxU2pDQ1lDLU1hWUp1S2xUb3E5dkUtQ3A1U3hJckIxb0VVWHk5YzNpWUpzNktSeGFTVkVVRWRCMWJuei1xVVdTY1U1MUo2cGppNjdYbnQ3Tm9SMURNbTVEQjRoZE5LQzV6UlI4T0FhZXFMcXVlOQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065788"
+      },
+      {
+        "title": "TRON USD Faces -1.11% Daily Decline—Can TRXUSD Hold $0.27 Support? - Meyka",
+        "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNnRqRGFmVWFkYlZlQTg0bjMtZmVka1BWMG96Y01OU0paTFBGVVVQdlM3M0Q2TEs5MndzdldScm1DQlhXb0ZRY3hBTjc1OVpydllVdmh6OEdHUk5uSnAyOXFsSWZUT25VVUJlTF9TcGJUNHRxZlZoOS16b3czdXRDb0NqTzlFRWpBNlFBNU1uM19RQQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065794"
+      },
+      {
+        "title": "Baltex announces XMR to TRX swaps now completing in as little as 20 minutes - Crypto Briefing",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRUdpbWFlQWRaT2h6Q2l1aFVLMHFSRm5MZjBlOXpva0ZlWmQzdk9BZXlaWU1PZmwwUkROSlBfdWw0MWZIbHZsbjF6MnZhQThocjdqcGdlY0tVTzEzRXMwdEdoTXlMZFUyaE5VdUdnZmVfRmdNLVZkcXd3T01aN09HYWpVYVBxZE40YnRRbUFMQTdMRmFQdVZmbC00V0Z2a1VnRWZJQ1Fn?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065800"
+      },
+      {
+        "title": "Justin Sun says 'keep going' on Tron Inc's TRX buys as the token outperforms bitcoin - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMEhFSUNmM1lpcXFTa1kzanRJSmNETE1PM1RvNTlsdVE1R1JoSjdKd3BOb0J4ZnU2NTZwRVdmS1QxTFBvNkcybHRJOTV1aHNXRGpPNGE5cXlwRlpHajNpaWw1OHU0cnhpZ2VIUW9Lc1c5Znp1MFdFaWVoeDB1TFI2M1hXM0p5ZTB0XzMwRmRNUWkxeGM?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065805"
+      },
+      {
+        "title": "TRON Price Prediction: Unveiling the Ambitious 2026-2030 TRX Forecast - CryptoRank",
+        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE13aEMxSEdsODVCdWttVk5laDJvTXQ4dDkxYl9zLU11cTBYUm9xM0Nfay10MWgxQWZ6YmlBa3dSa3VjdkxTcHBFNUo0dmdpTjZiTWhtYjhlYTlETm5CZ2JqUjd3VURtb194UWhWeTc4UGE0dGFKZzAxcURB?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065810"
+      },
+      {
+        "title": "TRON (TRX) Price Prediction 2026, 2027 – 2030: How High Can TRX Go? - Coinpedia Fintech News",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE95aUtwb29SNS0xanB1djA0NjZCNlAtWlRRRGhFZndQaC1zeUEwMjV6eHpTcTcxTVlYSUswOUZxWWFyVGphV3llNEpNanc3T3Z5NW1zV2tldklJdDhnYTBodVpHSk14cmRMNk5VZ2xqSFdtTFHSAXhBVV95cUxNMGtuaWFUNFJjTDBacEVRRDZURk1ndTdseFlNd2JSX0xNZWRuUkRTSTVabVBad01iUE5GY25RekNBQzI2V0xnbkJtdFFnTXptcExFdjljUmZTTXJZMVFlM1VUU1hCVzZUQUF1aTRwOElBWlg1YUpEVUo?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065816"
+      },
+      {
+        "title": "TRX Breaks Higher While Ethereum, Solana Flush Leverage, XRP Nears Tactical Rebound Zone - Stocktwits",
+        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPaUdCUkRSRG4tM3hUYzFJTEdLcGVFMVN5NHlIS2hvbHYxT2xiS3gtQV9wS2tCNmxUVXF0M1VNcmxXbUhGOEVPd3dSNjRmMHRRdlhaTGxaeEJkV3RTSXJ6c1JMV3lTV1VZVnRZSHpqNjlBVXZ5LTcxczRubE1nNUN5TTJBb1E0YU9ickwzQ3ZXOXcxTGJpNVU1ZkFfeUxNQ2lVeDBaV2hZR2xYc1VyTG9Ua05ibUNkTjdKakNCaEhZck0tMkE5Z2s3Q0NLTk9uLWkteE44?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065821"
+      },
+      {
+        "title": "TRON Holds $0.28 as Neutral Sentiment Offsets Flows - CoinMarketCap",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Qc1JOeEtoUWxpSnNVSDJrVk1nSERsc1U4Qy1uV0JRMnZFNXp1V25pQnluekVOeU9BSUJ0YjFRTndEbTFTNUdhem4wSnd4dHdoS2U2SVRrY3QwYS1CcEp5cm5GZndtazVhMEI1ejNjTVo?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.065834"
+      }
+    ],
+    "AVAX": [
+      {
+        "title": "How to Buy Avalanche (AVAX) in the US 2026 Guide - Bitget",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPd3YyQUZFWmhCWDlpSTZvN0dYWW9kUW5BVnlxVnctVzhEU2o5aVhUb3dpU2JwcEMxRzN5VF9aVElDRmRJb2lDOXc5T2l6Qm1OQVVacmxSenJMTl82MDVBT2VQaGJ0OHdUeGVJQkJEWTVJbFNyZEVvVVFYejMwOEFRNURUdXY3V3FxVVVyUzRQWWNJVHNrczlhOEhYTDZ2U3RjWnRyMElhQkEtVTdnb1FDdjJTb3I2S0hrdk8tOXZ5NEw2bGJhRWxV0gHHAUFVX3lxTE93djJBRkVaaEJYOWlJNm83R1hZb2RRbkFWeXFWdy1XOERTajlpWFRvd2lTYnBwQzFHM3lUX1pUSUNGZElvaUM5dzlPaXpCbU5BVVpybFJ6ckxOXzYwNUFPZVBoYnQ4d1R4ZUlCQkRZNUlsU3JkRW9VUVh6MzA4QVE1RFR1djdXcXFVVXJTNFBZY0lUc2tzOWE4SFhMNnZTdGNadHIwSWFCQS1VN2dvUUN2MlNvcjZLSGt2Ty05dnk0TDZsYmFFbFU?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701677"
+      },
+      {
+        "title": "What Could Drive Avalanche (AVAX) After a 94% Drop From Its All-Time High? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVlhhRHFQM08td2JsVEh1Yy1LaFlvN2dzeTFpVWdtRF9QUXdSaWs5Q3o4WDFHZmhFdnFaVmtZdzdHUDEyTzQwUmlDVGJKZG9WNTRXcHFYWXp6ZUxvWllDT3R0V2dLV05LeWxnaHhzY2JhS2lyVWQxSHE0OVprM3ZmXw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701693"
+      },
+      {
+        "title": "Avalanche ETF breaks a massive daily inflow record - thestreet.com",
+        "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeDJuZHFUMGlUdnc0RFd1X2JQUlFxRU0wN0pYSndRLWdLYmpNTXl4R0l0aWdIYk1iQlNRcXpTU0UxOGhmRnRMcnRRUjNqYVR0bEdmUlliby1BcGZybEt2XzVLOW41UEw3WWZMLXNIaHdhRkdwVFZhbVVmX2FWM0FGaF9zX2NNR1JRQTFXbV91b0NXbFczZkE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701700"
+      },
+      {
+        "title": "Avalanche IOU price today, AVAXIOU to USD live price, marketcap and chart - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE81X3E3TjQ1cTVvWXNPTnVmUnNVbG8xdGs3NE0xQ0J4RHBRWmVwYnJ1TVNLWXlzRXpEM1pTQWdhdGl5UGJOb2w5Ui02am5OSW8?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701704"
+      },
+      {
+        "title": "Avalanche 201: The Institutional Platform - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMTNmU1ZRU3MzN251OVNpRGZ0QnFkZzBuUGNvRGRXTWZJYkt4bDZRTnRZZ1JGendoR3Q3cEtXbDlyb2JleWZiVDJPX3prQml0UllBVXI3Rzg3Tm52SXVfZmdPUlhCdlMtMUVYTmNSVF9COWEtVWtVT2xMbE1ZVzNUZF9wRQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701709"
+      },
+      {
+        "title": "First Avalanche ETF hits US markets as VanEck launches AVAX fund - The Block",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQc3JmWktsZi12dG1feDFHd3Q4TEdqNExKcThDQWNFbUMzNGRPSUFZRmNFX0xGcldMa2JkNUE4VDJ1UkN3MGlNTHM2WUtpaWNCcThad1k2ZEo5Sk9aQTVwbDl2aHYzMFZReng4ajFoSVFhTzhDS2tsT0duTTBSMnE3YkI5alRySktGOTY5SWdIRDQ0UnZ2XzhMcjJtMDZfTkpWRHc?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701714"
+      },
+      {
+        "title": "AVAX Tests $9.38 Resistance After 8.3% Surge — Breakout or Pullback Ahead? - Bitget",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5pNzFVcnpNaDY4OTI0dnR4SHNEbDA2TXVkbmc3R2hjYXY2bWpYZXN4TV9KTnVudC1tVnVEdGw0cmZBb09GOUhESjVfZDk2bGZCZnZlSWp0N3I1VFVJc1HSAWNBVV95cUxPQkZsVzZYZFFaLW9PYlYwajBuTGNHanowcENZZl94TmdFMzV0MV8wLWF1SVdjVkhYd3RtQUdwUFFEODBGbXZXeG5GNXFGUTdfbmE3OEdXSzhRNzBmYmlzVFRYaTg?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701721"
+      },
+      {
+        "title": "AVAX rises 10% as $2B RWAs move to Avalanche: Is $15 next? - AMBCrypto",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNjl0WGd2dVZhMkxCek9XZWhGUzlCLTlXRVkzU3Z2TlFfM2dXSE5yczlEeWtLd1BrTUUxb0FTMGgwZnJISjk3ekpBbHEzVHlGSFJXVVZhLTJOZUU4N1VxeUkxWXNsNGZfOExHVVZqZVk5TFhpaU85Nk55RWhyR2E1LVNR0gGHAUFVX3lxTE9SdXc3bEJjeDFfSXBIY0lCODAxVElxTXUtLW5udVNtbUV6aHdsLXh4cW5qNm9wSzZpZ2FIaW1TMUd1Tmg2QkxSU2lia2RWQzN6NXQ5a1RNa252VTlCTnBsTjlZcUt5cUlpWnNvQ3JjNFpqSmdKYWlhSzBKamVXaERKOFg4eDdGOA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701726"
+      },
+      {
+        "title": "Avalanche Price Prediction 2026-2030: The Critical Path for AVAX to Hit $100 - CryptoRank",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPR0hZN1c5T1pma3htb25GSW9FUGxDcldGMHJpUVFYOXZsWGlFTVU4OTVyM0JNS1VRUU5yUk05MG9fQkQwOXg1dVlZeVMwcHJ4ajdaZnZ6M25reE1qUS1QZC1VMTd6RUFEX1Z3NENIWWNjZGtXUG9DY3FNTnB5alNtZmdR?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701731"
+      },
+      {
+        "title": "Avalanche Gets First US ETF As VanEck Debuts AVAX Fund - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Ndjg3ZElPSS1EeVdXNDBzR2tCSFE2dV9SVGk2LXpIdXhLaXk3NVdEYnlDTG5UbXBhcjRWUGxqT000T0IyWEhIZGxpTXpIY1E3eG1DV21qd1g2elQ2bkNHWG9TOUFhTjdxdzdJM2xOMG5sOXBtTVJ1dWkzRlFFdw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:53.701735"
+      }
+    ],
+    "WBTC": [
+      {
+        "title": "Wrapped Bitcoin (WBTC) Daily Market Analysis 03 March 2026 - MEXC",
+        "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFAtN2EyRmdreVkwQXFfWTlwR1ZaV3o5Xy1adGFOUWgzQ25HbXc5Wm5WbGowajRBSUJFUmZuNWFJamtEOHUwaG5V?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323319"
+      },
+      {
+        "title": "Threshold Launches All-in-One Bitcoin Liquidity App - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONE1ReDFXQktfUUNzZG5fVmVkdnNQVlFYT19PX3lYcUZjQ19zXy1iSGVxcl9PRDRlOV9JNF9GQ2oydE9EWHlZeE80RXoza29ueGNBVUlPYnB2amFQdnMyd0VJYkNBNnNxZTY5TGRINHBrQU11cEZmTjAyTkYwWGwyeG1faGJSVy1DeVNFMjdlTzFhaTlWczgyMGZXbk03V0dkbUJGYUxiSWlVUThValJCLQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323336"
+      },
+      {
+        "title": "Lisk Bridged Wrapped Bitcoin (Lisk) Price &amp; Chart | Buy Lisk Bridged Wrapped Bitcoin (Lisk) Online - LCX Exchange",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1RT2N3UHVseF82S1VBbDhQYURZbGkxdmJuTEk4cW16THM3NTBjLUdtT1pNLURBN3RYWUVYQ1V5NUpnTWNtN3R5ODV2a2dQM0ZESzhNdWlQaE0zZHM?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323341"
+      },
+      {
+        "title": "Wrapped Bitcoin team taps Hyperlane for WBTC bridge between Ethereum and Solana - The Block",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaXpqWUQ3YWVyVHpkbkpEOU1ITlpXU09reURHNnAzZzhFU3p3dVJLX3Q1Z2hzTk1FY2FwWmVZSnNaS0FCMWQtS0xZMHUyYW45Wi05ZXgxUnhUcEQ3RW9sN3M3V0F4T1EwZEhzakNFNEp5cWhwcmtfcUY1ZzkwX0x5SFZXLWlEUDR0Z3BJeXE1Zy1XbmM?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323346"
+      },
+      {
+        "title": "Aave interest bearing WBTC price today, AWBTC to USD live price, marketcap and chart - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5SQ1VCY2FtSkRKYVp6X2tIemdCQ0QtRUNoZEpHNUVpSlNXQUIwWDJDRlktaU13aVBNejl2ZFc2cWlrWHJMd05VMFUyS28?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323351"
+      },
+      {
+        "title": "Wrapped Bitcoin - Bullish",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5Kc0d3dU5qa0l2enJUeU44NDM5WldrVURPSHEzVjdRVmhUUGdoWmd3R0VWSnpvZENTT1pJdWF6VWluWl9nQUJiYXRVTnk0VlhlODZDRjlieG9MSzBCbWs4?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323356"
+      },
+      {
+        "title": "Ethereum Price Prediction: Institutional Giant Bitmine Just Bought $100 Million ETH — Is a Bigger Rally Starting? - 99Bitcoins",
+        "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPd2VRQllyMVR4Z1Y1cXNIczdzbDdVNHRoeG5IMmxiT3ZwWjJuSzY3M013QVVwLUtnUWxlQ2lIcHBVNHg0YTlMY3dlaG1CMkdfU2FyZDh5bDFPdjBSRm0xak9vTW9mQnd2TkdpV0UxMGJteTRydVVTUkFjR1FfZEpsbHB5d0kzS0RW?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323364"
+      },
+      {
+        "title": "Starknet’s Revolutionary strkBTC Launch: Transforming Bitcoin Privacy and DeFi Utility on Ethereum Layer 2 - CryptoRank",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVURmSnprUDNqUks0ZHBIZHotZXhvejBha0k1YzBfM0IwamJKZG9kcVRzLThCRWNBSUduWjR5NElIQXMtTzlxVm9IcEduSmluTmRvUV8wUS1jUzBNR2lQWlFCU1VsdkY4QXRac1Q3amFTcUZBR0Nzdk1EU2dKZTN0Xw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323370"
+      },
+      {
+        "title": "ThunderCore Bridged TT-WBTC (ThunderCore) - LCX Exchange",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9DY2VESV9RNWVJc2l1a2docTA5Rjh3b2VBN2VvZmdoSFBkNHlUT1YtcTZZWEUyazEzeVFQUnRNMldRbUJtVFBZa0pWdC1uT1ZnYmV5QlRGeGtFeFBSYUlhTVFvV3d6cm1DajhEZ3d3?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323374"
+      },
+      {
+        "title": "Monad's cbBTC bridge may add $5B in Bitcoin-backed liquidity - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS04tZ1dDU093dlY2WlRwM0FGTl9aY1dWb2VoS05zekZ2blpUQnBwVmdLSi13aFBrRUpSVjBfV19FY2gwMDR2cklIMDVSSFR0cmN2UEduMDRfYm14ZjZjaFhsdXdoTHhMZzlZWG81WFpDOTZoQ3lQeDVXZERNN0dzT3FITWtJRFhTUDRDeF8ydGRFeHc1dHlCYzA3T081bkppcm42enJyUHRsc0hxRi1BVThqZ1FwUkVzWHhybkxEeks?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.323379"
+      }
+    ],
+    "LINK": [
+      {
+        "title": "Navigating the Crypto Market Evolution with Cardano, Chainlink and Stellar Futures - CME Group",
+        "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNZEFqdkFaRmlQb0Y1RVFWMExkZXM5dFc0Y1RMUDBYWjJ3R2g2Ym5XTUl6aE5NNGs0dVRhSFJlcUhjeENXNmlMc05ZZmVHcU9kQTNmNmFhQ1llRjJOUTBvRlBlN0FSOFpYSDYyaEtvM3ZDN0FvSVNQeFR3d0s4MU43a0FQX3oyYzFfVjBtQkNKbFlMcGtHSWE0bHNCem9Eci1pczdoX2dVak5UVkR0MEg2UkFqbGI0WEI2Vm1vdWdvS1JYSGItWFhhZVNtTjlNQThnVFNGdXpXUmpUWGp1YnZJMGdVU1VUejFpVDhsUVM4Umc3YmotZ01CRVgycWtKYm5pSWxpVGEtZEdHbmprVTBMZVRTTGE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999735"
+      },
+      {
+        "title": "CFTC chief Selig to clear path for U.S. perpetual futures in coming weeks - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSkhwcnFWNU9TMDN4VTNlc2FzR1pPa2lDUG5haWxGSlF0ZnlQQmgyNldTUk1jdDRDMUxrZnM4VHdIR3VvZkE0X1lEWHFWT0NxVHpkVVZld2EyRUZJMjRkTFA3LXJnSFM3RWwtb0FRZElKbFlicmVlLWtwalVncjQ4SzNsRVJWNDdVRUE5SkNLOE40NExnWFRja0dhTEFCYzZUZ3lzMUFONE16RzRVNHB0NnY1NVoxUQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999753"
+      },
+      {
+        "title": "Tether says it has frozen $4.2 billion of its stablecoin over crime links - Reuters",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdllLSEgydHc1bUNTdGpzOVF4Y0RXX0dlWndPZmp2REZkcTl0N2hydzRlbkdGLXBtbnZWY1NHUGFjOHdtdFh6Y1ZKSlVFOFctVHNqV2NiMFF4bGVidnpadG1HSmZ2OHlaRTlVUEhPZEhCdl8wSE5nVzZvYm1FTW0tS2RuenU1RW1SaVhmeDdwaE5Lcml5RUREanlMRk81bHV0ckpRejhxVVlsY2dNaXZuaFFJWmNDZW1aRTRpZFBaQzY2RmFCYnpvUzlKSVNiYnYyNV9wSTBWdUctZUFU?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999759"
+      },
+      {
+        "title": "Former LAPD officer found guilty of crypto-related home invasion robbery - Los Angeles Times",
+        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdE5nbUFHaDhWMzdGVXhSRkIwMnh2OVR0dkZvMHJ5bWNlNjhPZFdMcmtIRDF1LVJVaGxZZWZSRTVfc2ljQzVxZTJ1Nndmd2pPbTk4VFUwQnQ0N0doTXUzTnZrZzY5cXhHdjNFMnV3WUl0WGNFa2RScGlZc2JmR0VtbWZiejBrTTFVT0Y0VFhnRXQyeW92RVMtX3FJTnVhanBxLUw5RlI1aDRQS1k?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999765"
+      },
+      {
+        "title": "Crypto’s 24-Hour Promise Gets a Geopolitical Reality Check - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOb2tHalBEeDJlNmVtenNwRWNGd25VdHpzdTdvTDVqSFh4SVdkUkdkTnZBZ25Ka1BEWUNHTFFrMnNOMXBRLVEwY0FZVVFXbVJZMHdqUzdlVEJRVjZXbmtLd3NGRm5XaVBTdnByeGs0emtFbnVVZzB5UTZXUVZMbkNjenlvMnN1U2xsN3ZPd2c0V2RqWjduS3F1Uzh3T3EtV3pURFFKWENRMk41akVvUEE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999771"
+      },
+      {
+        "title": "ChainLink: Now Is The Time To Accumulate (Cryptocurrency:LINK-USD) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNUkyX1FIbXhMU3VYWkVsam1YWHFsM3dfSzB3OUViVnRsaGdSWmRfOHBIRlRhckRxb21WWlV3YlJENEtBUlhiU21yWjl0ZHhaa053NXhVSmsyRlZtOUdMelJMaVFRS3pzNVFCTnJyZ3h6Ri04N3JaYUc1V1lwRUh6N3FRUGdqQVE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999777"
+      },
+      {
+        "title": "Exclusive: Crypto trading platform raises $30 million from CMT Digital and Kraken - Fortune",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRFIwSVhXYzZ6bnFETk12S0F0ZHI1SzNYODFHVHFRRS1fLVROUjVaZXllWDNwVElITUJJNDd3VWlNOGZXNHlhXzJWLVpaX0J0ckhYVXJjVTFYLUc0dzgzWVRVRlVrLWRMUXBvR1dYSDFIUGlQSVVEQkFiUkM0dTRObWFqVHc1dWtuVGVz?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999782"
+      },
+      {
+        "title": "DoJ Seizes $61 Million in Tether Linked to Pig Butchering Crypto Scams - The Hacker News",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOLUhxdzdoVFFTT2QydElpU3locWJDQTlnZXNmYTJRRXJHRW1WSjY3ZFo0NmZIUU9QSURrSTd2bThfRDNTLVpIMEVXYkcwTVJsMjlzQVZKZDhBT0pvTkxvb2VKa1FJdHRDRjdlc3Y4el9LSGRjTmFneS1pTVU1MDN4OXBhWQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999787"
+      },
+      {
+        "title": "SANAE TOKEN Denial: Japanese PM Sanae Takaichi Categorically Rejects Controversial Cryptocurrency Link - CryptoRank",
+        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5sX0psMDlLb0tsMDI0RkZmbUpxYnVWcVVWUFJTZnpUY0JfbDBiUnhQTFl4Z1BEWGZtQjVjXzBjZHpab3IwMHFiNVRjMkRRUEMyeXF6ZnVPWWV2aVphMFBiSkFUd3BPcGR1ZlVHcWFUcHNRNEtQeWF3?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999792"
+      },
+      {
+        "title": "Protect Yourself Against Romance Scams - U.S. Immigration and Customs Enforcement (.gov)",
+        "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE53bzBaQWRrZTh2RmdGdkZEVjZ2VUdMQ3JSRWdvY2R3d3o3QkdqMUFrNUNUVlhTcEZaV3V6bmkwLVVSdVJ2X3FfQnFKWUFNQi0zamlPanB5MGo5TkNPaGpiZzZKN3pGS1d5NHJqZEtmUG02Z0RFOEJDQlVrcw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:54.999796"
+      }
+    ],
+    "MATIC": [
+      {
+        "title": "DeCard Brings USDC and USDT Spending to 150M Merchants via Polygon (MATIC) - MEXC",
+        "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBpVVFFVU50LTJEUTBCNXdNRWtPeG9qakUxYTduMVAxRzBjdjNSTXd3d05HdU5GMkRmZmlTdUs1ZHRqVFYxRXBJ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605766"
+      },
+      {
+        "title": "Polygon (prev. MATIC) Price Today | POL to USD Live Price, Market Cap &amp; Chart - Binance",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9HaTNmS2syU1ZKY1pMWnQ0Ynk3OWhOSVlDWklPaWVlVGpyT1pfbk5HOG5TM25fNUU2Sld2akR1VV84U2ZMLXhKNkRkVl91TWYtckkwX09HeTRFQXRSLUVkVFgtNUk3TnJjZ3Aw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605784"
+      },
+      {
+        "title": "Who owns the most Polygon (POL)? | POL holders - Capital.com",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9UdWVjcEdaR3FLYm01aG1OUEpUUUhDZDYtQllidFNhNzJxeHEyYzQ0Zl95WE5lNE0zX2c4X1J5QmcxelNQV1hFY0o4bHRHWmZxN092alBwRTFwYW55OTRtTzJCcGN0YV9Zd2VzM2RR?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605789"
+      },
+      {
+        "title": "Polygon Price Prediction: The Critical 2026-2030 Outlook for MATIC’s Ambitious $1 Journey - CryptoRank",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOU2MxUFJuckg5dnQ5Ul93UDNyNXFZY256TmFtVWlTWEI0NjZUVmNTNnItOUtrR2pnYkxVM2ZaX2lzd2paVjdOSUNYbnY3MEFaaDB0dUNUb0c3OVM5aTdralltb2tpbFk3a0luLW5FRzZ2SjllOWV6czBfcXQ5OHpNNA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605796"
+      },
+      {
+        "title": "Coinbase Delists Major Cryptocurrency: Details - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMUFEcU9VMUdhRFdGekk0YjF1UnNiQzlxUlQ4UzJxYWVaclBmN3liUkl3dXd4REZZaFRBakdaTjBRdEtxQXNKMzFTSjRkbU52Y0JJWERfbkRfREZ4aGFBSTEyM3RwdEVOdGRYa21NTklCUFJ4ZWpiZTRKTzZXTXY2eFpodV9kOE83WDdVS2RMRHZRR0ppUExQWXhzZ29RVlNSbDM0bGxn?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605802"
+      },
+      {
+        "title": "How to buy Polygon (MATIC) in the US - Crypto.com",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfLVBLT1NRRTUxQ1VzSzA4OTh6bzhwWVBVMEdPaHN4MjZOVW4tOGFqYmRIQzBJd3NTVm5CWHV2UDdaV2FmMzBuczE0elktQXprUzJPRUttSTgxbXVhdTVNR1lyaGh0ZUgxZzZN?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605806"
+      },
+      {
+        "title": "Polygon Price Holds As Bulls Defend Crucial Trendline (Technical Analysis) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbUd0RUlxaEl1UGgzcHZkN1dMTDJNNVRFVmRPMXIwZUd1blkxdU51MEpxTERCVmlhZi1DS0lnNWVYQVh2OXpEN1FHUlp2TnJ4cG9XQU8wdHpfVncta1VlRW9JbEhQVWktX0JJY2pZNEhQZjg0TzRNejRwVXdpSm1USE93czdnYWFSYllTN29QZHl2V3plMG9mZF9qakNqOVBDRUJJd0FGZnJTUFdqYTFQVUhURQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605811"
+      },
+      {
+        "title": "HOW TO BUY POLYGON (MATIC) - eToro",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xQlRfbnB3Uk9NdG5OR0FtMmhpS1RfRzhKVzdOc004eWtscE1yS2J5S3U2elBreTNCOGU2aEU2enJ5NlVyWXNpck94QUY1LXZDZkx5REVyM0dsbDNN?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605815"
+      },
+      {
+        "title": "Paradigm Introduces Block Trading Facility for MATIC, SOL, XRP Options on Deribit - CoinMarketCap",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd1I2d2F0MmVHcUtZWXJzWWZOcUtzWGlXZnQ1OXlpSGNTT2laYXJmdF9zTjVLNWtfNUQ5b1ZXcnFiN2xIZ3ozdlZDNlFVb0dHd0pOcFhCd2xzR0VvdEFGQ2l0aVpBUWZUSC1aSDZTQnlFUnBTTFhBUkM2aWtoOVlpS2szcWFiQy1FTVZBMlhHakxyRV9kU0FfVGN3cGhLVmRwc05DWnBTdS1WYUNPWW41N1plTHNpNDNiRHZKRm9n?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605819"
+      },
+      {
+        "title": "Ethereum vs Polygon: Is the New POL Token Better Than ETH? - CoinDCX",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhS3Y5X085SExvb3Q3OUZXS0hJc3BGd3dvbHlQbWJ3SDZJbTE3QWd6LVJYampNVzJrcmU4RjZtRHI3Y0M4SHhGMmQtRjdjSHJPU3dtNjBuQW9sbkpORzB2UUdIZ0c2c054anVETA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:55.605824"
+      }
+    ],
+    "TON": [
+      {
+        "title": "Toncoin (TON) Price Today: Token Slips 3.3% to $1.59 as Broader Crypto Market Weakens - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQN1FyVUlTYUZrQURGSDZtdmM0bXo1TG93ZmhPd1BvVzMyMlkwMjFYbmZyT1lEbk1qLXpnR3Frc0Uzc19McktQdVQ0c01xNDNPcGRfRUhsbFhFb2lGaWFnQVkxbXUxdTBvanFZQ3pHTW9malVjdjVTenE3cklaRWwxN2hIOTk1VUhiVXJULXAzR3F0eGl0anh1VnZlQzRMVjVpbXA4?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522901"
+      },
+      {
+        "title": "Telegram's TON Wallet Rolls Out On-Chain Yield Vaults for Bitcoin, Ethereum and USDT Holders - CoinMarketCap",
+        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPOTNjVFpTYUFBekdoRFRHc0VrMWdmVTlsLWw4ekFWN3JnQXA3UDBJUXlaY05MUk9xRmg2bjhyZjBQUmYyN2c0Mzh0ajNrM3pyenNmWV8zV1NTLVJxM1NhQ3FKcm9CY184Q28zbGJ4aWtKWjhOanpMUUZ3SjFkdHpiX3VvaGV0U0VwU2ItNjlwczhJRkVuQUhSOHhzTmlIaGN0RW5XUUlJTjBFdHBHMW1tempNTmN3UlhBbTVkV2JTbXdPRmEzTUw2R3N5S3U?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522920"
+      },
+      {
+        "title": "Coinbase Ventures buys TON tokens 'directly from Telegram,' says TON Foundation exec - The Block",
+        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZlJudXFLb0hPNFV1QS13czd6RnZSdlhUb1FlclpfWUkzZXNmZzdoS0lXUkFpVGJBN3p2VWo5Mnd6Z1NoM201a3d6OTBhNTBUTVBocmd5cDJoTE1Cel9mNV9fNG5FZ2hJSE1rc24wcGhEbW9RS2tsX21RZjdFMzlVN0RQZkhuQzFQc0hCZTJTSjRmcFpwQUh2S1dlblF3X0o2REZEaWZoeXhFem5yR3U0bUZpQnJseS1n?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522926"
+      },
+      {
+        "title": "Telegram's crypto wallet goes live to its 87 million U.S. users - CNBC",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBCNVREZlQ2Y0dUSndQVUZGcXplemZHNGFKV3JMWThNeG1BblZUWlBhQ25mZU8zQ0c1VllyR1JCSHFrc2J4a29fazNxUlZjenZUSG42ZG1CME45V3A4Q1pFcnJlRjJibXRjeXF6VHY5TdIBdEFVX3lxTE1hZFhEYkxSSVdDVkt0bG9rekNZeDRiSktxZGhPcmRrZUNSdTBqc2lvOXNza3RKd0hfazJERWdDY1IxcmZqY0FCUXp3Vjd4MWN3bXBlYjBoSUo0S25ZWnJBQ01DeWNJWjNGcEs0bEdfS19oTHJv?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522931"
+      },
+      {
+        "title": "TONUSD Charts and Quotes - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51VkdrSzNMdnY5bm45QS1nM2hVbnNpc1oxZWwybmNhQ0RfVnNPTVRxZHBpV2RkYzI0d3Z5NWNIWWVMYXNydVExcjYyYVB1Q1B4M3AyVGdR?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522935"
+      },
+      {
+        "title": "Nasdaq Reprimands TON Treasury for $558 Million Stock Sale, Crypto Buy - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbVQ1VGgxRFBpTUtzUzV0YUJtZ0pjeHZBRGVrSzU2TEg2bXhiTTlpVnNSM1dvR0k0YzZORkJMTDNsa09LVE1UZFM3YkQweTAzNTQwQXRPb0tOWlk2VXVRa0VQZ3BLcFNqV2dsTy1wZ3lCSmNkdXlhSG1IUGRnTzVYNkVNOUtRVUU?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522940"
+      },
+      {
+        "title": "Ton Foundation Seeking to Join Crypto Treasury Company Trend With Toncoin Pitch - Bloomberg.com",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQkZoT3VlNTN5aTZsT3ByTHh1Xy1FbWRrY0hGaDRBd3FfLTktMFUtMVlBMy11ck9XWF95MnpjUEE0eVo4b0hmOW5wN2Zna1JLOFYtX2JiX0ZmTUtuQ1NtN0JUWG9DNGF1N0tZY1QxYzRYV01rSGVNaXp0TVI0eG5oaVhqcjBGZEhVeEI1WFFoTS00b0FXQ0k4bFAzcTJGXzNCZl9nejhPNkRyR1BRVWhwOUcyeEYyNVpkQnVZ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522945"
+      },
+      {
+        "title": "Telegram-Linked Cryptocurrency TON Gains Ground With Coinbase Debut - Finance Magnates",
+        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMUlBNHNyR0VBWEpWbTI0a044VDVnVkpIQUNNRWYyNVBMZHJ6d3lLTE54YUgwYk9na0d3Q2pyM2JWM19jU25zOGpCZWNpcWVnbzE4ZFBzUGlRZ01XUklyUzdySDlFNnU0ZXdlWU5DNVRYeUNHeGRZNXlhX2JhWmNxN0w0MTVyWTB6R0F5UDk3UEw3Z0hkQ19KUk5yeGQ2dW54dUhyZDdjN09vSWs3d0FoLXJyUmduQdIBuwFBVV95cUxQQUw2MGZkOUJIUm9tcTR0OWZyMllGT24zdHlLM0hpeWZORDB5T0pfNnZrdEM5SWl4VnQxcTR6QnFkdDlpekh5MjFOTE1qSFIwRkxJMWR1b0x4ZnZrT0N2bEEzbDFUckk2cHN1MmNFNC12cVFBbjlRU25GN0xLUDZVUlIzMzlmaFBEcnVIbk5PVXFFcDFHeEQwRzBPYjVYOUs5NmFfcVkyMy1Hd3RGakdpRzl1TmNxdVVqbmpv?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522951"
+      },
+      {
+        "title": "Toncoin Price Prediction: The Critical 2026-2030 Forecast for TON’s $10 Ambition - CryptoRank",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lcTc1bGxVV2lwaU4xdU9fZDVLZEE3Q3hwSWVuSGJDdkN1LXl1T0R5VnpyWGFlalliRFBaRlJ2WTlUTkhlVUxBdnVFaDZvTjJMYjRZdTBSTHBGZzQ4R1F5eWpESEdoMkJfQUJDZGNYX3V4LXNpblZJRGNqT1Bsd0U?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522958"
+      },
+      {
+        "title": "TON Strategy Stock: Why I Bought Shares Despite Being A Crypto Skeptic (NASDAQ:TONX) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU0hCcXB5LUV5UjZKbHhkbDJObDJieVpzb2JpZlIwS0c2a0xGelFtTDR2Vk81QnlocEdmUVBQb2xQMkgyMkh0aTVmdU5tUW1pS3pNREcwYWFsbEdILTBhTE50alR1SXlLa1BhVnkwUTJMZUh5RlpVNXlVNHRGcXlVY09vTnBpek11NFJFWk9FTjRkTzh0OEczaW5vcXVKUlJSNWp4VHJRaw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:56.522963"
+      }
+    ],
+    "SHIB": [
+      {
+        "title": "Bitcoin Holds $68,000 As Ethereum, XRP, Dogecoin Slip Despite Strong ETF Inflows - Benzinga",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZGl0M295eFNXaXFIemFhanM3dzZTaUNwVzM3MUd0MGRQNm5jTWRESWhZMWJrdjdWNGQxa3BuQjdIQjExempUMVhONjJjTTcwMl9tdF9YbGxvZXdfWjFSVmFGMXJlc295c0ZvNGdmeVdReW1ST09jemYtWXV1aHd2UGRSUFlMNGNaWkdsV2tBZmhLYkJJUkJJZnlZUzVMbXRVb0JVQkxicmRHTU5MMGN0aHg2Vmd1a3dfMWpYNHpNNXFfMDNQTkFTVG8yanBlaXZDS0V1NA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161047"
+      },
+      {
+        "title": "Shiba Inu Coin price prediction as open interest surge 5% in 24 Hours - crypto.news",
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORjh5ekR1bzhUdTBxOFBBUDVMNmhfeTZZNndSdGMzVTlleHZndERpT19hazNUbkVUS3pnWEZCcjRoUWpCU0o4ZlFZLXdWQk9OZWRQVXcwWkRiR1hlM2tUR2xsU25nOE8tNFZ3WEVPdTIyTUlacXhTbFpMS0NsR28zZlQ5Um9SalZrVmNfeDNCVEo0QW8?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161063"
+      },
+      {
+        "title": "Shiba Inu (SHIB) Exchange Inflows Hit 110B and Climbing: Setup for a Price Crash or a Fake-Out? - CCN.com",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdVpwNmtZbUQybkluN1R1TU5yRC1kQWV3Q0EzODQtRzlnaHNTeXZLMVF1X2V4MWNkSHlwWEtRdFE5cTVDZV9ZN09ESGJ2RUZkYi1VT29wR0cxTVZ4QURZMjB2cGFwenpDbl9iU21RZVBmdGtLYUVLUFNFWkZ4VnNPazhodi1nMllraURjc0dQZ0h1ME04dTU0TFp3UWw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161069"
+      },
+      {
+        "title": "Shiba Inu Price Prediction: Will SHIB Recover or Drop Further in 2026? - Coinpaper",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRThzN2ZMQ2ZoZkZydEdjcEpyZWQ5RG1IUjdxbmVzcFNJNmdSdjhXRGpsLTg3aXRSdl9jelNvaExTYzM1M285ekx4NUo3eHdOdVNpTXdLejFrQ29BU2RBY19PejE1Y0lPQWFGQmlxRFdjOWR5cEE2LUpZM1BTTmlDZFVVSldnTU9HZG9OYnJTVm8tNjVnV0xJZzNJZmc?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161073"
+      },
+      {
+        "title": "Bitcoin Drops 4.4% to $66,348 as Fear Hits 10: DOGE and SHIB Lose - openPR.com",
+        "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOamM0RW1pNWhyeHZJWmV2djN3WmdHNmk2b1FUdk1Vd2RqVHItRVpDNjlUbXZMeHlxclZYZTVKU1E4c1Q2Vmh2UzlFVEZxYklzNGY4ZU9iX3prcDc2UENZaGJiMmtLTVpRN0ZhZTg5WXpXUjNMNG9HOU0yZUNIOVlwelVmZzc3dkJENElYM04yN1d0NXFmbnl6Wm1jdGIyWTQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161078"
+      },
+      {
+        "title": "SHIB Burn Volume Falls to Zero After High-Activity Weekend - TradingView",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVExVeWQ5dHR2b29QU3Fjc1JaODh4VnF4b3NKVG9lVTdlZnd4czVRdU8yeDhudC10WTJjemsxZ0ZqSTFubUM3WHp0OGlicDMtelFpQWwzRDdSSGE3a0I0dE83WWlQazJtXzJ6Z0NySjdvQ1NhS01FQ25ndGIxcHAyUDJWLUNLb2hqck5GaVM0LXpuQzU3TE1lTG1MdnlkVGsxMGtQQlloRVMzTlBub3piNU9wQ3B0X3c?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161083"
+      },
+      {
+        "title": "5 SHIB Oversold Signals: 20% Rebound Chance Amidst a Still Sluggish Crypto Market! - Pintu",
+        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcVBaMXFaS3FnRm9jcDk5M3BEVk9oWXVHZWhWTFVMdlZPRTNhMnpYZ1QtRFdOcVU3ay1YZ2t5bW9VaVh4RUZNdUNMbmdZMXJ4b1A0YS1QcEJ3QXZwRFhKOUZiakk2eExJbW1iNkN1MW5CYlEzQkczN20zcFRmMC1wczJyRWxYd0tqTm9Ed0ZDSmM4T0hVVmlhMzZKRWpELWY2ZkhiMjUxeWRlc2NpcF9IQ3ZZUmw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161087"
+      },
+      {
+        "title": "X Restricts Crypto Paid Features, SHIB Averages 24% Monthly Rise, Cardano Creator Teases Upgrades - KuCoin",
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZTA2bXgtcG9oRWdvY25BYVZ3MHBzbF90R3NrbGM0OGxGUkhxdnU1V092MkNKY2RBZkJMalFXZ3h3WG1xM2xLSFhYRlZVYi1CQV9QWTNLWDBiOElYMFp3QktwRFgxVnVyanNzMFZWYVNVMHdkRG81anpyNktEMGQyN2VHVzN4endhZ1k4NHJYeFBYVHh1U2Fteloxb2sxbFk2MlZYZnUxZEd5dy0wdmVyeXZReXB4S0ptOFhENjZzOW1iLUp5dElN?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161093"
+      },
+      {
+        "title": "Best Crypto to Invest In 2026: The New Crypto Pepeto Accelerates Fast During Market Crash Surpassin SHIB and DOGE - BlockchainReporter",
+        "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNV1FidUtvRmdOQmhLd1FpU3JjMlBEWHdaTG1QV3JqSFc5em9jcl80blRtZjNFaW5hOGxvemVxd1dxTGlSQ2YxQUlBcVNvN0Z1TEtsT0tMc2VfQnVhN20yV21JVW1wTGZZZ3JjMXhaWThBZnBLdEVySVRTalpmRE03UDNFVjhvYWVtVnRiSFFQQ2Uta2hsWTFycF91MjF6S1NkeTZvSWcySnhBZFdJUUxiTmhTUGdBUXBkbXhUVUxENm1LTXpzdlVhTEJhNzJ4b1R2ZUlGc3JBMkMxcURk?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161100"
+      },
+      {
+        "title": "Will Shiba Inu Reach $1 in 2026? A Realistic Look - Analytics Insight",
+        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRThoeEZoaXhJZmtFc01zSmFDUy16cmswSE43bFBmcWYwN1laMDBaaVEwZGlmUXpFX0ROMGp6ajAtQUd1Y0IyYTRjV1VLYUFKbXUxbmFQenNHMmUzTENuTWpZOFJ1QkRIanVfendRZmpSOVlqcHdKNV9FcnlXQWN2YUlUeGl6cDBKR1kyVzRIaHR4bFZvdy0yNG1jLTIyNVVKMVR6MnhWemZqcVlSbzFheThmRdIBwAFBVV95cUxPU3RjLTNnWG05bmNJYk9MWmhvSFBlc0hZZFl6Yko3SkQ5amRvNzd2amFlei1GZWQ3UlFXSnB0SUpVQTJyRkJtTEx2bU5PQkdoTnR1YzJqOVVOT19yQXQyOUpPYVItdTZTM1JjMF9WWU9lRmI4Nk5LME93VGpEdnZac3lDNnV1WERDVE5oOFFvTjR5NkJnNWVhN0R3WjVXTVd0V3c5TU9EQzZqUlRMM01fV2dyVlZ6MVVXMVhkeWc4TWs?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.161107"
+      }
+    ],
+    "DAI": [
+      {
+        "title": "MakerDAO Optimism Bridged DAI (Optimism) Price &amp; Chart | Buy MakerDAO Optimism Bridged DAI (Optimism) Online - LCX Exchange",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5RZzZiOHhWdWswOXEwanFWQVQ4Zzh2aUtNWVhQSUl6RHZMY2tfejJGUTVqbDV3SUZLa3NvMXpENl9DZG1haEtuNE5QOWowRGNMSGNuVnc2bm5VVlRXdEN2VlI2ZjRhT1VXdndYRjFIMXE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733822"
+      },
+      {
+        "title": "Dai (From Binance - Harmony One Bridge) price today, BSCDAI to USD live price, marketcap and chart - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ydzZtWGZoS2dIQ29YX180X2RYSklkbVV0MFZ4X0JMMXlESnJibWlIWTBHWG15TGVFZEVOUHVnOW96MG52dHY1aDlwMGR2Zw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733849"
+      },
+      {
+        "title": "3 Reasons to Buy Dai, One of the Largest Stablecoins in 2025 - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNck0zUVBUX21PX1BpSzJhT2VBY21TUjNucDB0Qm1aeVk0REpmVGFLZ3ZsNElxYlE5T3lCdDFBY1EwbzdiNU04Q0pySktHZ0NSRzFqakE2RjA0b0pvVWk0S0Q1aUFHTnFTVG5kUFZSZWpwZG9iMmF5dEFpOVJuUzZONHdFUnkwX2h0bVJNTkVpVmFaN2hXcnJpag?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733855"
+      },
+      {
+        "title": "3 Reasons to Buy Dai, One of the Largest Stablecoins in 2025 - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9IYmlKdU1XUzdGMkZRUVJrYkJZcjliU2x5bS01U1VhNUljWXRTM0Z1Y0ZwWWQ0bkZrQUEwZl9tc21UVm1pb1luS2ZveUl6eUhZQ0VyLUJ4RVRvZTFhVV8zcWNlQVlDQ21POFdDY3hrWnlLbDlsTUE?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733859"
+      },
+      {
+        "title": "Dai Price Today | DAI to USD Live Price, Market Cap &amp; Chart - Binance",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE91UHpVX2JjTlFnVEM5YWw0TEd5UnhNeE5KRXBKMTBKVkY3ZHVNV3RJc3kyWWt6UE9LS0ZtVjJFdF82SXJuNGFURnB6cDlaZERaa1pwOFNieTljT3NuSU1KZ0ttTW5KRFU?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733863"
+      },
+      {
+        "title": "Polygon PoS Bridged DAI (Polygon POS) Price &amp; Chart | Buy Polygon PoS Bridged DAI (Polygon POS) Online - LCX Exchange",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45NlFyR2hZNWtaY2wyZXNzc0dVWVFrMENUeC1YZlpNS0RES3NNZGNjV3JmbmU5UHVaOVJuTzVhakFFbzE2cERGMVlJQmNzR093bWZvdzFCTWlWdERtRUE0S0J3czNMNVlQSk10Qg?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733867"
+      },
+      {
+        "title": "Better Stablecoin Buy: Tether (USDT) vs. Dai (DAI) - AOL.com",
+        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbDZCLVR2T1lxZ2tQRFFjTlVGa29uSkhYOXFlbzdzY19NcUJFR2J1Y1RyMmZWN3JZYU5LdU9kVFBJeGNhMG1hVVBSVjh3WnltcTk4aG9QRkdST09Za0g3d0ZEeW5BVVRCa3lzb3VxdktMTUpmamVGM1hYRFZ0MHFjSDJ3?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733870"
+      },
+      {
+        "title": "Dai (Avalanche Bridge) price today, DAIE to USD live price, marketcap and chart - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBScHhZdXd4WjZZVE1WXzA1eHVEZkhsWFhSQmw5RWtHVlpoSFI0eTJ4eUVMVTRUZ1pCUDJBSFg2MmZMNmIxNDgzZndrWQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733874"
+      },
+      {
+        "title": "Better Stablecoin Buy: Tether (USDT) vs. Dai (DAI) - The Motley Fool",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZjI2T0dIMFp5UmprLW9rcWRwcmp1aU5iUG9nOFBUajdNcmlnLXJyRndLWXJ3UEpUWV9rUVlWUDlWbTRFaTB0bkJJUVdGY2s5dzY2bUp6STJBbnFYdE5CUUJFUjZ0RG5xbF9NZUFoR3oyQUxIdDBpWWxUMnZ2NnJwVUlQdmdYMkdGb09Ic1BkR1o?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733878"
+      },
+      {
+        "title": "Aave v3 DAI Price &amp; Chart | Buy Aave v3 DAI Online - LCX Exchange",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1zVFBUdE1EYVVUc0RGZlgyWTdfclQ2NDhDWUs3Q2d6b01PdXJSWEcyTXp4dENGbjJlMjItc1gxeWt5NEtZd1pUanNBd24?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:57.733881"
+      }
+    ],
+    "LTC": [
+      {
+        "title": "Litecoin Investment Guide for Americans: 2026 Bitget Review - Bitget",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUDBFSTFnX1NDQkRXamtRd1dhaU9aN3o2R3BaRlA0czMzZDd2UUFRNHp1Tnl1Skt6RmFZUlpva1kybEh4aDkzbEh4SjBKbHBtOW8zR1JSV0kySEtLaU9NRXlvYUZrQzBPS2JWbV83b0hvUDhhV2lYcFB0UHRGUFNOT0RPeDVzRmJvUC1OLXlpbUVRcmVoSU9VMDZBbnh4TnVQVGlWVkdPRlhrWVRCcUZSd1hZZXEzYVdNTXRYeENVWdIBvwFBVV95cUxOUDBFSTFnX1NDQkRXamtRd1dhaU9aN3o2R3BaRlA0czMzZDd2UUFRNHp1Tnl1Skt6RmFZUlpva1kybEh4aDkzbEh4SjBKbHBtOW8zR1JSV0kySEtLaU9NRXlvYUZrQzBPS2JWbV83b0hvUDhhV2lYcFB0UHRGUFNOT0RPeDVzRmJvUC1OLXlpbUVRcmVoSU9VMDZBbnh4TnVQVGlWVkdPRlhrWVRCcUZSd1hZZXEzYVdNTXRYeENVWQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401531"
+      },
+      {
+        "title": "Investing in Litecoin | What is LTC? - eToro",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE10RWFkV04wZzk0b080djd2WXRMcVBRMEtHXzdTNkRuM2J3aVVtaW5fMVhWbTNRTzdjS3pyQ2pJYmI3NFZ5YmNBUEoyaVAxV3NEZUQtT3JUZTlCUQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401550"
+      },
+      {
+        "title": "Best Crypto Casinos in 2026: Top Cryptocurrency Casino Sites - MovieMaker Magazine",
+        "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOanVrVGZvNmZsU2hfa2NVU2dmaEFuM193V3o5Y2JmbEV1cjZua0xvdGhNalEzeFYwMWZ6MmE3eURtcDdMRzV5Z3ZOVlVZS1pRTFM4UWJGNjNhZWpOcHRiazdDdTh2cHBJUVFSeUllVHo2S2xyS0JPSU1IZkN5Yk1haURJeGlZSG1WTXl0QS1LTlc?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401556"
+      },
+      {
+        "title": "Litecoin (LTC) Returns to Multi-Cycle Lows as New Demand Emerges - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZ1REcDFtVDNETnNCN3BRVVFzczZ6Ylcwb09lXzBrMnVZR2RrVGw1b05uTW95Q0hNMUVfSmNSRU9NWVJGZlJPa09Cd0U2UTJoZkZzY1BkdllGbUQ1ajhGQk81QW1ZRWlSTW5WVG45ZjlZU1JHWTlBTzdSa2lYc1VtY21QT0c?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401561"
+      },
+      {
+        "title": "Will Litecoin (LTC) Reach $1000 in 2-10 years? - Traders Union",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5GckRDTlJQaDVYbnJfSFhWZkRPc1hHeVdzRUZ1TERhaTNyc05Hcm5RR0l0ckFnQnlqOVN2NElka1pZYWpHTDR1ZHF4NE5uN24wY0pRTHFOcnhfaFpla0ZlMFhzcXhmcFdNMFZzZA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401565"
+      },
+      {
+        "title": "How to buy Litecoin (LTC) in the US - Crypto.com",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43ZHA2NUVSblVUSm1oaXA4dk14MzR5aXFJZUJNcEd4QkhtWXhxYVVKUzd0TGlzVHp2THFlckYyLTN1ZDdOc1dtSi1mWlFPTDJqbW0xNnpKdzNyRVZpcEhZZUJ4UDAyMWFjbmc?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401570"
+      },
+      {
+        "title": "Litecoin LTC/USD price history up to Feb 5, 2026 - Statista",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9HYk51YUtldFVXbVl6QnhDQy1wdG54OUtGbkNFVmhqX3RzSWlsMzRsVWxCN1Z2Z2JpSVJPX1JGdF9JZDI4MGVDWG1OakZSUnI0b1hZVVF3OW9XRm42MjgxVzRFbjYtTTRqRWZGbGZLZFVKaWhi?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401574"
+      },
+      {
+        "title": "Charlie Lee: Litecoin Creator and Cryptocurrency Pioneer - Investopedia",
+        "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZMEwwZ0E2UkNIOWRuRGtDeUxvU2tIT1JFYVdoSjNfdzNkSmRWaFNlTTdEQ012WWtzbW02RnB5dEVGSkJBcC1EVVY5czljOEVSQ3k0YVA1OHhzRHNaOEx5cWw5cUJ0eEdKLWtRbkdHUGJlQ3lNN2c?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401578"
+      },
+      {
+        "title": "Litecoin (LTC) Price Cracks Under $75 Following Whales' Sell-off as Technical Structure Turns Fragile - CCN.com",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORlFRVVBsbGlfN1dpWUdCRmpiWkp5bDQzMzZkT19zQk9oNmtYeDVBb3phX2prTUk0QjYtMVgyLUJlWVFiYlc1NXZOX2RIeGJnYkpPTWVfMFF0QzRjV2dQM2wzSFhtR3JGTWRYa0lPeTl3Z2dDdXZDb1RoWlExZkZaMUZrYXU4NGYtUVhvTGxHZ256Zm5rdWR6alBnQVlVYUh5RnZWYTU1M3Bldw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401584"
+      },
+      {
+        "title": "Nasdaq Lists Solana (SOL), Hedera (HBAR), Litecoin (LTC) Spot Crypto ETFs for Trading This Week - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPX3BHeHhFc1FkQ2lyTnRGV0J0Q3didXJQV3JySFlfa3JIYURSVjE4Mks5ZmZmTENta3NSYVVESGhBaXVnbmp6elNNT0hyaXRlNC12MEFwVzZyY29PbGhfMDN5RW1oaGFMaXFRdTd2QzI0SVVsa2NkcS1pTGpmOEgwQTRoazhfdmtoUm4wOE45aHNoMmdQdXNWN3BSeHlYdHZiMWFjVU5ySzZNM2xJcmduQU4zVTNzOXM?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.401589"
+      }
+    ],
+    "BCH": [
+      {
+        "title": "Will Bitcoin Cash (BCH) Succeed In Repeating 28% Rally Fractal From 2025? - Yahoo Finance",
+        "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOTJXOVFfZjFkSFJ2NmlBcjJnVDBZaUhBMmstNjVOSjh0WWdOejNKUTU3M1lscHZsa3ZlV0RKUXFHeVhlNkQ0QVNvX28yaHhvZDAtSENGUUFFMTBHcFpPN3ZfNUx4MHhSYUpWYzNjNGs4REFSNkh2X0M0ZFNnU2pOdGVpTDR5RUk?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999073"
+      },
+      {
+        "title": "Crypto market’s weekly winners and losers – DOT, NEAR, BCH, PEPE - AMBCrypto",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5Qa2xkOVdoVlB0aGtvZkxLelVfRjI1WDJiZWFUaUtLZFdKRWhrT3kzazlBVzcyQUJTeVRGNWsycVZSS1hkRkhIMVgxQkxfSExxcWlyS0V6SmhmUjlqREptR1VBd1QwRnFESGfSAW9BVV95cUxPbGpYREpfY0s5SjhWcTFzckMtTGFVVk5LOFk4NmpfbEtLU3R3Z0VSUndzM1Q4ejRnQzgwblZ3MENFclRRcThYNWxrdTVhRFpQMFJOR3djNjVSaWZzYXVMWkQwaWFNVEpaaURZUGh3blk?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999091"
+      },
+      {
+        "title": "Bitcoin Cash price prediction: Can BCH recover after breaking below key supports? - Traders Union",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUFBCSW5YUEhMLXJSU3lzRWphUy1SR0owbnB0ZXRmX0ZMay1kSDAwLVhaTmdFRWtXS1JZeFMyRUxrUHBMUW5ONmpZVGlLTk1CNkdTMmYyNlAwbW9RMGx3dHg1dEhSci1yaDdNNnpwc0wtVk5fb1dnOTJNa1JfbTFEVnE2c2RJTXpLX3lycUltNm9ZT25vTHFpOXd0RUtmSWg2Rnc0?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999097"
+      },
+      {
+        "title": "CoinDesk 20 performance update: Bitcoin Cash (BCH) is only gainer, up 3.4% - CoinDesk",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPc3NxN0lqYTlwVUhfS1FxWDNiMFRyaVh2R1BudXppX3JHM2djUklPNkpIOGF3cC1ZS2xha0hidVo5MENyRV9MQnBUTDhXYUxLYXZqbE5RZEx5NU9scGpjdjZ1VXZGenZTbFhVUmhfUjVKbHBqaDh6VksxRnJKRHNSMmZTQ2xfS0Y0V0szU3REeWpvZVBlOURlV2NuSjJUeEFqWVVHdjF6bmdTN3kzMkRYNUM5V0p4NWRFVlYzTkxWTQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999103"
+      },
+      {
+        "title": "Top Crypto Losers: BCH, HYPE, PUMP extend losses as Bitcoin drops below $64,000 - Mitrade",
+        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN1pDVWlxVmxXNzdfSFMydGNNNF9jZlhqLUpyM3kzRldGWURSdU9kdnBhSm5icEVvV3lZekR2V0U0Q2NVaWx1M2hnWDBjUWwtVHNkaFladlpnUjA0T25TSnRJY25BYlJKMEJCT0pyeWJTZGcyUHBoRVJCR19yblpPUVhnQ3p1OTkwZ1J5YnJTTkIxRGNJaHhxV0ZaT2g5UQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999108"
+      },
+      {
+        "title": "BCHG: Bitcoin Cash Remains A Ghost Town (Cryptocurrency:BCH-USD) - Seeking Alpha",
+        "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQU3JpX1RZdmpjOTVVc01HUDdEOUx6WldFZVpmTTMtMXpEZEpMd0dPaTIwWjkyZEhnR05waFE0WWg0aDRjQjlpTzdFNEVuaEV2QlBFSnhWaDFlXzdfVW1maVVpRjk3cnZ1QXN3U0xkX3gwRWktUGZXeV9NTkNaaDYtNHNBMVdWZw?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999113"
+      },
+      {
+        "title": "Bitcoin Cash Price Prediction | Is BCH a Good Investment - Capital.com",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9LRDBjQ3lmNTUwRmt2MXN6V3N6UzF4U0k4OHE3T0J2WlEtYS1DZ0ZwWjNOeG1GeFcxYlhucDR6UlhIU1JRNlpuSG5TNWs5c2JOemFYN3BFNEZaMWpaOFl1UXAtYU1FRk9vejVkb2Q1RHZFRTZBc3dGWA?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999118"
+      },
+      {
+        "title": "Bitcoin Cash - Bullish",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5LUkt2MkxxZ0F4UUhYaVF5eDNqRk5vOXk2RXcyVXc1VUVkbjV6LUJCQTRkaGVyMUJRVW5RZzNnWklSWTFNajlocUtPckhtbXBMQ2VpWQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999122"
+      },
+      {
+        "title": "How to buy Bitcoin Cash (BCH) in the US - Crypto.com",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE50UER1NUpFX2I3Ti1vUjhnR0dTSFAwMi1wY1c0QkRUMTNvOXRBZTA4cDBzZnVseUJzR3FWTHNqR3JzVHhjN1lCdjRpOUd5YXR5RlJZS3lPVi00d3BQSDhRN3FIWkcwbThaSXJ1aXBhQQ?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999126"
+      },
+      {
+        "title": "Bitcoin Cash Price Today | BCH to USD Live Price, Market Cap &amp; Chart - Binance",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1hNXFYRms1X2lLRUoyMVQ4dDFsMFY5dWdZRkdvM2dMZEhlMkM5dnd0QkdYS3dwR3ZBZUhZekpjeTVOMy1qOWY3dHhSc1dTajRhRFZQUjVXOEpKMnBy?oc=5",
+        "source": "Google News",
+        "time": "2026-03-04T06:24:58.999130"
+      }
+    ]
+  },
+  "sentiment": {
+    "BTC": {
+      "score": 1,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "ETH": {
+      "score": 1,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "USDT": {
+      "score": 0,
+      "label": "neutral",
+      "articles_count": 10
+    },
+    "BNB": {
+      "score": 1,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "SOL": {
+      "score": 2,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "XRP": {
+      "score": 0,
+      "label": "neutral",
+      "articles_count": 10
+    },
+    "USDC": {
+      "score": 2,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "STETH": {
+      "score": -3,
+      "label": "bearish",
+      "articles_count": 10
+    },
+    "ADA": {
+      "score": -1,
+      "label": "bearish",
+      "articles_count": 10
+    },
+    "DOGE": {
+      "score": 0,
+      "label": "neutral",
+      "articles_count": 10
+    },
+    "TRX": {
+      "score": 0,
+      "label": "neutral",
+      "articles_count": 10
+    },
+    "AVAX": {
+      "score": 2,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "WBTC": {
+      "score": 3,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "LINK": {
+      "score": 1,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "MATIC": {
+      "score": 2,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "TON": {
+      "score": 3,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "SHIB": {
+      "score": -4,
+      "label": "bearish",
+      "articles_count": 10
+    },
+    "DAI": {
+      "score": 7,
+      "label": "bullish",
+      "articles_count": 10
+    },
+    "LTC": {
+      "score": 0,
+      "label": "neutral",
+      "articles_count": 10
+    },
+    "BCH": {
+      "score": 3,
+      "label": "bullish",
+      "articles_count": 10
+    }
+  },
+  "rsi": {},
+  "hot_tokens": [
+    {
+      "symbol": "SOL",
+      "score": 2,
+      "change_24h": -2.09432,
+      "sentiment": "bullish"
+    }
+  ]
+}

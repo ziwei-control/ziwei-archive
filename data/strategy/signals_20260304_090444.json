@@ -1,0 +1,99 @@
+[
+  {
+    "symbol": "ETH",
+    "signal": "BUY",
+    "score": 50,
+    "price": 1980.76,
+    "change_24h": -2.58428,
+    "reasons": [
+      "看涨情绪 (score=2)",
+      "热点代币 (#1)"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T09:04:44.131378",
+    "suggested_position": 0.035,
+    "stop_loss": 1881.722,
+    "take_profit": 2277.874
+  },
+  {
+    "symbol": "SOL",
+    "signal": "BUY",
+    "score": 50,
+    "price": 86.7,
+    "change_24h": -0.13946,
+    "reasons": [
+      "看涨情绪 (score=2)",
+      "热点代币 (#2)"
+    ],
+    "warnings": [],
+    "timestamp": "2026-03-04T09:04:44.131394",
+    "suggested_position": 0.035,
+    "stop_loss": 82.365,
+    "take_profit": 99.705
+  },
+  {
+    "symbol": "BTC",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 68195,
+    "change_24h": -1.1993,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T09:04:44.131350",
+    "suggested_position": 0,
+    "stop_loss": 64785.25,
+    "take_profit": 78424.25
+  },
+  {
+    "symbol": "BNB",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 632.77,
+    "change_24h": -1.09829,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T09:04:44.131386",
+    "suggested_position": 0,
+    "stop_loss": 601.1315,
+    "take_profit": 727.6854999999999
+  },
+  {
+    "symbol": "XRP",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 1.36,
+    "change_24h": -2.10653,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T09:04:44.131390",
+    "suggested_position": 0,
+    "stop_loss": 1.292,
+    "take_profit": 1.564
+  },
+  {
+    "symbol": "DOGE",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 0.089879,
+    "change_24h": -3.81622,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T09:04:44.131398",
+    "suggested_position": 0,
+    "stop_loss": 0.08538504999999999,
+    "take_profit": 0.10336084999999999
+  },
+  {
+    "symbol": "ADA",
+    "signal": "HOLD",
+    "score": 0,
+    "price": 0.262484,
+    "change_24h": -4.81327,
+    "reasons": [],
+    "warnings": [],
+    "timestamp": "2026-03-04T09:04:44.131401",
+    "suggested_position": 0,
+    "stop_loss": 0.2493598,
+    "take_profit": 0.3018566
+  }
+]

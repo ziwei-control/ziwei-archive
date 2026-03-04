@@ -1,8 +1,8 @@
 {
-  "last_learn": "2026-03-04T04:00:02.000433",
+  "last_learn": "2026-03-04T10:00:01.633773",
   "current_agent_index": 1,
-  "total_sessions": 100,
-  "total_words": 1003169,
+  "total_sessions": 106,
+  "total_words": 1063357,
   "learned_topics": [
     {
       "agent": "T-01",
@@ -1370,6 +1370,90 @@
         "https://www.pluralsight.com/browse/software-development",
         "https://www.oreilly.com/architecture",
         "https://dev.to/t/architecture"
+      ]
+    },
+    {
+      "agent": "T-02",
+      "topic": "代码重构",
+      "time": "2026-03-04T05:00:01.458115",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.gunicorn.org",
+        "https://www.consul.io",
+        "https://www.celeryproject.org",
+        "https://coverage.readthedocs.io",
+        "https://rabbitmq.com"
+      ]
+    },
+    {
+      "agent": "T-03",
+      "topic": "代码审查",
+      "time": "2026-03-04T06:00:01.808993",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.avg.com/en/signatures",
+        "https://www.helpnetsecurity.com",
+        "https://www.avast.com/blog",
+        "https://www.alienvault.com/blogs",
+        "https://www.eset.com/int/about/newsroom"
+      ]
+    },
+    {
+      "agent": "T-04",
+      "topic": "问题分解",
+      "time": "2026-03-04T07:00:01.049552",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.purplemath.com",
+        "https://www.khanacademy.org/math",
+        "https://plato.stanford.edu",
+        "https://www.spss.com",
+        "https://www.deeplearning.ai"
+      ]
+    },
+    {
+      "agent": "T-05",
+      "topic": "跨文化沟通",
+      "time": "2026-03-04T08:00:01.449676",
+      "words": 10033,
+      "sources_count": 20,
+      "sources": [
+        "https://www.gengo.com",
+        "https://www.apertium.org",
+        "https://www.languageline.com",
+        "https://www.weblate.org",
+        "https://www.crowdin.com"
+      ]
+    },
+    {
+      "agent": "T-06",
+      "topic": "知识管理",
+      "time": "2026-03-04T09:00:01.445405",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.harpers.org",
+        "https://www.longform.org/apps",
+        "https://www.motherjones.com",
+        "https://www.longreads.com",
+        "https://longform.org"
+      ]
+    },
+    {
+      "agent": "T-01",
+      "topic": "云原生架构",
+      "time": "2026-03-04T10:00:01.633773",
+      "words": 10031,
+      "sources_count": 20,
+      "sources": [
+        "https://www.postgresql.org/about/news",
+        "https://www.edx.org/learn/software-architecture",
+        "https://www.packtpub.com",
+        "https://www.computer.org",
+        "https://www.elastic.co/blog"
       ]
     }
   ]

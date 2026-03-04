@@ -1,0 +1,25 @@
+{
+  "brave_api_keys": [
+    {
+      "key": "BSAP4YK2Ts3gGQ8p2Bzaye3pY3HQxfT",
+      "status": "rate_limited",
+      "requests_today": 0,
+      "last_used": "2026-03-04T10:27:28.479997",
+      "rate_limit": 1,
+      "quota_limit": 2000,
+      "quota_current": 0
+    },
+    {
+      "key": "BSA29vEjLsxVaNdMy34TwsobcPAt6et",
+      "status": "rate_limited",
+      "requests_today": 1,
+      "last_used": "2026-03-04T10:26:33Z",
+      "rate_limit": 1,
+      "quota_current": 1
+    }
+  ],
+  "current_key_index": 0,
+  "rotation_strategy": "round_robin",
+  "rate_limit_recovery_seconds": 60,
+  "last_rotation": null
+}

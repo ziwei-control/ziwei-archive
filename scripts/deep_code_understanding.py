@@ -46,7 +46,7 @@ class DeepCodeUnderstanding:
         
         return {
             'primary': best_match[0],
-            'confidence': min(best_match[1] / len(self.intent_patterns[best_match[0]]), 1.0),
+            'confidence': min(best_match[1] / len(len(self.intent_patterns) if best_match[0] in self.intent_patterns else 1), 1.0),
             'secondary': [k for k, v in scores.items() if v > 0 and k != best_match[0]]
         }
     
