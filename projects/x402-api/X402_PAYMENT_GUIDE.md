@@ -101,7 +101,7 @@
 #### 第一次请求（获取支付信息）
 
 ```bash
-curl -X POST http://8.213.149.224/api/v1/code-audit \
+curl -X POST http://localhost/api/v1/code-audit \
   -H "Content-Type: application/json" \
   -d '{"code": "def hello(): pass", "language": "Python"}'
 ```
@@ -138,7 +138,7 @@ curl -X POST http://8.213.149.224/api/v1/code-audit \
 PROOF=$(echo '{"tx_hash": "0x...", "amount": "0.05", "sender": "0x...", "recipient": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb", "timestamp": "2026-03-03T17:45:00"}' | base64)
 
 # 重发请求
-curl -X POST http://8.213.149.224/api/v1/code-audit \
+curl -X POST http://localhost/api/v1/code-audit \
   -H "Content-Type: application/json" \
   -H "x-payment-proof: $PROOF" \
   -d '{"code": "def hello(): pass", "language": "Python"}'
@@ -175,10 +175,10 @@ curl -X POST http://8.213.149.224/api/v1/code-audit \
 
 ```bash
 # 1. 测试健康检查
-curl http://8.213.149.224/health
+curl http://localhost/health
 
 # 2. 测试 API 调用（无支付）
-curl -X POST http://8.213.149.224/api/v1/code-audit \
+curl -X POST http://localhost/api/v1/code-audit \
   -H "Content-Type: application/json" \
   -d '{"code": "def test(): pass", "language": "Python"}'
 
@@ -205,7 +205,7 @@ cat /home/admin/Ziwei/projects/x402-api/data/payments.json
 ### 查看统计
 
 ```bash
-curl http://8.213.149.224/api/v1/stats
+curl http://localhost/api/v1/stats
 ```
 
 ---

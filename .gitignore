@@ -6,12 +6,19 @@
 # 日志文件
 data/logs/*.log
 data/health/*.log
+data/strategy/*.log
+data/intel/*.json
+data/strategy/signals_*.json
 
 # 临时文件
 *.tmp
 *.bak
 __pycache__/
 *.pyc
+
+# 大数据文件
+data/warroom/temp_news/*.json
+data/x402/reports/*.md
 
 # Obsidian 配置（可选）
 docs/.obsidian/workspace.json
