@@ -146,7 +146,7 @@ limiter = Limiter(
     app=app,
     key_func=get_remote_address,
     default_limits=["200 per day", "50 per hour"],
-    storage_uri="sqlite:///api_keys.db"
+    storage_uri="memory://"  # 使用内存存储（简化配置）
 )
 
 # ============ API Key 生成器 ============
@@ -535,4 +535,4 @@ if __name__ == "__main__":
     else:
         print("访问地址：http://8.213.149.224:8080")
         print("⚠️ 生产环境建议启用 HTTPS")
-        app.run(host="0.0.0.0", port=8080, debug=False)
+        app.run(host="0.0.0.0", port=8090, debug=False)

@@ -1,7 +1,7 @@
 # 🚀 x402 API 官方链接汇总
 
-**最后更新：** 2026-03-05  
-**版本：** v2.0.0
+**最后更新：** 2026-03-06  
+**版本：** v2.1.0
 
 ---
 
@@ -9,7 +9,7 @@
 
 ### API 密钥获取页面（用户入口）
 ```
-http://8.213.149.224:8080/get-api-key.html
+http://8.213.149.224:8090/get-api-key.html
 ```
 **用途：** 用户支付 USDC 后自动获取 API 访问凭证
 
@@ -24,6 +24,12 @@ http://8.213.149.224:8081
 http://8.213.149.224:5002
 ```
 **用途：** API 调用端点
+
+### API 密钥发放服务
+```
+http://8.213.149.224:8090
+```
+**用途：** API 密钥自动发放 Web 服务
 
 ---
 
@@ -92,7 +98,7 @@ https://gitee.com/pandac0/ziwei-archive
 ✅ 有 USDC 就能用
 
 立即获取 API 密钥：
-http://8.213.149.224:8080/get-api-key.html
+http://8.213.149.224:8090/get-api-key.html
 
 #AI #Web3 #USDC #API
 ```
@@ -108,7 +114,7 @@ http://8.213.149.224:8080/get-api-key.html
 ✅ 有 USDC 就能用
 
 立即获取 API 密钥：
-http://8.213.149.224:8080/get-api-key.html
+http://8.213.149.224:8090/get-api-key.html
 
 GitHub: github.com/ziwei-control/ziwei-archive
 ```
@@ -120,7 +126,7 @@ x402 API - 按次付费的 AI API 服务
 价格：$0.02/次起
 支付：USDC (Base 链)
 文档：github.com/ziwei-control/ziwei-archive
-获取密钥：http://8.213.149.224:8080/get-api-key.html
+获取密钥：http://8.213.149.224:8090/get-api-key.html
 ```
 
 ---
@@ -129,17 +135,22 @@ x402 API - 按次付费的 AI API 服务
 
 ### 查看当前收入
 ```bash
-curl http://8.213.149.224:8081/api/stats
+curl http://8.213.149.224:8090/api/stats
 ```
 
 ### 查看 API 状态
 ```bash
-curl http://8.213.149.224:8080/api/status
+curl http://8.213.149.224:8090/api/status
 ```
 
 ### 查看交易记录
 ```bash
-curl http://8.213.149.224:8080/api/transactions
+curl http://8.213.149.224:8090/api/transactions
+```
+
+### 健康检查
+```bash
+curl http://8.213.149.224:8090/
 ```
 
 ---
@@ -241,4 +252,4 @@ MIT License - 详见 [LICENSE](https://github.com/ziwei-control/ziwei-archive/bl
 
 **开始构建你的 AI 应用吧！** 🚀
 
-**立即获取 API 密钥：** http://8.213.149.224:8080/get-api-key.html
+**立即获取 API 密钥：** http://8.213.149.224:8090/get-api-key.html
