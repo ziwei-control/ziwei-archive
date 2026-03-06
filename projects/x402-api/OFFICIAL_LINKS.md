@@ -210,7 +210,7 @@ curl -X POST http://8.213.149.224:5002/api/v1/translator \
 
 **技术支持：**
 - GitHub Issues: https://github.com/ziwei-control/ziwei-archive/issues
-- 邮箱：contact@x402.network
+- 邮箱：GitHub Issues: https://github.com/ziwei-control/ziwei-archive/issues
 
 **商务合作：**
 - DM 或邮件联系
