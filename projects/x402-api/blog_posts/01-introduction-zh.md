@@ -209,14 +209,14 @@ print(response.json())
 
 ## 📞 立即开始
 
-**API 地址：** （私有部署，合作开放）  
-**Dashboard：** （合作后可查看实时数据）  
-**GitHub：** （即将开源）  
-**Discord：** （即将开放）  
+**🔑 获取 API 密钥：** http://8.213.149.224:8090/get-api-key.html  
+**API 地址：** http://8.213.149.224:5002  
+**Dashboard：** http://8.213.149.224:8081  
+**GitHub：** github.com/ziwei-control/ziwei-archive  
 
 **使用方式：** 按次付费，用多少付多少
 
-**合作联系：** DM 或邮件获取 API 访问权限
+**技术支持：** [GitHub Issues](https://github.com/ziwei-control/ziwei-archive/issues)
 
 ---
 

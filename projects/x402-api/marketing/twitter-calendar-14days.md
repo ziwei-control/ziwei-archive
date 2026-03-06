@@ -20,7 +20,7 @@
 
 按次付费，用多少付多少
 
-👉 DM 获取 API 访问权限
+👉 立即获取：http://8.213.149.224:8090/get-api-key.html
 
 #AI #Web3 #USDC #API #Developer
 ```
@@ -164,7 +164,7 @@ github.com/ziwei-control/x402-api
 - 推荐计划（方案待定，不涉及任何奖金或免费额度）
 - 联合营销
 
-有兴趣？DM 或 email
+有兴趣？立即获取：http://8.213.149.224:8090/get-api-key.html
 
 #Partnership #Collaboration
 ```
@@ -233,7 +233,7 @@ http://8.213.149.224:5002
 
 评论区提问，我一一回答。
 
-也可以 DM 或加入 Discord（即将开放）
+也可以 [GitHub Issues](https://github.com/ziwei-control/ziwei-archive/issues) 提问
 
 #AMA #QandA #Community
 ```
@@ -254,7 +254,7 @@ http://8.213.149.224:5002
 我们证明模式可行，现在需要加速。
 种子轮：$500K-$1M，出让 10-15%
 
-投资人/机构欢迎 DM。
+投资人/机构欢迎联系：[GitHub Issues](https://github.com/ziwei-control/ziwei-archive/issues)
 
 BP 和数据已准备好。
 

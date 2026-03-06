@@ -266,6 +266,6 @@ MIT License - See [LICENSE](LICENSE) file
 
 **Built with ❤️ by Ziwei Control**
 
-[Report Issue](https://github.com/ziwei-control/ziwei-archive/issues) · [Request Feature](https://github.com/ziwei-control/ziwei-archive/issues) · [Contact Us](mailto:contact@x402.network)
+[Report Issue](https://github.com/ziwei-control/ziwei-archive/issues) · [Request Feature](https://github.com/ziwei-control/ziwei-archive/issues) · [Support](https://github.com/ziwei-control/ziwei-archive/issues)
 
 </div>
