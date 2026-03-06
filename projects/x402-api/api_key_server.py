@@ -341,7 +341,19 @@ def verify_payment(tx_hash: str = "") -> dict:
 @app.route("/")
 @limiter.limit("100 per day")
 def index():
-    """首页 - API 密钥获取页面"""
+    """首页 - 重定向到 API 密钥获取页面"""
+    return send_from_directory('.', 'get-api-key.html')
+
+@app.route("/get-api-key.html")
+@limiter.limit("100 per day")
+def get_api_key_page():
+    """API 密钥获取页面"""
+    return send_from_directory('.', 'get-api-key.html')
+
+@app.route("/api-key-generator.html")
+@limiter.limit("100 per day")
+def api_key_generator_page():
+    """旧的 API 密钥生成页面（兼容）"""
     return send_from_directory('.', 'api-key-generator.html')
 
 @app.route("/api/verify", methods=["POST"])
