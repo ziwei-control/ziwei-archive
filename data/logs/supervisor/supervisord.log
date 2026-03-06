@@ -706,3 +706,13 @@ AttributeError: type object 'Faults' has no attribute 'utf-8'
 2026-03-05 20:50:27,164 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
 2026-03-05 20:50:27,166 INFO spawned: 'ziwei-dashboard' with pid 1118183
 2026-03-05 20:50:28,229 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-06 11:38:15,708 WARN exited: ziwei-x402-api (terminated by SIGTERM; not expected)
+2026-03-06 11:38:16,731 INFO spawned: 'ziwei-x402-api' with pid 1250716
+2026-03-06 11:38:16,790 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-06 11:38:18,471 INFO spawned: 'ziwei-x402-api' with pid 1250718
+2026-03-06 11:38:18,530 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-06 11:38:20,533 INFO spawned: 'ziwei-x402-api' with pid 1250719
+2026-03-06 11:38:20,591 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-06 11:38:23,596 INFO spawned: 'ziwei-x402-api' with pid 1250732
+2026-03-06 11:38:23,654 WARN exited: ziwei-x402-api (exit status 1; not expected)
+2026-03-06 11:38:24,656 INFO gave up: ziwei-x402-api entered FATAL state, too many start retries too quickly

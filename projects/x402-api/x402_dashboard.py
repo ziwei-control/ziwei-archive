@@ -304,6 +304,105 @@ LOGIN_HTML = """
 """
 
 # Dashboard 页面 HTML
+
+# 管理员登录页面 HTML
+ADMIN_LOGIN_HTML = """
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>x402 API - 管理员登录</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-box {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 { text-align: center; color: #667eea; margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .error { background: #ffebee; color: #c62828; padding: 15px; border-radius: 8px; margin-bottom: 20px; display: none; }
+        .footer { text-align: center; margin-top: 20px; }
+        .footer a { color: #667eea; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>🔐 管理员登录</h1>
+        <div class="error" id="error"></div>
+        <form onsubmit="return handleLogin(event)">
+            <div class="form-group">
+                <label>地址</label>
+                <input type="text" id="addr" placeholder="0x..." required>
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input type="password" id="pwd" placeholder="••••••••" required>
+            </div>
+            <button type="submit">登录</button>
+        </form>
+        <div class="footer"><a href="/">← 返回用户登录</a></div>
+    </div>
+    <script>
+        async function handleLogin(e) {
+            e.preventDefault();
+            const addr = document.getElementById('addr').value;
+            const pwd = document.getElementById('pwd').value;
+            try {
+                const r = await fetch('/api/admin-login', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({address: addr, password: pwd})
+                });
+                const d = await r.json();
+                if (d.success) {
+                    alert('✅ 登录成功');
+                    window.location.href = d.redirect || '/admin-dashboard.html';
+                } else {
+                    document.getElementById('error').textContent = '❌ ' + d.message;
+                    document.getElementById('error').style.display = 'block';
+                }
+            } catch (err) {
+                document.getElementById('error').textContent = '❌ 网络错误';
+                document.getElementById('error').style.display = 'block';
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
+"""
+
 DASHBOARD_HTML = """
 <!DOCTYPE html>
 <html lang="zh-CN">
