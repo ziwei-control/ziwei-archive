@@ -12,7 +12,7 @@ x402 API 密钥自动发放 Web 服务（生产环境版）
 python3 api_key_server.py
 
 访问：
-http://localhost:8080 或 https://localhost:4433
+http://8.213.149.224:8080 或 https://localhost:4433
 """
 
 from flask import Flask, render_template, jsonify, request, send_from_directory
@@ -34,7 +34,7 @@ CONFIG = {
     "PAYMENT_ADDRESS": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb",
     "EXPECTED_AMOUNT": 0.05,  # USDC
     "TOLERANCE": 0.02,  # 容差范围
-    "REAL_API_URL": "8.213.149.224",
+    "REAL_API_URL": "8.213.149.224",  # 真实 API 服务器地址
     "BASESCAN_API_KEY": "",  # 留空使用公开 API（无需注册）
     "TIME_WINDOW": 300,  # 5 分钟内交易有效
     "DB_PATH": "api_keys.db",
@@ -521,6 +521,6 @@ if __name__ == "__main__":
             debug=False
         )
     else:
-        print("访问地址：http://localhost:8080")
+        print("访问地址：http://8.213.149.224:8080")
         print("⚠️ 生产环境建议启用 HTTPS")
         app.run(host="0.0.0.0", port=8080, debug=False)

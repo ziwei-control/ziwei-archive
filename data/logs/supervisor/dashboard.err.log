@@ -413,3 +413,2869 @@ Traceback (most recent call last):
     self._sock.sendall(b)
 BrokenPipeError: [Errno 32] Broken pipe
 ----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59874)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59888)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48650)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48664)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 34962)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 42360)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 42374)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 42376)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60522)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60536)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60540)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1286, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1312, in do_GET
+    self.wfile.write(f"Error: {e}".encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48204)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+    self.wfile.write(content.encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 40624)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+    }}).encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.wfile.write(json.dumps({{
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48062)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+    }}).encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.wfile.write(json.dumps({{
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48064)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+    }}).encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.wfile.write(json.dumps({{
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48086)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+    }}).encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.wfile.write(json.dumps({{
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48100)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+    }}).encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.wfile.write(json.dumps({{
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59786)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.send_header('Expires', '0')
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59808)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.send_header('Expires', '0')
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59820)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.send_header('Expires', '0')
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59836)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.send_header('Expires', '0')
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59848)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.send_header('Expires', '0')
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57802)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.send_header('Expires', '0')
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57804)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.send_header('Expires', '0')
+    ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 40162)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 40172)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 40186)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50234)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1375, in do_POST
+    self.send_response(403)
+                            
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1393, in do_POST
+    )
+      
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1410, in do_POST
+    self.end_headers()
+                       
+TypeError: unhashable type: 'dict'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50238)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50254)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50266)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35816)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35864)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35872)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35886)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35134)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35136)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55374)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1313, in do_GET
+    return f'<div class="card"><h2>🔍 运行进程</h2><p class="status-error">获取失败：{e}</p></div>'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1318, in do_GET
+    try:
+        ^
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 45122)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1375, in do_POST
+    self.send_response(403)
+                            
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1393, in do_POST
+    )
+      
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1410, in do_POST
+    self.end_headers()
+                       
+TypeError: unhashable type: 'dict'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 37086)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1402, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1420, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1437, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 40488)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1402, in do_POST
+    self.wfile.write(json.dumps({
+                                ^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1420, in do_POST
+    self.wfile.write(json.dumps({
+                                ^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1437, in do_POST
+    self.wfile.write(json.dumps({
+                                ^
+TypeError: unhashable type: 'dict'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 37182)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1402, in do_POST
+    self.wfile.write(json.dumps({
+                                ^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1420, in do_POST
+    self.wfile.write(json.dumps({
+                                ^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1437, in do_POST
+    self.wfile.write(json.dumps({
+                                ^
+TypeError: unhashable type: 'dict'
+----------------------------------------
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1472, in <module>
+    main()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1464, in main
+    with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1472, in <module>
+    main()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1464, in main
+    with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1472, in <module>
+    main()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1464, in main
+    with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1472, in <module>
+    main()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1464, in main
+    with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53086)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53085)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53137)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53138)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53143)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53144)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53145)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53163)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53162)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53177)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53178)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53176)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53179)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53180)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53181)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 32864)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+    self.wfile.write(content.encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53185)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53187)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 34994)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1306, in do_GET
+    self.wfile.write(content.encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53315)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53459)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53638)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('222.160.144.128', 53752)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53756)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1368, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1386, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1403, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35056)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1368, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1386, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1403, in do_POST
+    self.wfile.write(json.dumps({{
+                                ^^
+TypeError: unhashable type: 'dict'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('111.25.141.28', 7694)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('111.25.141.28', 7692)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('111.25.141.28', 7693)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1438, in <module>
+    main()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1430, in main
+    with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1438, in <module>
+    main()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1430, in main
+    with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1438, in <module>
+    main()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1430, in main
+    with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1438, in <module>
+    main()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1430, in main
+    with socketserver.TCPServer(("", PORT), DashboardHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+----------------------------------------
+Exception occurred during processing of request from ('111.25.141.28', 8099)
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1305, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_v3_framer.py", line 1311, in do_GET
+    self.end_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 538, in end_headers
+    self.flush_headers()
+  File "/usr/lib64/python3.11/http/server.py", line 542, in flush_headers
+    self.wfile.write(b"".join(self._headers_buffer))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 531, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 531, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 531, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 531, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 45982)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 474, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 44074)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 474, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49170)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 474, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52054)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 474, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 42274)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 474, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'command'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52706)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 488, in do_GET
+    self.wfile.write(content.encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52568)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 661, in do_GET
+    content = HTML_TEMPLATE.format(
+              ^^^^^^^^^^^^^^^^^^^^^
+ValueError: unexpected '{' in field name
+----------------------------------------
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 720, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 720, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 720, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 720, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+/usr/bin/python3: can't open file '/home/admin/Ziwei/projects/dashboard_minimal.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/admin/Ziwei/projects/dashboard_minimal.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/admin/Ziwei/projects/dashboard_minimal.py': [Errno 2] No such file or directory
+/usr/bin/python3: can't open file '/home/admin/Ziwei/projects/dashboard_minimal.py': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 954, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 954, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 954, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 954, in <module>
+    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+----------------------------------------
+Exception occurred during processing of request from ('14.58.11.13', 44076)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/dashboard_minimal.py", line 912, in do_GET
+    self.wfile.write(content.encode('utf-8'))
+  File "/usr/lib64/python3.11/socketserver.py", line 834, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------

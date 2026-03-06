@@ -129,7 +129,7 @@ server {
     server_name your-domain.com;
 
     location / {
-        proxy_pass http://localhost:5002;
+        proxy_pass http://8.213.149.224:5002;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -201,7 +201,7 @@ journalctl -u x402-api -f
 
 ```bash
 # 本地测试
-curl http://localhost:5002/health
+curl http://8.213.149.224:5002/health
 
 # 公网测试
 curl https://your-domain.com/health
@@ -270,7 +270,7 @@ systemctl status nginx
 cat .env
 
 # 测试连接
-curl http://localhost:5002/health
+curl http://8.213.149.224:5002/health
 ```
 
 ---
@@ -325,7 +325,7 @@ server {
     listen 80;
     server_name $DOMAIN;
     location / {
-        proxy_pass http://localhost:5002;
+        proxy_pass http://8.213.149.224:5002;
         proxy_set_header Host \$host;
         proxy_set_header X-Real-IP \$remote_addr;
     }

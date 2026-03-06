@@ -191,9 +191,9 @@ if __name__ == '__main__':
     print("=" * 70)
     print("🚀 紫微智控 x402 API - 启动中")
     print("=" * 70)
-    print("📍 服务地址: http://localhost:5000")
+    print("📍 服务地址: http://8.213.149.224:5000")
     print("💰 支付方式: x402 (USDC on Base)")
-    print("📊 统计接口: http://localhost:5000/api/v1/stats")
+    print("📊 统计接口: http://8.213.149.224:5000/api/v1/stats")
     print("=" * 70)
 
     app.run(

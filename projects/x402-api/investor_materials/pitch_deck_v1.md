@@ -56,7 +56,7 @@
 | `/crawl` | 网络爬虫 | $0.04 | 数据抓取 |
 | `/vision` | 视觉解析 | $0.15 | 图片分析 |
 
-**实时 Dashboard:** http://localhost:8081
+**实时 Dashboard:** http://8.213.149.224:8081
 
 ---
 
@@ -81,7 +81,7 @@
 - ✅ 支付流程打通（x402 协议）
 - ✅ 收入可追踪（链上透明）
 
-**Dashboard 实时数据:** http://localhost:8081
+**Dashboard 实时数据:** http://8.213.149.224:8081
 
 ---
 
@@ -338,8 +338,8 @@
 
 ### 立即开始
 
-**API 端点：** http://localhost:5002  
-**Dashboard：** http://localhost:8081  
+**API 端点：** http://8.213.149.224:5002  
+**Dashboard：** http://8.213.149.224:8081  
 **GitHub：** （即将开源）  
 
 ### 投资意向

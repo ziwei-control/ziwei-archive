@@ -8,7 +8,7 @@ import requests
 import json
 import base64
 
-API_BASE_URL = "http://localhost:5000"
+API_BASE_URL = "http://8.213.149.224:5000"
 
 def test_health():
     """测试健康检查"""

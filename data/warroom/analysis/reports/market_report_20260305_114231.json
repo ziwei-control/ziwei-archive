@@ -1,0 +1,163 @@
+{
+  "report_time": "2026-03-05T11:42:31.261258",
+  "analyzed_files": 1,
+  "total_news": 150,
+  "market_overview": {
+    "overall_sentiment": "neutral",
+    "bullish_coins": [
+      "SOL",
+      "AVAX",
+      "LINK",
+      "TON",
+      "SHIB"
+    ],
+    "bearish_coins": [
+      "BTC",
+      "ADA",
+      "TRX",
+      "MATIC"
+    ],
+    "neutral_coins": [
+      "ETH",
+      "BNB",
+      "XRP",
+      "DOGE",
+      "LTC",
+      "BCH"
+    ]
+  },
+  "coin_predictions": {
+    "BTC": {
+      "symbol": "BTC/USDT",
+      "sentiment_score": -1.0,
+      "impact": "negative",
+      "price_prediction": {
+        "current_price": 72425,
+        "predicted_price": 70252.25,
+        "change_percent": -3.0,
+        "change_amount": -2172.75,
+        "support_level": 66739.64,
+        "resistance_level": 76046.25,
+        "timeframe": "24h"
+      },
+      "confidence": "medium"
+    },
+    "ETH": {
+      "symbol": "ETH/USDT",
+      "sentiment_score": 0.0,
+      "impact": "neutral",
+      "price_prediction": {
+        "current_price": 2113.24,
+        "predicted_price": 2113.24,
+        "change_percent": 0.0,
+        "change_amount": 0.0,
+        "support_level": 2070.98,
+        "resistance_level": 2155.5,
+        "timeframe": "24h"
+      },
+      "confidence": "low"
+    },
+    "BNB": {
+      "symbol": "BNB/USDT",
+      "sentiment_score": 0.0,
+      "impact": "neutral",
+      "price_prediction": {
+        "current_price": 653.36,
+        "predicted_price": 653.36,
+        "change_percent": 0.0,
+        "change_amount": 0.0,
+        "support_level": 640.29,
+        "resistance_level": 666.43,
+        "timeframe": "24h"
+      },
+      "confidence": "low"
+    },
+    "SOL": {
+      "symbol": "SOL/USDT",
+      "sentiment_score": 2.0,
+      "impact": "positive",
+      "price_prediction": {
+        "current_price": 89.92,
+        "predicted_price": 92.62,
+        "change_percent": 3.0,
+        "change_amount": 2.7,
+        "support_level": 85.42,
+        "resistance_level": 97.25,
+        "timeframe": "24h"
+      },
+      "confidence": "medium"
+    },
+    "XRP": {
+      "symbol": "XRP/USDT",
+      "sentiment_score": 0.0,
+      "impact": "neutral",
+      "price_prediction": {
+        "current_price": 1.42,
+        "predicted_price": 1.42,
+        "change_percent": 0.0,
+        "change_amount": 0.0,
+        "support_level": 1.39,
+        "resistance_level": 1.45,
+        "timeframe": "24h"
+      },
+      "confidence": "low"
+    },
+    "ADA": {
+      "symbol": "ADA/USDT",
+      "sentiment_score": -1.0,
+      "impact": "negative",
+      "price_prediction": {
+        "current_price": 0.27,
+        "predicted_price": 0.27,
+        "change_percent": -3.0,
+        "change_amount": -0.01,
+        "support_level": 0.25,
+        "resistance_level": 0.29,
+        "timeframe": "24h"
+      },
+      "confidence": "medium"
+    },
+    "DOGE": {
+      "symbol": "DOGE/USDT",
+      "sentiment_score": 0.0,
+      "impact": "neutral",
+      "price_prediction": {
+        "current_price": 0.1,
+        "predicted_price": 0.1,
+        "change_percent": 0.0,
+        "change_amount": 0.0,
+        "support_level": 0.09,
+        "resistance_level": 0.1,
+        "timeframe": "24h"
+      },
+      "confidence": "low"
+    }
+  },
+  "top_news": [],
+  "recommendations": [
+    {
+      "type": "BUY",
+      "coin": "SOL",
+      "symbol": "SOL/USDT",
+      "reason": "新闻情感积极 (得分：2.00)",
+      "target_price": 92.62,
+      "confidence": "medium"
+    },
+    {
+      "type": "SELL",
+      "coin": "BTC",
+      "symbol": "BTC/USDT",
+      "reason": "新闻情感消极 (得分：-1.00)",
+      "target_price": 70252.25,
+      "confidence": "medium"
+    },
+    {
+      "type": "SELL",
+      "coin": "ADA",
+      "symbol": "ADA/USDT",
+      "reason": "新闻情感消极 (得分：-1.00)",
+      "target_price": 0.27,
+      "confidence": "medium"
+    }
+  ]
+}

@@ -123,7 +123,7 @@ func main() {
     wallet, _ := x402.ImportWallet("your_private_key")
     client := x402.NewClient(x402.Config{
         Wallet: wallet,
-        BaseURL: "http://localhost:5002",
+        BaseURL: "http://8.213.149.224:5002",
     })
     
     result, _ := client.Translator.Translate(x402.TranslateRequest{

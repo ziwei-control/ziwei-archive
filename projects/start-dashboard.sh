@@ -1,41 +1,38 @@
 #!/bin/bash
-# 紫微智控 - Dashboard 启动脚本
+# =============================================================================
+# 紫微智控 Dashboard 启动脚本 v4.0.1
+# =============================================================================
 
-PORT=8081
-PID_FILE=/tmp/dashboard.pid
-LOG_FILE=/home/admin/Ziwei/data/logs/dashboard.log
+echo "🚀 启动 Dashboard v4.0.1..."
+echo ""
 
-# 创建日志目录
-mkdir -p /home/admin/Ziwei/data/logs
-
-# 检查是否已运行
-if ps aux | grep "[d]ashboard.py" > /dev/null 2>&1; then
-    EXISTING_PID=$(ps aux | grep "[d]ashboard.py" | awk '{print $2}')
-    echo "✅ Dashboard 已在运行 (PID: $EXISTING_PID)"
-    echo "📍 访问地址：http://8.213.149.224/dashboard"
-    exit 0
+# 检查是否已有进程运行
+if pgrep -f "dashboard.py" > /dev/null; then
+    echo "⚠️  Dashboard 已在运行，正在停止..."
+    pkill -f "dashboard.py"
+    sleep 2
 fi
 
-# 启动 Dashboard
+# 启动新版本
 cd /home/admin/Ziwei/projects
-nohup python3 dashboard.py > "$LOG_FILE" 2>&1 &
-NEW_PID=$!
-
-# 保存 PID
-echo "$NEW_PID" > "$PID_FILE"
+nohup python3 dashboard_v4_0_1.py > /tmp/dashboard_v4.log 2>&1 &
 
 # 等待启动
 sleep 3
 
-# 检查是否启动成功
-if ps -p "$NEW_PID" > /dev/null 2>&1; then
-    echo "✅ Dashboard 已启动"
+# 检查是否成功
+if pgrep -f "dashboard.py" > /dev/null; then
+    echo "✅ Dashboard v4.0.1 启动成功！"
+    echo ""
     echo "📍 访问地址："
-    echo "   内网：http://localhost:$PORT"
-    echo "   公网：http://8.213.149.224/dashboard"
-    echo "📄 日志文件：$LOG_FILE"
+    echo "   内网：http://localhost:8081"
+    echo "   公网：http://panda66.duckdns.org/dashboard"
+    echo ""
+    echo "📊 进程信息："
+    ps aux | grep dashboard_v4 | grep -v grep
 else
-    echo "❌ Dashboard 启动失败"
-    cat "$LOG_FILE"
-    exit 1
+    echo "❌ Dashboard 启动失败！"
+    echo ""
+    echo "日志："
+    tail -20 /tmp/dashboard_v4.log
 fi

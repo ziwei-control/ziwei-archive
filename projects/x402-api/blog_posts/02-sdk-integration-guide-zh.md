@@ -48,7 +48,7 @@ wallet = Wallet.create()  # 新钱包
 # 2. 初始化客户端
 client = Client(
     wallet=wallet,
-    base_url="http://localhost:5002"
+    base_url="http://8.213.149.224:5002"
 )
 
 # 3. 检查余额
@@ -132,7 +132,7 @@ const wallet = Wallet.create();
 // 2. 初始化客户端
 const client = new Client({
   wallet: wallet,
-  baseUrl: 'http://localhost:5002'
+  baseUrl: 'http://8.213.149.224:5002'
 });
 
 // 3. 检查余额
@@ -223,7 +223,7 @@ func main() {
     // 2. 初始化客户端
     client := x402.NewClient(x402.Config{
         Wallet:  wallet,
-        BaseURL: "http://localhost:5002",
+        BaseURL: "http://8.213.149.224:5002",
     })
 
     // 3. 检查余额

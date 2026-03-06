@@ -686,3 +686,1105 @@ Traceback (most recent call last):
                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: '>' not supported between instances of 'str' and 'float'
 ----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 41620)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 59656)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50826)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 45790)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55676)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 38048)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53816)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53832)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 56938)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52712)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52660)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53146)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 41054)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46606)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46622)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46634)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46648)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 45998)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46002)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 44256)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35878)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57130)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 57146)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 47698)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 48642)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 46000)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 56364)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 56380)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 52756)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35466)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 55452)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 41332)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 53418)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 42022)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 45888)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35950)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 35048)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 60764)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.11/socketserver.py", line 317, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 348, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+  File "/usr/lib64/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 440, in wrapped_do_GET
+    return original_do_GET(self)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/app_production.py", line 180, in do_GET
+    security_stats = security_manager.get_stats()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in get_stats
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin/Ziwei/projects/x402-api/security.py", line 341, in <listcomp>
+    "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'float'
+----------------------------------------

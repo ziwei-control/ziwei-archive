@@ -1,30 +1,44 @@
 {
-  "balance": 3.606098483902922e-05,
+  "balance": 1.792491505147576e-58,
   "portfolio": {
+    "DOGE": {
+      "amount": 2.1335049876738723e-58,
+      "entry_price": 0.093948,
+      "entry_time": "2026-03-06T00:45:27.215828",
+      "stop_loss": 0.0892506,
+      "take_profit": 0.1127376
+    },
+    "XRP": {
+      "amount": 1.2597491284385617e-53,
+      "entry_price": 1.44,
+      "entry_time": "2026-03-05T20:38:25.864971",
+      "stop_loss": 1.3679999999999999,
+      "take_profit": 1.728
+    },
     "SOL": {
-      "amount": 2.4650967561963092e-08,
-      "entry_price": 86.78,
-      "entry_time": "2026-03-04T10:37:12.360562",
-      "stop_loss": 82.441,
-      "take_profit": 104.136
+      "amount": 7.377888549712349e-57,
+      "entry_price": 92.07,
+      "entry_time": "2026-03-05T21:04:26.005514",
+      "stop_loss": 87.4665,
+      "take_profit": 110.484
     },
     "ETH": {
-      "amount": 2.1585139658068113e-09,
-      "entry_price": 1978.95,
-      "entry_time": "2026-03-04T10:25:12.327098",
-      "stop_loss": 1880.0025,
-      "take_profit": 2374.74
+      "amount": 5.111559645180117e-63,
+      "entry_price": 2080.27,
+      "entry_time": "2026-03-06T06:21:29.103626",
+      "stop_loss": 1976.2565,
+      "take_profit": 2496.324
     },
-    "BNB": {
-      "amount": 0.18634097612954628,
-      "entry_price": 634.05,
-      "entry_time": "2026-03-04T03:42:10.967479",
-      "stop_loss": 602.3475,
-      "take_profit": 760.8599999999999
+    "BTC": {
+      "amount": 9.80670568728194e-64,
+      "entry_price": 72623,
+      "entry_time": "2026-03-05T23:05:26.633219",
+      "stop_loss": 68991.84999999999,
+      "take_profit": 87147.59999999999
     }
   },
   "daily_pnl": 0,
   "win_rate": 0,
-  "total_trades": 336,
-  "timestamp": "2026-03-04T10:38:12.362912"
+  "total_trades": 2367,
+  "timestamp": "2026-03-06T09:05:30.058877"
 }

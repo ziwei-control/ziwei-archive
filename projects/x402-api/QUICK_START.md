@@ -33,7 +33,7 @@
 import requests
 
 # 配置（合作后获取）
-API_URL = "http://localhost:5002/api/v1/translator"
+API_URL = "http://8.213.149.224:5002/api/v1/translator"
 API_KEY = "your_api_key"
 WALLET = "your_wallet_address"
 
@@ -59,7 +59,7 @@ print(response.json())
 const axios = require('axios');
 
 const response = await axios.post(
-    'http://localhost:5002/api/v1/translator',
+    'http://8.213.149.224:5002/api/v1/translator',
     { text: 'Hello!', source: 'en', target: 'zh' },
     {
         headers: {
@@ -77,7 +77,7 @@ console.log(response.data);
 ### cURL（命令行）
 
 ```bash
-curl -X POST http://localhost:5002/api/v1/translator \
+curl -X POST http://8.213.149.224:5002/api/v1/translator \
   -H "Content-Type: application/json" \
   -H "X-API-Key: your_api_key" \
   -H "X-Wallet-Address: your_wallet_address" \
@@ -133,7 +133,7 @@ A: 区块链支付不可逆，但 API 问题会补偿。
 ## 📞 联系合作
 
 - **GitHub:** github.com/ziwei-control/ziwei-archive
-- **Dashboard:** http://localhost:8081
+- **Dashboard:** http://8.213.149.224:8081
 - **完整文档:** [CUSTOMER_API_GUIDE.md](CUSTOMER_API_GUIDE.md)
 
 ---

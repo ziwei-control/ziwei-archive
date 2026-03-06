@@ -56,7 +56,7 @@ x402 是一个基于 Web3 的支付协议，让 AI API 可以：
 [屏幕共享：Python 代码]
 import requests
 
-url = "http://localhost:5002/api/v1/translator"
+url = "http://8.213.149.224:5002/api/v1/translator"
 payload = {"text": "Hello!", "source": "en", "target": "zh"}
 headers = {
     "X-Payment-Amount": "20000",

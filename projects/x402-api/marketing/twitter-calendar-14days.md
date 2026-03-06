@@ -199,7 +199,7 @@ github.com/ziwei-control/x402-api
 - 匿名开发者
 
 你也可以。API 地址：
-http://localhost:5002
+http://8.213.149.224:5002
 
 #SuccessStory #IndieHacker
 ```

@@ -225,7 +225,7 @@ def send_weekly_summary():
 - 考虑增加 translator 的容量
 - code-gen 需求上升，可优化响应速度
 
-Dashboard: http://localhost:8081
+Dashboard: http://8.213.149.224:8081
 """
     
     # 发送邮件
@@ -348,7 +348,7 @@ def run_auto_campaign():
 - 🎯 完成进度（vs 目标）
 - 📉 趋势图表
 
-**访问：** http://localhost:8081
+**访问：** http://8.213.149.224:8081
 
 ---
 

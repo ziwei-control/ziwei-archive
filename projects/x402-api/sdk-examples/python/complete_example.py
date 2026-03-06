@@ -25,7 +25,7 @@ class APIResponse:
 class x402Client:
     """x402 API 客户端示例"""
     
-    def __init__(self, wallet_key: str, base_url: str = "http://localhost:5002"):
+    def __init__(self, wallet_key: str, base_url: str = "http://8.213.149.224:5002"):
         self.wallet_key = wallet_key
         self.base_url = base_url
         self.balance = 10.0  # 模拟余额

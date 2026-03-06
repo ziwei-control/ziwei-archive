@@ -4,7 +4,7 @@ sys.path.insert(0, '/home/admin/Ziwei/projects/x402-python-sdk')
 
 from x402 import X402Client
 
-client = X402Client(api_base_url='http://localhost:5001')
+client = X402Client(api_base_url='http://8.213.149.224:5001')
 
 print('🧪 测试代码审计...')
 result = client.request_with_payment(

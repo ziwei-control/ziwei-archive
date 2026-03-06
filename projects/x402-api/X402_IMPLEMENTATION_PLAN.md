@@ -532,7 +532,7 @@
 ```
 GitHub: https://github.com/ziwei-control/x402-api
 文档：https://docs.x402-api.com
-API: http://localhost/api/v1/
+API: http://8.213.149.224/api/v1/
 ```
 
 **联系方式：**

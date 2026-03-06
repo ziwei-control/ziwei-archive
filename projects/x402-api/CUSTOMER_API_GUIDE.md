@@ -40,7 +40,7 @@ import json
 from datetime import datetime
 
 # ============ 配置 ============
-API_BASE_URL = "http://localhost:5002"  # 合作后获取真实地址
+API_BASE_URL = "http://8.213.149.224:5002"  # 合作后获取真实地址
 API_KEY = "your_api_key"  # 合作后获取
 WALLET_ADDRESS = "your_wallet_address"  # 你的 USDC 钱包地址
 
@@ -152,7 +152,7 @@ const crypto = require('crypto');
 const axios = require('axios');
 
 // ============ 配置 ============
-const API_BASE_URL = 'http://localhost:5002';
+const API_BASE_URL = 'http://8.213.149.224:5002';
 const API_KEY = 'your_api_key';
 const WALLET_ADDRESS = 'your_wallet_address';
 
@@ -247,7 +247,7 @@ import (
 
 // 配置
 const (
-	APIBaseURL  = "http://localhost:5002"
+	APIBaseURL  = "http://8.213.149.224:5002"
 	APIKey      = "your_api_key"
 	WalletAddr  = "your_wallet_address"
 )
@@ -353,7 +353,7 @@ func main() {
 
 # x402 API 调用示例 - cURL
 
-API_BASE_URL="http://localhost:5002"
+API_BASE_URL="http://8.213.149.224:5002"
 API_KEY="your_api_key"
 WALLET_ADDRESS="your_wallet_address"
 
@@ -569,7 +569,7 @@ class APICostTracker:
 
 **合作联系：**
 - GitHub: github.com/ziwei-control/ziwei-archive
-- Dashboard: http://localhost:8081
+- Dashboard: http://8.213.149.224:8081
 - 邮箱：contact@x402.network（示例）
 
 ---

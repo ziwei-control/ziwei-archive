@@ -57,7 +57,7 @@ cd /home/admin/Ziwei/projects/x402-api
 python3 api_key_server.py
 ```
 
-**访问：** http://localhost:8080
+**访问：** http://8.213.149.224:8080
 
 ### 方式 2: HTTPS 模式（生产环境）
 
@@ -450,10 +450,10 @@ tail -f /var/log/x402_api_server.log
 
 ```bash
 # 健康检查
-curl http://localhost:8080/api/status
+curl http://8.213.149.224:8080/api/status
 
 # 查看统计
-curl http://localhost:8080/api/stats
+curl http://8.213.149.224:8080/api/stats
 ```
 
 ### 设置告警（示例）

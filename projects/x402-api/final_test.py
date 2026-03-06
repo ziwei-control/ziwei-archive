@@ -20,7 +20,7 @@ def test_agent(agent_type, data, cost):
     proof_b64 = base64.b64encode(json.dumps(proof).encode()).decode()
 
     # Make request
-    url = f"http://localhost:5002/api/v1/{agent_type}"
+    url = f"http://8.213.149.224:5002/api/v1/{agent_type}"
     payload = json.dumps(data).encode('utf-8')
 
     req = urllib.request.Request(

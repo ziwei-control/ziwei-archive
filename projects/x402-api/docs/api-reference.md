@@ -2,7 +2,7 @@
 
 ## 基础信息
 
-- **Base URL**: `http://localhost:5000`
+- **Base URL**: `http://8.213.149.224:5000`
 - **支付协议**: x402 (HTTP 402)
 - **支付货币**: USDC (Base 链)
 - **认证方式**: x402 支付证明
@@ -308,7 +308,7 @@ import base64
 
 # 1. 发送请求（无支付）
 response = requests.post(
-    "http://localhost:5000/api/v1/code-audit",
+    "http://8.213.149.224:5000/api/v1/code-audit",
     json={
         "code": "def login(username, password):\n    return True",
         "language": "Python"
@@ -334,7 +334,7 @@ if response.status_code == 402:
 
     # 5. 重发请求 + 支付证明
     response = requests.post(
-        "http://localhost:5000/api/v1/code-audit",
+        "http://8.213.149.224:5000/api/v1/code-audit",
         json={
             "code": "def login(username, password):\n    return True",
             "language": "Python"

@@ -457,3 +457,252 @@ AttributeError: type object 'Faults' has no attribute 'utf-8'
 2026-03-04 10:35:40,940 WARN exited: ziwei-dashboard (terminated by SIGKILL; not expected)
 2026-03-04 10:35:41,941 INFO spawned: 'ziwei-dashboard' with pid 803620
 2026-03-04 10:35:43,002 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 10:53:33,119 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-04 10:53:34,121 INFO spawned: 'ziwei-dashboard' with pid 806556
+2026-03-04 10:53:35,181 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 11:37:58,385 WARN exited: ziwei-dashboard (terminated by SIGKILL; not expected)
+2026-03-04 11:37:59,388 INFO spawned: 'ziwei-dashboard' with pid 813884
+2026-03-04 11:38:00,448 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 11:44:06,371 WARN exited: ziwei-dashboard (terminated by SIGKILL; not expected)
+2026-03-04 11:44:07,373 INFO spawned: 'ziwei-dashboard' with pid 814996
+2026-03-04 11:44:08,433 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 11:46:16,379 WARN exited: ziwei-dashboard (terminated by SIGKILL; not expected)
+2026-03-04 11:46:17,382 INFO spawned: 'ziwei-dashboard' with pid 815391
+2026-03-04 11:46:17,445 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 11:46:18,447 INFO spawned: 'ziwei-dashboard' with pid 815392
+2026-03-04 11:46:18,516 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 11:46:20,519 INFO spawned: 'ziwei-dashboard' with pid 815396
+2026-03-04 11:46:20,589 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 11:46:23,593 INFO spawned: 'ziwei-dashboard' with pid 815404
+2026-03-04 11:46:23,775 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 11:46:24,776 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-04 16:44:53,334 CRIT Handling XML-RPC request with data "<?xml version='1.0'?>\n<methodCall>\n<methodName>supervisor.readProcessStdoutLog</methodName>\n<params>\n<param>\n<value><string>ziwei-dashboard</string></value>\n</param>\n<param>\n<value><int>-100</int></value>\n</param>\n<param>\n<value><int>0</int></value>\n</param>\n</params>\n</methodCall>\n" raised an unexpected exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 716, in _readProcessLog
+    return as_string(readFile(logfile, int(offset), int(length)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/compat.py", line 60, in as_string
+    return s.decode(encoding)
+           ^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb0 in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/supervisor/xmlrpc.py", line 410, in continue_request
+    value = self.call(method, params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/xmlrpc.py", line 446, in call
+    return traverse(self.rpcinterface, method, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/xmlrpc.py", line 469, in traverse
+    return func(*params)
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 730, in readProcessStdoutLog
+    return self._readProcessLog(name, offset, length, 'stdout')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/supervisor/rpcinterface.py", line 719, in _readProcessLog
+    raise RPCError(getattr(Faults, why))
+                   ^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Faults' has no attribute 'utf-8'
+
+2026-03-04 16:47:18,226 INFO spawned: 'ziwei-dashboard' with pid 858659
+2026-03-04 16:47:19,290 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 17:30:18,852 INFO waiting for ziwei-dashboard to stop
+2026-03-04 17:30:18,853 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 17:30:18,855 INFO spawned: 'ziwei-dashboard' with pid 865750
+2026-03-04 17:30:19,921 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 17:35:33,725 WARN exited: ziwei-warroom (terminated by SIGKILL; not expected)
+2026-03-04 17:35:34,726 INFO spawned: 'ziwei-warroom' with pid 866936
+2026-03-04 17:35:35,768 INFO success: ziwei-warroom entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 17:37:14,253 WARN exited: ziwei-log-trim (terminated by SIGKILL; not expected)
+2026-03-04 17:37:15,255 INFO spawned: 'ziwei-log-trim' with pid 867380
+2026-03-04 17:37:16,278 INFO success: ziwei-log-trim entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 18:25:31,484 INFO waiting for ziwei-dashboard to stop
+2026-03-04 18:25:31,485 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 18:25:31,487 INFO spawned: 'ziwei-dashboard' with pid 875141
+2026-03-04 18:25:32,547 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 18:26:47,213 INFO waiting for ziwei-dashboard to stop
+2026-03-04 18:26:47,214 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 18:26:47,216 INFO spawned: 'ziwei-dashboard' with pid 875385
+2026-03-04 18:26:48,270 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 18:27:13,625 INFO waiting for ziwei-dashboard to stop
+2026-03-04 18:27:13,626 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 18:27:13,628 INFO spawned: 'ziwei-dashboard' with pid 875475
+2026-03-04 18:27:14,681 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 18:27:44,417 INFO waiting for ziwei-dashboard to stop
+2026-03-04 18:27:44,418 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 18:27:44,420 INFO spawned: 'ziwei-dashboard' with pid 875601
+2026-03-04 18:27:45,483 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 18:28:28,064 INFO waiting for ziwei-dashboard to stop
+2026-03-04 18:28:28,065 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 18:28:28,067 INFO spawned: 'ziwei-dashboard' with pid 875756
+2026-03-04 18:28:29,128 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 18:29:26,664 INFO waiting for ziwei-dashboard to stop
+2026-03-04 18:29:26,665 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 18:29:26,667 INFO spawned: 'ziwei-dashboard' with pid 875968
+2026-03-04 18:29:27,727 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 18:30:17,600 INFO waiting for ziwei-dashboard to stop
+2026-03-04 18:30:17,601 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 18:30:17,603 INFO spawned: 'ziwei-dashboard' with pid 876109
+2026-03-04 18:30:18,655 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 19:23:26,440 INFO waiting for ziwei-dashboard to stop
+2026-03-04 19:23:26,441 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 19:23:26,442 INFO spawned: 'ziwei-dashboard' with pid 884566
+2026-03-04 19:23:27,500 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 19:24:58,543 INFO waiting for ziwei-dashboard to stop
+2026-03-04 19:24:58,546 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 19:24:58,548 INFO spawned: 'ziwei-dashboard' with pid 884842
+2026-03-04 19:24:59,618 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 19:30:58,708 INFO waiting for ziwei-dashboard to stop
+2026-03-04 19:30:58,709 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 19:30:58,711 INFO spawned: 'ziwei-dashboard' with pid 885914
+2026-03-04 19:30:59,764 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 19:32:07,998 INFO waiting for ziwei-dashboard to stop
+2026-03-04 19:32:07,999 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 19:32:08,003 INFO spawned: 'ziwei-dashboard' with pid 886122
+2026-03-04 19:32:09,062 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 19:32:58,158 INFO waiting for ziwei-dashboard to stop
+2026-03-04 19:32:58,161 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 19:32:58,163 INFO spawned: 'ziwei-dashboard' with pid 886290
+2026-03-04 19:32:59,219 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 19:34:02,855 INFO waiting for ziwei-dashboard to stop
+2026-03-04 19:34:02,856 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 19:34:02,859 INFO spawned: 'ziwei-dashboard' with pid 886486
+2026-03-04 19:34:03,917 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 19:35:33,419 INFO waiting for ziwei-dashboard to stop
+2026-03-04 19:35:33,430 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 19:35:33,432 INFO spawned: 'ziwei-dashboard' with pid 886811
+2026-03-04 19:35:34,487 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 19:54:33,793 INFO waiting for ziwei-dashboard to stop
+2026-03-04 19:54:33,801 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 19:55:00,479 INFO spawned: 'ziwei-dashboard' with pid 889899
+2026-03-04 19:55:00,541 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 19:55:01,543 INFO spawned: 'ziwei-dashboard' with pid 889907
+2026-03-04 19:55:01,627 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 19:55:03,630 INFO spawned: 'ziwei-dashboard' with pid 889914
+2026-03-04 19:55:03,698 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 19:55:06,722 INFO spawned: 'ziwei-dashboard' with pid 889920
+2026-03-04 19:55:06,791 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 19:55:06,791 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-04 19:55:37,175 INFO spawned: 'ziwei-dashboard' with pid 890026
+2026-03-04 19:55:38,227 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 20:17:32,718 INFO waiting for ziwei-dashboard to stop
+2026-03-04 20:17:32,719 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 20:18:25,179 INFO spawned: 'ziwei-dashboard' with pid 893670
+2026-03-04 20:18:25,306 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 20:18:26,339 INFO spawned: 'ziwei-dashboard' with pid 893677
+2026-03-04 20:18:26,404 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 20:18:28,407 INFO spawned: 'ziwei-dashboard' with pid 893678
+2026-03-04 20:18:28,474 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 20:18:31,477 INFO spawned: 'ziwei-dashboard' with pid 893686
+2026-03-04 20:18:31,548 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-04 20:18:32,023 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-04 20:19:05,243 INFO spawned: 'ziwei-dashboard' with pid 893778
+2026-03-04 20:19:06,301 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 20:20:23,608 INFO waiting for ziwei-dashboard to stop
+2026-03-04 20:20:23,609 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 20:21:07,513 INFO spawned: 'ziwei-dashboard' with pid 894156
+2026-03-04 20:21:08,575 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-04 20:23:07,401 INFO waiting for ziwei-dashboard to stop
+2026-03-04 20:23:07,402 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-04 20:23:07,404 INFO spawned: 'ziwei-dashboard' with pid 894498
+2026-03-04 20:23:08,460 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 06:32:24,762 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 06:32:25,764 INFO spawned: 'ziwei-dashboard' with pid 992184
+2026-03-05 06:32:26,841 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 06:40:32,529 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 06:40:33,532 INFO spawned: 'ziwei-dashboard' with pid 993559
+2026-03-05 06:40:34,621 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 06:45:06,501 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 06:45:07,358 INFO spawned: 'ziwei-dashboard' with pid 994379
+2026-03-05 06:45:08,417 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 06:49:42,326 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 06:49:43,328 INFO spawned: 'ziwei-dashboard' with pid 995135
+2026-03-05 06:49:44,389 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:08:40,108 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 07:08:41,110 INFO spawned: 'ziwei-dashboard' with pid 997975
+2026-03-05 07:08:42,197 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:11:46,923 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 07:11:47,925 INFO spawned: 'ziwei-dashboard' with pid 998479
+2026-03-05 07:11:49,003 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:20:38,951 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 07:20:39,971 INFO spawned: 'ziwei-dashboard' with pid 999848
+2026-03-05 07:20:41,037 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:20:58,730 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 07:20:59,732 INFO spawned: 'ziwei-dashboard' with pid 999915
+2026-03-05 07:21:00,840 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:21:36,321 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 07:21:37,323 INFO spawned: 'ziwei-dashboard' with pid 1000028
+2026-03-05 07:21:38,381 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:21:47,896 WARN exited: ziwei-dashboard (terminated by SIGKILL; not expected)
+2026-03-05 07:21:48,898 INFO spawned: 'ziwei-dashboard' with pid 1000084
+2026-03-05 07:21:49,956 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:21:55,259 WARN exited: ziwei-dashboard (terminated by SIGKILL; not expected)
+2026-03-05 07:21:56,262 INFO spawned: 'ziwei-dashboard' with pid 1000110
+2026-03-05 07:21:57,319 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:22:36,919 WARN exited: ziwei-dashboard (terminated by SIGKILL; not expected)
+2026-03-05 07:22:37,921 INFO spawned: 'ziwei-dashboard' with pid 1000253
+2026-03-05 07:22:38,982 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:22:49,340 WARN exited: ziwei-dashboard (terminated by SIGKILL; not expected)
+2026-03-05 07:22:50,343 INFO spawned: 'ziwei-dashboard' with pid 1000305
+2026-03-05 07:22:51,402 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:29:31,567 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 07:29:32,569 INFO spawned: 'ziwei-dashboard' with pid 1001352
+2026-03-05 07:29:33,666 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 07:30:14,960 WARN exited: ziwei-dashboard (terminated by SIGTERM; not expected)
+2026-03-05 07:30:15,963 INFO spawned: 'ziwei-dashboard' with pid 1001483
+2026-03-05 07:30:16,029 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-05 07:30:17,031 INFO spawned: 'ziwei-dashboard' with pid 1001484
+2026-03-05 07:30:17,097 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-05 07:30:19,100 INFO spawned: 'ziwei-dashboard' with pid 1001487
+2026-03-05 07:30:19,167 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-05 07:30:22,581 INFO spawned: 'ziwei-dashboard' with pid 1001517
+2026-03-05 07:30:22,653 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-05 07:30:23,653 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-05 07:45:17,865 WARN exited: ziwei-soul-trader (terminated by SIGKILL; not expected)
+2026-03-05 07:45:18,881 INFO spawned: 'ziwei-soul-trader' with pid 1004005
+2026-03-05 07:45:19,912 INFO success: ziwei-soul-trader entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 13:13:47,085 INFO spawned: 'ziwei-dashboard' with pid 1047800
+2026-03-05 13:13:47,097 WARN exited: ziwei-dashboard (exit status 2; not expected)
+2026-03-05 13:13:48,100 INFO spawned: 'ziwei-dashboard' with pid 1047801
+2026-03-05 13:13:48,113 WARN exited: ziwei-dashboard (exit status 2; not expected)
+2026-03-05 13:13:50,118 INFO spawned: 'ziwei-dashboard' with pid 1047803
+2026-03-05 13:13:50,131 WARN exited: ziwei-dashboard (exit status 2; not expected)
+2026-03-05 13:13:53,135 INFO spawned: 'ziwei-dashboard' with pid 1047813
+2026-03-05 13:13:53,148 WARN exited: ziwei-dashboard (exit status 2; not expected)
+2026-03-05 13:13:53,148 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-05 13:14:41,166 INFO spawned: 'ziwei-dashboard' with pid 1048132
+2026-03-05 13:14:41,232 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-05 13:14:42,234 INFO spawned: 'ziwei-dashboard' with pid 1048135
+2026-03-05 13:14:42,301 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-05 13:14:44,305 INFO spawned: 'ziwei-dashboard' with pid 1048136
+2026-03-05 13:14:44,373 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-05 13:14:47,378 INFO spawned: 'ziwei-dashboard' with pid 1048151
+2026-03-05 13:14:47,447 WARN exited: ziwei-dashboard (exit status 1; not expected)
+2026-03-05 13:14:48,448 INFO gave up: ziwei-dashboard entered FATAL state, too many start retries too quickly
+2026-03-05 13:15:31,336 INFO spawned: 'ziwei-dashboard' with pid 1048250
+2026-03-05 13:15:32,390 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 16:36:37,238 INFO waiting for ziwei-dashboard to stop
+2026-03-05 16:36:37,239 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-05 16:36:37,241 INFO spawned: 'ziwei-dashboard' with pid 1080249
+2026-03-05 16:36:38,294 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 16:47:52,267 INFO waiting for ziwei-dashboard to stop
+2026-03-05 16:47:52,268 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-05 16:47:52,271 INFO spawned: 'ziwei-dashboard' with pid 1082048
+2026-03-05 16:47:53,333 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 16:59:13,046 INFO waiting for ziwei-dashboard to stop
+2026-03-05 16:59:13,047 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-05 16:59:13,049 INFO spawned: 'ziwei-dashboard' with pid 1083750
+2026-03-05 16:59:14,118 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 19:35:09,640 INFO waiting for ziwei-dashboard to stop
+2026-03-05 19:35:09,641 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-05 19:35:09,643 INFO spawned: 'ziwei-dashboard' with pid 1107297
+2026-03-05 19:35:10,698 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 19:50:42,371 INFO waiting for ziwei-dashboard to stop
+2026-03-05 19:50:42,372 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-05 19:50:42,374 INFO spawned: 'ziwei-dashboard' with pid 1109560
+2026-03-05 19:50:43,436 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2026-03-05 20:50:27,163 INFO waiting for ziwei-dashboard to stop
+2026-03-05 20:50:27,164 WARN stopped: ziwei-dashboard (terminated by SIGTERM)
+2026-03-05 20:50:27,166 INFO spawned: 'ziwei-dashboard' with pid 1118183
+2026-03-05 20:50:28,229 INFO success: ziwei-dashboard entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

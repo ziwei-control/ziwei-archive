@@ -13,7 +13,7 @@ proof = {
 }
 proof_b64 = base64.b64encode(json.dumps(proof).encode()).decode()
 
-url = "http://localhost:5002/api/v1/code-audit"
+url = "http://8.213.149.224:5002/api/v1/code-audit"
 payload = json.dumps({"code": "def add(a, b): return a + b", "language": "Python"}).encode('utf-8')
 
 req = urllib.request.Request(

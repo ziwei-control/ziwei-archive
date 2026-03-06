@@ -80,13 +80,13 @@
 
 ```bash
 # 查看安全统计
-curl http://localhost/api/v1/security/stats
+curl http://8.213.149.224/api/v1/security/stats
 
 # 查看攻击日志
-curl http://localhost/api/v1/security/attacks
+curl http://8.213.149.224/api/v1/security/attacks
 
 # 查看黑名单
-curl http://localhost/api/v1/security/blacklist
+curl http://8.213.149.224/api/v1/security/blacklist
 ```
 
 ### 命令行工具
@@ -321,10 +321,10 @@ cat /home/admin/Ziwei/data/security/blacklist.json | python3 -m json.tool
 ```bash
 # 1. 发现异常流量
 # 查看安全统计
-curl http://localhost/api/v1/security/stats
+curl http://8.213.149.224/api/v1/security/stats
 
 # 2. 查看攻击来源
-curl http://localhost/api/v1/security/attacks?limit=100
+curl http://8.213.149.224/api/v1/security/attacks?limit=100
 
 # 3. 手动封禁 IP
 # 编辑黑名单

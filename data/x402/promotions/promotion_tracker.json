@@ -1,0 +1,71 @@
+{
+  "campaign_start_date": "2026-03-05",
+  "status": "active",
+  "financial_policy": "zero_cash_spending",
+  "channels": {
+    "github": {
+      "name": "GitHub 开源项目",
+      "status": "ready",
+      "url": "https://github.com/ziwei-control/x402-api",
+      "actions_completed": [
+        "SDK 示例代码准备完成",
+        "README 文档准备完成",
+        "推广材料准备完成"
+      ],
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "views": 0,
+        "clones": 0
+      },
+      "cost": 0,
+      "conversions": 0
+    },
+    "dev_to": {
+      "name": "Dev.to 技术博客",
+      "status": "ready",
+      "articles_ready": 3,
+      "cost": 0,
+      "conversions": 0
+    },
+    "medium": {
+      "name": "Medium 技术文章",
+      "status": "ready",
+      "articles_ready": 2,
+      "cost": 0,
+      "conversions": 0
+    },
+    "github_issues": {
+      "name": "GitHub Issues 合作邀请",
+      "status": "ready",
+      "target_projects": 3,
+      "messages_ready": true,
+      "cost": 0,
+      "conversions": 0
+    },
+    "twitter": {
+      "name": "Twitter/X 内容营销",
+      "status": "ready",
+      "content_calendar": "14 天推文计划",
+      "cost": 0,
+      "conversions": 0
+    }
+  },
+  "referral_program": {
+    "status": "planning",
+    "note": "No cash or free credits promised",
+    "cash_payout": false,
+    "free_credits": false
+  },
+  "summary": {
+    "total_channels": 5,
+    "ready_channels": 5,
+    "active_channels": 0,
+    "total_reach": 0,
+    "total_conversions": 0,
+    "total_cost_usd": 0,
+    "roi": 0,
+    "revenue_attributed": 0,
+    "financial_safety": "✅ Zero cash spending"
+  }
+}

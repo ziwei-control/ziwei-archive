@@ -38,7 +38,7 @@ Install MetaMask or any Base chain wallet, load with small amount of USDC ($5 is
 ```python
 import requests
 
-url = "http://localhost:5002/api/v1/translator"
+url = "http://8.213.149.224:5002/api/v1/translator"
 payload = {
     "text": "Hello, world!",
     "source": "en",
@@ -85,7 +85,7 @@ print(response.json())
 
 **This is not hype. This is real running data.** 📈
 
-**Live Dashboard:** http://localhost:8081
+**Live Dashboard:** http://8.213.149.224:8081
 
 ---
 
@@ -212,8 +212,8 @@ Need private deployment? Custom AI models? Contact us.
 
 | Resource | Link |
 |----------|------|
-| **API Endpoint** | http://localhost:5002 (private, open to partners) |
-| **Live Dashboard** | http://localhost:8081 |
+| **API Endpoint** | http://8.213.149.224:5002 (private, open to partners) |
+| **Live Dashboard** | http://8.213.149.224:8081 |
 | **GitHub Repo** | github.com/ziwei-control/ziwei-archive |
 | **Gitee Mirror** | gitee.com/pandac0/ziwei-archive |
 | **Documentation** | (Coming soon) |

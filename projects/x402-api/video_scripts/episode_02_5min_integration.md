@@ -66,7 +66,7 @@ import json
 class X402Translator:
     def __init__(self, wallet_key):
         self.wallet_key = wallet_key
-        self.base_url = "http://localhost:5002"
+        self.base_url = "http://8.213.149.224:5002"
     
     def translate(self, text, source='en', target='zh'):
         # 生成支付签名
