@@ -18,6 +18,7 @@ from flask import Flask, render_template_string, jsonify, request
 import sqlite3
 import requests
 import os
+import hashlib
 from datetime import datetime
 
 app = Flask(__name__)
@@ -629,7 +630,7 @@ def admin_login():
 def admin_verify():
     """管理员验证"""
     data = request.get_json() or {}
-    address = data.get("address", "").strip().lower()
+    address = data.get("address", "").strip()
     password = data.get("password", "").strip()
     
     conn = get_db_connection()
