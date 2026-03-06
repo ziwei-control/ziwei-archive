@@ -107,17 +107,12 @@
             font-size: 16px;
             cursor: pointer;
             transition: all 0.3s;
-            position: relative;
         }
         
         .address-box:hover {
             background: linear-gradient(135deg, #f0f4ff 0%, #e3e7ff 100%);
             border-color: #764ba2;
             transform: translateY(-2px);
-        }
-        
-        .address-box:active {
-            transform: translateY(0);
         }
         
         .copy-hint {
@@ -205,8 +200,67 @@
             box-shadow: none;
         }
         
-        .button i {
-            margin-right: 10px;
+        /* 输入框样式 */
+        .input-group {
+            margin: 20px 0;
+        }
+        
+        .input-label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: 'Courier New', monospace;
+            transition: all 0.3s;
+        }
+        
+        .input-field:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .input-hint {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+        
+        .or-divider {
+            text-align: center;
+            margin: 15px 0;
+            color: #999;
+            font-size: 14px;
+            position: relative;
+        }
+        
+        .or-divider:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background: #ddd;
+        }
+        
+        .or-divider:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background: #ddd;
         }
         
         /* 弹窗样式 */
@@ -498,14 +552,15 @@
                         <strong>ℹ️ 支付信息：</strong><br>
                         • 网络：Base Chain (ERC-20 USDC)<br>
                         • 金额：0.05 USDC（容差范围：0.03 - 0.07 USDC）<br>
-                        • 确认时间：约 15-30 秒
+                        • 确认时间：约 15-30 秒<br>
+                        • <strong>验证时限：60 分钟内</strong>
                     </div>
                     <div class="warning-box">
                         <strong>⚠️ 重要提示：</strong><br>
                         1. 必须使用 <strong>Base 网络</strong> 发送 USDC<br>
                         2. 金额必须在 <strong>0.03-0.07 USDC</strong> 范围内<br>
                         3. 保留交易 Hash 以便查询<br>
-                        4. 等待 15-30 秒让交易确认
+                        4. <strong>60 分钟内完成验证</strong>，超时需重新支付
                     </div>
                 </div>
             </div>
@@ -514,13 +569,28 @@
             <div class="step">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <div class="step-title">验证交易获取密钥</div>
+                    <div class="step-title">输入信息并验证</div>
                     <div class="step-desc">
-                        点击下方按钮，系统会自动查询 BaseScan 验证您的交易。
+                        点击下方按钮，输入您的发送地址或交易 hash 进行验证。
                     </div>
+                    
+                    <div class="input-group">
+                        <label class="input-label">发送方地址 或 交易 Hash</label>
+                        <input 
+                            type="text" 
+                            class="input-field" 
+                            id="userInput"
+                            placeholder="0x... 或 0x..."
+                        />
+                        <div class="input-hint">
+                            💡 可以输入您的钱包地址（发送方）或交易 hash
+                        </div>
+                    </div>
+                    
                     <button class="button" onclick="verifyTransaction()" id="verifyBtn">
                         🔍 验证交易并获取密钥
                     </button>
+                    
                     <div class="success-box" style="margin-top: 20px;">
                         <strong>✅ 验证成功后您将获得：</strong><br>
                         • <strong>API_BASE_URL</strong> - API 服务器地址<br>
@@ -578,7 +648,7 @@
         <!-- 底部 -->
         <div class="footer">
             <p>📚 完整文档：<a href="https://github.com/ziwei-control/ziwei-archive" target="_blank">GitHub</a></p>
-            <p>💬 技术支持：GitHub Issues: https://github.com/ziwei-control/ziwei-archive/issues</p>
+            <p>💬 技术支持：<a href="https://github.com/ziwei-control/ziwei-archive/issues" target="_blank">GitHub Issues</a></p>
             <p style="margin-top: 15px; font-size: 12px; opacity: 0.7;">
                 本服务仅服务于加密货币合法地区<br>
                 不提供中国大陆、朝鲜、伊朗、叙利亚等受限地区服务
@@ -612,7 +682,7 @@
                 <code style="display: block; margin-top: 10px; padding: 10px; background: white; border-radius: 5px; font-size: 12px;">
                 import requests<br><br>
                 response = requests.post(<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"http://8.213.149.224/api/v1/translator",<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;"http://8.213.149.224:5002/api/v1/translator",<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;json={"text": "Hello!", "source": "en", "target": "zh"},<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;headers={"X-API-Key": "你的 API_KEY"}<br>
                 )
@@ -645,7 +715,8 @@
                 1. 已发送 <strong>0.03-0.07 USDC</strong> 到指定地址<br>
                 2. 使用 <strong>Base 网络</strong>（不是 ERC20、BEP20）<br>
                 3. 等待 <strong>15-30 秒</strong> 确认时间<br>
-                4. 检查交易是否成功
+                4. <strong>60 分钟内</strong>完成验证<br>
+                5. 检查输入的地址或 hash 是否正确
             </div>
             
             <div class="step-desc" style="margin-top: 20px;">
@@ -685,7 +756,6 @@
             navigator.clipboard.writeText(text).then(() => {
                 showToast('✅ 已复制到剪贴板！');
             }).catch(err => {
-                // 降级方案
                 const textArea = document.createElement('textarea');
                 textArea.value = text;
                 document.body.appendChild(textArea);
@@ -716,6 +786,23 @@
         
         // 验证交易
         async function verifyTransaction() {
+            const userInput = document.getElementById('userInput').value.trim();
+            
+            // 检查输入
+            if (!userInput) {
+                showToast('❌ 请输入发送地址或交易 hash');
+                return;
+            }
+            
+            // 判断输入类型（地址或 hash）
+            const isTxHash = userInput.startsWith('0x') && userInput.length === 66;
+            const isAddress = userInput.startsWith('0x') && userInput.length === 42;
+            
+            if (!isTxHash && !isAddress) {
+                showToast('❌ 请输入有效的地址或交易 hash');
+                return;
+            }
+            
             // 显示加载弹窗
             document.getElementById('loadingModal').classList.add('show');
             document.getElementById('verifyBtn').disabled = true;
@@ -728,14 +815,24 @@
                 updateLoadingText('正在连接服务器...');
                 await sleep(500);
                 
-                updateLoadingText('正在查询交易记录...');
+                updateLoadingText('正在查询 BaseScan...');
+                
+                // 构建请求数据
+                const requestData = {};
+                if (isTxHash) {
+                    requestData.tx_hash = userInput;
+                    updateLoadingText('正在验证交易 hash...');
+                } else {
+                    requestData.from_address = userInput;
+                    updateLoadingText('正在查询发送地址交易...');
+                }
                 
                 const response = await fetch(`${API_SERVER}/api/verify`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify({})
+                    body: JSON.stringify(requestData)
                 });
                 
                 const data = await response.json();
@@ -766,22 +863,6 @@
             } catch (error) {
                 console.error('验证失败:', error);
                 document.getElementById('loadingModal').classList.remove('show');
-                
-                // 开发模式：模拟验证成功（用于测试）
-                if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-                    console.log('开发模式：模拟验证成功');
-                    await sleep(2000);
-                    updateLoadingText('模拟验证成功...');
-                    await sleep(1000);
-                    
-                    document.getElementById('loadingModal').classList.remove('show');
-                    document.getElementById('apiBaseUrl').textContent = '8.213.149.224';
-                    document.getElementById('apiKey').textContent = 'x402_dev_' + Date.now();
-                    document.getElementById('successModal').classList.add('show');
-                    return;
-                }
-                
-                // 显示失败弹窗
                 document.getElementById('errorModal').classList.add('show');
             } finally {
                 document.getElementById('verifyBtn').disabled = false;

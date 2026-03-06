@@ -211,7 +211,7 @@ print(response.json())
 
 **🔑 获取 API 密钥：** http://8.213.149.224:8090/get-api-key.html  
 **API 地址：** http://8.213.149.224:5002  
-**Dashboard：** http://8.213.149.224:8081  
+**Dashboard：** http://8.213.149.224:8091  
 **GitHub：** github.com/ziwei-control/ziwei-archive  
 
 **使用方式：** 按次付费，用多少付多少

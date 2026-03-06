@@ -569,7 +569,7 @@ class APICostTracker:
 
 **合作联系：**
 - GitHub: github.com/ziwei-control/ziwei-archive
-- Dashboard: http://8.213.149.224:8081
+- Dashboard: http://8.213.149.224:8091
 - 邮箱：contact@x402.network（示例）
 
 ---

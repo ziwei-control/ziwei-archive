@@ -133,7 +133,7 @@ A: 区块链支付不可逆，但 API 问题会补偿。
 ## 📞 联系合作
 
 - **GitHub:** github.com/ziwei-control/ziwei-archive
-- **Dashboard:** http://8.213.149.224:8081
+- **Dashboard:** http://8.213.149.224:8091
 - **完整文档:** [CUSTOMER_API_GUIDE.md](CUSTOMER_API_GUIDE.md)
 
 ---

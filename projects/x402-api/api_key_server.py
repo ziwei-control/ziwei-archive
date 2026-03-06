@@ -36,7 +36,7 @@ CONFIG = {
     "TOLERANCE": 0.02,  # 容差范围
     "REAL_API_URL": "8.213.149.224",  # 真实 API 服务器地址
     "BASESCAN_API_KEY": "",  # 留空使用公开 API（无需注册）
-    "TIME_WINDOW": 300,  # 5 分钟内交易有效
+    "TIME_WINDOW": 3600,  # 60 分钟内交易有效
     "DB_PATH": "api_keys.db",
     "HTTPS_ENABLED": False,  # 生产环境建议开启
     "SSL_CERT": "cert.pem",
@@ -211,7 +211,7 @@ def query_basescan(address: str) -> dict:
         return {"status": "0", "message": str(e), "result": []}
 
 # ============ 交易验证 ============
-def verify_payment(tx_hash: str = "") -> dict:
+def verify_payment(tx_hash: str = "", from_address: str = "") -> dict:
     """
     验证支付交易
     
@@ -219,7 +219,7 @@ def verify_payment(tx_hash: str = "") -> dict:
     1. 查询 BaseScan 获取交易记录
     2. 检查是否是 USDC 交易
     3. 检查金额是否在容差范围内（0.05 ± 0.02 USDC）
-    4. 检查时间是否在时间窗口内（5 分钟）
+    4. 检查时间是否在时间窗口内（60 分钟）
     5. 生成并保存 API Key
     
     Returns:
@@ -263,6 +263,9 @@ def verify_payment(tx_hash: str = "") -> dict:
     min_amount = CONFIG["EXPECTED_AMOUNT"] - CONFIG["TOLERANCE"]  # 0.03 USDC
     max_amount = CONFIG["EXPECTED_AMOUNT"] + CONFIG["TOLERANCE"]  # 0.07 USDC
     
+    # 时间窗口：60 分钟
+    time_window = CONFIG["TIME_WINDOW"]  # 3600 秒
+    
     for tx in results:
         # 检查是否是 USDC 交易
         token_symbol = tx.get("tokenSymbol", "")
@@ -279,6 +282,10 @@ def verify_payment(tx_hash: str = "") -> dict:
         if tx_hash and tx.get("hash", "").lower() != tx_hash.lower():
             continue
         
+        # 如果指定了 from_address，检查发送方是否匹配
+        if from_address and tx.get("from", "").lower() != from_address.lower():
+            continue
+        
         try:
             # 检查金额（容差范围检查）
             decimal = int(tx.get("tokenDecimal", 6))
@@ -290,10 +297,10 @@ def verify_payment(tx_hash: str = "") -> dict:
                 print(f"⚠️ 金额不符合：{amount} USDC (需要 {min_amount}-{max_amount})")
                 continue
             
-            # 检查时间
+            # 检查时间（60 分钟内）
             tx_time = int(tx.get("timeStamp", 0))
-            if (now - tx_time) > CONFIG["TIME_WINDOW"]:
-                print(f"⚠️ 交易超时：{tx_time}")
+            if (now - tx_time) > time_window:
+                print(f"⚠️ 交易超时：{tx_time}（超过 60 分钟）")
                 continue
             
             # 验证成功，生成 API Key
@@ -362,7 +369,17 @@ def api_verify():
     """API 验证端点"""
     ip = request.remote_addr
     data = request.get_json() or {}
-    tx_hash = data.get("tx_hash", "")
+    
+    # 支持两种输入：发送地址或交易 hash
+    from_address = data.get("from_address", "").strip()
+    tx_hash = data.get("tx_hash", "").strip()
+    
+    # 验证输入
+    if not from_address and not tx_hash:
+        return jsonify({
+            "success": False,
+            "message": "请提供发送地址或交易 hash"
+        })
     
     try:
         result = verify_payment(tx_hash)

@@ -211,7 +211,7 @@ Need private deployment? Custom AI models? Contact us.
 
 **🔑 Get API Key:** http://8.213.149.224:8090/get-api-key.html  
 **API Endpoint:** http://8.213.149.224:5002  
-**Dashboard:** http://8.213.149.224:8081  
+**Dashboard:** http://8.213.149.224:8091  
 **GitHub:** github.com/ziwei-control/ziwei-archive  
 
 **Pricing:** Pay-per-call, starting at $0.02 USDC

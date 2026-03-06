@@ -85,7 +85,7 @@ print(response.json())
 
 **This is not hype. This is real running data.** 📈
 
-**Live Dashboard:** http://8.213.149.224:8081
+**Live Dashboard:** http://8.213.149.224:8091
 
 ---
 
@@ -213,7 +213,7 @@ Need private deployment? Custom AI models? Contact us.
 | Resource | Link |
 |----------|------|
 | **API Endpoint** | http://8.213.149.224:5002 (private, open to partners) |
-| **Live Dashboard** | http://8.213.149.224:8081 |
+| **Live Dashboard** | http://8.213.149.224:8091 |
 | **GitHub Repo** | github.com/ziwei-control/ziwei-archive |
 | **Gitee Mirror** | gitee.com/pandac0/ziwei-archive |
 | **Documentation** | (Coming soon) |
