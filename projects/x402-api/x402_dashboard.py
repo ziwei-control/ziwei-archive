@@ -21,7 +21,7 @@ import os
 import hashlib
 from datetime import datetime
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='/home/admin/Ziwei/projects/x402-api')
 
 # 配置
 DB_PATH = "/home/admin/Ziwei/projects/x402-api/api_keys.db"
@@ -819,6 +819,47 @@ def get_user_data():
     return jsonify({
         "success": False,
         "message": "未找到记录"
+    })
+
+@app.route("/admin-dashboard.html")
+def admin_dashboard():
+    """管理员后台仪表板"""
+    with open('/home/admin/Ziwei/projects/x402-api/admin-dashboard.html', 'r', encoding='utf-8') as f:
+        return f.read()
+
+@app.route("/api/admin-users")
+def admin_users():
+    """获取所有用户数据"""
+    conn = get_db_connection()
+    if not conn:
+        return jsonify({"success": False, "message": "数据库连接失败"})
+    
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT api_key, api_base_url, tx_hash, from_address, amount, timestamp, is_active
+        FROM api_keys
+        ORDER BY timestamp DESC
+    """)
+    
+    rows = cursor.fetchall()
+    conn.close()
+    
+    users = []
+    for row in rows:
+        users.append({
+            "api_key": row[0],
+            "api_base_url": row[1],
+            "tx_hash": row[2],
+            "from_address": row[3],
+            "amount": row[4],
+            "timestamp": row[5],
+            "is_active": row[6]
+        })
+    
+    return jsonify({
+        "success": True,
+        "users": users,
+        "total": len(users)
     })
 
 if __name__ == "__main__":
