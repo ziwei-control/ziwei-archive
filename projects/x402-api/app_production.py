@@ -156,10 +156,23 @@ def call_dashscope(model, prompt):
 
 class X402APIHandler(http.server.BaseHTTPRequestHandler):
     def send_json_response(self, data, status_code=200):
-        self.send_response(status_code)
-        self.send_header('Content-Type', 'application/json; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(json.dumps(data, ensure_ascii=False).encode('utf-8'))
+        try:
+            self.send_response(status_code)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+            self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+            self.end_headers()
+            self.wfile.write(json.dumps(data, ensure_ascii=False).encode('utf-8'))
+        except BrokenPipeError:
+            # 客户端断开连接，忽略错误
+            pass
+        except ConnectionResetError:
+            # 连接被重置，忽略错误
+            pass
+        except Exception as e:
+            # 其他错误记录日志
+            print(f"[ERROR] send_json_response failed: {e}")
 
     def send_402_payment_required(self, amount, request_id):
         response = gateway.generate_402_response(amount, request_id)
@@ -227,8 +240,13 @@ class X402APIHandler(http.server.BaseHTTPRequestHandler):
             self.send_json_response({"error": f"Unknown agent: {agent_type}"}, 400)
             return
 
-        content_length = int(self.headers.get('Content-Length', 0))
-        request_data = self.rfile.read(content_length)
+        # 使用安全中间件缓存的请求数据（如果有）
+        if hasattr(self, '_cached_request_data'):
+            request_data = self._cached_request_data.encode('utf-8')
+        else:
+            content_length = int(self.headers.get('Content-Length', 0))
+            request_data = self.rfile.read(content_length)
+        
         try:
             data = json.loads(request_data.decode('utf-8'))
         except:

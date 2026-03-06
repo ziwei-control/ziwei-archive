@@ -29,6 +29,14 @@ from functools import wraps
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 
+# ============ CORS 支持 ============
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
+
 # ============ 配置 ============
 CONFIG = {
     "PAYMENT_ADDRESS": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb",

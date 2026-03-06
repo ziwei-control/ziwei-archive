@@ -366,9 +366,9 @@
         async function loadServiceStatus() {
             try {
                 const services = [
-                    { name: 'API 密钥发放', port: 8090, url: 'http://8.213.149.224:8090/api/status' },
-                    { name: '用户登录验证', port: 8091, url: 'http://8.213.149.224:8091/api/status' },
-                    { name: 'AI API 服务', port: 5002, url: 'http://8.213.149.224:5002/health' }
+                    { name: 'API 密钥发放', port: 8090, url: '/api/proxy/8090/status' },
+                    { name: '用户登录验证', port: 8091, url: '/api/proxy/8091/status' },
+                    { name: 'AI API 服务', port: 5002, url: '/api/proxy/5002/health' }
                 ];
                 
                 let html = '<table><thead><tr><th>服务名称</th><th>端口</th><th>状态</th></tr></thead><tbody>';

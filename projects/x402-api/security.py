@@ -333,12 +333,15 @@ class SecurityManager:
             for stats in self.ip_stats.values()
         )
         
+        # 计算一小时前的时间戳（ISO 格式字符串，用于与 log["timestamp"] 比较）
+        cutoff_timestamp = (datetime.now() - timedelta(hours=1)).isoformat()
+        
         return {
             "total_ips": len(self.ip_stats),
             "blocked_ips": len([ip for ip, stats in self.ip_stats.items() if stats["blocked_until"] > now]),
             "blacklisted_ips": len(self.blacklist),
             "total_attacks": len(self.attack_log),
-            "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > (now - 3600)]),
+            "attacks_last_hour": len([log for log in self.attack_log if log["timestamp"] > cutoff_timestamp]),
             "total_requests_last_hour": total_requests,
             "alerts": self.alert_count,
         }
@@ -382,7 +385,10 @@ def security_middleware(handler_class):
             self.send_response(403)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
-            self.wfile.write(json.dumps({"error": message}).encode())
+            try:
+                self.wfile.write(json.dumps({"error": message}).encode())
+            except (BrokenPipeError, ConnectionResetError):
+                pass
             return
         
         # 记录请求并检查频率限制
@@ -391,7 +397,10 @@ def security_middleware(handler_class):
             self.send_response(429)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
-            self.wfile.write(json.dumps({"error": message}).encode())
+            try:
+                self.wfile.write(json.dumps({"error": message}).encode())
+            except (BrokenPipeError, ConnectionResetError):
+                pass
             return
         
         # 读取请求体并检测攻击
@@ -399,16 +408,22 @@ def security_middleware(handler_class):
         if content_length > 0:
             request_data = self.rfile.read(content_length).decode('utf-8', errors='ignore')
             
+            # 将请求体缓存，供原始处理函数使用
+            self._cached_request_data = request_data
+            
             # 检测攻击
             is_attack, attack_types = security_manager.detect_attack(client_ip, request_data)
             if is_attack:
                 self.send_response(400)
                 self.send_header('Content-Type', 'application/json')
                 self.end_headers()
-                self.wfile.write(json.dumps({
-                    "error": "检测到攻击行为",
-                    "attack_types": attack_types
-                }).encode())
+                try:
+                    self.wfile.write(json.dumps({
+                        "error": "检测到攻击行为",
+                        "attack_types": attack_types
+                    }).encode())
+                except (BrokenPipeError, ConnectionResetError):
+                    pass
                 return
         
         # 继续原始处理
@@ -424,7 +439,10 @@ def security_middleware(handler_class):
             self.send_response(403)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
-            self.wfile.write(json.dumps({"error": message}).encode())
+            try:
+                self.wfile.write(json.dumps({"error": message}).encode())
+            except (BrokenPipeError, ConnectionResetError):
+                pass
             return
         
         # 记录请求并检查频率限制
@@ -433,7 +451,10 @@ def security_middleware(handler_class):
             self.send_response(429)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
-            self.wfile.write(json.dumps({"error": message}).encode())
+            try:
+                self.wfile.write(json.dumps({"error": message}).encode())
+            except (BrokenPipeError, ConnectionResetError):
+                pass
             return
         
         # 继续原始处理

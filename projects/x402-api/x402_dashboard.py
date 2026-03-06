@@ -23,6 +23,14 @@ from datetime import datetime
 
 app = Flask(__name__, static_folder='/home/admin/Ziwei/projects/x402-api')
 
+# ============ CORS 支持 ============
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
+
 # 配置
 DB_PATH = "/home/admin/Ziwei/projects/x402-api/api_keys.db"
 PAYMENT_ADDRESS = "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb"
@@ -861,6 +869,50 @@ def admin_users():
         "users": users,
         "total": len(users)
     })
+
+@app.route("/api/status", methods=["GET"])
+def api_status():
+    """API 状态检查"""
+    return jsonify({
+        "status": "ok",
+        "service": "x402 Dashboard",
+        "port": 8091,
+        "database": "initialized" if os.path.exists(DB_PATH) else "not_initialized"
+    })
+
+# ============ 代理接口（避免 CORS 跨域问题）===========
+@app.route("/api/proxy/5002/health", methods=["GET"])
+def proxy_5002_health():
+    """代理 5002 端口健康检查"""
+    try:
+        resp = requests.get("http://localhost:5002/health", timeout=3)
+        return jsonify({"status": "ok", "data": resp.json()})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 503
+
+@app.route("/api/proxy/8090/status", methods=["GET"])
+def proxy_8090_status():
+    """代理 8090 端口状态检查"""
+    try:
+        resp = requests.get("http://localhost:8090/api/status", timeout=3)
+        return jsonify({"status": "ok", "data": resp.json()})
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 503
+
+@app.route("/api/proxy/8091/status", methods=["GET"])
+def proxy_8091_status():
+    """代理 8091 端口状态检查（本机）"""
+    try:
+        return jsonify({
+            "status": "ok",
+            "data": {
+                "service": "x402 Dashboard",
+                "port": 8091,
+                "status": "ok"
+            }
+        })
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 503
 
 if __name__ == "__main__":
     print("=" * 60)
