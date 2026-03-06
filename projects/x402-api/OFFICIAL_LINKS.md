@@ -1,35 +1,60 @@
 # 🚀 x402 API 官方链接汇总
 
 **最后更新：** 2026-03-06  
-**版本：** v2.1.0
+**版本：** v2.2.0
 
 ---
 
-## 🌐 官方网站和访问地址
+## 🌐 服务架构说明
 
-### API 密钥获取页面（用户入口）
+### 端口分配
+
+| 端口 | 服务 | 用途 | 状态 |
+|------|------|------|------|
+| **8090** | API 密钥发放服务 | 用户获取 API 密钥 + 验证交易 API | ✅ 运行中 |
+| **8091** | Dashboard 监控面板 | 实时查看发放统计和记录 | ✅ 运行中 |
+| **5002** | API 服务器 | 实际 AI API 调用端点 | - |
+
+**说明：**
+- **8090 端口** 是 API 密钥发放系统的核心服务，提供前端页面和后端 API
+- **8091 端口** 是独立的监控面板，用于查看统计数据
+- **5002 端口** 是实际的 AI API 服务（私有部署）
+
+---
+
+## 🔗 官方访问地址
+
+### 用户入口（8090 端口）
+
+**API 密钥获取页面：**
 ```
 http://8.213.149.224:8090/get-api-key.html
 ```
 **用途：** 用户支付 USDC 后自动获取 API 访问凭证
 
-### Dashboard 监控面板
+**API 端点（8090 端口）：**
+```
+POST http://8.213.149.224:8090/api/verify     # 验证交易
+GET  http://8.213.149.224:8090/api/status     # 状态检查
+GET  http://8.213.149.224:8090/api/transactions # 交易记录
+GET  http://8.213.149.224:8090/api/stats      # 统计数据
+```
+
+### 监控面板（8091 端口）
+
+**Dashboard 监控面板：**
 ```
 http://8.213.149.224:8091
 ```
 **用途：** 实时查看系统状态、收入统计、交易记录
 
-### API 服务器
+### API 服务器（5002 端口）
+
+**API 调用端点：**
 ```
 http://8.213.149.224:5002
 ```
-**用途：** API 调用端点
-
-### API 密钥发放服务
-```
-http://8.213.149.224:8090
-```
-**用途：** API 密钥自动发放 Web 服务
+**用途：** 实际 AI API 调用（合作后开放）
 
 ---
 
@@ -50,6 +75,7 @@ https://gitee.com/pandac0/ziwei-archive
 - [QUICK_START.md](https://github.com/ziwei-control/ziwei-archive/blob/main/projects/x402-api/QUICK_START.md) - 快速开始
 - [CUSTOMER_API_GUIDE.md](https://github.com/ziwei-control/ziwei-archive/blob/main/projects/x402-api/CUSTOMER_API_GUIDE.md) - 客户调用指南
 - [API_KEY_SYSTEM_README.md](https://github.com/ziwei-control/ziwei-archive/blob/main/projects/x402-api/API_KEY_SYSTEM_README.md) - API 密钥系统说明
+- [VERIFICATION_LOGIC.md](https://github.com/ziwei-control/ziwei-archive/blob/main/projects/x402-api/VERIFICATION_LOGIC.md) - 验证逻辑详解
 
 ---
 
@@ -62,7 +88,8 @@ https://gitee.com/pandac0/ziwei-archive
 
 **网络：** Base Chain (ERC-20 USDC)  
 **金额：** 0.05 USDC（容差范围：0.03 - 0.07 USDC）  
-**确认时间：** 约 15-30 秒
+**确认时间：** 约 15-30 秒  
+**验证时限：** 60 分钟内  
 
 **查询交易：** https://basescan.org/address/0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb
 
@@ -148,9 +175,9 @@ curl http://8.213.149.224:8090/api/status
 curl http://8.213.149.224:8090/api/transactions
 ```
 
-### 健康检查
+### Dashboard 监控
 ```bash
-curl http://8.213.149.224:8090/
+curl http://8.213.149.224:8091/api/stats
 ```
 
 ---
@@ -210,7 +237,7 @@ curl -X POST http://8.213.149.224:5002/api/v1/translator \
 
 **技术支持：**
 - GitHub Issues: https://github.com/ziwei-control/ziwei-archive/issues
-- 邮箱：GitHub Issues: https://github.com/ziwei-control/ziwei-archive/issues
+- 工单系统：https://github.com/ziwei-control/ziwei-archive/issues
 
 **商务合作：**
 - DM 或邮件联系
@@ -252,4 +279,5 @@ MIT License - 详见 [LICENSE](https://github.com/ziwei-control/ziwei-archive/bl
 
 **开始构建你的 AI 应用吧！** 🚀
 
-**立即获取 API 密钥：** http://8.213.149.224:8090/get-api-key.html
+**立即获取 API 密钥：** http://8.213.149.224:8090/get-api-key.html  
+**查看监控面板：** http://8.213.149.224:8091
