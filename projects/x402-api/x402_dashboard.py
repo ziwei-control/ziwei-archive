@@ -518,8 +518,48 @@ def query_basescan(tx_hash):
 
 @app.route("/")
 def login():
-    """登录页面"""
+    """用户登录页面"""
     return render_template_string(LOGIN_HTML)
+
+@app.route("/admin")
+def admin_login():
+    """管理员登录页面"""
+    return render_template_string(ADMIN_LOGIN_HTML)
+
+@app.route("/api/admin-login", methods=["POST"])
+def admin_verify():
+    """管理员验证"""
+    data = request.get_json() or {}
+    address = data.get("address", "").strip().lower()
+    password = data.get("password", "").strip()
+    
+    conn = get_db_connection()
+    if not conn:
+        return jsonify({"success": False, "message": "数据库连接失败"})
+    
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT password_hash, salt, is_active
+        FROM admins
+        WHERE address = ?
+    """, (address,))
+    
+    row = cursor.fetchone()
+    conn.close()
+    
+    if not row or row[2] != 1:
+        return jsonify({"success": False, "message": "管理员账户不存在"})
+    
+    # 验证密码
+    password_hash = hashlib.sha256(f"{password}{row[1]}".encode()).hexdigest()
+    if password_hash != row[0]:
+        return jsonify({"success": False, "message": "密码错误"})
+    
+    return jsonify({
+        "success": True,
+        "message": "登录成功",
+        "redirect": "/admin-dashboard.html"
+    })
 
 @app.route("/dashboard.html")
 def dashboard():
