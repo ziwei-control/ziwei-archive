@@ -43,9 +43,9 @@ BODY = """
 欢迎测试体验。
 
 【立即测试】
-📊 Dashboard: http://8.213.149.224/dashboard
-🔌 API 测试：http://8.213.149.224:5002
-🔐 获取 Key: http://8.213.149.224:8090/get-api-key.html
+📚 GitHub: https://github.com/ziwei-control/ziwei-archive
+🔌 API 文档：查看 GitHub README
+📝 文档：https://github.com/ziwei-control/ziwei-archive/tree/main/projects/x402-api
 📚 文档：https://github.com/ziwei-control/ziwei-archive
 
 【技术支持】
