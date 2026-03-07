@@ -1,3 +1,17 @@
+# 🚀 x402 API - AI 微付费协议
+
+[![Status](https://img.shields.io/badge/status-live-green)]()
+[![Price](https://img.shields.io/badge/price-$0.02-blue)]()
+[![Testnet](https://img.shields.io/badge/testnet-free-orange)]()
+
+> **💰 限时免费测试中！** 即日起至 2026-03-09
+> 
+> **📊 实时 Dashboard:** http://8.213.149.224/dashboard
+> **🔌 API 测试:** http://8.213.149.224:5002
+> **🔐 获取 Key:** http://8.213.149.224:8090/get-api-key.html
+
+---
+
 # x402 API - AI Micro-Payment Protocol
 
 [![Status](https://img.shields.io/badge/status-live-green)]()
