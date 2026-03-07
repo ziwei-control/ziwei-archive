@@ -22,7 +22,7 @@ AI 微付费协议，让开发者用多少付多少：
 🆓 测试期：即日起 - 3 月 9 日
 💰 正式价：$0.02/次起（业界最低）
 
-👉 立即测试：http://8.213.149.224:5002
+👉 立即测试：http://8.213.149.224:8090/get-api-key.html
 
 #AI #API #Developer #BuildInPublic
 ```
@@ -78,8 +78,8 @@ Key features:
 - Pay with USDC on Base (low gas fees)
 - Free trial until March 9th
 
-Live demo: http://8.213.149.224:5002
-Dashboard: http://8.213.149.224/dashboard
+Live demo: http://8.213.149.224:8090/get-api-key.html
+Dashboard: http://8.213.149.224:8090/get-api-key.html
 
 This is a one-person project. Would love your feedback!
 
@@ -113,8 +113,8 @@ Features:
 - Pay with USDC on Base chain (low gas fees)
 - Free trial until March 9th
 
-Live demo: http://8.213.149.224:5002
-Dashboard: http://8.213.149.224/dashboard
+Live demo: http://8.213.149.224:8090/get-api-key.html
+Dashboard: http://8.213.149.224:8090/get-api-key.html
 GitHub: https://github.com/ziwei-control/ziwei-archive
 
 This is a one-person project built over the past month. 
@@ -148,7 +148,7 @@ Tech stack:
 - Frontend: Pure HTML/CSS/JS
 - Monitoring: Custom dashboard
 
-Live: http://8.213.149.224:5002
+Live: http://8.213.149.224:8090/get-api-key.html
 Code: https://github.com/ziwei-control/ziwei-archive
 
 Happy to answer any questions!
@@ -188,8 +188,8 @@ Try it free until March 9th!
 ```
 
 **链接：**
-- Website: http://8.213.149.224:5002
-- Demo: http://8.213.149.224/dashboard
+- Website: http://8.213.149.224:8090/get-api-key.html
+- Demo: http://8.213.149.224:8090/get-api-key.html
 - GitHub: https://github.com/ziwei-control/ziwei-archive
 
 ---
@@ -205,7 +205,7 @@ No subscription, no credit card needed. Just pay with USDC on Base chain.
 
 Free trial until March 9th. Come try it out!
 
-👉 http://8.213.149.224:5002
+👉 http://8.213.149.224:8090/get-api-key.html
 📚 Docs: https://github.com/ziwei-control/ziwei-archive
 ```
 
@@ -242,8 +242,8 @@ Free trial until March 9th. Come try it out!
 欢迎测试体验。
 
 【立即测试】
-📊 Dashboard: http://8.213.149.224/dashboard
-🔌 API 测试：http://8.213.149.224:5002
+📊 Dashboard: http://8.213.149.224:8090/get-api-key.html
+🔌 API 测试：http://8.213.149.224:8090/get-api-key.html
 🔐 获取 Key: http://8.213.149.224:8090/get-api-key.html
 📚 文档：https://github.com/ziwei-control/ziwei-archive
 

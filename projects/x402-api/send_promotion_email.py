@@ -6,7 +6,6 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
-import json
 
 # 配置
 SMTP_SERVER = "smtp.163.com"
@@ -42,11 +41,10 @@ BODY = """
 即日起至 2026-03-09，所有 API 免费使用！
 欢迎测试体验。
 
-【立即测试】
+【立即获取 API Key】
+🔑 API Key 获取：http://8.213.149.224:8090/get-api-key.html
 📚 GitHub: https://github.com/ziwei-control/ziwei-archive
-🔌 API 文档：查看 GitHub README
-📝 文档：https://github.com/ziwei-control/ziwei-archive/tree/main/projects/x402-api
-📚 文档：https://github.com/ziwei-control/ziwei-archive
+📚 Gitee: https://gitee.com/pandac0/ziwei-archive
 
 【技术支持】
 如有任何问题，欢迎通过 GitHub Issues 联系我们。
@@ -70,7 +68,7 @@ RECEIVERS = [
 def send_email(to_email, subject, body):
     """发送邮件"""
     try:
-        msg = MIMEText(body, 'plain', 'utf-8')
+        msg = MIMEText(BODY, 'plain', 'utf-8')
         msg['From'] = Header("紫微智控", 'utf-8')
         msg['To'] = Header(to_email, 'utf-8')
         msg['Subject'] = Header(subject, 'utf-8')
