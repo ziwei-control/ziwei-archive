@@ -1,0 +1,29 @@
+============================================================
+x402 API 密钥自动发放服务（生产环境版）
+============================================================
+收款地址：0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb
+期望金额：0.05 USDC
+容差范围：±0.02 USDC (0.030000000000000002 - 0.07)
+真实 API 地址：8.213.149.224
+时间窗口：3600 秒
+BaseScan API Key: 未配置（使用公开 API）
+============================================================
+✅ 数据库初始化完成
+
+启动 Web 服务...
+访问地址：http://8.213.149.224:8080
+⚠️ 生产环境建议启用 HTTPS
+ * Serving Flask app 'api_key_server'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8090
+ * Running on http://172.19.26.222:8090
+[33mPress CTRL+C to quit[0m
+36.104.185.173 - - [07/Mar/2026 10:08:23] "GET /get-api-key.html HTTP/1.1" 200 -
+36.104.185.173 - - [07/Mar/2026 10:08:24] "GET /api/status HTTP/1.1" 200 -
+36.104.185.173 - - [07/Mar/2026 10:08:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+36.104.185.173 - - [07/Mar/2026 10:11:32] "[36mGET /get-api-key.html HTTP/1.1[0m" 304 -
+36.104.185.173 - - [07/Mar/2026 10:11:32] "GET /api/status HTTP/1.1" 200 -
+36.104.185.173 - - [07/Mar/2026 10:11:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/Mar/2026 10:20:35] "GET /api/status HTTP/1.1" 200 -

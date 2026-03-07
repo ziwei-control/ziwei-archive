@@ -1,0 +1,19 @@
+============================================================
+x402 API Dashboard - 用户登录验证
+============================================================
+访问地址：http://8.213.149.224:8091
+数据库：/home/admin/Ziwei/projects/x402-api/api_keys.db
+============================================================
+ * Serving Flask app 'x402_dashboard'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8091
+ * Running on http://172.19.26.222:8091
+[33mPress CTRL+C to quit[0m
+8.213.149.224 - - [07/Mar/2026 10:20:30] "GET /admin-dashboard.html HTTP/1.1" 200 -
+8.213.149.224 - - [07/Mar/2026 10:20:34] "GET /api/admin-users HTTP/1.1" 200 -
+8.213.149.224 - - [07/Mar/2026 10:20:34] "GET /api/admin-users HTTP/1.1" 200 -
+8.213.149.224 - - [07/Mar/2026 10:20:35] "GET /api/proxy/8090/status HTTP/1.1" 200 -
+8.213.149.224 - - [07/Mar/2026 10:20:35] "GET /api/proxy/8091/status HTTP/1.1" 200 -
+8.213.149.224 - - [07/Mar/2026 10:20:35] "GET /api/proxy/5002/health HTTP/1.1" 200 -
