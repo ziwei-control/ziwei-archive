@@ -290,6 +290,10 @@ HTML_TEMPLATE = """
         </div>
         
         <div class="grid">
+            {trading_signals}
+        </div>
+        
+        <div class="grid">
             {crypto_stats}
             {warroom_stats}
         </div>
@@ -751,6 +755,135 @@ def get_api_stats():
         """
 
 
+def get_trading_signals():
+    """交易机器人 - 实时信号分析"""
+    try:
+        strategy_dir = Ziwei_DIR / "data" / "strategy"
+        signal_files = sorted(strategy_dir.glob("signals_*.json"), reverse=True)
+        
+        if not signal_files:
+            return """
+            <div class="card">
+                <h2>🤖 交易信号分析</h2>
+                <p style="color:#666;">暂无信号数据</p>
+            </div>
+            """
+        
+        with open(signal_files[0]) as f:
+            signals = json.load(f)
+        
+        # 获取账户状态
+        account_file = strategy_dir / "account_status.json"
+        account = {}
+        if account_file.exists():
+            with open(account_file) as f:
+                account = json.load(f)
+        
+        balance = account.get('balance', 10000)
+        total_trades = account.get('total_trades', 0)
+        
+        # 信号分类
+        strong_buy = [s for s in signals if s.get('signal') == 'STRONG_BUY']
+        buy = [s for s in signals if s.get('signal') == 'BUY']
+        weak_buy = [s for s in signals if s.get('signal') == 'WEAK_BUY']
+        hold = [s for s in signals if s.get('signal') == 'HOLD']
+        sell = [s for s in signals if s.get('signal') in ['SELL', 'WEAK_SELL', 'STRONG_SELL']]
+        
+        # 生成信号行
+        rows = ""
+        for signal in signals[:7]:  # 最多显示 7 个
+            symbol = signal.get('symbol', '')
+            sig = signal.get('signal', 'HOLD')
+            score = signal.get('score', 0)
+            price = signal.get('price', 0)
+            change = signal.get('change_24h', 0)
+            
+            # 信号颜色
+            if 'STRONG_BUY' in sig:
+                sig_color = '#22c55e'  # 绿色
+                sig_bg = 'rgba(34, 197, 94, 0.2)'
+            elif 'BUY' in sig:
+                sig_color = '#84cc16'
+                sig_bg = 'rgba(132, 204, 22, 0.2)'
+            elif 'SELL' in sig:
+                sig_color = '#ef4444'
+                sig_bg = 'rgba(239, 68, 68, 0.2)'
+            else:
+                sig_color = '#6b7280'
+                sig_bg = 'rgba(107, 116, 128, 0.2)'
+            
+            # 分数颜色
+            if score >= 15:
+                score_color = '#22c55e'
+            elif score >= 5:
+                score_color = '#f59e0b'
+            elif score <= -5:
+                score_color = '#ef4444'
+            else:
+                score_color = '#6b7280'
+            
+            change_sign = '+' if change >= 0 else ''
+            change_class = 'crypto-up' if change >= 0 else 'crypto-down'
+            
+            rows += f"""
+            <div class="stat" style="align-items:center;">
+                <div style="flex:1;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;">
+                        <span class="stat-label" style="font-weight:600;color:#e0e0e0;">{symbol}</span>
+                        <span style="background:{sig_bg};color:{sig_color};padding:2px 8px;border-radius:4px;font-size:0.75em;font-weight:600;">{sig}</span>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;font-size:0.85em;">
+                        <span style="color:#888;">${price:,.2f} <span class="{change_class}">({change_sign}{change:.2f}%)</span></span>
+                        <span style="color:{score_color};font-weight:600;">分数：{score}</span>
+                    </div>
+                </div>
+            </div>
+            """
+        
+        # 信号统计
+        signal_summary = f"""
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:15px;">
+            <div style="background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:10px;text-align:center;">
+                <div style="color:#22c55e;font-size:1.5em;font-weight:700;">{len(strong_buy)}</div>
+                <div style="color:#888;font-size:0.75em;">强买</div>
+            </div>
+            <div style="background:rgba(132,204,22,0.1);border:1px solid rgba(132,204,22,0.3);border-radius:8px;padding:10px;text-align:center;">
+                <div style="color:#84cc16;font-size:1.5em;font-weight:700;">{len(buy)}</div>
+                <div style="color:#888;font-size:0.75em;">买入</div>
+            </div>
+            <div style="background:rgba(107,116,128,0.1);border:1px solid rgba(107,116,128,0.3);border-radius:8px;padding:10px;text-align:center;">
+                <div style="color:#9ca3af;font-size:1.5em;font-weight:700;">{len(hold)}</div>
+                <div style="color:#888;font-size:0.75em;">观望</div>
+            </div>
+        </div>
+        """
+        
+        update_time = signal_files[0].stem.replace('signals_', '').replace('_', ':')[-8:] if signal_files else 'N/A'
+        
+        return f"""
+        <div class="card" style="grid-column:span 2;">
+            <h2>🤖 交易信号分析</h2>
+            {signal_summary}
+            <div style="margin-bottom:15px;padding:10px;background:rgba(255,255,255,0.05);border-radius:8px;">
+                <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
+                    <span style="color:#888;">账户余额</span>
+                    <span style="color:#e0e0e0;font-weight:600;">${balance:,.2f} USDC</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                    <span style="color:#888;">总交易数</span>
+                    <span style="color:#e0e0e0;font-weight:600;">{total_trades}</span>
+                </div>
+            </div>
+            {rows}
+            <div style="margin-top:15px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8em;color:#666;">
+                📅 最后更新：{update_time} | 策略引擎 v3.0
+            </div>
+        </div>
+        """
+    except Exception as e:
+        return f'<div class="card" style="grid-column:span 2;"><h2>🤖 交易信号分析</h2><span class="error">{e}</span></div>'
+
+
 def get_crypto_stats():
     """加密货币实时价格 (从战情室数据)"""
     try:
@@ -1205,6 +1338,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             system_stats=get_system_stats(),
             service_stats=get_service_stats(),
             trading_stats=get_trading_stats(),
+            trading_signals=get_trading_signals(),
             security_stats=get_security_stats(),
             income_stats=get_income_stats(),
             api_stats=get_api_stats(),
