@@ -931,133 +931,111 @@ def get_crypto_stats():
 
 
 def get_warroom_stats():
-    """全球战情室 - 新闻市场影响分析（真实数据）"""
+    """全球战情室 - 实时新闻 + 市场情绪（每 60 秒更新）"""
     try:
-        # 读取最新的市场分析报告
-        reports_dir = Ziwei_DIR / "data" / "warroom" / "analysis" / "reports"
-        report_files = sorted(reports_dir.glob("market_report_*.json"), reverse=True)
+        # 读取最新情报（实时数据，60 秒更新）
+        intel_dir = Ziwei_DIR / "data" / "intel"
+        intel_files = sorted(intel_dir.glob("intel_*.json"), reverse=True)
         
-        if not report_files:
+        if not intel_files:
             return """
             <div class="card" style="grid-column:span 2;">
-                <h2>🌍 全球战情室 - 市场分析</h2>
-                <p style="color:#666;">暂无分析数据，运行：python3 news_market_analyzer.py analyze</p>
+                <h2>🌍 全球战情室</h2>
+                <p style="color:#666;">暂无情报数据</p>
             </div>
             """
         
-        with open(report_files[0]) as f:
-            report = json.load(f)
+        with open(intel_files[0]) as f:
+            intel = json.load(f)
         
-        report_time = report.get('report_time', 'N/A')[:19].replace('T', ' ')
-        total_news = report.get('total_news', 0)
+        report_time = intel.get('timestamp', 'N/A')[11:19] if intel.get('timestamp') else 'N/A'
         
-        # 市场概览
-        overview = report.get('market_overview', {})
-        bullish = overview.get('bullish_coins', [])
-        bearish = overview.get('bearish_coins', [])
-        neutral = overview.get('neutral_coins', [])
+        # 获取新闻数据
+        news = intel.get('news', {})
+        total_news = sum(len(articles) for articles in news.values())
         
-        # 币种预测详情
-        predictions = report.get('coin_predictions', {})
+        # 获取情绪数据
+        sentiment = intel.get('sentiment', {})
+        
+        # 获取价格数据
+        prices = intel.get('prices', {})
+        
+        # 显示各币种新闻和情绪
         rows = ""
-        
-        for coin, pred in predictions.items():
-            price_pred = pred.get('price_prediction', {})
-            sentiment = pred.get('sentiment_score', 0)
-            impact = pred.get('impact', 'neutral')
-            confidence = pred.get('confidence', 'low')
+        for coin in ['BTC', 'ETH', 'SOL', 'BNB', 'XRP', 'DOGE']:
+            coin_news = news.get(coin, [])[:3]  # 最新 3 条新闻
+            coin_sentiment = sentiment.get(coin, {})
+            coin_price = prices.get(coin, {})
             
-            # 情感颜色
-            if sentiment > 0:
-                sentiment_color = "#22c55e"
-                sentiment_icon = "📈"
-            elif sentiment < 0:
-                sentiment_color = "#ef4444"
-                sentiment_icon = "📉"
+            sentiment_label = coin_sentiment.get('label', 'neutral')
+            sentiment_score = coin_sentiment.get('score', 0)
+            
+            # 情绪颜色
+            if sentiment_label == 'bullish':
+                sent_color = '#22c55e'
+                sent_icon = '📈'
+            elif sentiment_label == 'bearish':
+                sent_color = '#ef4444'
+                sent_icon = '📉'
             else:
-                sentiment_color = "#666"
-                sentiment_icon = "➡️"
+                sent_color = '#6b7280'
+                sent_icon = '➡️'
             
-            # 置信度颜色
-            conf_color = {"high": "#22c55e", "medium": "#f59e0b", "low": "#666"}.get(confidence, "#666")
+            price = coin_price.get('price', 0)
+            change = coin_price.get('change_24h', 0)
+            change_sign = '+' if change >= 0 else ''
+            change_color = '#22c55e' if change >= 0 else '#ef4444'
+            
+            # 新闻标题
+            news_html = ""
+            for n in coin_news:
+                title = n.get('title', '')[:60] + '...' if len(n.get('title', '')) > 60 else n.get('title', '')
+                news_html += f'<div style="font-size:0.8em;color:#888;margin:4px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">📰 {title}</div>'
+            
+            if not news_html:
+                news_html = '<div style="font-size:0.8em;color:#666;">暂无新闻</div>'
             
             rows += f"""
-            <div style="padding:12px;margin:8px 0;background:rgba(255,255,255,0.03);border-radius:8px;border-left:3px solid {sentiment_color};">
+            <div style="padding:12px;margin:8px 0;background:rgba(255,255,255,0.03);border-radius:8px;border-left:3px solid {sent_color};">
                 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
                     <span style="font-weight:600;font-size:1.1em;">{coin}/USDT</span>
-                    <span style="font-size:0.85em;color:{conf_color};">● {confidence.upper()}</span>
+                    <span style="font-size:0.85em;color:{change_color};font-weight:600;">${price:,.2f} ({change_sign}{change:.2f}%)</span>
                 </div>
-                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:0.9em;">
-                    <div>
-                        <div style="color:#666;font-size:0.8em;">当前价格</div>
-                        <div style="font-weight:600;">${price_pred.get('current_price', 0):,.2f}</div>
-                    </div>
-                    <div>
-                        <div style="color:#666;font-size:0.8em;">预测价格</div>
-                        <div style="font-weight:600;color:{sentiment_color};">${price_pred.get('predicted_price', 0):,.2f}</div>
-                    </div>
-                    <div>
-                        <div style="color:#666;font-size:0.8em;">变化幅度</div>
-                        <div style="font-weight:600;color:{sentiment_color};">{price_pred.get('change_percent', 0):+.2f}%</div>
-                    </div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.85em;">
+                    <span style="color:{sent_color};">{sent_icon} 情绪：{sentiment_label} ({sentiment_score:+.2f})</span>
+                    <span style="color:#888;">📰 {len(coin_news)} 条新闻</span>
                 </div>
-                <div style="display:flex;justify-content:space-between;margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.05);font-size:0.85em;">
-                    <span>{sentiment_icon} 情感：{sentiment:+.1f}</span>
-                    <span>支撑：${price_pred.get('support_level', 0):,.2f}</span>
-                    <span>阻力：${price_pred.get('resistance_level', 0):,.2f}</span>
+                <div style="border-top:1px solid rgba(255,255,255,0.05);padding-top:8px;">
+                    {news_html}
                 </div>
-            </div>
-            """
-        
-        # 交易建议
-        recommendations = report.get('recommendations', [])
-        rec_html = ""
-        for rec in recommendations[:3]:
-            rec_type = rec.get('type', '')
-            rec_color = "#22c55e" if rec_type == "BUY" else "#ef4444"
-            rec_icon = "🟢" if rec_type == "BUY" else "🔴"
-            rec_html += f"""
-            <div style="padding:8px;margin:4px 0;background:rgba({102 if rec_type == 'BUY' else 239},{126 if rec_type == 'BUY' else 68},234,0.1);border-radius:6px;border-left:3px solid {rec_color};">
-                <span style="font-weight:600;color:{rec_color};">{rec_icon} {rec_type}</span>
-                <span style="margin-left:10px;">{rec.get('coin', '')}</span>
-                <span style="float:right;font-size:0.85em;color:#666;">目标：${rec.get('target_price', 0):,.2f}</span>
             </div>
             """
         
         return f"""
         <div class="card" style="grid-column:span 2;">
-            <h2>🌍 全球战情室 - 新闻市场影响分析</h2>
+            <h2>🌍 全球战情室 · 实时新闻</h2>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;padding:10px;background:rgba(102,126,234,0.1);border-radius:8px;">
                 <div>
-                    <span style="font-size:0.9em;color:#888;">📊 分析新闻总数</span>
+                    <span style="font-size:0.9em;color:#888;">📰 新闻总数</span>
                     <div style="font-size:1.5em;font-weight:700;color:#667eea;">{total_news} 条</div>
                 </div>
                 <div>
-                    <span style="font-size:0.9em;color:#888;">📅 报告时间</span>
+                    <span style="font-size:0.9em;color:#888;">🕐 最后更新</span>
                     <div style="font-size:1.1em;font-weight:600;color:#e0e0e0;">{report_time}</div>
                 </div>
                 <div>
-                    <span style="font-size:0.9em;color:#888;">市场情绪</span>
-                    <div style="font-size:1.1em;font-weight:600;">
-                        <span style="color:#22c55e;">📈 {len(bullish)} 看涨</span> | 
-                        <span style="color:#ef4444;">📉 {len(bearish)} 看跌</span> | 
-                        <span style="color:#666;">➡️ {len(neutral)} 中性</span>
-                    </div>
+                    <span style="font-size:0.9em;color:#888;">🔄 更新频率</span>
+                    <div style="font-size:1.1em;font-weight:600;color:#22c55e;">60 秒</div>
                 </div>
             </div>
             
-            <div style="margin-bottom:20px;">
-                <h3 style="color:#667eea;margin-bottom:10px;font-size:1em;">📋 币种详细预测</h3>
+            <div style="margin-bottom:5px;">
+                <h3 style="color:#667eea;margin-bottom:10px;font-size:1em;">📋 币种新闻 + 情绪</h3>
                 {rows}
             </div>
             
-            <div style="margin-top:20px;padding:15px;background:rgba(102,126,234,0.05);border-radius:8px;">
-                <h3 style="color:#667eea;margin-bottom:10px;font-size:1em;">💡 交易建议</h3>
-                {rec_html}
-            </div>
-            
-            <div style="margin-top:15px;font-size:0.8em;color:#666;text-align:center;">
-                🤖 AI 分析 · 数据来自全球新闻 · 仅供参考不构成投资建议
+            <div style="margin-top:15px;padding:10px;background:rgba(102,126,234,0.05);border-radius:8px;font-size:0.8em;color:#666;">
+                📊 数据来源：Google News · 情绪分析：AI · 🔄 每 60 秒自动更新
             </div>
         </div>
         """
