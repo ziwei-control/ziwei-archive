@@ -668,14 +668,22 @@ def get_income_stats():
         if not tx_rows:
             tx_rows = '<div style="padding:20px;text-align:center;color:#666;">暂无交易记录</div>'
         
+        # 判断是否为测试数据（假地址）
+        test_tx_count = sum(1 for p in payments.values() if '0x0000' in p.get('tx_hash', '') or 'aaaa' in p.get('tx_hash', '') or 'bbbb' in p.get('tx_hash', ''))
+        is_test_data = test_tx_count > 0 and test_tx_count == len(payments)
+        income_label = "测试收入" if is_test_data and api_income > 0 else "x402 API 收入"
+        income_note = "⚠️ 测试数据" if is_test_data and api_income > 0 else "✅ 真实收入"
+        income_color = "#f59e0b" if is_test_data and api_income > 0 else "#22c55e"
+        
         return f"""
         <div class="card" style="grid-column:span 2;">
-            <h2>💰 真实收入统计</h2>
+            <h2>💰 收入统计</h2>
             
             <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:15px;">
                 <div style="text-align:center;padding:15px;background:rgba(34,197,94,0.1);border-radius:8px;">
-                    <div style="font-size:1.8em;font-weight:700;color:#22c55e;">{api_income:.4f} USDC</div>
-                    <div style="font-size:0.85em;color:#888;">x402 API 总收入</div>
+                    <div style="font-size:1.8em;font-weight:700;color:{income_color};">{api_income:.4f} USDC</div>
+                    <div style="font-size:0.85em;color:#888;">{income_label}</div>
+                    <div style="font-size:0.75em;color:{income_color};margin-top:5px;">{income_note}</div>
                 </div>
                 <div style="text-align:center;padding:15px;background:rgba(102,126,234,0.1);border-radius:8px;">
                     <div style="font-size:1.8em;font-weight:700;color:#667eea;">${binance_balance:.2f}</div>
@@ -714,8 +722,8 @@ def get_income_stats():
             </div>
             
             <div style="margin-top:15px;padding:10px;background:rgba(34,197,94,0.05);border-radius:6px;font-size:0.85em;">
-                <div style="color:#22c55e;">
-                    ✅ 所有收入均为真实 USDC，通过 x402 协议在 Base 链上结算
+                <div style="color:{income_color};">
+                    {'⚠️ 当前为测试数据 - 需要接入真实支付' if is_test_data and api_income > 0 else '✅ 所有收入均为真实 USDC，通过 x402 协议在 Base 链上结算'}
                 </div>
             </div>
         </div>
