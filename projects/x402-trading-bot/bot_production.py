@@ -21,6 +21,14 @@ except ImportError as e:
     print("请安装: pip3 install ccxt web3 python-dotenv")
     sys.exit(1)
 
+# 导入实时价格获取器
+try:
+    from get_realtime_prices import BinancePriceFetcher
+    price_fetcher = BinancePriceFetcher()
+except ImportError:
+    price_fetcher = None
+    print("⚠️  警告：无法导入 BinancePriceFetcher，将使用 CCXT 获取价格")
+
 # 加载环境变量
 try:
     from dotenv import load_dotenv
@@ -84,12 +92,29 @@ class RealExchangeConnector:
             return {}
     
     def get_ticker(self, symbol: str) -> Dict:
-        """获取当前价格"""
+        """获取当前价格（优先使用币安实时 API）"""
         try:
+            # 优先使用币安实时 API
+            if price_fetcher:
+                binance_symbol = symbol.replace('/', '')
+                price = price_fetcher.get_price(binance_symbol)
+                if price > 0:
+                    return {
+                        'symbol': symbol,
+                        'last': price,
+                        'bid': price * 0.999,
+                        'ask': price * 1.001,
+                        'timestamp': datetime.datetime.now().timestamp() * 1000,
+                        'datetime': datetime.datetime.now().isoformat(),
+                        'source': 'Binance'
+                    }
+            
+            # 回退到 CCXT
             return self.exchange.fetch_ticker(symbol)
         except Exception as e:
             print(f"❌ 获取价格失败 {symbol}: {e}")
             return {}
+    
     
     def place_order(self, symbol: str, side: str, amount: float, price: float = None) -> Optional[Dict]:
         """下订单"""
