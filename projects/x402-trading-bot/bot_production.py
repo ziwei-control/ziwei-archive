@@ -60,7 +60,11 @@ CONFIG = {
     # 监控配置
     "update_interval": 5,  # 价格更新间隔（秒）
     "check_interval": 60,  # 风险检查间隔（秒）
-    "log_file": "trades.log"
+    "log_file": "trades.log",
+    
+    # 模拟账户配置
+    "initial_balance": float(os.getenv("INITIAL_BALANCE", "10000")),  # 初始模拟余额 $10,000
+    "min_balance": 10.0  # 最小交易余额 $10
 }
 
 
