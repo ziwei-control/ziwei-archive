@@ -269,8 +269,8 @@ def main():
                 print(f"  {i}. {token['symbol']}: {token['change_24h']:.2f}% | {token['sentiment']}")
             
             # 等待下次更新（5 分钟）
-            print("\n⏳ 等待 5 分钟后更新...\n")
-            time.sleep(300)
+            print("\n⏳ 等待 1 分钟后更新...\n")
+            time.sleep(60)
             
         except KeyboardInterrupt:
             print("\n🛑 情报搜集已停止")
