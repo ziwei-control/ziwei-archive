@@ -795,7 +795,12 @@ def get_trading_signals():
         buy = [s for s in signals if s.get('signal') == 'BUY']
         weak_buy = [s for s in signals if s.get('signal') == 'WEAK_BUY']
         hold = [s for s in signals if s.get('signal') == 'HOLD']
-        sell = [s for s in signals if s.get('signal') in ['SELL', 'WEAK_SELL', 'STRONG_SELL']]
+        weak_sell = [s for s in signals if s.get('signal') == 'WEAK_SELL']
+        sell = [s for s in signals if s.get('signal') == 'SELL']
+        strong_sell = [s for s in signals if s.get('signal') == 'STRONG_SELL']
+        
+        # 做空信号总数
+        sell_signals = weak_sell + sell + strong_sell
         
         # 生成信号行
         rows = ""
@@ -848,23 +853,59 @@ def get_trading_signals():
             </div>
             """
         
-        # 信号统计
+        # 信号统计（包含做空）
         signal_summary = f"""
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:15px;">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:15px;">
             <div style="background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.3);border-radius:8px;padding:10px;text-align:center;">
-                <div style="color:#22c55e;font-size:1.5em;font-weight:700;">{len(strong_buy)}</div>
-                <div style="color:#888;font-size:0.75em;">强买</div>
-            </div>
-            <div style="background:rgba(132,204,22,0.1);border:1px solid rgba(132,204,22,0.3);border-radius:8px;padding:10px;text-align:center;">
-                <div style="color:#84cc16;font-size:1.5em;font-weight:700;">{len(buy)}</div>
-                <div style="color:#888;font-size:0.75em;">买入</div>
+                <div style="color:#22c55e;font-size:1.5em;font-weight:700;">{len(strong_buy) + len(buy)}</div>
+                <div style="color:#888;font-size:0.75em;">做多信号</div>
             </div>
             <div style="background:rgba(107,116,128,0.1);border:1px solid rgba(107,116,128,0.3);border-radius:8px;padding:10px;text-align:center;">
                 <div style="color:#9ca3af;font-size:1.5em;font-weight:700;">{len(hold)}</div>
                 <div style="color:#888;font-size:0.75em;">观望</div>
             </div>
+            <div style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;padding:10px;text-align:center;">
+                <div style="color:#ef4444;font-size:1.5em;font-weight:700;">{len(sell_signals)}</div>
+                <div style="color:#888;font-size:0.75em;">做空信号</div>
+            </div>
+            <div style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.3);border-radius:8px;padding:10px;text-align:center;">
+                <div style="color:#8b5cf6;font-size:1.5em;font-weight:700;">{len(signals)}</div>
+                <div style="color:#888;font-size:0.75em;">总监控</div>
+            </div>
         </div>
         """
+        
+        # 做空信号提示框
+        sell_alert = ""
+        if sell_signals:
+            sell_list = ", ".join([f"{s['symbol']}({s['score']})" for s in sell_signals])
+            strongest_sell = max(sell_signals, key=lambda x: x['score'])  # 分数最高（最接近 0）的做空信号
+            strongest_sell_score = strongest_sell['score']
+            
+            if strongest_sell_score <= -25:
+                alert_level = "🔴 强烈看空"
+                alert_color = "#ef4444"
+            elif strongest_sell_score <= -15:
+                alert_level = "🔴 看空"
+                alert_color = "#ef4444"
+            else:
+                alert_level = "⚪ 轻微看空"
+                alert_color = "#f59e0b"
+            
+            sell_alert = f"""
+            <div style="margin-bottom:15px;padding:12px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;border-left:4px solid {alert_color};">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                    <span style="font-weight:600;color:{alert_color};">📉 做空信号提示</span>
+                    <span style="font-size:0.8em;color:#888;">{alert_level}</span>
+                </div>
+                <div style="font-size:0.85em;color:#e0e0e0;margin-bottom:8px;">
+                    <strong>当前做空信号：</strong>{sell_list}
+                </div>
+                <div style="font-size:0.8em;color:#888;">
+                    💡 策略配置：当前只做多，不做空（可修改代码开启）
+                </div>
+            </div>
+            """
         
         # 从文件名提取时间：signals_20260308_141055 → 14:10:55
         file_name = signal_files[0].stem if signal_files else ''
@@ -878,6 +919,7 @@ def get_trading_signals():
         <div class="card" style="grid-column:span 2;">
             <h2>🤖 交易信号分析</h2>
             {signal_summary}
+            {sell_alert}
             <div style="margin-bottom:15px;padding:10px;background:rgba(255,255,255,0.05);border-radius:8px;">
                 <div style="display:flex;justify-content:space-between;margin-bottom:5px;">
                     <span style="color:#888;">账户余额</span>
@@ -890,7 +932,7 @@ def get_trading_signals():
             </div>
             {rows}
             <div style="margin-top:15px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8em;color:#666;">
-                📅 最后更新：{update_time} | 策略引擎 v3.0
+                📅 最后更新：{update_time} | 策略引擎 v3.0 | 📈 只做多 | 📉 做空信号：{len(sell_signals)} 个
             </div>
         </div>
         """
