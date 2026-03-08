@@ -23,7 +23,7 @@ SMTP_SERVER = "smtp.163.com"
 SMTP_PORT = 465
 SENDER_EMAIL = "pandac00@163.com"
 # 从环境变量读取密码，如果没有则使用硬编码（不推荐生产环境）
-SENDER_PASSWORD = os.getenv("SENDER_PASSWORD", "CVQSPKRDHFMZGQNB")  # 163 SMTP 授权码
+SENDER_PASSWORD = os.getenv("SENDER_PASSWORD", "")  # 163 SMTP 授权码
 
 # 收件人列表
 RECEIVERS = [
