@@ -866,7 +866,13 @@ def get_trading_signals():
         </div>
         """
         
-        update_time = signal_files[0].stem.replace('signals_', '').replace('_', ':')[-8:] if signal_files else 'N/A'
+        # 从文件名提取时间：signals_20260308_141055 → 14:10:55
+        file_name = signal_files[0].stem if signal_files else ''
+        if file_name and '_' in file_name:
+            time_part = file_name.split('_')[-1]  # 获取 141055
+            update_time = f"{time_part[:2]}:{time_part[2:4]}:{time_part[4:]}" if len(time_part) == 6 else 'N/A'
+        else:
+            update_time = 'N/A'
         
         return f"""
         <div class="card" style="grid-column:span 2;">
