@@ -921,6 +921,68 @@ def get_trading_signals():
         </div>
         """
         
+        # 持仓详情显示
+        portfolio_html = ""
+        if account.get('portfolio'):
+            portfolio_rows = ""
+            total_portfolio_value = 0
+            
+            for coin, holding in account['portfolio'].items():
+                value = holding['amount'] * holding['entry_price']
+                total_portfolio_value += value
+                
+                # 格式化入场时间
+                entry_time = holding.get('entry_time', 'N/A')
+                if 'T' in entry_time:
+                    entry_time = entry_time.split('T')[1].split('.')[0]  # 只保留时分秒
+                
+                portfolio_rows += f"""
+                <div style="padding:12px;margin:8px 0;background:rgba(34,197,94,0.05);border:1px solid rgba(34,197,94,0.2);border-radius:8px;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <span style="font-size:1.1em;font-weight:700;color:#22c55e;">{coin}</span>
+                        <span style="font-size:0.85em;color:#888;">💰 价值 ${value:,.2f}</span>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;font-size:0.85em;">
+                        <div>
+                            <div style="color:#666;font-size:0.8em;">持仓数量</div>
+                            <div style="font-weight:600;color:#e0e0e0;">{holding['amount']:,.2f}</div>
+                        </div>
+                        <div>
+                            <div style="color:#666;font-size:0.8em;">入场价格</div>
+                            <div style="font-weight:600;color:#e0e0e0;">${holding['entry_price']:.6f}</div>
+                        </div>
+                        <div>
+                            <div style="color:#666;font-size:0.8em;">购买时间</div>
+                            <div style="font-weight:600;color:#e0e0e0;">{entry_time}</div>
+                        </div>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px;padding-top:8px;border-top:1px solid rgba(34,197,94,0.2);font-size:0.8em;">
+                        <div style="color:#ef4444;">
+                            🛑 止损：${holding['stop_loss']:.6f}
+                        </div>
+                        <div style="color:#22c55e;">
+                            🎯 止盈：${holding['take_profit']:.6f}
+                        </div>
+                    </div>
+                </div>
+                """
+            
+            portfolio_html = f"""
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:600;color:#667eea;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;">
+                    <span>📦 当前持仓 ({len(account['portfolio'])} 个币种)</span>
+                    <span style="font-size:0.85em;color:#22c55e;">总价值：${total_portfolio_value:,.2f}</span>
+                </div>
+                {portfolio_rows}
+            </div>
+            """
+        else:
+            portfolio_html = """
+            <div style="margin-bottom:15px;padding:20px;text-align:center;background:rgba(107,116,128,0.05);border-radius:8px;">
+                <div style="font-size:0.9em;color:#888;">⏳ 空仓等待信号中...</div>
+            </div>
+            """
+        
         # 做空信号提示框
         sell_alert = ""
         if sell_signals:
