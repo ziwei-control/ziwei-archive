@@ -383,17 +383,23 @@ class AdvancedStrategyEngine:
         return round(position, 4)
     
     def execute_simulation_trade(self, signal: Dict):
-        """执行模拟交易"""
+        """执行模拟交易（修复版）"""
         if not SIMULATION_CONFIG['enabled']:
             return
         
         symbol = signal['symbol']
         position = signal['suggested_position']
-        amount_usd = self.simulation_balance * position
         price = signal['price']
         
         if 'BUY' in signal['signal']:
-            # 买入
+            # 检查是否已持仓
+            if symbol in self.simulation_portfolio:
+                # 已持仓，跳过本次买入（避免重复建仓）
+                print(f"⏭️  [跳过买入] {symbol}: 已持仓，不重复买入")
+                return
+            
+            # 计算买入金额
+            amount_usd = self.simulation_balance * position
             tokens = amount_usd / price
             
             self.simulation_portfolio[symbol] = {
