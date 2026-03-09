@@ -322,17 +322,63 @@ HTML_TEMPLATE = """
         
         // 强制刷新函数 - 清除缓存并重新加载
         function forceRefresh() {{
-            // 添加时间戳参数，强制浏览器重新请求
             var timestamp = new Date().getTime();
             var url = window.location.href.split('?')[0] + '?v=' + timestamp;
             window.location.href = url;
         }}
         
-        // 页面加载时显示版本信息
+        // 🔄 交易信号独立刷新模块（每 60 秒）
+        var signalRefreshInterval = null;
+        
+        function updateSignalTime() {{
+            // 从服务器获取最新信号文件时间
+            fetch('/api/latest-signal-time?t=' + new Date().getTime())
+                .then(response => response.json())
+                .then(data => {{
+                    if (data.success && data.update_time) {{
+                        // 更新信号卡片的时间显示
+                        var timeElements = document.querySelectorAll('[data-signal-time]');
+                        timeElements.forEach(el => {{
+                            el.textContent = '📅 最后更新：' + data.update_time + ' | 策略引擎 v3.0';
+                            el.style.color = '#22c55e';  // 绿色表示已更新
+                            setTimeout(() => {{ el.style.color = '#666'; }}, 2000);
+                        }});
+                        
+                        // 更新做空信号数量
+                        if (data.sell_count !== undefined) {{
+                            var sellElements = document.querySelectorAll('[data-sell-count]');
+                            sellElements.forEach(el => {{
+                                el.textContent = '📉 做空信号：' + data.sell_count + ' 个';
+                            }});
+                        }}
+                        
+                        console.log('✅ 信号时间已更新：' + data.update_time);
+                    }}
+                }})
+                .catch(err => console.error('❌ 获取信号时间失败:', err));
+        }}
+        
+        function startSignalAutoRefresh() {{
+            // 立即执行一次
+            updateSignalTime();
+            
+            // 每 60 秒刷新一次
+            signalRefreshInterval = setInterval(updateSignalTime, 60000);
+            console.log('🔄 交易信号自动刷新已启动（60 秒间隔）');
+        }}
+        
+        function stopSignalAutoRefresh() {{
+            if (signalRefreshInterval) {{
+                clearInterval(signalRefreshInterval);
+                console.log('⏸️ 交易信号自动刷新已停止');
+            }}
+        }}
+        
+        // 页面加载时启动信号刷新
         window.addEventListener('load', function() {{
             console.log('Dashboard 版本：{version}');
             console.log('加载时间：' + new Date().toISOString());
-            console.log('缓存策略：no-cache, no-store');
+            startSignalAutoRefresh();
         }});
         
         var cliOutput = document.getElementById('cliOutput');
@@ -931,7 +977,7 @@ def get_trading_signals():
                 </div>
             </div>
             {rows}
-            <div style="margin-top:15px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8em;color:#666;">
+            <div style="margin-top:15px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8em;color:#666;" data-signal-time>
                 📅 最后更新：{update_time} | 策略引擎 v3.0 | 📈 只做多 | 📉 做空信号：{len(sell_signals)} 个
             </div>
         </div>
@@ -1367,7 +1413,57 @@ def get_status_report():
 
 
 class Handler(http.server.BaseHTTPRequestHandler):
+    def send_json_response(self, data=None):
+        """发送 JSON 响应"""
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Cache-Control', 'no-cache, no-store')
+        self.end_headers()
+        
+        if data is None:
+            # 获取最新信号时间和做空信号数量
+            try:
+                strategy_dir = Ziwei_DIR / "data" / "strategy"
+                signal_files = sorted(strategy_dir.glob("signals_*.json"), reverse=True)
+                
+                if signal_files:
+                    file_name = signal_files[0].stem
+                    time_part = file_name.split('_')[-1]
+                    update_time = f"{time_part[:2]}:{time_part[2:4]}:{time_part[4:]}" if len(time_part) == 6 else 'N/A'
+                    
+                    # 获取做空信号数量
+                    with open(signal_files[0]) as f:
+                        signals = json.load(f)
+                    sell_count = sum(1 for s in signals if 'SELL' in s.get('signal', ''))
+                    
+                    response_data = {
+                        'success': True,
+                        'update_time': update_time,
+                        'sell_count': sell_count,
+                        'timestamp': datetime.now().isoformat()
+                    }
+                else:
+                    response_data = {
+                        'success': False,
+                        'error': 'No signal files found'
+                    }
+            except Exception as e:
+                response_data = {
+                    'success': False,
+                    'error': str(e)
+                }
+        else:
+            response_data = data
+        
+        self.wfile.write(json.dumps(response_data, ensure_ascii=False).encode('utf-8'))
+    
     def do_GET(self):
+        # API 端点：获取最新信号时间
+        if self.path.startswith('/api/latest-signal-time'):
+            self.send_json_response()
+            return
+        
         content = HTML_TEMPLATE.format(
             system_stats=get_system_stats(),
             service_stats=get_service_stats(),
