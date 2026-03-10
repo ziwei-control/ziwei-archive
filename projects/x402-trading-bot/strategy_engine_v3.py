@@ -15,6 +15,14 @@ from typing import Dict, List, Optional, Tuple
 STRATEGY_DIR = Path("/home/admin/Ziwei/data/strategy")
 STRATEGY_DIR.mkdir(parents=True, exist_ok=True)
 
+# 交易历史持久化配置（独立文件，永不丢失）
+TRADE_HISTORY_FILE = STRATEGY_DIR / "trade_history.jsonl"  # JSON Lines 格式
+BACKUP_DIR = STRATEGY_DIR / "backup"
+BACKUP_DIR.mkdir(parents=True, exist_ok=True)
+
+# 最大备份数量（保留最近 100 个）
+MAX_BACKUPS = 100
+
 # 模拟账户配置
 SIMULATION_CONFIG = {
     'initial_balance': 10000,  # 💰 10,000 USDC 初始资金
@@ -58,6 +66,98 @@ class AdvancedStrategyEngine:
         self.daily_pnl = 0
         self.win_rate = 0
         self.total_trades = 0
+        
+        # 加载之前的交易历史
+        self.load_trade_history()
+    
+    def load_trade_history(self):
+        """加载之前的交易历史（增强版 - 多重恢复）"""
+        loaded_count = 0
+        
+        # 1. 优先从独立历史文件加载（最可靠）
+        if TRADE_HISTORY_FILE.exists():
+            try:
+                with open(TRADE_HISTORY_FILE, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        line = line.strip()
+                        if line:
+                            trade = json.loads(line)
+                            # 避免重复
+                            if not any(t.get('time') == trade.get('time') and t.get('symbol') == trade.get('symbol') for t in self.trade_history):
+                                self.trade_history.append(trade)
+                                loaded_count += 1
+                print(f"✅ 从独立文件加载交易历史：{loaded_count} 笔")
+            except Exception as e:
+                print(f"⚠️ 加载独立历史文件失败：{e}")
+        
+        # 2. 从 account_status.json 补充加载
+        account_file = STRATEGY_DIR / "account_status.json"
+        if account_file.exists():
+            try:
+                with open(account_file) as f:
+                    account = json.load(f)
+                account_history = account.get('trade_history', [])
+                
+                # 只添加不重复的
+                for trade in account_history:
+                    if not any(t.get('time') == trade.get('time') and t.get('symbol') == trade.get('symbol') for t in self.trade_history):
+                        self.trade_history.append(trade)
+                        loaded_count += 1
+                
+                print(f"✅ 从账户状态补充加载：{len(account_history)} 笔")
+            except Exception as e:
+                print(f"⚠️ 加载账户状态失败：{e}")
+        
+        # 3. 从日志文件恢复未记录的交易（最后防线）
+        recovered = self._recover_from_logs()
+        if recovered:
+            print(f"✅ 从日志恢复交易：{recovered} 笔")
+            loaded_count += recovered
+        
+        print(f"📜 总交易历史：{len(self.trade_history)} 笔")
+    
+    def _recover_from_logs(self):
+        """从日志文件恢复未记录的交易"""
+        recovered = 0
+        log_file = Path("/home/admin/Ziwei/data/logs/soul-trader/strategy_engine.out")
+        
+        if not log_file.exists():
+            return 0
+        
+        try:
+            with open(log_file, 'r', encoding='utf-8', errors='ignore') as f:
+                lines = f.readlines()
+            
+            for line in lines:
+                # 查找模拟买入记录
+                if '[模拟买入]' in line or '[模拟建仓]' in line or '[模拟加仓]' in line:
+                    # 解析：💰 [模拟买入] DOGE: 6197.7068 @ $0.090356 = $560.00
+                    import re
+                    match = re.search(r'\[(模拟 [买入建仓加仓]+)\]\s+(\w+):\s+([\d.]+)\s+@\s+\$([\d.]+)\s+=\s+\$([\d.]+)', line)
+                    if match:
+                        action = match.group(1)
+                        symbol = match.group(2)
+                        amount = float(match.group(3))
+                        price = float(match.group(4))
+                        value = float(match.group(5))
+                        
+                        # 检查是否已存在
+                        if not any(t.get('symbol') == symbol and t.get('amount') == amount for t in self.trade_history):
+                            trade_type = '建仓' if '建仓' in action else '加仓'
+                            self.trade_history.append({
+                                'type': trade_type,
+                                'symbol': symbol,
+                                'time': '2026-03-09T00:00:00',  # 日志时间不精确，用占位符
+                                'price': price,
+                                'amount': amount,
+                                'value': value,
+                                'recovered_from_log': True
+                            })
+                            recovered += 1
+        except Exception as e:
+            print(f"⚠️ 日志恢复失败：{e}")
+        
+        return recovered
         
     def load_intel(self, limit: int = 3) -> Optional[Dict]:
         """加载最新多份情报（趋势分析）"""
@@ -382,45 +482,156 @@ class AdvancedStrategyEngine:
         
         return round(position, 4)
     
+    def record_trade_persistent(self, trade_record: Dict):
+        """持久化记录交易（独立文件 + 备份，永不丢失）"""
+        try:
+            # 1. 追加到独立历史文件（JSON Lines 格式）
+            with open(TRADE_HISTORY_FILE, 'a', encoding='utf-8') as f:
+                f.write(json.dumps(trade_record, ensure_ascii=False) + '\n')
+            
+            # 2. 创建备份
+            self._create_backup()
+            
+            print(f"💾 交易已持久化：{trade_record['type']} {trade_record['symbol']}")
+        except Exception as e:
+            print(f"❌ 持久化失败：{e}")
+    
+    def _create_backup(self):
+        """创建账户状态备份"""
+        try:
+            account_file = STRATEGY_DIR / "account_status.json"
+            if not account_file.exists():
+                return
+            
+            timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+            backup_file = BACKUP_DIR / f"account_status_{timestamp}.json"
+            latest_backup = BACKUP_DIR / "account_status_latest.json"
+            
+            # 复制到备份目录
+            import shutil
+            shutil.copy2(account_file, backup_file)
+            shutil.copy2(account_file, latest_backup)
+            
+            # 清理旧备份（保留最近 100 个）
+            backups = sorted(BACKUP_DIR.glob("account_status_*.json"))
+            if len(backups) > MAX_BACKUPS:
+                for old_backup in backups[:-MAX_BACKUPS]:
+                    old_backup.unlink()
+            
+            print(f"📦 备份已创建：{backup_file.name}")
+        except Exception as e:
+            print(f"⚠️ 备份失败：{e}")
+    
     def execute_simulation_trade(self, signal: Dict):
-        """执行模拟交易（修复版）"""
+        """执行模拟交易（增强版 - 记录完整交易历史）"""
         if not SIMULATION_CONFIG['enabled']:
             return
         
         symbol = signal['symbol']
         position = signal['suggested_position']
         price = signal['price']
+        timestamp = datetime.now().isoformat()
         
         if 'BUY' in signal['signal']:
             # 检查是否已持仓
             if symbol in self.simulation_portfolio:
-                # 已持仓，跳过本次买入（避免重复建仓）
-                print(f"⏭️  [跳过买入] {symbol}: 已持仓，不重复买入")
-                return
-            
-            # 计算买入金额
-            amount_usd = self.simulation_balance * position
-            tokens = amount_usd / price
-            
-            self.simulation_portfolio[symbol] = {
-                'amount': tokens,
-                'entry_price': price,
-                'entry_time': datetime.now().isoformat(),
-                'stop_loss': signal['stop_loss'],
-                'take_profit': signal['take_profit']
-            }
-            
-            self.simulation_balance -= amount_usd
-            self.total_trades += 1
-            
-            print(f"💰 [模拟买入] {symbol}: {tokens:.4f} @ ${price:.6f} = ${amount_usd:.2f}")
+                # 已持仓 - 加仓逻辑
+                holding = self.simulation_portfolio[symbol]
+                amount_usd = self.simulation_balance * position
+                tokens = amount_usd / price
+                
+                # 计算新的平均成本
+                old_cost = holding['amount'] * holding['entry_price']
+                new_cost = amount_usd
+                total_amount = holding['amount'] + tokens
+                avg_price = (old_cost + new_cost) / total_amount if total_amount > 0 else price
+                
+                # 更新持仓
+                holding['amount'] = total_amount
+                holding['entry_price'] = avg_price
+                holding['entry_time'] = timestamp  # 更新最后加仓时间
+                holding['stop_loss'] = signal['stop_loss']
+                holding['take_profit'] = signal['take_profit']
+                
+                self.simulation_balance -= amount_usd
+                self.total_trades += 1
+                
+                # 记录加仓历史
+                trade_record = {
+                    'type': '加仓',
+                    'symbol': symbol,
+                    'time': timestamp,
+                    'price': price,
+                    'amount': tokens,
+                    'total_amount': total_amount,
+                    'avg_price': avg_price,
+                    'value': amount_usd,
+                    'pnl': 0
+                }
+                self.trade_history.append(trade_record)
+                
+                # 🔒 立即持久化（防止丢失）
+                self.record_trade_persistent(trade_record)
+                
+                print(f"📈 [模拟加仓] {symbol}: {tokens:.4f} @ ${price:.6f} = ${amount_usd:.2f} (总仓：{total_amount:.4f}, 均价：${avg_price:.6f})")
+            else:
+                # 新建仓
+                amount_usd = self.simulation_balance * position
+                tokens = amount_usd / price
+                
+                self.simulation_portfolio[symbol] = {
+                    'amount': tokens,
+                    'entry_price': price,
+                    'entry_time': timestamp,
+                    'stop_loss': signal['stop_loss'],
+                    'take_profit': signal['take_profit']
+                }
+                
+                self.simulation_balance -= amount_usd
+                self.total_trades += 1
+                
+                # 记录建仓历史
+                trade_record = {
+                    'type': '建仓',
+                    'symbol': symbol,
+                    'time': timestamp,
+                    'price': price,
+                    'amount': tokens,
+                    'total_amount': tokens,
+                    'avg_price': price,
+                    'value': amount_usd,
+                    'pnl': 0
+                }
+                self.trade_history.append(trade_record)
+                
+                # 🔒 立即持久化（防止丢失）
+                self.record_trade_persistent(trade_record)
+                
+                print(f"💰 [模拟建仓] {symbol}: {tokens:.4f} @ ${price:.6f} = ${amount_usd:.2f}")
         
         elif 'SELL' in signal['signal'] and symbol in self.simulation_portfolio:
-            # 卖出
+            # 卖出逻辑
             holding = self.simulation_portfolio[symbol]
             tokens = holding['amount']
             revenue = tokens * price
             pnl = revenue - (tokens * holding['entry_price'])
+            
+            # 记录清仓历史
+            trade_record = {
+                'type': '清仓',
+                'symbol': symbol,
+                'time': timestamp,
+                'price': price,
+                'amount': tokens,
+                'total_amount': 0,
+                'avg_price': holding['entry_price'],
+                'value': revenue,
+                'pnl': pnl
+            }
+            self.trade_history.append(trade_record)
+            
+            # 🔒 立即持久化（防止丢失）
+            self.record_trade_persistent(trade_record)
             
             self.simulation_balance += revenue
             self.daily_pnl += pnl
@@ -432,7 +643,8 @@ class AdvancedStrategyEngine:
             else:
                 self.win_rate = (self.win_rate * (self.total_trades - 1)) / self.total_trades
             
-            print(f"💰 [模拟卖出] {symbol}: {tokens:.4f} @ ${price:.6f} = ${revenue:.2f} (PnL: ${pnl:.2f})")
+            pnl_text = "✅ 盈利" if pnl > 0 else "❌ 亏损"
+            print(f"💰 [模拟清仓] {symbol}: {tokens:.4f} @ ${price:.6f} = ${revenue:.2f} ({pnl_text}: ${pnl:+,.2f})")
     
     def analyze_all(self, intel: Dict) -> List[Dict]:
         """分析所有代币"""
@@ -459,7 +671,7 @@ class AdvancedStrategyEngine:
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(signals, f, indent=2, ensure_ascii=False)
         
-        # 保存账户状态
+        # 保存账户状态（包含交易历史）
         account_file = STRATEGY_DIR / "account_status.json"
         account_status = {
             'balance': self.simulation_balance,
@@ -467,13 +679,17 @@ class AdvancedStrategyEngine:
             'daily_pnl': self.daily_pnl,
             'win_rate': self.win_rate,
             'total_trades': self.total_trades,
+            'trade_history': self.trade_history[-100:],  # 保留最近 100 笔交易
             'timestamp': datetime.now().isoformat()
         }
         
         with open(account_file, 'w', encoding='utf-8') as f:
             json.dump(account_status, f, indent=2, ensure_ascii=False)
         
-        print(f"💾 信号已保存：{filepath}")
+        # 🔒 创建备份
+        self._create_backup()
+        
+        print(f"💾 信号已保存：{filepath} | 交易历史：{len(self.trade_history)} 笔 | 备份：✅")
     
     def print_portfolio(self):
         """打印投资组合"""
