@@ -1,0 +1,4 @@
+  File "/home/admin/Ziwei/projects/x402-api/hybrid_register.py", line 151
+    print("  │     4. 点击"继续"按钮                               │")
+          ^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
