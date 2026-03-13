@@ -16,9 +16,20 @@ Ziwei_DIR = "/home/admin/Ziwei"
 LOG_DIR = os.path.join(Ziwei_DIR, "data", "logs")
 SELF_LEARN_LOG = os.path.join(LOG_DIR, "self_learn.log")
 TRIM_LOG = os.path.join(LOG_DIR, "log_trim.log")
-MAX_SIZE_MB = 995  # 最大 995MB
+MAX_SIZE_MB = 50  # 降低阈值到 50MB（原 995MB）
 MAX_SIZE_BYTES = MAX_SIZE_MB * 1024 * 1024
-BACKUP_COUNT = 5  # 保留 5 个备份文件
+BACKUP_COUNT = 3  # 保留 3 个备份（原 5 个）
+
+# 需要监控的日志文件列表
+MONITORED_LOGS = [
+    os.path.join(LOG_DIR, "self_learn.log"),
+    os.path.join(LOG_DIR, "observer", "observer.log"),
+    os.path.join(LOG_DIR, "observer", "learning.log"),
+    os.path.join(LOG_DIR, "observer", "decisions.log"),
+    os.path.join(LOG_DIR, "supervisor", "supervisord.log"),
+    os.path.join(LOG_DIR, "supervisor", "self-learn.out.log"),
+    os.path.join(LOG_DIR, "soul-trader", "soul-trader.log"),
+]
 
 # 颜色定义
 class Colors:
@@ -46,58 +57,64 @@ def get_file_size(filepath):
         return 0
     return os.path.getsize(filepath) / (1024 * 1024)
 
-def trim_log_file():
-    """修剪日志文件"""
-    if not os.path.exists(SELF_LEARN_LOG):
-        log("ℹ️  日志文件不存在：" + SELF_LEARN_LOG)
+def trim_log_file(filepath):
+    """修剪单个日志文件"""
+    if not os.path.exists(filepath):
         return False
     
-    current_size = get_file_size(SELF_LEARN_LOG)
-    log("📊 当前日志大小：" + str(round(current_size, 2)) + "MB")
+    current_size = get_file_size(filepath)
     
     # 检查是否需要修剪
     if current_size < MAX_SIZE_MB:
-        log("✅ 日志大小正常 (< " + str(MAX_SIZE_MB) + "MB)")
         return False
     
-    log("⚠️  日志超过 " + str(MAX_SIZE_MB) + "MB，开始修剪...")
-    
-    # 备份旧日志
-    backup_file = SELF_LEARN_LOG + "." + datetime.now().strftime('%Y%m%d_%H%M%S') + ".bak"
-    log("📦 备份日志：" + backup_file)
-    shutil.copy2(SELF_LEARN_LOG, backup_file)
+    log("⚠️  日志超过 " + str(MAX_SIZE_MB) + "MB：" + os.path.basename(filepath))
+    log("  修剪前：" + str(round(current_size, 2)) + "MB")
     
     # 读取日志内容
-    with open(SELF_LEARN_LOG, 'r', encoding='utf-8') as f:
+    with open(filepath, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
     total_lines = len(lines)
-    log("📝 总行数：" + str(total_lines))
     
-    # 计算需要保留的行数（保留最后 995MB 的内容）
-    # 估算：平均每行 100 字节，995MB ≈ 10,430,000 行
-    # 为了安全，保留 80%
-    avg_line_size = os.path.getsize(SELF_LEARN_LOG) / total_lines if total_lines > 0 else 100
-    target_lines = int((MAX_SIZE_MB * 1024 * 1024 * 0.95) / avg_line_size)
-    target_lines = max(10000, min(target_lines, total_lines - 1000))  # 至少保留 1 万行，最多删除到剩 1000 行
-    
-    log("📏 目标保留行数：" + str(target_lines))
+    # 计算需要保留的行数（保留最后 MAX_SIZE_MB 的内容）
+    avg_line_size = os.path.getsize(filepath) / total_lines if total_lines > 0 else 100
+    target_lines = int((MAX_SIZE_MB * 1024 * 1024 * 0.9) / avg_line_size)
+    target_lines = max(5000, min(target_lines, total_lines - 1000))
     
     # 保留最后的行
     kept_lines = lines[-target_lines:]
     removed_lines = total_lines - target_lines
     
     # 写入修剪后的内容
-    with open(SELF_LEARN_LOG, 'w', encoding='utf-8') as f:
+    with open(filepath, 'w', encoding='utf-8') as f:
         f.writelines(kept_lines)
     
-    new_size = get_file_size(SELF_LEARN_LOG)
-    log("✅ 修剪完成！")
+    new_size = get_file_size(filepath)
+    log("✅ 修剪完成：" + os.path.basename(filepath))
     log("  删除行数：" + str(removed_lines))
     log("  保留行数：" + str(len(kept_lines)))
-    log("  修剪前：" + str(round(current_size, 2)) + "MB")
     log("  修剪后：" + str(round(new_size, 2)) + "MB")
     log("  释放空间：" + str(round(current_size - new_size, 2)) + "MB")
+    
+    return True
+
+def trim_all_logs():
+    """修剪所有监控的日志文件"""
+    trimmed_count = 0
+    freed_space = 0
+    
+    for filepath in MONITORED_LOGS:
+        if os.path.exists(filepath):
+            size_before = get_file_size(filepath)
+            if trim_log_file(filepath):
+                trimmed_count += 1
+                freed_space += size_before - get_file_size(filepath)
+    
+    if trimmed_count > 0:
+        log("📊 总计：修剪 " + str(trimmed_count) + " 个文件，释放 " + str(round(freed_space, 2)) + "MB")
+    else:
+        log("✅ 所有日志文件大小正常")
     
     # 清理旧备份（保留最近 5 个）
     cleanup_old_backups()
@@ -127,17 +144,21 @@ def check_all_logs():
         return
     
     # 检查所有 .log 文件
+    total_size = 0
     for filename in os.listdir(LOG_DIR):
         if filename.endswith('.log'):
             filepath = os.path.join(LOG_DIR, filename)
             size = get_file_size(filepath)
+            total_size += size
             status = "⚠️  警告" if size > MAX_SIZE_MB * 0.9 else "✅"
             log(status + " " + filename + ": " + str(round(size, 2)) + "MB")
     
     log("")
+    log("📊 日志目录总计：" + str(round(total_size, 2)) + "MB")
+    log("")
     
-    # 特别检查 self_learn.log
-    trim_log_file()
+    # 修剪所有监控的日志
+    trim_all_logs()
 
 def watch_mode(interval=60):
     """监控模式（持续运行）"""
@@ -156,13 +177,11 @@ def watch_mode(interval=60):
     try:
         while True:
             check_count += 1
-            current_size = get_file_size(SELF_LEARN_LOG)
-            
             # 每 10 次检查输出一次详细日志
             if check_count % 10 == 0:
-                log("📊 检查 #" + str(check_count) + " - 当前大小：" + str(round(current_size, 2)) + "MB")
+                log("📊 检查 #" + str(check_count))
             
-            if trim_log_file():
+            if trim_all_logs():
                 trim_count += 1
                 log("✅ 修剪次数：" + str(trim_count))
             
@@ -263,7 +282,7 @@ def main():
         show_status()
     elif cmd == "trim":
         log("手动触发修剪...")
-        trim_log_file()
+        trim_all_logs()
     elif cmd == "help":
         show_help()
     else:

@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-03-13T17:15:18.288361",
+  "observation_id": 1,
+  "issues": [
+    {
+      "type": "warning",
+      "component": "策略引擎",
+      "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+      "assigned_to": "信念",
+      "priority": "medium",
+      "suggestion": "清理重复进程，保留 1 个"
+    },
+    {
+      "type": "warning",
+      "component": "Dashboard",
+      "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+      "assigned_to": "如意",
+      "priority": "medium",
+      "suggestion": "清理重复 Dashboard 进程，保留 1 个"
+    },
+    {
+      "type": "warning",
+      "component": "策略引擎",
+      "issue": "检测到 2 个策略引擎进程",
+      "assigned_to": "信念",
+      "priority": "medium",
+      "suggestion": "清理重复进程"
+    }
+  ],
+  "warnings": [],
+  "status": "warning",
+  "tasks_assigned": {
+    "爱人": [],
+    "信念": [
+      {
+        "type": "warning",
+        "component": "策略引擎",
+        "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+        "assigned_to": "信念",
+        "priority": "medium",
+        "suggestion": "清理重复进程，保留 1 个"
+      },
+      {
+        "type": "warning",
+        "component": "策略引擎",
+        "issue": "检测到 2 个策略引擎进程",
+        "assigned_to": "信念",
+        "priority": "medium",
+        "suggestion": "清理重复进程"
+      }
+    ],
+    "如意": [
+      {
+        "type": "warning",
+        "component": "Dashboard",
+        "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+        "assigned_to": "如意",
+        "priority": "medium",
+        "suggestion": "清理重复 Dashboard 进程，保留 1 个"
+      }
+    ]
+  }
+}

@@ -15,6 +15,11 @@ from pathlib import Path
 import urllib.request
 import glob
 
+# 导入独立持仓卡片函数
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
+from dashboard_trading_card import get_my_holdings
+
 # 配置
 VERSION = "4.0.3"
 PORT = 8081
@@ -280,16 +285,21 @@ HTML_TEMPLATE = """
         <div class="grid">
             {system_stats}
             {service_stats}
-            {trading_stats}
+            {power_stats}
         </div>
         
         <div class="grid">
+            {my_holdings}
+        </div>
+        
+        <div class="grid">
+            {trading_stats}
             {security_stats}
             {income_stats}
-            {api_stats}
         </div>
         
         <div class="grid">
+            {api_stats}
             {trading_signals}
         </div>
         
@@ -374,11 +384,43 @@ HTML_TEMPLATE = """
             }}
         }}
         
-        // 页面加载时启动信号刷新
+        // 💰 持仓卡片独立刷新模块（每 30 秒）
+        var holdingsRefreshInterval = null;
+        
+        function updateHoldingsCard() {{
+            fetch('/api/latest-signal-time?t=' + new Date().getTime())
+                .then(response => response.json())
+                .then(data => {{
+                    if (data.success && data.update_time) {{
+                        // 更新持仓卡片的时间显示
+                        var timeElements = document.querySelectorAll('[data-last-update]');
+                        timeElements.forEach(el => {{
+                            el.textContent = '📅 最后更新：' + data.update_time;
+                        }});
+                        
+                        // 更新刷新计时器
+                        var timerElements = document.querySelectorAll('[data-refresh-timer]');
+                        timerElements.forEach(el => {{
+                            el.textContent = '🔄 下次刷新：30 秒';
+                        }});
+                    }}
+                }})
+                .catch(err => console.error('❌ 获取持仓更新时间失败:', err));
+        }}
+        
+        function startHoldingsAutoRefresh() {{
+            updateHoldingsCard();
+            // 每 30 秒刷新一次持仓
+            holdingsRefreshInterval = setInterval(updateHoldingsCard, 30000);
+            console.log('💰 持仓卡片自动刷新已启动（30 秒间隔）');
+        }}
+        
+        // 页面加载时启动所有刷新
         window.addEventListener('load', function() {{
             console.log('Dashboard 版本：{version}');
             console.log('加载时间：' + new Date().toISOString());
             startSignalAutoRefresh();
+            startHoldingsAutoRefresh();  // 新增：启动持仓刷新
         }});
         
         var cliOutput = document.getElementById('cliOutput');
@@ -446,6 +488,56 @@ HTML_TEMPLATE = """
             out = out.replace(/⚠️|Warning/g,'<span class="warning">$&</span>');
             return out;
         }}
+        
+        // ⚡ 电源管理功能
+        function powerAction(action) {{
+            var confirmMsg = action === 'shutdown' ? '⚠️ 确定要关机吗？系统将会关闭！' : '⚠️ 确定要重启吗？系统将会重新启动！';
+            if (!confirm(confirmMsg)) return;
+            
+            fetch('/api/power/' + action, {{
+                method: 'POST',
+                headers: {{ 'Content-Type': 'application/json' }}
+            }})
+            .then(function(r) {{ return r.json(); }})
+            .then(function(data) {{
+                if (data.success) {{
+                    alert('✅ ' + (action === 'shutdown' ? '关机指令已发送，系统将在 2 秒后关闭' : '重启指令已发送，系统将在 2 秒后重启'));
+                }} else {{
+                    alert('❌ 操作失败：' + (data.error || '未知错误'));
+                }}
+            }})
+            .catch(function(err) {{
+                alert('❌ 请求失败：' + err.message);
+            }});
+        }}
+        
+        function showScheduleModal() {{
+            var time = prompt('⏰ 请输入定时时间 (格式：HH:MM 或 ISO 格式如 2026-03-13T10:00:00)\\n\\n例如：\\n- 23:00 (今晚 11 点)\\n- 06:00 (明早 6 点)\\n- 2026-03-13T10:00:00 (指定时间)');
+            if (!time) return;
+            
+            var action = prompt('⚡ 请输入操作类型:\\n- shutdown (关机)\\n- reboot (重启)');
+            if (!action || !['shutdown', 'reboot'].includes(action)) {{
+                alert('❌ 无效的操作类型');
+                return;
+            }}
+            
+            fetch('/api/power/schedule', {{
+                method: 'POST',
+                headers: {{ 'Content-Type': 'application/json' }},
+                body: JSON.stringify({{ action: action, time: time }})
+            }})
+            .then(function(r) {{ return r.json(); }})
+            .then(function(data) {{
+                if (data.success) {{
+                    alert('✅ 定时任务已设置：' + action + ' @ ' + data.schedule.time);
+                }} else {{
+                    alert('❌ 设置失败：' + (data.error || '未知错误'));
+                }}
+            }})
+            .catch(function(err) {{
+                alert('❌ 请求失败：' + err.message);
+            }});
+        }}
     </script>
 </body>
 </html>
@@ -508,11 +600,73 @@ def get_service_stats():
     """
 
 
+def get_power_stats():
+    """电源管理"""
+    try:
+        # 获取电源管理服务状态
+        result = subprocess.run(['pgrep', '-f', 'system_power_manager'], capture_output=True, text=True)
+        power_running = bool(result.stdout.strip())
+        
+        # 获取系统状态
+        status_url = "http://localhost:9002/status"
+        status_data = None
+        try:
+            with urllib.request.urlopen(status_url, timeout=2) as response:
+                status_data = json.loads(response.read().decode())
+        except:
+            pass
+        
+        # 系统运行时间
+        uptime_str = "--:--:--"
+        scheduled = None
+        if status_data:
+            uptime_str = status_data.get('uptime', '--:--:--')
+            if status_data.get('scheduled_action'):
+                sched = status_data['scheduled_action']
+                scheduled = f"{sched['action']} @ {sched['time'][:16].replace('T', ' ')}"
+        
+        # 电源状态指示
+        power_status = '<span class="badge-status success"><span class="dot active"></span>服务正常</span>' if power_running else '<span class="badge-status danger"><span class="dot inactive"></span>服务停止</span>'
+        
+        # 计划任务显示
+        schedule_info = f'<div style="color:#888;font-size:0.85em;">暂无计划任务</div>'
+        if scheduled:
+            schedule_info = f'<div style="color:#f59e0b;font-size:0.9em;font-weight:600;">⏰ {scheduled}</div>'
+        
+        return f"""
+        <div class="card">
+            <h2>⚡ 电源管理</h2>
+            <div style="margin-bottom:15px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+                    <span style="color:#888;">服务状态</span>
+                    {power_status}
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+                    <span style="color:#888;">运行时间</span>
+                    <span style="color:#e0e0e0;font-weight:600;">{uptime_str}</span>
+                </div>
+                {schedule_info}
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+                <button onclick="powerAction('shutdown')" style="padding:10px;background:rgba(239,68,68,0.2);border:1px solid rgba(239,68,68,0.3);border-radius:6px;color:#ef4444;cursor:pointer;font-weight:600;">🔴 关机</button>
+                <button onclick="powerAction('reboot')" style="padding:10px;background:rgba(245,158,11,0.2);border:1px solid rgba(245,158,11,0.3);border-radius:6px;color:#f59e0b;cursor:pointer;font-weight:600;">🔄 重启</button>
+                <button onclick="showScheduleModal()" style="padding:10px;background:rgba(102,126,234,0.2);border:1px solid rgba(102,126,234,0.3);border-radius:6px;color:#667eea;cursor:pointer;font-weight:600;">⏰ 定时</button>
+            </div>
+            <div style="margin-top:10px;text-align:center;">
+                <a href="http://localhost:9001" target="_blank" style="color:#667eea;text-decoration:none;font-size:0.85em;">🖥️ Supervisor Web UI →</a>
+            </div>
+        </div>
+        """
+    except Exception as e:
+        return f'<div class="card"><h2>⚡ 电源管理</h2><span class="error">{e}</span></div>'
+
+
 def get_trading_stats():
     """交易机器人统计 - 模拟交易（详细真实数据）"""
     try:
-        # 获取进程详细信息
+        # 获取进程详细信息（每个类型只显示一个，优先显示 Supervisor 管理的）
         processes = []
+        seen_types = set()  # 记录已显示的类型
         process_names = {
             'soul_trader': '🧠 主交易员',
             'strategy_engine_v3': '📊 策略引擎 v3',
@@ -520,20 +674,49 @@ def get_trading_stats():
             'start_test': '🚀 启动器'
         }
         
+        # 先获取 Supervisor 管理的进程（优先显示）
+        supervisor_pids = set()
+        try:
+            result = subprocess.run(['supervisorctl', 'status'], capture_output=True, text=True)
+            for line in result.stdout.split('\n'):
+                if 'RUNNING' in line:
+                    parts = line.split()
+                    for part in parts:
+                        if part.startswith('pid'):
+                            supervisor_pids.add(int(part.replace(',', '')))
+        except:
+            pass
+        
+        # 收集所有匹配的进程
+        all_matches = []
         for proc in psutil.process_iter(['pid', 'name', 'cmdline', 'create_time', 'memory_percent']):
             try:
                 cmdline = ' '.join(proc.info.get('cmdline', []))
                 for key, name in process_names.items():
                     if key in cmdline:
                         uptime = datetime.now() - datetime.fromtimestamp(proc.info.get('create_time', 0))
-                        processes.append({
+                        all_matches.append({
                             'name': name,
+                            'key': key,
                             'pid': proc.info.get('pid', 0),
                             'uptime': str(uptime).split('.')[0],
-                            'memory': f"{proc.info.get('memory_percent', 0):.1f}%"
+                            'memory': f"{proc.info.get('memory_percent', 0):.1f}%",
+                            'is_supervisor': proc.info.get('pid', 0) in supervisor_pids
                         })
             except:
                 pass
+        
+        # 每个类型只保留一个进程（优先 Supervisor 管理的）
+        for key in process_names.keys():
+            matches = [m for m in all_matches if m['key'] == key]
+            if matches:
+                # 优先选择 Supervisor 管理的进程
+                supervisor_match = next((m for m in matches if m['is_supervisor']), None)
+                if supervisor_match:
+                    processes.append(supervisor_match)
+                else:
+                    # 否则选择第一个
+                    processes.append(matches[0])
         
         # 读取配置文件
         env_file = Ziwei_DIR / "projects" / "x402-trading-bot" / ".env"
@@ -562,6 +745,8 @@ def get_trading_stats():
                 <div>• 链上数据：大额转账，持仓变化</div>
                 <div>• 止损：{stop_loss:.0f}%</div>
                 <div>• 止盈：+{take_profit:.0f}%</div>
+                <div>• 最大加仓：3 次/币种</div>
+                <div>• 亏损加仓：禁止</div>
             </div>
         </div>
         
@@ -685,11 +870,22 @@ def get_income_stats():
         payment_wallet = "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb"
         network = "Base L2"
         
-        # 交易记录详情
+        # 交易记录详情 - 过滤模拟交易
         tx_rows = ""
-        sorted_payments = sorted(payments.values(), key=lambda x: x.get('timestamp', ''), reverse=True)
         
-        for tx in sorted_payments[:10]:  # 显示最近 10 笔
+        # 过滤掉模拟交易（tx_hash 包含 0x0000、aaaa、bbbb 等）
+        real_payments = [
+            p for p in payments.values() 
+            if '0x0000' not in p.get('tx_hash', '') 
+            and 'aaaa' not in p.get('tx_hash', '') 
+            and 'bbbb' not in p.get('tx_hash', '')
+            and 'cccc' not in p.get('tx_hash', '')
+            and 'dddd' not in p.get('tx_hash', '')
+        ]
+        
+        sorted_payments = sorted(real_payments, key=lambda x: x.get('timestamp', ''), reverse=True)
+        
+        for tx in sorted_payments[:10]:  # 显示最近 10 笔真实交易
             tx_hash = tx.get('tx_hash', 'N/A')
             amount = tx.get('amount', 0)
             sender = tx.get('sender', 'N/A')
@@ -712,7 +908,7 @@ def get_income_stats():
             """
         
         if not tx_rows:
-            tx_rows = '<div style="padding:20px;text-align:center;color:#666;">暂无交易记录</div>'
+            tx_rows = '<div style="padding:20px;text-align:center;color:#666;">暂无真实交易记录</div>'
         
         # 判断是否为测试数据（假地址）
         test_tx_count = sum(1 for p in payments.values() if '0x0000' in p.get('tx_hash', '') or 'aaaa' in p.get('tx_hash', '') or 'bbbb' in p.get('tx_hash', ''))
@@ -1529,6 +1725,8 @@ class Handler(http.server.BaseHTTPRequestHandler):
         content = HTML_TEMPLATE.format(
             system_stats=get_system_stats(),
             service_stats=get_service_stats(),
+            power_stats=get_power_stats(),
+            my_holdings=get_my_holdings(),  # 新增：我的持仓大卡片
             trading_stats=get_trading_stats(),
             trading_signals=get_trading_signals(),
             security_stats=get_security_stats(),
@@ -1579,6 +1777,65 @@ class Handler(http.server.BaseHTTPRequestHandler):
                 self._json(500, {'success': False, 'error': '命令执行超时 (60 秒) - 交互式命令不支持'})
             except Exception as e:
                 self._json(500, {'success': False, 'error': str(e)})
+        
+        elif self.path == '/api/power/shutdown':
+            """关机接口"""
+            try:
+                # 记录操作
+                power_log = Ziwei_DIR / "data/logs/power/power_actions.log"
+                power_log.parent.mkdir(parents=True, exist_ok=True)
+                with open(power_log, 'a', encoding='utf-8') as f:
+                    f.write(f"[{datetime.now().isoformat()}] shutdown: triggered from dashboard\n")
+                
+                self._json(200, {'success': True, 'message': '关机指令已发送'})
+                # 延迟执行关机
+                subprocess.Popen(['sleep', '2', '&&', 'poweroff'], shell=True)
+            except Exception as e:
+                self._json(500, {'success': False, 'error': str(e)})
+        
+        elif self.path == '/api/power/reboot':
+            """重启接口"""
+            try:
+                # 记录操作
+                power_log = Ziwei_DIR / "data/logs/power/power_actions.log"
+                power_log.parent.mkdir(parents=True, exist_ok=True)
+                with open(power_log, 'a', encoding='utf-8') as f:
+                    f.write(f"[{datetime.now().isoformat()}] reboot: triggered from dashboard\n")
+                
+                self._json(200, {'success': True, 'message': '重启指令已发送'})
+                # 延迟执行重启
+                subprocess.Popen(['sleep', '2', '&&', 'reboot'], shell=True)
+            except Exception as e:
+                self._json(500, {'success': False, 'error': str(e)})
+        
+        elif self.path == '/api/power/schedule':
+            """定时任务接口"""
+            try:
+                length = int(self.headers.get('Content-Length', 0))
+                data = json.loads(self.rfile.read(length).decode())
+                
+                action = data.get('action')
+                time_str = data.get('time')
+                
+                if not action or not time_str:
+                    self._json(400, {'success': False, 'error': '缺少 action 或 time 参数'})
+                    return
+                
+                # 转发请求到电源管理服务
+                schedule_url = "http://localhost:9002/schedule"
+                req = urllib.request.Request(
+                    schedule_url,
+                    data=json.dumps(data).encode(),
+                    headers={'Content-Type': 'application/json'},
+                    method='POST'
+                )
+                with urllib.request.urlopen(req, timeout=5) as response:
+                    result = json.loads(response.read().decode())
+                
+                self._json(200, {'success': True, 'schedule': result})
+            except Exception as e:
+                self._json(500, {'success': False, 'error': str(e)})
+        
         else:
             self._json(404, {'success': False, 'error': '不存在'})
     

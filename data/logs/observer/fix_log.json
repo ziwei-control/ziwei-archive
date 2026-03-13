@@ -1,0 +1,338 @@
+[
+  {
+    "timestamp": "2026-03-13T11:18:32.724181",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.05
+  },
+  {
+    "timestamp": "2026-03-13T11:18:32.724288",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:18:32.724378",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:18:32.724465",
+    "issue": "4 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:18:38.258482",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:18:38.258600",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:18:38.258712",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:18:38.258854",
+    "issue": "5 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.05
+  },
+  {
+    "timestamp": "2026-03-13T11:18:43.971251",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.05
+  },
+  {
+    "timestamp": "2026-03-13T11:18:43.971405",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.05
+  },
+  {
+    "timestamp": "2026-03-13T11:18:43.971520",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:18:43.971629",
+    "issue": "5 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:18:51.195942",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:18:51.196162",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:18:51.196260",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:18:51.196351",
+    "issue": "5 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:19:22.288562",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:19:22.288669",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:19:22.288762",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:19:22.288864",
+    "issue": "5 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:19:33.284512",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:19:33.284616",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:19:33.284708",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:19:33.284796",
+    "issue": "2 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:20:33.322767",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.05
+  },
+  {
+    "timestamp": "2026-03-13T11:20:33.322910",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:20:33.323005",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:20:33.323136",
+    "issue": "6 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:21:33.380322",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.05
+  },
+  {
+    "timestamp": "2026-03-13T11:21:33.380462",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:21:33.380559",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:21:33.380657",
+    "issue": "5 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:22:34.025475",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.05
+  },
+  {
+    "timestamp": "2026-03-13T11:22:34.025585",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:22:34.025691",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:22:34.025790",
+    "issue": "6 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:23:34.408281",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:23:34.408396",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:23:34.408490",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:23:34.408593",
+    "issue": "5 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:24:34.145499",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.04
+  },
+  {
+    "timestamp": "2026-03-13T11:24:34.145628",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:24:34.145737",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:24:34.145862",
+    "issue": "6 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:25:34.268859",
+    "issue": "策略引擎运行 3 个进程（正常应为 1 个）",
+    "method": "清理重复进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.05
+  },
+  {
+    "timestamp": "2026-03-13T11:25:34.268995",
+    "issue": "Dashboard 运行 2 个进程（正常应为 1 个）",
+    "method": "清理重复 Dashboard 进程，保留 1 个",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:25:34.269132",
+    "issue": "检测到 2 个策略引擎进程",
+    "method": "清理重复进程",
+    "status": "success",
+    "duration_ms": 0.03
+  },
+  {
+    "timestamp": "2026-03-13T11:25:34.269221",
+    "issue": "6 个 Supervisor 服务异常",
+    "method": "检查 Supervisor 服务日志",
+    "status": "success",
+    "duration_ms": 0.03
+  }
+]

@@ -1,0 +1,254 @@
+{
+  "created": "2026-03-12T10:00:19.742029",
+  "updated": "2026-03-12T17:10:47.653194",
+  "work_patterns": [
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "guidance": "创建观察者系统，自动化监控系统状态",
+      "context": "系统反复出现重复进程问题，人工监控不可持续",
+      "category": "监控系统"
+    },
+    {
+      "timestamp": "2026-03-12T09:00:00",
+      "guidance": "方案 B：Supervisor 直接管理所有进程",
+      "context": "soul_trader 子进程管理混乱，导致重复进程",
+      "category": "系统架构"
+    },
+    {
+      "timestamp": "2026-03-12T09:35:00",
+      "guidance": "止盈从 +20% 改为 +10%",
+      "context": "当前是震荡市，快速获利，避免坐过山车",
+      "category": "交易策略"
+    },
+    {
+      "timestamp": "2026-03-12T09:44:00",
+      "guidance": "全部实施综合保护策略",
+      "context": "发现无限加仓问题，同一币种加仓 9 次",
+      "category": "风险控制"
+    },
+    {
+      "timestamp": "2026-03-12T10:22:06.961154",
+      "guidance": "观察者要代替用户位置",
+      "context": "用户希望完全放手，只享受收益",
+      "category": "终极目标"
+    },
+    {
+      "timestamp": "2026-03-12T10:22:06.961167",
+      "guidance": "15 天接替计划",
+      "context": "用户觉得 50 天太慢，要求加速",
+      "category": "项目进度"
+    },
+    {
+      "timestamp": "2026-03-12T10:22:06.961169",
+      "guidance": "并行执行，激进测试，主动学习",
+      "context": "加速方法论",
+      "category": "工作方法"
+    },
+    {
+      "timestamp": "2026-02-28T00:00:00",
+      "guidance": "全球战情室系统部署",
+      "context": "从历史记忆文件 2026-02-28.md 提取",
+      "category": "历史项目"
+    },
+    {
+      "timestamp": "2026-03-01T00:00:00",
+      "guidance": "全球战情室双平台上传 + 私有化",
+      "context": "从历史记忆文件 2026-03-01.md 提取",
+      "category": "历史项目"
+    },
+    {
+      "timestamp": "2026-03-02T00:00:00",
+      "guidance": "x402 API 系统完成 + 最终成功",
+      "context": "从历史记忆文件 2026-03-02.md 提取",
+      "category": "历史项目"
+    },
+    {
+      "timestamp": "2026-03-05T00:00:00",
+      "guidance": "财务安全策略 + x402 扩展",
+      "context": "从历史记忆文件 2026-03-05.md 提取",
+      "category": "历史项目"
+    },
+    {
+      "timestamp": "2026-03-06T00:00:00",
+      "guidance": "x402 API 系统文档",
+      "context": "从历史记忆文件 2026-03-06.md 提取",
+      "category": "历史项目"
+    },
+    {
+      "timestamp": "2026-03-10T00:00:00",
+      "guidance": "系统审计",
+      "context": "从历史记忆文件 2026-03-10.md 提取",
+      "category": "历史项目"
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "guidance": "Dashboard 修复 + 观察者系统创建",
+      "context": "从历史记忆文件 2026-03-11.md 提取",
+      "category": "历史项目"
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "guidance": "紫微工作指导手册 + 观察者终极目标",
+      "context": "从历史记忆文件 2026-03-12.md 提取",
+      "category": "历史项目"
+    },
+    {
+      "timestamp": "2026-03-04T02:31:00",
+      "guidance": "创建学习目录和成功模式库",
+      "context": "紫微制造自学系统初始化",
+      "category": "系统初始化"
+    },
+    {
+      "timestamp": "2026-03-04T03:50:00",
+      "guidance": "开始记录学习经验和风险评分",
+      "context": "audit_learning.json 创建",
+      "category": "学习系统"
+    },
+    {
+      "timestamp": "2026-03-05T17:43:00",
+      "guidance": "创建自动同步看门狗",
+      "context": "自动监控同步服务",
+      "category": "监控系统"
+    },
+    {
+      "timestamp": "2026-03-06T15:35:00",
+      "guidance": "创建 x402 服务看门狗",
+      "context": "监控 x402 API 服务",
+      "category": "监控系统"
+    },
+    {
+      "timestamp": "2026-03-11T19:32:00",
+      "guidance": "创建系统观察者 v1.0",
+      "context": "每 8 分钟观察系统状态",
+      "category": "监控系统"
+    },
+    {
+      "timestamp": "2026-03-12T10:00:00",
+      "guidance": "升级为自学系统",
+      "context": "添加学习模块和决策引擎",
+      "category": "系统升级"
+    }
+  ],
+  "problem_solving": [
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "problem": "Dashboard 多进程运行，端口冲突",
+      "solution": "清理所有 Dashboard 进程，启动单个实例",
+      "method": "1. pkill -f dashboard 2. sleep 2 3. nohup python3 dashboard_v4_0_1.py &",
+      "keywords": [
+        "进程管理",
+        "Dashboard"
+      ]
+    },
+    {
+      "timestamp": "2026-03-11T00:00:00",
+      "problem": "持仓加载失败：tuple indices must be integers or slices, not str",
+      "solution": "修复 portfolio.items() 为 portfolio.values()",
+      "method": "1. 定位错误代码 2. 修改为.values() 3. 修复 lambda 函数",
+      "keywords": [
+        "Dashboard",
+        "Python"
+      ]
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "problem": "无限加仓，同一币种加仓 9 次",
+      "solution": "实施综合保护策略",
+      "method": "1. 限制加仓次数 2. 禁止亏损加仓 3. 单币种仓位上限 4. 提高买入门槛",
+      "keywords": [
+        "交易操作",
+        "风险控制"
+      ]
+    }
+  ],
+  "optimization_methods": [
+    {
+      "timestamp": "2026-03-12T09:35:00",
+      "before": "止盈 +20%",
+      "after": "止盈 +10%",
+      "reason": "震荡市不贪心，快速获利",
+      "result": "提高资金周转率，减少回调风险",
+      "type": "交易策略优化"
+    },
+    {
+      "timestamp": "2026-03-12T09:44:00",
+      "before": "无限制加仓",
+      "after": "最多 3 次加仓",
+      "reason": "防止无限补仓，控制风险",
+      "result": "避免亏损扩大",
+      "type": "安全优化"
+    }
+  ],
+  "decisions": [
+    {
+      "timestamp": "2026-03-12T09:00:00",
+      "decision": "方案 B：Supervisor 直接管理所有进程",
+      "options": [
+        "方案 A：改进 soul_trader 子进程管理",
+        "方案 B：Supervisor 直接管理"
+      ],
+      "reasons": [
+        "单一管理源",
+        "Supervisor 更可靠",
+        "日志集中"
+      ],
+      "outcome": "进程数量正常（各 1 个）"
+    },
+    {
+      "timestamp": "2026-03-12T09:44:00",
+      "decision": "全部实施综合保护策略",
+      "options": [
+        "限制加仓次数",
+        "禁止亏损加仓",
+        "单币种仓位上限",
+        "提高买入门槛"
+      ],
+      "reasons": [
+        "防止无限补仓",
+        "避免亏损扩大",
+        "分散风险",
+        "提高信号质量"
+      ],
+      "outcome": "已生效，新交易受保护"
+    }
+  ],
+  "principles": [
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "principle": "系统稳定 > 功能丰富",
+      "explanation": "先保证稳定，再添加功能",
+      "examples": [
+        "先修复重复进程，再添加新功能",
+        "先保证数据不丢失，再优化性能"
+      ]
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "principle": "数据驱动 > 主观感觉",
+      "explanation": "用数据验证假设，不用感觉",
+      "examples": [
+        "检查交易历史统计加仓次数",
+        "查看进程数量确认问题"
+      ]
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "principle": "预防为主 > 修复为主",
+      "explanation": "提前预防问题比修复更重要",
+      "examples": [
+        "创建观察者系统",
+        "添加综合保护策略"
+      ]
+    },
+    {
+      "timestamp": "2026-03-12T00:00:00",
+      "principle": "本金安全第一",
+      "explanation": "宁可错过，不可做错",
+      "examples": [
+        "止损 -5%",
+        "禁止亏损加仓",
+        "单币种最大 20% 仓位"
+      ]
+    }
+  ]
+}

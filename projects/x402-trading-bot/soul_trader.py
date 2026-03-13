@@ -2,6 +2,8 @@
 # =============================================================================
 # 紫微智控 - 智能交易机器人 v2.0 (Soul Edition)
 # 24 小时监控 | 情报驱动 | AI 决策 | 本金安全第一
+# 
+# ⚠️ 修改：不再启动子进程，由 Supervisor 直接管理
 # =============================================================================
 
 import os
@@ -18,7 +20,7 @@ DATA_DIR = Path("/home/admin/Ziwei/data")
 LOG_DIR = DATA_DIR / "logs" / "soul-trader"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-# 进程管理
+# 进程管理（只监控，不启动）
 PROCESSES = {
     'intel_collector': None,
     'strategy_engine': None,
@@ -37,35 +39,10 @@ def log(message: str):
         f.write(log_msg + '\n')
 
 
-def start_intel_collector():
-    """启动情报搜集器"""
-    log("🕵️ 启动情报搜集器...")
-    
-    proc = subprocess.Popen(
-        ['python3', str(BOT_DIR / 'intel_collector.py')],
-        stdout=open(LOG_DIR / 'intel_collector.out', 'a'),
-        stderr=subprocess.STDOUT
-    )
-    
-    PROCESSES['intel_collector'] = proc
-    log(f"✅ 情报搜集器已启动 (PID: {proc.pid})")
-    return proc
-
-
-def start_strategy_engine():
-    """启动策略引擎 v3.0"""
-    log("🧠 启动策略引擎 v3.0 (AI 增强版)...")
-    
-    proc = subprocess.Popen(
-        ['python3', str(BOT_DIR / 'strategy_engine_v3.py')],
-        stdout=open(LOG_DIR / 'strategy_engine.out', 'a'),
-        stderr=subprocess.STDOUT
-    )
-    
-    PROCESSES['strategy_engine'] = proc
-    log(f"✅ 策略引擎 v3.0 已启动 (PID: {proc.pid})")
-    return proc
-
+# =============================================================================
+# ⚠️ 已禁用：子进程启动功能
+# 现在由 Supervisor 直接管理 intel_collector 和 strategy_engine
+# =============================================================================
 
 def check_signals():
     """检查交易信号并执行"""
@@ -100,17 +77,24 @@ def check_signals():
 
 
 def monitor_processes():
-    """监控进程状态"""
-    for name, proc in PROCESSES.items():
-        if proc:
-            if proc.poll() is not None:
-                log(f"❌ {name} 进程已退出，重启中...")
-                if name == 'intel_collector':
-                    start_intel_collector()
-                elif name == 'strategy_engine':
-                    start_strategy_engine()
-            else:
-                log(f"✅ {name} 运行正常 (PID: {proc.pid})")
+    """监控进程状态（只检查，不重启）"""
+    log("🔍 监控进程状态...")
+    
+    # 检查 intel_collector
+    result = subprocess.run("pgrep -f 'intel_collector.py'", shell=True, capture_output=True, text=True)
+    if result.stdout.strip():
+        pids = result.stdout.strip().split('\n')
+        log(f"✅ intel_collector 运行中 (PID: {pids[0]})")
+    else:
+        log("❌ intel_collector 未运行（Supervisor 将自动重启）")
+    
+    # 检查 strategy_engine
+    result = subprocess.run("pgrep -f 'strategy_engine_v3.py'", shell=True, capture_output=True, text=True)
+    if result.stdout.strip():
+        pids = result.stdout.strip().split('\n')
+        log(f"✅ strategy_engine 运行中 (PID: {pids[0]})")
+    else:
+        log("❌ strategy_engine 未运行（Supervisor 将自动重启）")
 
 
 def print_status():
@@ -125,40 +109,29 @@ def print_status():
     
     # 进程状态
     print("📊 进程状态:")
-    for name, proc in PROCESSES.items():
-        if proc:
-            status = "✅ 运行中" if proc.poll() is None else "❌ 已退出"
-            print(f"   {name}: {status}")
-        else:
-            print(f"   {name}: ⏸️ 未启动")
+    result = subprocess.run("pgrep -f 'intel_collector.py'", shell=True, capture_output=True, text=True)
+    intel_pid = result.stdout.strip().split('\n')[0] if result.stdout.strip() else "未运行"
+    print(f"   intel_collector: {intel_pid}")
     
-    # 最新信号摘要
-    strategy_dir = Path("/home/admin/Ziwei/data/strategy")
-    if strategy_dir.exists():
-        signal_files = sorted(strategy_dir.glob("signals_*.json"), reverse=True)
-        if signal_files:
-            with open(signal_files[0], 'r') as f:
-                signals = json.load(f)
-            buy_count = len([s for s in signals if 'BUY' in s['signal']])
-            print(f"\n📈 最新信号：{len(signals)}个代币分析，{buy_count}个买入信号")
+    result = subprocess.run("pgrep -f 'strategy_engine_v3.py'", shell=True, capture_output=True, text=True)
+    strategy_pid = result.stdout.strip().split('\n')[0] if result.stdout.strip() else "未运行"
+    print(f"   strategy_engine: {strategy_pid}")
     
-    print("=" * 70 + "\n")
+    print(f"   soul_trader: {os.getpid()}")
+    print()
 
 
 def main():
-    """主函数"""
+    """主函数 - 只做交易决策，不启动子进程"""
     log("=" * 70)
     log("🚀 紫微智控 - 智能交易机器人 v2.0 启动")
     log("=" * 70)
+    log("📋 配置：Supervisor 管理所有进程，soul_trader 只做交易决策")
+    log("=" * 70)
     
-    # 启动子进程
-    start_intel_collector()
-    time.sleep(2)
-    start_strategy_engine()
-    
-    # 等待情报搜集
-    log("⏳ 等待情报数据...")
-    time.sleep(30)
+    # 等待 Supervisor 启动其他进程
+    log("⏳ 等待 Supervisor 启动其他进程...")
+    time.sleep(10)
     
     # 主循环
     check_interval = 60  # 60 秒检查一次信号
@@ -171,7 +144,7 @@ def main():
             # 检查信号
             check_signals()
             
-            # 监控进程
+            # 监控进程（只检查，不重启）
             monitor_processes()
             
             # 等待
@@ -179,13 +152,7 @@ def main():
             time.sleep(check_interval)
             
         except KeyboardInterrupt:
-            log("\n🛑 收到停止信号，关闭所有进程...")
-            
-            for name, proc in PROCESSES.items():
-                if proc:
-                    proc.terminate()
-                    log(f"✅ {name} 已停止")
-            
+            log("\n🛑 收到停止信号")
             log("👋 智能交易机器人已停止")
             break
         
@@ -194,5 +161,5 @@ def main():
             time.sleep(60)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
